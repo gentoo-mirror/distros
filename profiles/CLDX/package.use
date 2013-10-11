@@ -1,0 +1,26 @@
+lxde-base/lxdm gtk3
+mail-client/claws-mail imap
+media-sound/audacious chardet
+net-misc/networkmanager-pptp gnome
+net-misc/networkmanager-openvpn gnome
+net-misc/networkmanager-vpnc gnome
+net-misc/remmina ssh freerdp
+net-p2p/deluge webinterface
+net-print/gutenprint gimp
+sys-apps/calculate-client xfce
+sys-apps/calculate-desktop xfce
+sys-block/gparted dmraid fat jfs ntfs reiserfs xfs xfce
+x11-drivers/ati-drivers qt4
+x11-themes/tango-icon-theme -png
+dev-qt/qtgui gtkstyle
+xfce-base/thunar xfce_plugins_trash
+xfce-base/xfdesktop thunar xfce_plugins_menu
+
+#need for xfce-base/thunar-1.2.0
+gnome-base/gvfs gdu
+
+#required by net-p2p/deluge-1.3.3
+net-libs/rb_libtorrent python
+
+#required by xfce-base/thunar-1.2.3[udev], required by xfce-extra/thunar-archive-plugin-0.3.0, required by app-misc/cl-xfce-meta-4.8-r2, required by app-misc/cldx-meta-11.12[-calculate_noxfce], required by app-misc/calculate-meta-11.12, required by @selected, required by @world (argument)
+sys-fs/udev gudev
