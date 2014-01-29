@@ -13,7 +13,7 @@ HOMEPAGE="http://www.calculate-linux.org"
 
 IUSE=""
 
-DEPEND="vmlinuz? (|| ( app-arch/xz-utils app-arch/lzma-utils )
+DEPEND="vmlinuz? ( || ( app-arch/xz-utils app-arch/lzma-utils )
 	sys-apps/v86d
 	!<net-wireless/rtl8192se-3.0
 	sys-boot/grub
