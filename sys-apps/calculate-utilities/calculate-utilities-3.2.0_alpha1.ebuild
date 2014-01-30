@@ -14,13 +14,13 @@ KEYWORDS="amd64 x86"
 IUSE="cl_consolegui cl_client cl_desktop cl_console"
 
 RDEPEND="${RDEPEND}
-	=sys-apps/calculate-install-3.1.9-r4
-	=sys-apps/calculate-i18n-3.1.9
-	=sys-apps/calculate-lib-3.1.9-r11
-	=sys-apps/calculate-core-3.1.9-r4
-	=sys-apps/calculate-update-3.1.9
-	cl_client? ( =sys-apps/calculate-client-3.1.9-r2 )
-	cl_desktop? ( =sys-apps/calculate-desktop-3.1.9-r4 )
-	cl_consolegui? ( =sys-apps/calculate-console-gui-3.1.9-r1 )
-	cl_console? ( =sys-apps/calculate-console-3.1.9-r1 )
+	=sys-apps/calculate-install-3.2.0_alpha1
+	=sys-apps/calculate-i18n-3.2.0_alpha1
+	=sys-apps/calculate-lib-3.2.0_alpha1
+	=sys-apps/calculate-core-3.2.0_alpha1
+	=sys-apps/calculate-update-3.2.0_alpha1
+	cl_client? ( =sys-apps/calculate-client-3.2.0_alpha1 )
+	cl_desktop? ( =sys-apps/calculate-desktop-3.2.0_alpha1 )
+	cl_consolegui? ( =sys-apps/calculate-console-gui-3.2.0_alpha1 )
+	cl_console? ( =sys-apps/calculate-console-3.2.0_alpha1 )
 "
