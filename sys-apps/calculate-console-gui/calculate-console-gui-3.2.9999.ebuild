@@ -7,17 +7,17 @@ SUPPORT_PYTHON_ABIS="1"
 PYTHON_DEPEND="2:2.7"
 RESTRICT_PYTHON_ABIS="2.4 2.5 2.6 3.*"
 
-inherit distutils eutils
+inherit distutils git-2
 
-SRC_URI="ftp://ftp.calculate.ru/pub/calculate/calculate3/${PN}/${P}.tar.bz2"
+EGIT_REPO_URI="git://git.calculate.ru/calculate-3/calculate-console-gui.git"
 
-DESCRIPTION="The utilities for assembling tasks of Calculate Linux"
+DESCRIPTION="Qt gui console client for WSDL Calculate 3"
 HOMEPAGE="http://www.calculate-linux.org/main/en/calculate2"
 LICENSE="Apache-2.0"
 SLOT="3"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
+IUSE=""
 
-RDEPEND=">=sys-apps/calculate-lib-3.2.0_alpha1"
-
-DEPEND="sys-devel/gettext
-	${RDEPEND}"
+DEPEND="~sys-apps/calculate-core-3.2.9999
+	dev-python/pyside[script]"
+RDEPEND="${DEPEND}"
