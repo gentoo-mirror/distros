@@ -1,0 +1,17 @@
+diff --git update/update.py update/update.py
+index ef6fe02..a9b3588 100644
+--- update/update.py
++++ update/update.py
+@@ -514,7 +514,11 @@ class Update:
+                 self.printWARNING(str(e))
+                 self.printWARNING(_("Re-fetch {name} repository"
+                                   ).format(name=repname))
+-                removeDir(rpath)
++                try:
++                    removeDir(rpath)
++                except OSError as e:
++                    raise UpdateError(_("Permission denied to change "
++                        "{repname} repository").format(repname=repname))
+         self._syncRepository(name,url,rpath,revision,branch)
+         return True
+ 

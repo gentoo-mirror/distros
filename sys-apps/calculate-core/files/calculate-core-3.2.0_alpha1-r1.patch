@@ -1,0 +1,100 @@
+diff --git core/server/cl_server.py core/server/cl_server.py
+index a62d8cd..abd555f 100644
+--- core/server/cl_server.py
++++ core/server/cl_server.py
+@@ -75,12 +75,13 @@ def main(*args, **keywords):
+     cl_ver = ob.Get('cl_ver')
+     log_path_var = ob.Get('cl_log_path')
+     cl_core_port = ob.GetInteger('cl_core_port')
++    file_logger = None
+ 
+     if args.version:
+         print cl_ver
+         return 0
+ 
+-    if ob.Get('cl_ebuild_phase') == '':
++    if ob.Get('cl_ebuild_phase') == '' and os.getuid() == 0:
+         import logging
+         import logging.handlers
+ 
+@@ -149,9 +150,10 @@ def main(*args, **keywords):
+                                      serv_certbase, certbase, data_path)
+                 return 0
+         except URLError, e:
+-            fd = open(LOG_FILENAME,'a')
+-            file_logger.debug(print_exc(file=fd))
+-            fd.close()
++            if file_logger:
++                fd = open(LOG_FILENAME,'a')
++                file_logger.debug(print_exc(file=fd))
++                fd.close()
+             print e
+     params_list = ["start", "create_symlink", "method",
+                    "list_methods"]
+@@ -262,9 +264,10 @@ def main(*args, **keywords):
+             print _("No socket could be created")
+             print _('Port %d already in use') %port
+         else:
+-            fd = open(LOG_FILENAME,'a')
+-            file_logger.debug(print_exc(file=fd))
+-            fd.close()
++            if file_logger:
++                fd = open(LOG_FILENAME,'a')
++                file_logger.debug(print_exc(file=fd))
++                fd.close()
+             print e
+     except SSLError, e:
+         print '\n',_('Server certificate not found')#, e
+@@ -273,9 +276,10 @@ def main(*args, **keywords):
+     except KeyboardInterrupt:
+             pass
+     except Exception, e:
+-        fd = open(LOG_FILENAME,'a')
+-        file_logger.debug(print_exc(file=fd))
+-        fd.close()
++        if file_logger:
++            fd = open(LOG_FILENAME,'a')
++            file_logger.debug(print_exc(file=fd))
++            fd.close()
+ 
+     server.stop()
+     if args.pidfile:
+diff --git core/server/func.py core/server/func.py
+index 190a066..ae0c88f 100644
+--- core/server/func.py
++++ core/server/func.py
+@@ -815,8 +815,8 @@ def shortTraceback(e1,e2,e3):
+     Return short traceback
+     """
+     frame = e3
+-    #for i in apply(traceback.format_exception, (e1,e2,e3)):
+-    #    print i,
++    for i in apply(traceback.format_exception, (e1,e2,e3)):
++        print i,
+     while(frame.tb_next):
+         frame = frame.tb_next
+     module,part = os.path.split(frame.tb_frame.f_code.co_filename)
+diff --git core/server/server_class.py core/server/server_class.py
+index 13157ec..43f9ffb 100644
+--- core/server/server_class.py
++++ core/server/server_class.py
+@@ -360,7 +360,8 @@ class ClApplication(Application):
+                     certobj = OpenSSL.crypto.load_certificate \
+                             (OpenSSL.SSL.FILETYPE_PEM, curThread.client_cert)
+                     finger = certobj.digest('SHA1')
+-                    self.log.debug('%s %s %s forbidden %s' \
++                    if self.log:
++                        self.log.debug('%s %s %s forbidden %s' \
+                             %(datetime.datetime.now().__str__(), finger, ip, \
+                             method_name[5:]))
+                 resp = "Permission denied: " + method_name
+@@ -375,7 +376,8 @@ class ClApplication(Application):
+                 finger = certobj.digest('SHA1')
+                 if not method_name[5:] in not_log_list and \
+                                         not method_name[5:].endswith('_view'):
+-                    self.log.debug('%s %s %s allowed %s' \
++                    if self.log:
++                        self.log.debug('%s %s %s allowed %s' \
+                             %(datetime.datetime.now().__str__(), finger, ip, \
+                             method_name[5:]))
+ 
