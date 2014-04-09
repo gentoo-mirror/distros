@@ -1,0 +1,40 @@
+diff --git update/emerge_parser.py update/emerge_parser.py
+index c19450f..21b12b6 100644
+--- update/emerge_parser.py
++++ update/emerge_parser.py
+@@ -550,8 +550,7 @@ class EmergeCache(object):
+     # список файлов проверяемый по mtime на изменения
+     check_list = [MtimeCheckvalue('/etc/make.conf',
+                   '/etc/portage',
+-                  '/etc/make.profile',
+-                  '/var/cache/edb/binhost')]
++                  '/etc/make.profile')]
+ 
+     def __init__(self):
+         self.files_control_values = {}
+diff --git update/update.py update/update.py
+index fbb6782..9a7cedb 100644
+--- update/update.py
++++ update/update.py
+@@ -384,7 +384,7 @@ class Update:
+                         raise EmergeError(_("File %s not found" % filename))
+                 return self.child
+ 
+-        param, packages = self.getCacheOnWorld(param, packages)
++        param, packages = self.getCacheOnWorld(param, packages, check=True)
+         param = [param, "-pv"]
+         #print "PREMERGE",packages,param
+ 
+@@ -438,9 +438,11 @@ class Update:
+                     raise EmergeError(_("File %s not found" % filename))
+                 return self.child
+ 
+-        param, packages = self.getCacheOnWorld(param, packages, check=True)
++        param, packages = self.getCacheOnWorld(param, packages)
+         #print "EMERGE",packages,param
+         ask_emerge = self.clVars.Get('cl_update_precheck_set') == 'off'
++        if not packages:
++            return True
+         with EmergeParser(EmergeCommand(list(packages),
+                                         extra_params=[param])) as emerge:
+             try:
