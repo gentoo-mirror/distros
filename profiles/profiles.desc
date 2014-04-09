@@ -8,11 +8,11 @@
 
 
 # AMD64 Profiles
-amd64		acoola/amd64					dev
-amd64		acoola/amd64/binary				dev
+amd64		desktop/CLDX/amd64				dev
+amd64		desktop/CLDX/amd64/binary			dev
 
 # x86 Profiles
-x86		acoola/x86					dev
-x86		acoola/x86/binary				dev
+x86		desktop/CLDX/x86				dev
+x86		desktop/CLDX/x86/binary				dev
 
 # vim: set ts=8
