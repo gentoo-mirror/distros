@@ -1,0 +1,65 @@
+diff --git update/emerge_parser.py update/emerge_parser.py
+index 50d53aa..3095b7e 100644
+--- update/emerge_parser.py
++++ update/emerge_parser.py
+@@ -13,6 +13,7 @@
+ #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ #  See the License for the specific language governing permissions and
+ #  limitations under the License.
++import hashlib
+ 
+ import os
+ from os import path
+@@ -531,6 +532,10 @@ class MtimeCheckvalue(object):
+         return self.get_check_values(self.fname)
+ 
+ 
++class Md5Checkvalue(MtimeCheckvalue):
++    def value_func(self, fn):
++        return hashlib.md5(readFile(fn)).hexdigest()
++
+ class GitCheckvalue(object):
+     def __init__(self, rpath):
+         self.rpath = rpath
+@@ -550,9 +555,9 @@ class EmergeCache(object):
+     # список файлов проверяемый по mtime на изменения
+     check_list = [MtimeCheckvalue('/etc/make.conf',
+                   '/etc/portage',
+-                  '/var/lib/portage/world',
+-                  '/var/lib/portage/world_sets',
+-                  '/etc/make.profile')]
++                  '/etc/make.profile'),
++                  Md5Checkvalue('/var/lib/portage/world',
++                  '/var/lib/portage/world_sets')]
+ 
+     def __init__(self):
+         self.files_control_values = {}
+diff --git update/update.py update/update.py
+index 5d8936c..cb8b0b5 100644
+--- update/update.py
++++ update/update.py
+@@ -467,7 +467,7 @@ class Update:
+             emerge.uninstalling.add_observer(self._printUninstallPackage)
+             try:
+                 emerge.run()
+-            except EmergeError as e:
++            except EmergeError:
+                 self.emerge_cache.drop_cache()
+                 if emerge.emerging_error:
+                     self.printPre(
+diff --git update/variables/update.py update/variables/update.py
+index 0f79468..a000e45 100644
+--- update/variables/update.py
++++ update/variables/update.py
+@@ -117,8 +117,10 @@ class VariableClUpdateSystemProfile(ReadonlyVariable):
+     """
+     def get(self):
+         try:
++            make_profile = self.Get('cl_make_profile')
+             return path.normpath(
+-                path.join('/etc',os.readlink('/etc/make.profile')))
++                path.join(path.dirname(make_profile),
++                          os.readlink(make_profile)))
+         except:
+             raise VariableError(_("Failed to determine system profile"))
+ 
