@@ -1,0 +1,5 @@
+# Calculate ini(update.revtest)<1 format=samba path=/etc/calculate name=ini.env merge=app-portage/eix,app-portage/layman
+
+# reconfigure eix, layman
+[update]
+revtest = 1
