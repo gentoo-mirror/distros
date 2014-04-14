@@ -1,0 +1,173 @@
+diff --git update/emerge_parser.py update/emerge_parser.py
+index 50d53aa..6d677a0 100644
+--- update/emerge_parser.py
++++ update/emerge_parser.py
+@@ -13,6 +13,7 @@
+ #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ #  See the License for the specific language governing permissions and
+ #  limitations under the License.
++import hashlib
+ 
+ import os
+ from os import path
+@@ -159,9 +160,9 @@ class EmergeInformationBlock(object):
+ 
+     def __contains__(self, item):
+         if self.result is None:
+-            return 0
++            return False
+         else:
+-            return item in self.result
++            return item in str(self)
+ 
+     def _get_text(self, result):
+         """
+@@ -448,6 +449,29 @@ class EmergeingErrorBlock(EmergeInformationBlock):
+         raise EmergeError(_("Emerge %s is failed") % self.package)
+ 
+ 
++class RevdepPercentBlock(NotifierInformationBlock):
++    """
++    Блок определния статуса revdep-rebuild
++    """
++    token = "Collecting system binaries"
++    end_token = [re.compile("Assigning files to packages|"
++                            "All prepared. Starting rebuild"), pexpect.EOF]
++    re_block = re.compile("\[\s(\d+)%\s\]")
++
++    def notify(self, observer, groups):
++        percent = int(groups[0])
++        observer(percent)
++
++    def get_block(self, child):
++        while True:
++            index = child.expect([self.re_block]+self.end_token)
++            if index == 0:
++                for observer in self.observers:
++                    self.notify(observer, child.match.groups())
++            else:
++                self.result = child.match
++                break
++
+ class EmergeParser(object):
+     """
+     Парсер вывода emerge
+@@ -531,6 +555,10 @@ class MtimeCheckvalue(object):
+         return self.get_check_values(self.fname)
+ 
+ 
++class Md5Checkvalue(MtimeCheckvalue):
++    def value_func(self, fn):
++        return hashlib.md5(readFile(fn)).hexdigest()
++
+ class GitCheckvalue(object):
+     def __init__(self, rpath):
+         self.rpath = rpath
+@@ -550,9 +578,9 @@ class EmergeCache(object):
+     # список файлов проверяемый по mtime на изменения
+     check_list = [MtimeCheckvalue('/etc/make.conf',
+                   '/etc/portage',
+-                  '/var/lib/portage/world',
+-                  '/var/lib/portage/world_sets',
+-                  '/etc/make.profile')]
++                  '/etc/make.profile'),
++                  Md5Checkvalue('/var/lib/portage/world',
++                  '/var/lib/portage/world_sets')]
+ 
+     def __init__(self):
+         self.files_control_values = {}
+diff --git update/update.py update/update.py
+index 5d8936c..cb6702b 100644
+--- update/update.py
++++ update/update.py
+@@ -20,6 +20,7 @@ from os import path
+ from calculate.lib.utils.tools import AddonError
+ from calculate.lib.utils.colortext.palette import TextState
+ from calculate.lib.utils.colortext import get_color_print
++from calculate.update.emerge_parser import RevdepPercentBlock
+ import pexpect
+ 
+ from package_tools import Git, Layman,\
+@@ -298,6 +299,31 @@ class Update:
+                 raise
+         return True
+ 
++    def revdep_rebuild(self, cmd, *params):
++        cmd_path = getProgPath(cmd)
++        if not cmd_path:
++            raise UpdateError(_("Failed to find %s command") % cmd)
++        with EmergeParser(
++                emerge_parser.CommandExecutor(cmd_path, params)) as emerge:
++            revdep = RevdepPercentBlock(emerge)
++            self.addProgress()
++            revdep.add_observer(self.setProgress)
++            revdep.action = lambda x: (self.endTask(), self.startTask(
++                _("Calculating dependencies")) if "Assign" in revdep else None)
++            emerge.emerging.add_observer(self._printEmergePackage)
++            emerge.installing.add_observer(self._printInstallPackage)
++            emerge.uninstalling.add_observer(self._printUninstallPackage)
++            try:
++                emerge.run()
++            except EmergeError:
++                if emerge.emerging_error:
++                    self.printPre(
++                        self._emerge_translate(emerge.emerging_error.log))
++                else:
++                    self.printPre(self._emerge_translate(emerge.prepare_error))
++                raise
++        return True
++
+     def _display_pretty_package_list(self, pkglist, remove_list=False):
+         """
+         Отобразить список пакетов в "удобночитаемом" виде
+@@ -467,7 +493,7 @@ class Update:
+             emerge.uninstalling.add_observer(self._printUninstallPackage)
+             try:
+                 emerge.run()
+-            except EmergeError as e:
++            except EmergeError:
+                 self.emerge_cache.drop_cache()
+                 if emerge.emerging_error:
+                     self.printPre(
+diff --git update/utils/cl_update.py update/utils/cl_update.py
+index 111b369..6122db4 100644
+--- update/utils/cl_update.py
++++ update/utils/cl_update.py
+@@ -180,16 +180,16 @@ class ClUpdateAction(Action):
+                   'preserved_libs']
+              },
+              {'name': 'update:revdev_rebuild',
+-              'message': __('Executing {0}').format("revdep-rebuild"),
+-              'method': 'Update.emergelike("revdep-rebuild")',
++              'message': __('Checking reverse dependencies'),
++              'method': 'Update.revdep_rebuild("revdep-rebuild")',
+               'condition': was_installed('.*', log_names['revdep']),
+               'decoration': 'Update.update_task("%s")' % log_names['revdep']
+              },
+-             {'name': 'update:set_upto_date_cache',
+-              'method': 'Update.setUpToDateCache()'
+-             }
+          ]
+         },
++        {'name': 'update:set_upto_date_cache',
++         'method': 'Update.setUpToDateCache()'
++        }
+     ]
+ 
+     # список задач для дейсвия
+diff --git update/variables/update.py update/variables/update.py
+index 0f79468..a000e45 100644
+--- update/variables/update.py
++++ update/variables/update.py
+@@ -117,8 +117,10 @@ class VariableClUpdateSystemProfile(ReadonlyVariable):
+     """
+     def get(self):
+         try:
++            make_profile = self.Get('cl_make_profile')
+             return path.normpath(
+-                path.join('/etc',os.readlink('/etc/make.profile')))
++                path.join(path.dirname(make_profile),
++                          os.readlink(make_profile)))
+         except:
+             raise VariableError(_("Failed to determine system profile"))
+ 
