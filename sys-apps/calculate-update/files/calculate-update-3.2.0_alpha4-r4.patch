@@ -1,0 +1,477 @@
+diff --git update/emerge_parser.py update/emerge_parser.py
+index 50d53aa..597ba55 100644
+--- update/emerge_parser.py
++++ update/emerge_parser.py
+@@ -13,6 +13,7 @@
+ #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ #  See the License for the specific language governing permissions and
+ #  limitations under the License.
++import hashlib
+ 
+ import os
+ from os import path
+@@ -159,9 +160,9 @@ class EmergeInformationBlock(object):
+ 
+     def __contains__(self, item):
+         if self.result is None:
+-            return 0
++            return False
+         else:
+-            return item in self.result
++            return item in str(self)
+ 
+     def _get_text(self, result):
+         """
+@@ -448,6 +449,34 @@ class EmergeingErrorBlock(EmergeInformationBlock):
+         raise EmergeError(_("Emerge %s is failed") % self.package)
+ 
+ 
++class RevdepPercentBlock(NotifierInformationBlock):
++    """
++    Блок определния статуса revdep-rebuild
++    """
++    token = "Collecting system binaries"
++    end_token = [re.compile("Assigning files to packages|"
++                            "All prepared. Starting rebuild")]
++    re_block = re.compile("\[\s(\d+)%\s\]")
++    action = None
++
++    def notify(self, observer, groups):
++        percent = int(groups[0])
++        observer(percent)
++
++    def get_block(self, child):
++        expect_result = [self.re_block]+self.end_token
++        try:
++            while True:
++                index = child.expect(expect_result)
++                if index == 0:
++                    for observer in self.observers:
++                        self.notify(observer, child.match.groups())
++                else:
++                    self.result = child.match
++                    break
++        except pexpect.EOF:
++            self.result = ""
++
+ class EmergeParser(object):
+     """
+     Парсер вывода emerge
+@@ -531,6 +560,10 @@ class MtimeCheckvalue(object):
+         return self.get_check_values(self.fname)
+ 
+ 
++class Md5Checkvalue(MtimeCheckvalue):
++    def value_func(self, fn):
++        return hashlib.md5(readFile(fn)).hexdigest()
++
+ class GitCheckvalue(object):
+     def __init__(self, rpath):
+         self.rpath = rpath
+@@ -550,9 +583,9 @@ class EmergeCache(object):
+     # список файлов проверяемый по mtime на изменения
+     check_list = [MtimeCheckvalue('/etc/make.conf',
+                   '/etc/portage',
+-                  '/var/lib/portage/world',
+-                  '/var/lib/portage/world_sets',
+-                  '/etc/make.profile')]
++                  '/etc/make.profile'),
++                  Md5Checkvalue('/var/lib/portage/world',
++                  '/var/lib/portage/world_sets')]
+ 
+     def __init__(self):
+         self.files_control_values = {}
+diff --git update/update.py update/update.py
+index 5d8936c..1a9a6d9 100644
+--- update/update.py
++++ update/update.py
+@@ -20,6 +20,7 @@ from os import path
+ from calculate.lib.utils.tools import AddonError
+ from calculate.lib.utils.colortext.palette import TextState
+ from calculate.lib.utils.colortext import get_color_print
++from calculate.update.emerge_parser import RevdepPercentBlock
+ import pexpect
+ 
+ from package_tools import Git, Layman,\
+@@ -240,6 +241,9 @@ class Update:
+         return False
+ 
+     def _printEmergePackage(self, pkg, binary=False, num=1, max_num=1):
++        """
++        Вывод сообщения сборки пакета
++        """
+         self.endTask()
+         _print = self.color_print
+         if max_num > 1:
+@@ -256,6 +260,9 @@ class Update:
+         self.startTask(_("Emerging%s %s") % (part, _print(str(pkg))))
+ 
+     def _printInstallPackage(self, pkg, binary=False):
++        """
++        Вывод сообщения установки пакета
++        """
+         self.endTask()
+         _print = self.color_print
+         if self.is_binary_pkg(pkg,binary):
+@@ -266,6 +273,9 @@ class Update:
+                        _print(str(pkg)))
+ 
+     def _printUninstallPackage(self, pkg, num=1, max_num=1):
++        """
++        Вывод сообщения удаления пакета
++        """
+         self.endTask()
+         _print = self.color_print
+         if max_num > 1:
+@@ -279,23 +289,33 @@ class Update:
+         self.startTask(_("Unmerging%s %s") % (part, _print.bold(str(pkg))))
+ 
+     def emergelike(self, cmd, *params):
++        """
++        Запуск команды, которая подразумевает выполнение emerge
++        """
+         cmd_path = getProgPath(cmd)
+         if not cmd_path:
+             raise UpdateError(_("Failed to find %s command") % cmd)
+         with EmergeParser(
+                 emerge_parser.CommandExecutor(cmd_path, params)) as emerge:
+-            emerge.emerging.add_observer(self._printEmergePackage)
+-            emerge.installing.add_observer(self._printInstallPackage)
+-            emerge.uninstalling.add_observer(self._printUninstallPackage)
+-            try:
+-                emerge.run()
+-            except EmergeError:
+-                if emerge.emerging_error:
+-                    self.printPre(
+-                        self._emerge_translate(emerge.emerging_error.log))
+-                else:
+-                    self.printPre(self._emerge_translate(emerge.prepare_error))
+-                raise
++            self._startEmerging(emerge)
++        return True
++
++    def revdep_rebuild(self, cmd, *params):
++        """
++        Запуск revdep-rebulid
++        """
++        cmd_path = getProgPath(cmd)
++        if not cmd_path:
++            raise UpdateError(_("Failed to find %s command") % cmd)
++        with EmergeParser(
++                emerge_parser.CommandExecutor(cmd_path, params)) as emerge:
++            revdep = RevdepPercentBlock(emerge)
++            self.addProgress()
++            revdep.add_observer(self.setProgress)
++            revdep.action = lambda x: (
++                self.endTask(), self.startTask(_("Assigning files to packages"))
++                if "Assign" in revdep else None)
++            self._startEmerging(emerge)
+         return True
+ 
+     def _display_pretty_package_list(self, pkglist, remove_list=False):
+@@ -323,7 +343,7 @@ class Update:
+             else:
+                 size = ""
+             mult = _print.bold("*")
+-            self.printDefault("   {mult} {fullname} {shortname}{size}".format(
++            self.printDefault(" {mult} {fullname} {shortname}{size}".format(
+                 mult=mult, fullname=fullname, shortname=shortname, size=size))
+ 
+     def _display_install_package(self, emerge):
+@@ -332,6 +352,7 @@ class Update:
+         """
+         # подробный список пакетов
+         _print = self.color_print
++        highlight = TextState.Colors.WHITE
+         if self.clVars.Get('cl_verbose_set') == 'on':
+             self.printPre(str(emerge.install_packages))
+         else:
+@@ -345,9 +366,9 @@ class Update:
+                 self._display_pretty_package_list(
+                     emerge.install_packages.remove_list, remove_list=True)
+         if str(emerge.download_size) != "0 kB":
+-            self.printSUCCESS(_print(
+-                _("{size} will be downloaded").format(
+-                    size=emerge.download_size)))
++            self.printSUCCESS(_("{size} will be downloaded").format(
++                size=_print.foreground(highlight)(
++                    str(emerge.download_size))))
+ 
+     def _display_remove_list(self, emerge):
+         """
+@@ -364,6 +385,9 @@ class Update:
+             self._display_pretty_package_list(pkglist, remove_list=True)
+ 
+     def getCacheOnWorld(self, params, packages, check=False):
++        """
++        Получить список обновляемых пакетов @world из кэша
++        """
+         if "@world" in packages:
+             from calculate.update.utils.cl_update import ClUpdateAction
+             elog = EmergeLog(
+@@ -379,6 +403,10 @@ class Update:
+         return params, packages
+ 
+     def updateCache(self, pkg_list):
++        """
++        Обновить кэш. Оставить отметку в emerge.log о том, выполнено действие
++        premerge
++        """
+         self.emerge_cache.set_cache(pkg_list)
+         from calculate.update.utils.cl_update import ClUpdateAction
+         elog = EmergeLog(
+@@ -393,7 +421,7 @@ class Update:
+         param = [param, "-pv"]
+ 
+         if not packages:
+-            self.printSUCCESS(_("The system is up to date"))
++            self.printSUCCESS(_("Installed packages are up to date"))
+             return True
+         with EmergeParser(EmergeCommand(list(packages),
+                                           extra_params=param)) as emerge:
+@@ -422,6 +450,9 @@ class Update:
+         return True
+ 
+     def _emerge_translate(self, s):
++        """
++        Перевести текст из emerge
++        """
+         return RegexpLocalization('cl_emerge').translate(str(s))
+ 
+     def setUpToDateCache(self):
+@@ -431,6 +462,25 @@ class Update:
+         self.updateCache(PackageList([]))
+         return True
+ 
++    def _startEmerging(self, emerge):
++        """
++        Настроить и выполнить emerge
++        """
++        emerge.command.send("yes\n")
++        emerge.emerging.add_observer(self._printEmergePackage)
++        emerge.installing.add_observer(self._printInstallPackage)
++        emerge.uninstalling.add_observer(self._printUninstallPackage)
++        try:
++            emerge.run()
++        except EmergeError:
++            self.emerge_cache.drop_cache()
++            if emerge.emerging_error:
++                self.printPre(
++                    self._emerge_translate(emerge.emerging_error.log))
++            else:
++                self.printPre(self._emerge_translate(emerge.prepare_error))
++            raise
++
+     def emerge(self, param, *packages):
+         """
+         Выполнить сборку пакета
+@@ -449,32 +499,12 @@ class Update:
+                 emerge.question.action = lambda x: False
+                 emerge.run()
+                 if not emerge.install_packages.list:
+-                    #self.printSUCCESS(_("Nothing to merge"))
+                     return True
+-                #if ask_emerge:
+-                #    self.printPre(str(emerge.install_packages))
+             except EmergeError:
+                 self.emerge_cache.drop_cache()
+                 self.printPre(self._emerge_translate(emerge.prepare_error))
+                 raise
+-            #if (ask_emerge and self.askConfirm(
+-            #        _("Would you like to merge these packages?")) == 'no'):
+-            #    raise KeyboardInterrupt
+-            emerge.command.send("yes\n")
+-
+-            emerge.emerging.add_observer(self._printEmergePackage)
+-            emerge.installing.add_observer(self._printInstallPackage)
+-            emerge.uninstalling.add_observer(self._printUninstallPackage)
+-            try:
+-                emerge.run()
+-            except EmergeError as e:
+-                self.emerge_cache.drop_cache()
+-                if emerge.emerging_error:
+-                    self.printPre(
+-                        self._emerge_translate(emerge.emerging_error.log))
+-                else:
+-                    self.printPre(self._emerge_translate(emerge.prepare_error))
+-                raise
++            self._startEmerging(emerge)
+         return True
+ 
+     def depclean(self):
+@@ -494,14 +524,7 @@ class Update:
+             if (self.askConfirm(
+                     _("Would you like to unmerge these packages?")) == 'no'):
+                 return False
+-            emerge.command.send("yes\n")
+-
+-            emerge.uninstalling.add_observer(self._printUninstallPackage)
+-            try:
+-                emerge.run()
+-            except EmergeError:
+-                self.printPre(self._emerge_translate(emerge.emerging_error.log))
+-                raise
++            self._startEmerging(emerge)
+         return True
+ 
+     def update_task(self, task_name):
+@@ -510,10 +533,10 @@ class Update:
+         """
+ 
+         def decor(f):
+-            def wrapper(self, *args, **kwargs):
++            def wrapper(*args, **kwargs):
+                 logger = EmergeLog(EmergeLogNamedTask(task_name))
+                 logger.mark_begin_task()
+-                ret = f(self, *args, **kwargs)
++                ret = f(*args, **kwargs)
+                 if ret:
+                     logger.mark_end_task()
+                 return ret
+diff --git update/utils/cl_update.py update/utils/cl_update.py
+index 111b369..033a3bd 100644
+--- update/utils/cl_update.py
++++ update/utils/cl_update.py
+@@ -58,6 +58,7 @@ class ClUpdateAction(Action):
+                  'python_updater': "update python modules",
+                  'perl_cleaner': "update perl modules",
+                  'kernel_modules': "update kernel modules",
++                 'depclean': "depclean",
+                  'xorg_modules': "update xorg modules",
+                  'preserved_libs': "update preserved libs",
+                  'revdep': "revdep rebuild"}
+@@ -76,8 +77,12 @@ class ClUpdateAction(Action):
+          'condition': lambda Get:Get('cl_update_pretend_set') == 'off',
+          'depend': Tasks.result("premerge", eq='yes')
+         },
++        {'name': 'update_other',
++         'condition': lambda Get: ( Get('cl_update_pretend_set') == 'off' and
++                                    Get('cl_update_sync_only_set') == 'off')
++        },
+         {'name': 'update:update_portage',
+-         'group': __("Updating portage"),
++         'group': __("Updating Portage"),
+          'tasks': [
+              {'name': 'update:update_portage_pkg',
+               'message': __("Updating {0}").format(
+@@ -88,7 +93,7 @@ class ClUpdateAction(Action):
+          ]
+         },
+         {'name': 'update:update_python',
+-         'group': __("Updating python"),
++         'group': __("Updating Python"),
+          'tasks': [
+              {'name': 'update:update_python_pkg',
+               'message': __('Updating {0}').format(
+@@ -97,7 +102,7 @@ class ClUpdateAction(Action):
+               'condition': need_upgrade('dev-lang/python$')
+              },
+              {'name': 'update:python_updater',
+-              'message': __('Updating python modules'),
++              'message': __('Updating Python modules'),
+               'method': 'Update.emergelike("python-updater")',
+               'condition': was_installed('dev-lang/python$',
+                                          log_names['python_updater']),
+@@ -115,7 +120,7 @@ class ClUpdateAction(Action):
+               'condition': need_upgrade('dev-lang/perl$')
+              },
+              {'name': 'update:perl_cleaner',
+-              'message': __('Updating perl modules'),
++              'message': __('Updating Perl modules'),
+               'method': 'Update.emergelike("perl-cleaner", "all")',
+               'condition': was_installed('dev-lang/perl$',
+                                          log_names['perl_cleaner']),
+@@ -136,7 +141,7 @@ class ClUpdateAction(Action):
+          ]
+         },
+         {'name': 'update:update_world',
+-         'group': __("Updating all packages"),
++         'group': __("Updating packages"),
+          'tasks': [
+              {'name': 'update:update_world',
+               'message': __("Calculating dependencies"),
+@@ -144,52 +149,54 @@ class ClUpdateAction(Action):
+              }
+          ]
+         },
+-        {'name': 'update:depclean',
++        {'name': 'update_other:depclean',
+          'group': __("Cleaning system from needless packages"),
+          'tasks': [
+-             {'name': 'update:update_depclean',
++             {'name': 'update_other:update_depclean',
+               'message': __("Emerge depclean"),
+               'method': 'Update.depclean()',
++              'condition': was_installed('.*', log_names['depclean']),
++              'decoration': 'Update.update_task("%s")' % log_names['depclean']
+              },
+          ]
+         },
+-        {'name': 'update:update_modules',
++        {'name': 'update_other:update_modules',
+          'group': __("Rebuilding dependent modules"),
+          'tasks': [
+-             {'name': 'update:module_rebuild',
+-              'message': __('Updating kernel modules'),
++             {'name': 'update_other:module_rebuild',
++              'message': __('Updating Kernel modules'),
+               'method': 'Update.emerge("@module-rebuild")',
+               'condition': was_installed('sys-kernel/.*source',
+                                          log_names['kernel_modules']),
+               'decoration': 'Update.update_task("%s")' % log_names[
+                   'kernel_modules']
+              },
+-             {'name': 'update:x11_module_rebuild',
+-              'message': __('Updating xorg-server modules'),
++             {'name': 'update_other:x11_module_rebuild',
++              'message': __('Updating X.Org server modules'),
+               'method': 'Update.emerge("@x11-module-rebuild")',
+               'condition': was_installed('x11-base/xorg-server',
+                                          log_names['xorg_modules']),
+               'decoration': 'Update.update_task("%s")' % log_names[
+                   'xorg_modules']
+              },
+-             {'name': 'update:preserved_rebuild',
++             {'name': 'update_other:preserved_rebuild',
+               'message': __('Updating preserved libraries'),
+               'method': 'Update.emerge("@preserved-rebuild")',
+               'condition': was_installed('.*', log_names['preserved_libs']),
+               'decoration': 'Update.update_task("%s")' % log_names[
+                   'preserved_libs']
+              },
+-             {'name': 'update:revdev_rebuild',
+-              'message': __('Executing {0}').format("revdep-rebuild"),
+-              'method': 'Update.emergelike("revdep-rebuild")',
++             {'name': 'update_other:revdev_rebuild',
++              'message': __('Checking reverse dependencies'),
++              'method': 'Update.revdep_rebuild("revdep-rebuild")',
+               'condition': was_installed('.*', log_names['revdep']),
+               'decoration': 'Update.update_task("%s")' % log_names['revdep']
+              },
+-             {'name': 'update:set_upto_date_cache',
+-              'method': 'Update.setUpToDateCache()'
+-             }
+          ]
+         },
++        {'name': 'update:set_upto_date_cache',
++         'method': 'Update.setUpToDateCache()'
++        }
+     ]
+ 
+     # список задач для дейсвия
+diff --git update/variables/update.py update/variables/update.py
+index 0f79468..a000e45 100644
+--- update/variables/update.py
++++ update/variables/update.py
+@@ -117,8 +117,10 @@ class VariableClUpdateSystemProfile(ReadonlyVariable):
+     """
+     def get(self):
+         try:
++            make_profile = self.Get('cl_make_profile')
+             return path.normpath(
+-                path.join('/etc',os.readlink('/etc/make.profile')))
++                path.join(path.dirname(make_profile),
++                          os.readlink(make_profile)))
+         except:
+             raise VariableError(_("Failed to determine system profile"))
+ 
