@@ -1,0 +1,14 @@
+diff --git update/emerge_parser.py update/emerge_parser.py
+index 597ba55..204e758 100644
+--- update/emerge_parser.py
++++ update/emerge_parser.py
+@@ -57,7 +57,8 @@ class CommandExecutor(object):
+ 
+     def __init__(self, cmd, params, env=None, cwd=None, logfile=None):
+         self.cwd = cwd
+-        self.env = env
++        self.env = env or dict(os.environ)
++        self.env.update({'EINFO_QUIET':'NO'})
+         self.cmd = cmd
+         self.params = params
+         self.child = None
