@@ -1,0 +1,21 @@
+diff --git setup.py setup.py
+index 1209a33..f873cdf 100755
+--- setup.py
++++ setup.py
+@@ -24,10 +24,16 @@ from distutils.core import setup, Extension
+ from calculate.install_data import install_data
+ 
+ data_files = [('/etc/init.d', [('data/client',0755)]),
++              ('/usr/sbin', [('data/logout', 0755)]),
++              ('/usr/sbin', [('data/cl-client-resume-remount', 0755)]),
+               ('/usr/share/calculate/xdm/login.d',
+                             ['data/login.d/10client']),
++              ('/usr/share/calculate/xdm/login.d',
++                            ['data/login.d/15resume_remount']),
+               ('/usr/share/calculate/xdm/logout.d',
+                             ['data/logout.d/10client']),
++              ('/usr/share/calculate/xdm/logout.d',
++                            ['data/login.d/15resume_remount']),
+               ('/usr/share/calculate/xdm/',[('data/wait_domain',0755)])]
+ 
+ setup(
