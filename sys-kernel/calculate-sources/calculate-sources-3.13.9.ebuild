@@ -19,6 +19,8 @@ DEPEND="vmlinuz? ( || ( app-arch/xz-utils app-arch/lzma-utils )
 	sys-boot/grub
 	)"
 
+SRC_URI="${KERNEL_URI} ${ARCH_URI}"
+
 src_unpack() {
 	calculate-kernel-6_src_unpack
 }
