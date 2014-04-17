@@ -8,11 +8,31 @@
 
 
 # AMD64 Profiles
-amd64		CLDX/amd64					dev
-amd64		CLDX/amd64/binary				dev
+amd64		CLD/amd64					stable
+amd64		CLD/amd64/binary				stable
+amd64		CLDX/amd64					stable
+amd64		CLDX/amd64/binary				stable
+amd64		CLS/amd64					stable
+amd64		CLS/amd64/binary				stable
+amd64		CMC/amd64					stable
+amd64		CMC/amd64/binary				stable
+amd64		CDS/amd64					stable
+amd64		CDS/amd64/binary				stable
+amd64		CSS/amd64					stable
+amd64		CSS/amd64/binary				stable
 
 # x86 Profiles
-x86		CLDX/x86					dev
-x86		CLDX/x86/binary					dev
+x86		CLD/x86						stable
+x86		CLD/x86/binary					stable
+x86		CLDX/x86					stable
+x86		CLDX/x86/binary					stable
+x86		CLS/x86						stable
+x86		CLS/x86/binary					stable
+x86		CMC/x86						stable
+x86		CMC/x86/binary					stable
+x86		CDS/x86						stable
+x86		CDS/x86/binary					stable
+x86		CSS/x86						stable
+x86		CSS/x86/binary					stable
 
 # vim: set ts=8
