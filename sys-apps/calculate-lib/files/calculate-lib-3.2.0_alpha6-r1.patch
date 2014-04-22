@@ -1,0 +1,84 @@
+diff --git calculate/lib/datavars.py calculate/lib/datavars.py
+index b5f2d33..905f889 100644
+--- calculate/lib/datavars.py
++++ calculate/lib/datavars.py
+@@ -394,13 +394,13 @@ class Variable:
+         if "list" in self.type:
+             if not type(value) in (list,tuple):
+                 raise VariableError(
+-                    _("Value for variable '{varname}' may be '{vartype}' only").format(
++                    _("Value for variable '{varname}' may be {vartype} only").format(
+                     varname=self.label or self.name,
+                     vartype="list"))
+-            error = _("Values for variable '{varname}' may be '{vartype}' only")
++            error = _("Values for variable '{varname}' may be {vartype} only")
+         else:
+             value = repeat(value,1)
+-            error = _("Value for variable '{varname}' may be '{vartype}' only")
++            error = _("Value for variable '{varname}' may be {vartype} only")
+         if "string" in self.type:
+             value, valuecopy = tee(value,2)
+             for v in (x for x in valuecopy if not type(x) in (str,unicode)):
+@@ -410,7 +410,7 @@ class Variable:
+             return
+         if "choice" in self.type:
+             choiceVal = self.choice()
+-            tipChoice = map(lambda x:'"%s"(%s)'%(x[1],x[0]) \
++            tipChoice = map(lambda x:'"%s" [%s]'%(x[1],x[0]) \
+                             if type(x) in (list,tuple) else str(x), choiceVal)
+             if choiceVal and type(choiceVal[0]) in (tuple,list):
+                 choiceVal = [x[0] for x in choiceVal]
+@@ -418,10 +418,19 @@ class Variable:
+             value = repeat(value,1)
+         for recval in value:
+             for val in recval:
++                name = self.label or self.name
++                if val == "list" and "choice" in self.type:
++                    if "edit" in self.type:
++                        if "list" in self.type:
++                            error = _("Values for variable '{varname}' may "
++                                      "be {vartype}")
++                        else:
++                            error = _("Value for variable '{varname}' may be "
++                                      "{vartype}")
++                    self.raiseWrongChoice(name, tipChoice, val, error)
+                 if "choice" in self.type and not "choiceedit" in self.type:
+                     if choiceVal and val and not val in choiceVal or \
+                         val is None:
+-                        name = self.label or self.name
+                         if not choiceVal:
+                             self.raiseNothingValue()
+                         self.raiseWrongChoice(name,tipChoice,val,error)
+diff --git calculate/lib/utils/text.py calculate/lib/utils/text.py
+index 2387d92..af375b2 100644
+--- calculate/lib/utils/text.py
++++ calculate/lib/utils/text.py
+@@ -377,7 +377,7 @@ def formatListOr(lst):
+     """Convert list to string like this: [1,2,3] -> 1,2 or 3"""
+     lststr = map(lambda x:str(x),lst)
+     return (" %s "%_("or")).join(filter(lambda x:x,
+-                                 [",".join(map(lambda x:x or "''",lststr[:-1])),
++                                 [", ".join(map(lambda x:x or "''",lststr[:-1])),
+                                  "".join(lststr[-1:])]))
+ 
+ def getTerminalSize():
+diff --git calculate/lib/variables/env.py calculate/lib/variables/env.py
+index 87d43cc..f35e3f7 100644
+--- calculate/lib/variables/env.py
++++ calculate/lib/variables/env.py
+@@ -364,10 +364,11 @@ class VariableClTemplatesLocate(Variable):
+     metavalue = "TEMPLATES"
+     untrusted = True
+ 
+-    descriptionMap = {'overlay':_('Overlay templates'),
+-                     'local':_('Local templates'),
+-                     'remote':_('Remote templates'),
+-                     'clt':_('clt templates')}
++    descriptionMap = {'overlay': _('Overlay templates'),
++                      'local': _('Local templates'),
++                      'distro': _('Distributive templates'),
++                      'remote': _('Remote templates'),
++                      'clt': _('clt templates')}
+ 
+     def init(self):
+         self.label = _("Templates location")

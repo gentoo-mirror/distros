@@ -1,0 +1,27 @@
+diff --git data/cl-client-resume-remount data/cl-client-resume-remount
+index 68cdadc..0efe516 100644
+--- data/cl-client-resume-remount
++++ data/cl-client-resume-remount
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env python
+ #-*- coding: utf-8 -*-
+ 
+-# Copyright 2013 Calculate Ltd. http://www.calculate-linux.org
++# Copyright 2013-2014 Calculate Ltd. http://www.calculate-linux.org
+ #
+ #  Licensed under the Apache License, Version 2.0 (the "License");
+ #  you may not use this file except in compliance with the License.
+@@ -89,8 +89,11 @@ class ResourceRemounter:
+         print("Restoring remote mounts for user %s"%self.dv.Get('ur_login'))
+         # waiting for the domain
+         for wait in [1,2,5,10]:
+-            if self.check_server(True):
+-                break
++            try:
++                if self.check_server(True):
++                    break
++            except:
++                pass
+             sleep(wait)
+         # check and remount remote resources
+         self.remount_remote()

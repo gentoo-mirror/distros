@@ -1,0 +1,38 @@
+diff --git ru/cl_lib3.po ru/cl_lib3.po
+index d804a79..a26b3e8 100644
+--- ru/cl_lib3.po
++++ ru/cl_lib3.po
+@@ -352,17 +352,17 @@ msgstr "Попытка перезаписать переменную тольк
+ msgid "The value of variable '{varname}' must be integer"
+ msgstr "Значение для {varname} должно быть целым числом"
+ 
+-msgid "Value for variable '{varname}' may be '{vartype}' only"
+-msgstr "Значение для {varname} может быть только '{vartype}'"
++msgid "Value for variable '{varname}' may be {vartype} only"
++msgstr "Значение для {varname} может быть только {vartype}"
+ 
+-msgid "Values for variable '{varname}' may be '{vartype}' only"
+-msgstr "Значение для '{varname}' может быть только '{vartype}'"
++msgid "Values for variable '{varname}' may be {vartype} only"
++msgstr "Значение для '{varname}' может быть только {vartype}"
+ 
+ msgid "Source variable %s does not contain a list"
+ msgstr "Исходная переменная %s не содержит список"
+ 
+-msgid "Value for {varname} may be '{vartype}' only"
+-msgstr "Значение для {varname} может быть только '{vartype}'"
++msgid "Value for {varname} may be {vartype} only"
++msgstr "Значение для {varname} может быть только {vartype}"
+ 
+ msgid "Wrong entry '{entry}' for table variable '{varname}'"
+ msgstr "Неправильная запись '{entry}' для табличной переменной '{varname}'"
+@@ -683,3 +683,9 @@ msgstr "Необходимо указать пользователя"
+ 
+ msgid "User %s does not exist"
+ msgstr "Пользователь %s не существует"
++
++msgid "Value for variable '{varname}' may be {vartype}"
++msgstr "Значение для {varname} может быть {vartype}"
++
++msgid "Values for variable '{varname}' may be {vartype}"
++msgstr "Значения для {varname} может быть {vartype}"

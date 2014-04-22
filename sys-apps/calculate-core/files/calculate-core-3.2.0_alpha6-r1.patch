@@ -1,0 +1,786 @@
+diff --git core/server/api_types.py core/server/api_types.py
+index eb205c1..6b29d62 100644
+--- core/server/api_types.py
++++ core/server/api_types.py
+@@ -20,6 +20,7 @@ from soaplib.service import rpc
+ import sys
+ import pickle, os
+ from calculate.lib.datavars import SourceReadonlyVariable
++from collections import Mapping
+ 
+ from calculate.lib.cl_lang import setLocalTranslate
+ setLocalTranslate('cl_core3',sys.modules[__name__])
+@@ -164,96 +165,6 @@ class Table(DataVarsSerializer):
+             self.onClick = onClick
+             self.addAction = addAction
+ 
+-class ChoiceValueAdapter(object):
+-    def __init__(self, choicevalue):
+-        self.choicevalue = choicevalue
+-
+-    @property
+-    def values(self):
+-        return self.choicevalue.values.string
+-
+-    @property
+-    def comments(self):
+-        return self.choicevalue.comments.string
+-
+-    @property
+-    def onChanged(self):
+-        return self.choicevalue.onChanged.string
+-
+-    def __getattr__(self, item):
+-        return getattr(self.choicevalue, item)
+-
+-    @classmethod
+-    def from_detect(cls, choicevalue):
+-        if isinstance(choicevalue, ChoiceValue):
+-            return choicevalue
+-        else:
+-            return cls(choicevalue)
+-
+-class TableAdapter(object):
+-    def __init__(self, table):
+-        self.table = table
+-
+-    @property
+-    def fields(self):
+-        return self.table.fields.string
+-
+-    @property
+-    def head(self):
+-        return self.table.head.string
+-
+-    @property
+-    def body(self):
+-        if hasattr(self.table.body,'stringArray'):
+-            return [row.string
+-                    for row in self.table.body.stringArray
+-                    if hasattr(row, "string")]
+-        return []
+-
+-    @property
+-    def values(self):
+-        return [ChoiceValueAdapter(x) for  x in self.table.values.ChoiceValue]
+-
+-    def __getattr__(self, item):
+-        return getattr(self.table, item)
+-
+-    @classmethod
+-    def from_detect(cls, table):
+-        if isinstance(table, Table):
+-            return table
+-        else:
+-            return cls(table)
+-
+-class FieldAdapter(object):
+-    def __init__(self, field):
+-        self.field = field
+-
+-    @property
+-    def choice(self):
+-        return self.field.choice.string
+-
+-    @property
+-    def listvalue(self):
+-        return self.field.listvalue.string
+-
+-    @property
+-    def comments(self):
+-        return self.field.comments.string
+-
+-    @property
+-    def tablevalue(self):
+-        return TableAdapter(self.field.tablevalue)
+-
+-    def __getattr__(self, item):
+-        return getattr(self.field, item)
+-
+-    @classmethod
+-    def from_detect(cls, field):
+-        if isinstance(field, Field):
+-            return field
+-        else:
+-            return cls(field)
+-
+ 
+ class Option(DataVarsSerializer):
+     shortopt = String
+@@ -490,6 +401,7 @@ class ViewInfo(DataVarsSerializer):
+ #element = ['table', 'radio', 'combo', 'comboEdit', 'multichoice', \
+            #'multichoice_add', 'check', 'check_tristate', 'expert', 'input']
+ 
++
+ class ViewParams(ClassSerializer):
+     """
+     Struct for _view methods
+@@ -500,8 +412,8 @@ class ViewParams(ClassSerializer):
+     onlyhelp = Boolean      # request params for only help
+     clienttype = String     # type of client "gui","console"
+ 
+-################# MESSAGE ####################
+ 
++################# MESSAGE ####################
+ class ReturnedMessage(ClassSerializer):
+     type = String
+     field = String
+@@ -515,6 +427,7 @@ class ReturnedMessage(ClassSerializer):
+         self.message = message
+         self.expert = expert
+ 
++
+ class Message(ClassSerializer):
+     type = String
+     message = String
+@@ -532,6 +445,7 @@ class Message(ClassSerializer):
+         self.onlyShow = onlyShow
+         self.default = default
+ 
++
+ class ReturnProgress(ClassSerializer):
+     percent = Integer
+     short_message = String
+@@ -542,9 +456,11 @@ class ReturnProgress(ClassSerializer):
+         self.short_message = short_message
+         self.long_message = long_message
+ 
++
+ class Frame(ClassSerializer):
+     values = Array (Message)
+ 
++
+ # get and send client messages
+ class CoreWsdl:
+     perm_denied = []
+@@ -781,3 +697,100 @@ class CoreWsdl:
+     #@Dec.check_permissions()
+     def send_message ( self, sid, pid, text):
+         return self.client_send_message (sid, pid, text)
++
++
++class WsdlAdapter(object):
++    adapted_class = None
++
++    def __init__(self, source):
++        self.source = source
++
++    @classmethod
++    def from_detect(cls, source):
++        if isinstance(source, (cls.adapted_class, WsdlAdapter)):
++            return source
++        else:
++            return cls(source)
++
++    def __getattr__(self, item):
++        return getattr(self.source, item)
++
++    @staticmethod
++    def Array(field, field_type):
++        def wrapper(self):
++            if getattr(self.source, field):
++                return [field_type(x)
++                        for x in getattr(getattr(self.source, field),
++                                         field_type.__name__[:-7])]
++            else:
++                return []
++
++        return property(wrapper)
++
++    @staticmethod
++    def StringArray(field):
++        def wrapper(self):
++            source_field = getattr(self.source, field)
++            return source_field.string if source_field else []
++
++        return property(wrapper)
++
++
++class ChoiceValueAdapter(WsdlAdapter):
++    adapted_class = ChoiceValue
++
++    values = WsdlAdapter.StringArray("values")
++
++    comments = WsdlAdapter.StringArray("comments")
++
++    onChanged = WsdlAdapter.StringArray("onChanged")
++
++
++class TableAdapter(WsdlAdapter):
++    adapted_class = Table
++
++    fields = WsdlAdapter.StringArray("fields")
++    head = WsdlAdapter.StringArray("head")
++
++    @property
++    def body(self):
++        if hasattr(self.source.body, 'stringArray'):
++            return [row.string
++                    for row in self.source.body.stringArray
++                    if hasattr(row, "string")]
++        return []
++
++    values = WsdlAdapter.Array("values", ChoiceValueAdapter)
++
++
++class FieldAdapter(WsdlAdapter):
++    adapted_class = Field
++
++    choice = WsdlAdapter.StringArray("choice")
++    listvalue = WsdlAdapter.StringArray("listvalue")
++    comments = WsdlAdapter.StringArray("comments")
++
++    @property
++    def tablevalue(self):
++        return TableAdapter(self.source.tablevalue)
++
++
++class GroupFieldAdapter(WsdlAdapter):
++    adapted_class = GroupField
++
++    fields = WsdlAdapter.Array("fields", FieldAdapter)
++
++
++class ViewInfoAdapter(WsdlAdapter):
++    adapted_class = ViewInfo
++
++    groups = WsdlAdapter.Array("groups", GroupFieldAdapter)
++
++
++class ArrayReturnedMessage(WsdlAdapter, Mapping):
++    @classmethod
++    def from_detect(cls, source):
++        if isinstance(source, (list,tuple)):
++            return source
++        else:
++            return source.ReturnedMessage
+diff --git core/server/func.py core/server/func.py
+index 3bde6e4..76d2645 100644
+--- core/server/func.py
++++ core/server/func.py
+@@ -730,6 +730,7 @@ class Action:
+                                     result[name]=False
+                             elsePrint(elseMessage)
+                         if all(run_context.values()):
++                            self.writeFile()
+                             if self.group_name:
+                                 self.startGroup(str(self.group_name))
+                                 self.group_name = None
+@@ -1022,14 +1023,16 @@ class CoreWsdl():
+             """ write data in file """
+             from baseClass import Basic
+             if not os.path.exists(Basic.pids):
+-                os.system('mkdir %s' %Basic.pids)
+-            self.PID_FILE = Basic.pids + '/%d.pid'%self.pid
++                os.mkdir(Basic.pids)
++            pid_file = path.join(Basic.pids, '%d.pid' % self.pid)
+             try:
+-                _fc = open(self.PID_FILE,"w")
+-                pickle.dump(self.process_dict, _fc)
+-                _fc.close()
+-            except:
+-                print _("Failed to read the PID file %s!") %self.PID_FILE
++                with open(pid_file, 'w') as f:
++                    d = {'name': self.process_dict['method_name'],
++                         'status': self.process_dict['status']}
++                    pickle.dump(d, f)
++            except (IOError, OSError) as e:
++                print str(e)
++                print _("Failed to write the PID file %s!") % pid_file
+ 
+         def setProgress(self, perc, short_message = None, long_message = None):
+             try:
+diff --git core/server/gen_pid.py core/server/gen_pid.py
+index 1e1a731..84c8e1a 100644
+--- core/server/gen_pid.py
++++ core/server/gen_pid.py
+@@ -15,7 +15,9 @@
+ #  limitations under the License.
+ 
+ import os, pickle, threading
++from os import path
+ import random
++from calculate.lib.utils.tools import ignore
+ 
+ from cert_cmd import find_cert_id
+ 
+@@ -44,8 +46,12 @@ class CoreWsdl():
+             self.glob_progress_dict.pop(pid)
+             self.glob_table_dict.pop(pid)
+             self.glob_frame_list.pop(pid)
++            with ignore(OSError):
++                rm_fn = path.join(self.pids, "%d.pid" % pid)
++                if path.exists(rm_fn):
++                    os.unlink(rm_fn)
+             return 0
+-        except:
++        except BaseException as e:
+             return 1
+ 
+     # find process id in file processes, 1 - yes, 0 - none
+diff --git core/server/methods_func.py core/server/methods_func.py
+index d043b60..2d3bb02 100644
+--- core/server/methods_func.py
++++ core/server/methods_func.py
+@@ -22,6 +22,7 @@ from calculate.lib.cl_print import color_print
+ from calculate.lib.cl_lang import setLocalTranslate
+ setLocalTranslate('cl_core3',sys.modules[__name__])
+ from itertools import *
++from api_types import ViewInfoAdapter, ArrayReturnedMessage, FieldAdapter
+ 
+ colorPrint = color_print()
+ 
+@@ -234,6 +235,9 @@ def get_method_argparser(view, args, cl_core = False):
+                                               else field.name.upper()
+                     #if ':' in data['metavar']:
+                     #    data['metavar'] = field.name.upper()
++                    if "choice" in field.type:
++                        data['help'] = "%s (%s)" % (
++                            data['help'], _("'list' for display possible values"))
+                 if field.element in ['check']:
+                     data['metavar'] = "ON/OFF"
+                 try:
+@@ -358,69 +362,66 @@ def set_table_pwd(client, param_object, field, value):
+         setattr (param_object, field.name, result)
+         return param_object
+ 
+-def check_result_msg(method_result, view, input_error_dict = {},args=None):
+-    password_errors = {}
+-    if hasattr (method_result, 'ReturnedMessage'):
+-        method_result = method_result.ReturnedMessage
+ 
+-    if hasattr (view.groups, 'GroupField'):
+-        groups = view.groups.GroupField
++def display_error(error, args, groups):
++    params_text = ''
++    sys.stdout.write('\r')
++    sys.stdout.flush()
++    list_answer = False
++    if error.type != "commonerror":
++        for group in groups:
++            for field in group.fields:
++                if field.name == error.field:
++                    if not args is None:
++                        if (getattr(args, field.name) == "list" and
++                                    "choice" in field.type):
++                            list_answer = True
++                        params_text += getErrorOnParam(args, field)
++                    else:
++                        if field.opt.shortopt or field.opt.longopt:
++                            params_text += _('Wrong option ')
++                            params_text += ' ' + ', '.join(
++                                filter(None, [field.opt.shortopt,
++                                              field.opt.longopt])) + '. %s'
++    if list_answer:
++        colorPrint.printSUCCESS(params_text % error.message)
++    elif error.type != "commonerror":
++        colorPrint.printERROR(params_text % error.message)
+     else:
+-        groups = view.groups
++        colorPrint.printWARNING(params_text % error.message)
++
++
++def check_result_msg(method_result, view, input_error_dict={}, args=None):
++    password_errors = {}
++    method_result = ArrayReturnedMessage.from_detect(method_result)
++    view = ViewInfoAdapter.from_detect(view)
++
+     for error in method_result:
+         if error.type == 'pwderror':
+             password_errors[error.field] = error.message
+             continue
+ 
+-        params_text = ''
+-        if error.type != "commonerror":
+-            for Group in groups:
+-                if hasattr (Group.fields, 'Field'):
+-                    fields = Group.fields.Field
+-                else:
+-                    fields = Group.fields
+-                for field in fields:
+-                    if field.name == error.field:
+-                        if not args is None:
+-                            params_text += getErrorOnParam(args,field)
+-                        else:
+-                            if field.opt.shortopt or field.opt.longopt:
+-                                params_text += _('Wrong option ')
+-                                params_text += ' '+', '.join(filter(None,
+-                                    [field.opt.shortopt, field.opt.longopt])) \
+-                                    + '. %s'
+-
+-        sys.stdout.write('\r')
+-        sys.stdout.flush()
+-        if error.type != "commonerror":
+-            colorPrint.printERROR(params_text % error.message)
+-        else:
+-            colorPrint.printWARNING(params_text % error.message)
++        display_error(error, args, view.groups)
+ 
+-    if len(password_errors) < len(method_result):
+-        return None
+-    else:
++    # если все ошибки связаны с паролем
++    if len(password_errors) == len(method_result):
+         if not dict([x for x in input_error_dict.items() \
+-                            if x not in password_errors.items()]) and \
+-                            not dict([x for x in password_errors.items() \
+-                            if x not in input_error_dict.items()]):
++                     if x not in password_errors.items()]) and \
++                not dict([x for x in password_errors.items() \
++                          if x not in input_error_dict.items()]):
+             return None
+         return password_errors
++    else:
++        return None
++
+ 
+ def get_param_pwd(check_res, view, param_object, client = None,
+                   stdin_passwd=False):
+-    if hasattr (view.groups, 'GroupField'):
+-        groups = view.groups.GroupField
+-    else:
+-        groups = view.groups
++    view = ViewInfoAdapter.from_detect(view)
+     for pwd_field in check_res:
+-        _print (check_res[pwd_field])
+-        for Group in groups:
+-            if hasattr (Group.fields, 'Field'):
+-                fields = Group.fields.Field
+-            else:
+-                fields = Group.fields
+-            for field in fields:
++        _print(check_res[pwd_field])
++        for group in view.groups:
++            for field in group.fields:
+                 if field.name == pwd_field:
+                     if field.element == 'table':
+                         value = get_password(getfromstdin=stdin_passwd)
+@@ -434,26 +435,16 @@ def get_param_pwd(check_res, view, param_object, client = None,
+                         setattr(param_object, pwd_field, value)
+     return param_object
+ 
+-def collect_object(client, param_object, view, args,wait_thread = None,
+-                   stdin_passwd = False):
++
++def collect_object(client, param_object, view, args, wait_thread=None,
++                   stdin_passwd=False):
+     """
+     Collect Info object by args
+     """
+     steps = None
+-    if type(view.groups) == list:
+-        # for local call method
+-        groups = view.groups
+-    else:
+-        groups = view.groups[0]
+-    for Group in groups:
+-        if not Group.fields:
+-            continue
+-        if type(Group.fields) == list:
+-            # for local call method
+-            fields = Group.fields
+-        else:
+-            fields = Group.fields[0]
+-        for field in fields:
++    view = ViewInfoAdapter.from_detect(view)
++    for group in view.groups:
++        for field in group.fields:
+             if field.uncompatible:
+                 continue
+             if field.element in ['check', 'check_tristate'] and \
+@@ -659,13 +650,10 @@ def collect_table(field, val_list, client, wait_thread = None,
+     return listToArrayArray(client, obj_body)
+ 
+ def collect_obj_body(body, field):
+-    column = len(field.tablevalue.head) if type(field.tablevalue.head) == list\
+-                                        else len(field.tablevalue.head.string)
++    field = FieldAdapter.from_detect(field)
++    column = len(field.tablevalue.head)
+     result_table = []
+-    if type(field.tablevalue.values) in [list, tuple]:
+-        ChoiceValue = field.tablevalue.values
+-    else:
+-        ChoiceValue = field.tablevalue.values.ChoiceValue
++    ChoiceValue = field.tablevalue.values
+     for i in range(len(body)):
+         temp_row = []
+         for j in range(column):
+@@ -711,7 +699,7 @@ def getErrorOnParam(args,field):
+     Get errors for param
+     """
+     params_text = ""
+-    if any("-" in x 
++    if any("-" in x
+         for x in filter(None,(field.opt.longopt,field.opt.shortopt))):
+         paramName = ', '.join(filter(None,
+                 [field.opt.shortopt, field.opt.longopt]))
+@@ -725,6 +713,9 @@ def getErrorOnParam(args,field):
+         if "need" in field.type:
+             params_text += \
+                 _('Error in field \'%s\'. ')%field.label + " %s"
++        elif (getattr(args, field.name) == "list" and
++                        "choice" in field.type):
++            params_text += "%s"
+         else:
+             params_text += _('Error in parameter ')
+             params_text += paramName +'. %s'
+diff --git core/server/replace_class.py core/server/replace_class.py
+index 6e0da47..399814e 100644
+--- core/server/replace_class.py
++++ core/server/replace_class.py
+@@ -13,10 +13,12 @@
+ #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ #  See the License for the specific language governing permissions and
+ #  limitations under the License.
++import pickle
+ 
+ import sys
+ import termios
+ import os
++from os import path
+ import re
+ from fcntl import ioctl
+ from array import array
+@@ -35,9 +37,10 @@ from calculate.lib.cl_print import color_print
+ from calculate.lib.datavars import VariableError
+ from calculate.lib.cl_lang import setLocalTranslate
+ from calculate.core.server.api_types import FieldAdapter
++from calculate.lib.utils.tools import ignore
+ 
+ from methods_func import get_method_argparser, collect_object, \
+-    check_result_msg, get_param_pwd, _print
++    check_result_msg, get_param_pwd, _print, display_error
+ from api_types import ViewInfo
+ from cert_cmd import parse
+ from methods_func import getErrorOnParam, GotErrorField
+@@ -88,9 +91,23 @@ class replaceClass():
+         if len(com.__class__.__bases__) > 1 and \
+                 hasattr(com.__class__.__bases__[1], '__init__'):
+             com.__class__.__bases__[1].__init__(com)
+-        self.method_status = 0 if getattr(com, method)(*args_proc) else 1
++        com.method_name = method_name
++        com.method_status = 1
++        self.method_status = 0 if getattr(com, method)(*args_proc) else 2
++        com.method_status = self.method_status
++        self.del_pid_file(os.getpid(), com.clVars)
+         return 0
+ 
++    def del_pid_file(self, pid, clVars=None):
++        if clVars:
++            pids = clVars.Get('core.cl_core_pids_path')
++        else:
++            pids = '/tmp'
++        pid_file = path.join(pids, '%d.pid' % pid)
++        with ignore(OSError):
++            if path.exists(pid_file):
++                os.unlink(pid_file)
++
+     class Common(CommonMethods):
+         """ class to interact with the processes """
+         reClearTags = re.compile("<.*?>")
+@@ -99,6 +116,8 @@ class replaceClass():
+                      no_questions):
+             self.pid = 0
+             self.Num = 100000
++            self.method_name = ""
++            self.method_status = 0
+             self.color_print = color_print()
+ 
+             self.no_progress = no_progress
+@@ -110,13 +129,29 @@ class replaceClass():
+             self.error = []
+             self.warning = []
+             self.no_questions = no_questions
+-            self.currentTaskMessage = ""
++            self.current_task_message = ""
+             self.spinner = None
+             self.terminal_print = \
+                 get_terminal_print(self.color_print.defaultPrint)
+ 
+         def writeFile(self):
+-            pass
++            """ write data in file """
++            pid = os.getpid()
++            pids = self.clVars.Get('core.cl_core_pids_path')
++            # пропустить создание файла если идет сборка пакета
++            if self.clVars.Get('cl_ebuild_phase'):
++                return
++            if not os.path.exists(pids):
++                os.mkdir(pids)
++            pid_file = path.join(pids, '%d.pid' % pid)
++            try:
++                with open(pid_file, 'w') as f:
++                    d = {'name': self.method_name,
++                         'status': self.method_status}
++                    pickle.dump(d, f)
++            except (IOError, OSError) as e:
++                print str(e)
++                print _("Failed to write the PID file %s!") % pid_file
+ 
+         def setProgress(self, perc, short_message=None, long_message=None):
+             if self.no_progress:
+@@ -338,7 +373,7 @@ class replaceClass():
+                 self.spinner.stop()
+                 self.spinner = None
+             self.nextLine()
+-            self.currentTaskMessage = self.cleanTags(message)
++            self.current_task_message = self.cleanTags(message)
+             message = self.processTags(message)
+             self.color_print.printSUCCESS(message, printBR=False)
+             self.color_print.defaultPrint(" ...")
+@@ -379,14 +414,14 @@ class replaceClass():
+                 self.spinner.stop()
+                 self.spinner = None
+             self.setProgress(100, progress_message)
+-            if self.currentTaskMessage:
++            if self.current_task_message:
+                 if self.progressbar and self.progressbar.finished:
+                     self.terminal_print.up(1).clear_line("")
+                     self.terminal_print.up(1)("")
+                     self.progressbar = None
+ 
+                 self.displayResult(result)
+-                self.currentTaskMessage = ""
++                self.current_task_message = ""
+ 
+         def displayResult(self, result):
+             func_map = {"skip": self._printSkip,
+@@ -394,10 +429,10 @@ class replaceClass():
+             func_map.get(result, self._printOK)()
+ 
+         def nextLine(self, clearCurrent=True):
+-            if self.currentTaskMessage:
++            if self.current_task_message:
+                 self.color_print.defaultPrint('\n')
+                 if clearCurrent:
+-                    self.currentTaskMessage = ""
++                    self.current_task_message = ""
+ 
+         def askConfirm(self, message, default="yes"):
+             if self.no_questions:
+@@ -492,10 +527,9 @@ class replaceClass():
+             text1 = "%s:" % message
+             if not twice:
+                 return getpass.getpass(text1)
+-            if twice:
+-                text2 = _('Repeat: ')
+-                pass1 = 'password'
+-                pass2 = 'repeat'
++            text2 = _('Repeat: ')
++            pass1 = 'password'
++            pass2 = 'repeat'
+             try:
+                 while pass1 != pass2:
+                     pass1 = getpass.getpass(text1)
+@@ -532,13 +566,11 @@ class replaceClass():
+             _print = get_terminal_print()
+             self.printDefault(
+                 _print.foreground(TextState.Colors.WHITE)(message))
+-            #self.addMessage(type='startGroup', message=message)
+ 
+         def endGroup(self):
+             if self.spinner:
+                 self.spinner.stop()
+                 self.spinner = None
+-            pass
+ 
+ 
+ def cout_progress(string=None):
+@@ -711,17 +743,6 @@ def call_method(metaObject, args, unknown_args, colorPrint):
+             if ask.lower() in ['n', 'no']:
+                 colorPrint.printERROR(_('Manually interrupted'))
+                 return None
+-            #while True:
+-            #    try:
+-            #        ask = raw_input('\n' + _('Run process? (yes/no): '))
+-            #    except KeyboardInterrupt:
+-            #        ask = 'no'
+-            #        print
+-            #    if ask.lower() in ['n', 'no']:
+-            #        colorPrint.printERROR(_('Manually interrupted'))
+-            #        return None
+-            #    if ask.lower() in ['y', 'yes']:
+-            #        break
+ 
+     setattr(param_object, 'CheckOnly', False)
+     try:
+@@ -734,13 +755,14 @@ def call_method(metaObject, args, unknown_args, colorPrint):
+         return None
+     for ReturnedMessage in method_result:
+         if ReturnedMessage.type and ReturnedMessage.type != "pid":
+-            params_text = ''
+-            for Group in view.groups:
+-                for field in Group.fields:
+-                    if field.name == ReturnedMessage.field:
+-                        params_text += getErrorOnParam(args, field)
+-            colorPrint.printERROR('\r' + params_text % \
+-                                  str(ReturnedMessage.message))
++            display_error(ReturnedMessage, args, view.groups)
++            #params_text = ''
++            #for Group in view.groups:
++            #    for field in Group.fields:
++            #        if field.name == ReturnedMessage.field:
++            #            params_text += getErrorOnParam(args, field)
++            #colorPrint.printERROR('\r' + params_text % \
++            #                      str(ReturnedMessage.message))
+             return None
+     return method_result
+ 
+@@ -941,15 +963,20 @@ class TableInfo(InformationElement):
+ def print_brief_group(Fields, group_name):
+     display = Display()
+     show_group = True
+-    for element in ifilter(None,
+-                           (InformationElement.from_field(
+-                                   FieldAdapter.from_detect(x),
+-                                   display)
+-                            for x in Fields if not x.uncompatible)):
+-        if show_group:
+-            display.print_group(group_name)
+-            show_group = False
+-        element.show()
++    try:
++        for element in ifilter(None,
++                               (InformationElement.from_field(
++                                       FieldAdapter.from_detect(x),
++                                       display)
++                                for x in Fields if not x.uncompatible)):
++            if show_group:
++                display.print_group(group_name)
++                show_group = False
++            element.show()
++    except Exception as e:
++        import traceback
++        traceback.print_exc()
++        raise
+ 
+ 
+ class Table(tableReport):
+diff --git core/server/sid_pid_file.py core/server/sid_pid_file.py
+index 173ed4f..dec11a0 100644
+--- core/server/sid_pid_file.py
++++ core/server/sid_pid_file.py
+@@ -15,8 +15,11 @@
+ #  limitations under the License.
+ 
+ import os, time
++from os import path
+ import pickle
+ from threading import Lock
++from calculate.lib.utils.tools import ignore
++
+ 
+ class CoreWsdl () :
+     def del_sid_pid(self, sid):
+@@ -48,7 +51,10 @@ class CoreWsdl () :
+                     time.sleep(0.1)
+                 self.del_pid(list_sid[1])
+                 # delete process file
+-                os.unlink(self.pids + '/%d.pid' %list_sid[1])
++                rm_fn = path.join(self.pids, "%d.pid" % list_sid[1])
++                if path.exists(rm_fn):
++                    with ignore(OSError):
++                        os.unlink(rm_fn)
+         fd.close()
+         ft.close()
+ 
