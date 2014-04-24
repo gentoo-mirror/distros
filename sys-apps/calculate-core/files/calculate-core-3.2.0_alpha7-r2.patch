@@ -1,0 +1,67 @@
+diff --git core/server/cl_server.py core/server/cl_server.py
+index abd555f..549397c 100644
+--- core/server/cl_server.py
++++ core/server/cl_server.py
+@@ -248,7 +248,9 @@ def main(*args, **keywords):
+                 sys.exit(1)
+         # For cleaning of sessions at server reboot
+         from clean import clean
++        from gen_pid import clear_finished_pids
+         clean(sids_file, pids_file, sids_pids, sids, pids)
++        clear_finished_pids(ob)
+         print _("Server started")
+         server.start()
+     except KeyboardInterrupt, e:
+diff --git core/server/gen_pid.py core/server/gen_pid.py
+index 1bd1a40..44034b7 100644
+--- core/server/gen_pid.py
++++ core/server/gen_pid.py
+@@ -30,6 +30,13 @@ class ProcessStatus:
+ 
+ 
+ def search_worked_process(method_name, clVars):
++    """
++    Найти все работающие процессы
++
++    Возвращает список процессов со статусом Worked и существующем системным
++    процессом
++    """
++
+     def generator():
+         pids = clVars.Get('core.cl_core_pids_path')
+         for pidfile in listDirectory(pids, fullPath=True):
+@@ -37,15 +44,30 @@ def search_worked_process(method_name, clVars):
+                 status = pickle.load(open(pidfile))
+                 if (status['name'] == method_name and
+                             status['status'] == ProcessStatus.Worked):
+-                    pid = int(path.basename(pidfile)[:-4])
+-                    if path.exists(path.join("/proc",str(status['os_pid']))):
++                    if path.exists(path.join("/proc", str(status['os_pid']))):
+                         yield status['os_pid']
+-            except (ValueError, EOFError, OSError):
++            except (ValueError, KeyError, EOFError, OSError):
+                 pass
+-    #print "DEBUG",list(generator())
++
+     return list(generator())
+ 
+ 
++def clear_finished_pids(clVars):
++    """
++    Удалить все идентификационные файлы завершившихся процессов
++    """
++    pids = clVars.Get('core.cl_core_pids_path')
++    for pidfile in listDirectory(pids, fullPath=True):
++        try:
++            d = pickle.load(open(pidfile))
++            if path.exists(path.join("/proc", str(d['os_pid']))):
++                continue
++        except (ValueError, KeyError, EOFError, OSError):
++            pass
++        with ignore(OSError):
++            os.unlink(pidfile)
++
++
+ # process management
+ class CoreWsdl():
+     # delete process id from list process
