@@ -1,0 +1,28 @@
+diff --git update/emerge_parser.py update/emerge_parser.py
+index 204e758..80d012b 100644
+--- update/emerge_parser.py
++++ update/emerge_parser.py
+@@ -321,7 +321,7 @@ class QuestionBlock(EmergeInformationBlock):
+     """
+     Блок вопроса
+     """
+-    default_answer = "no"
++    default_answer = "yes"
+     _color_block = EmergeInformationBlock._color_block
+     token = "Would you like"
+     end_token = ["]", "\n"]
+diff --git update/update.py update/update.py
+index 50dd30b..77b1d9b 100644
+--- update/update.py
++++ update/update.py
+@@ -94,6 +94,10 @@ class Update:
+                 git.checkoutBranch(rpath, branch)
+             if revision == "last":
+                 if git.resetRepository(rpath, to_origin=True):
++                    # если не удалось сбросить
++                    repInfo = git.getStatusInfo(rpath)
++                    if repInfo.get("files", False):
++                        raise GitError("Failed to reset git")
+                     needMeta = True
+             else:
+                 git.resetRepository(rpath, to_rev=revision)

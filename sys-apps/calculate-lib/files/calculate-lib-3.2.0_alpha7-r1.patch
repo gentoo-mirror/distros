@@ -1,0 +1,23 @@
+diff --git calculate/lib/datavars.py calculate/lib/datavars.py
+index 905f889..eb7f38d 100644
+--- calculate/lib/datavars.py
++++ calculate/lib/datavars.py
+@@ -1610,7 +1610,7 @@ class DataVars(SimpleDataVars):
+                                                  choicedata)
+                                         if len(result) > 1:
+                                             raise VariableError(_("Ambiguous choice:%s")%
+-                                                ",".join(map(
++                                                formatListOr(map(
+                                                 lambda x:'"%s"(%s)'%(x[1],x[0]) if x[0] != x[1] else x[0],
+                                                              result)))
+                                         elif result:
+diff --git calculate/lib/variables/__init__.py calculate/lib/variables/__init__.py
+index 1f5bf42..5e18176 100644
+--- calculate/lib/variables/__init__.py
++++ calculate/lib/variables/__init__.py
+@@ -41,4 +41,4 @@ class VariableClVer(ReadonlyVariable):
+     """
+     Package version
+     """
+-    value = "3.1.9.3"
++    value = "3.2.0"
