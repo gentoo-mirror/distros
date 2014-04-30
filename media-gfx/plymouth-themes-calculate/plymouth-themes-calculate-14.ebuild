@@ -14,7 +14,9 @@ IUSE=""
 
 SRC_URI="ftp://ftp.calculate.ru/pub/calculate/themes/plymouth/plymouth-calculate-14.tar.bz2"
 
-RDEPEND="sys-boot/plymouth"
+RDEPEND="sys-boot/plymouth
+sys-boot/plymouth-openrc-plugin
+"
 
 DEPEND="${RDEPEND}"
 
