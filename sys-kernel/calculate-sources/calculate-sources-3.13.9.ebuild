@@ -14,6 +14,7 @@ HOMEPAGE="http://www.calculate-linux.org"
 IUSE=""
 
 DEPEND="vmlinuz? ( || ( app-arch/xz-utils app-arch/lzma-utils )
+	media-gfx/plymouth-themes-calculate
 	sys-apps/v86d
 	!<net-wireless/rtl8192se-3.0
 	sys-boot/grub
