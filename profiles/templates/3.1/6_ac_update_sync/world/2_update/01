@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(update.worldtest)<1
+
+#-ini(update.world,1)-#
+
+#?os_linux_shortname==CLDX#
+x11-themes/greybird
+#os_linux_shortname#
