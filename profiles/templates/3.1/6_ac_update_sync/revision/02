@@ -1,0 +1,5 @@
+# Calculate ini(update.revtest)<2 format=samba path=/etc/calculate name=ini.env merge=media-gfx/plymouth-themes-calculate
+
+# reconfigure localization of plymouth themes
+[update]
+revtest = 2
