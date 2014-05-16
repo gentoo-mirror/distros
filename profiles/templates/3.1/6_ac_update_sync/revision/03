@@ -9,5 +9,7 @@ elif [ -h /etc/make.profile ]; then
 fi
 
 if [[ `ls -la $Profile | grep distros | grep binary` ]]; then
-	ln -sf $(echo `ls -la $Profile` | sed -r 's/(.*) //g' | sed -r 's/(.*)\/binary/\1/g') $Profile
+	ln -sf $(echo `ls -la $Profile` | sed -r 's/(.*) //g' | sed -r 's/(.*)\/binary/\1/g') /tmp/profile
+	rm $Profile
+	mv /tmp/profile $Profile
 fi
