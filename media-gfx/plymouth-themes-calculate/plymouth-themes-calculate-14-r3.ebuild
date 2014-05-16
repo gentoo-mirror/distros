@@ -12,7 +12,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-SRC_URI="ftp://ftp.calculate.ru/pub/calculate/themes/plymouth/plymouth-calculate-14.tar.bz2"
+SRC_URI="ftp://ftp.calculate.ru/pub/calculate/themes/plymouth/plymouth-calculate-${PVR}.tar.bz2"
 
 RDEPEND="sys-boot/plymouth
 sys-boot/plymouth-openrc-plugin
@@ -24,4 +24,5 @@ src_install() {
 	dodir /usr/share/plymouth/themes/calculate
 	insinto /usr/share/plymouth/themes/calculate
 	doins *
+	doins .plymouth_shutdown*
 }
