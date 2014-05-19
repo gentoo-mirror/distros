@@ -1,0 +1,27 @@
+diff --git core/server/methods_func.py core/server/methods_func.py
+index 5a25e4e..3393f49 100644
+--- core/server/methods_func.py
++++ core/server/methods_func.py
+@@ -237,7 +237,8 @@ def get_method_argparser(view, args, cl_core = False):
+                     #    data['metavar'] = field.name.upper()
+                     if "choice" in field.type:
+                         data['help'] = "%s (%s)" % (
+-                            data['help'], _("'list' for display possible values"))
++                            data['help'],
++                            _("'list' for displaying possible values"))
+                 if field.element in ['check']:
+                     data['metavar'] = "ON/OFF"
+                 try:
+diff --git core/variables/setup_package.py core/variables/setup_package.py
+index ac6daf6..9da4e0d 100644
+--- core/variables/setup_package.py
++++ core/variables/setup_package.py
+@@ -201,7 +201,7 @@ class VariableClCorePkgDesktopSet(Variable):
+     def check(self,value):
+         if self.Get('cl_templates_locate') == ["clt"] and value == "on":
+             raise VariableError(
+-                _("You shouldn't choice only clt location "
++                _("You must not choose only clt location "
+                   "for desktop templates"))
+ 
+     def init(self):

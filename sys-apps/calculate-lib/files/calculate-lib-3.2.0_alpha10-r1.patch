@@ -1,0 +1,83 @@
+diff --git calculate/lib/cl_template.py calculate/lib/cl_template.py
+index 7363a50..2a91c1a 100644
+--- calculate/lib/cl_template.py
++++ calculate/lib/cl_template.py
+@@ -4764,7 +4764,7 @@ gettext -d cl_template "$*"
+                             self.postmergePkgs.append(pkg)
+                         except:
+                             self.printWARNING(
+-                                _("Failed to reconfigure %s package")%pkg)
++                                _("Failed to reconfigure package %s")%pkg)
+             else:
+                 mergePkgs = mergePkgs + postmergePkgs
+ 
+@@ -4959,9 +4959,8 @@ gettext -d cl_template "$*"
+                     try:
+                         os.chmod(applyDir, mode)
+                     except:
+-                        self.setError(
+-                            _("Failed to change mode for directory: ") +\
+-                                      applyDir)
++                        self.setError(_("Failed to change the mode for "
++                            "the directory: ") +applyDir)
+             else:
+                 self.setError(_("Wrong value 'chmod' in the template") + ": " +\
+                                templateDirFile)
+diff --git calculate/lib/datavars.py calculate/lib/datavars.py
+index eb7f38d..052a5e5 100644
+--- calculate/lib/datavars.py
++++ calculate/lib/datavars.py
+@@ -394,13 +394,13 @@ class Variable:
+         if "list" in self.type:
+             if not type(value) in (list,tuple):
+                 raise VariableError(
+-                    _("Value for variable '{varname}' may be {vartype} only").format(
++                    _("The value for variable '{varname}' may be {vartype} only").format(
+                     varname=self.label or self.name,
+                     vartype="list"))
+             error = _("Values for variable '{varname}' may be {vartype} only")
+         else:
+             value = repeat(value,1)
+-            error = _("Value for variable '{varname}' may be {vartype} only")
++            error = _("The value for variable '{varname}' may be {vartype} only")
+         if "string" in self.type:
+             value, valuecopy = tee(value,2)
+             for v in (x for x in valuecopy if not type(x) in (str,unicode)):
+@@ -425,7 +425,7 @@ class Variable:
+                             error = _("Values for variable '{varname}' may "
+                                       "be {vartype}")
+                         else:
+-                            error = _("Value for variable '{varname}' may be "
++                            error = _("The value for variable '{varname}' may be "
+                                       "{vartype}")
+                     self.raiseWrongChoice(name, tipChoice, val, error)
+                 if "choice" in self.type and not "choiceedit" in self.type:
+@@ -589,7 +589,7 @@ class TableVariable(Variable):
+         if not type(value) in (list,tuple) or \
+             any(i for i in value if not type(i) in (tuple,list)):
+             raise VariableError(
+-                    _("Value for {varname} may be '{vartype}' only").format(
++                    _("The value for {varname} may be '{vartype}' only").format(
+                     varname=self.label or self.name,
+                     vartype="table"))
+         # check len all entries
+diff --git calculate/lib/variables/env.py calculate/lib/variables/env.py
+index f35e3f7..8788dc4 100644
+--- calculate/lib/variables/env.py
++++ calculate/lib/variables/env.py
+@@ -366,7 +366,7 @@ class VariableClTemplatesLocate(Variable):
+ 
+     descriptionMap = {'overlay': _('Overlay templates'),
+                       'local': _('Local templates'),
+-                      'distro': _('Distributive templates'),
++                      'distro': _('Distribution templates'),
+                       'remote': _('Remote templates'),
+                       'clt': _('clt templates')}
+ 
+@@ -427,5 +427,5 @@ class VariableClMakeProfile(Variable):
+         val = self.get_work_link(
+             *[path.join(self.systemRoot, x) for x in files])
+         if not val:
+-            raise VariableError(_("Failed to detect system profile"))
++            raise VariableError(_("Failed to detect the system profile"))
+         return val
