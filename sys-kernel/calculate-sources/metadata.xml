@@ -7,8 +7,8 @@
 	</longdescription>
 	<use>
 		<flag name='vmlinuz'>Build kernel, modules and initramfs</flag>
-	</use>
-	<use>
 		<flag name='minimal'>Remove kernel sources</flag>
+		<flag name='themes'>Include calculate plymouth themes</flag>
+		<flag name='plymouth'>Include plymouth</flag>
 	</use>
 </pkgmetadata>
