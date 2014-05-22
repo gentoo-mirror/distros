@@ -12,6 +12,11 @@ get_safemode_name() {
     echo ${kernel/-calculate/-SafeMode}
 }
 
+get_kernel_version() {
+    local kernel=$1
+    file -L $kernel | sed -r 's/.*version (\S+)\s+.*/\1/'
+}
+
 get_kernel_initramfs() {
     local kernel=$1
     echo ${kernel/vmlinuz-/initramfs-}.img
@@ -28,10 +33,10 @@ die() {
 }
 
 create_hostonly_initramfs() {
-    kernel_safemode=$(get_safemode_name $kernel)
-    initrd=$(get_kernel_initramfs $kernel)
-    initrd_tmp=$(get_kernel_initramfs $kernel).tmp
-    initrd_safemode=$(get_safemode_name $initrd)
+    local kernel_safemode=$(get_safemode_name $kernel)
+    local initrd=$(get_kernel_initramfs $kernel)
+    local initrd_tmp=$(get_kernel_initramfs $kernel).tmp
+    local initrd_safemode=$(get_safemode_name $initrd)
 
     [[ -e $kernel_safemode ]] || (rm -f $kernel_safemode;ln -s $kernel $kernel_safemode &>/dev/null) || 
         die "Failed to create kernel for safemode"
@@ -42,8 +47,11 @@ create_hostonly_initramfs() {
     fi
     if [[ -e $initrd_safemode ]]
     then
+        local kernel_version=$(get_kernel_version $kernel)
+        [[ -n $kernel_version ]] || die "Failed to detect version"
         echo "Creating hostonly initramfs ..."
-        dracut -H -f $initrd_tmp &>/dev/null || die "Failed to create hostonly initramfs"
+        dracut -H -f --kver $kernel_version $initrd_tmp &>/dev/null ||
+            die "Failed to create hostonly initramfs"
         mv $initrd_tmp $initrd &>/dev/null || die "Failed to rename initramfs"
         echo "Hostonly initramfs has been created"
     fi
