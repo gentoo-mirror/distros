@@ -4,7 +4,7 @@
 source /usr/share/grub/grub-mkconfig_lib
 
 get_latest_kernel() {
-    version_find_latest /boot/vmlinuz-*
+    version_find_latest /boot/vmlinuz-*-calculate
 }
 
 get_safemode_name() {
