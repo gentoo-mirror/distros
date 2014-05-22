@@ -39,6 +39,9 @@ create_hostonly_initramfs() {
     if ! [[ -e $initrd_safemode ]]
     then
         cp $initrd $initrd_safemode &>/dev/null || die "Failed to create initramfs safemode backup"
+    fi
+    if [[ -e $initrd_safemode ]]
+    then
         echo "Creating hostonly initramfs ..."
         dracut -H -f $initrd_tmp &>/dev/null || die "Failed to create hostonly initramfs"
         mv $initrd_tmp $initrd &>/dev/null || die "Failed to rename initramfs"
