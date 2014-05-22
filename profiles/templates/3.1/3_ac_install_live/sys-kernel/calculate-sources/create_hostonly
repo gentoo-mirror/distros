@@ -1,0 +1,57 @@
+# Calculate exec=/bin/bash
+#!/bin/bash
+
+source /usr/share/grub/grub-mkconfig_lib
+
+get_latest_kernel() {
+    version_find_latest /boot/vmlinuz-*
+}
+
+get_safemode_name() {
+    local kernel=$1
+    echo ${kernel/-calculate/-SafeMode}
+}
+
+get_kernel_initramfs() {
+    local kernel=$1
+    echo ${kernel/vmlinuz-/initramfs-}.img
+}
+
+is_calculate_kernel() {
+    local kernel=$1
+    [[ $kernel =~ -calculate$ ]]
+}
+
+die() {
+    echo $@ 1>&2
+    exit 1
+}
+
+create_hostonly_initramfs() {
+    kernel_safemode=$(get_safemode_name $kernel)
+    initrd=$(get_kernel_initramfs $kernel)
+    initrd_tmp=$(get_kernel_initramfs $kernel).tmp
+    initrd_safemode=$(get_safemode_name $initrd)
+
+    [[ -e $kernel_safemode ]] || (rm -f $kernel_safemode;ln -s $kernel $kernel_safemode &>/dev/null) || 
+        die "Failed to create kernel for safemode"
+
+    if ! [[ -e $initrd_safemode ]]
+    then
+        cp $initrd $initrd_safemode &>/dev/null || die "Failed to create initramfs safemode backup"
+        echo "Creating hostonly initramfs ..."
+        dracut -H -f $initrd_tmp &>/dev/null || die "Failed to create hostonly initramfs"
+        mv $initrd_tmp $initrd &>/dev/null || die "Failed to rename initramfs"
+        echo "Hostonly initramfs has been created"
+    fi
+}
+
+kernel=$(get_latest_kernel)
+
+if [[ -e $kernel ]] && [[ -e $(get_kernel_initramfs $kernel) ]]
+then
+    is_calculate_kernel $kernel && create_hostonly_initramfs $kernel
+else
+    echo "Creating hostonly initramfs was skipped"
+fi
+exit 0
