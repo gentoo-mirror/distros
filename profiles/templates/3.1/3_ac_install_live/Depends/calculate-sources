@@ -1,1 +1,1 @@
-# Calculate append=skip merge(media-gfx/plymouth-themes-calculate)!= postmerge=sys-kernel/dracut
+# Calculate append=skip merge(sys-kernel/calculate-sources)!= postmerge=sys-kernel/dracut
