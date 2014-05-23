@@ -1,4 +1,4 @@
-# Calculate exec=/bin/bash merge=sys-boot/grub
+# Calculate exec=/bin/bash postmerge=sys-boot/grub
 #!/bin/bash
 
 source /usr/share/grub/grub-mkconfig_lib
