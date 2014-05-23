@@ -49,11 +49,11 @@ create_hostonly_initramfs() {
     then
         local kernel_version=$(get_kernel_version $kernel)
         [[ -n $kernel_version ]] || die "Failed to detect version"
-        echo "Creating hostonly initramfs ..."
+        echo "Creating Host-Only initramfs ..."
         dracut -H -f --kver $kernel_version $initrd_tmp &>/dev/null ||
-            die "Failed to create hostonly initramfs"
+            die "Failed to create Host-Only initramfs"
         mv $initrd_tmp $initrd &>/dev/null || die "Failed to rename initramfs"
-        echo "Hostonly initramfs has been created"
+        echo "Host-Only initramfs has been created"
     fi
 }
 
@@ -63,6 +63,6 @@ if [[ -e $kernel ]] && [[ -e $(get_kernel_initramfs $kernel) ]]
 then
     is_calculate_kernel $kernel && create_hostonly_initramfs $kernel
 else
-    echo "Creating hostonly initramfs was skipped"
+    echo "Creating Host-Only initramfs was skipped"
 fi
 exit 0
