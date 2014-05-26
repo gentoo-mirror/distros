@@ -1,0 +1,244 @@
+diff --git calculate/lib/cl_progressbar.py calculate/lib/cl_progressbar.py
+index cfdf384..e417881 100644
+--- calculate/lib/cl_progressbar.py
++++ calculate/lib/cl_progressbar.py
+@@ -139,6 +139,7 @@ try:
+ 
+         def update(self, value):
+             self.setMaximum(100)
++            self.setTextVisible(True)
+             self.setValue(min(value, 99))
+ 
+ 
+@@ -203,7 +204,7 @@ def get_progress_bar(bartype="text", title=""):
+         pbar.setAutoReset(False)
+         pbar.setMaximum(0)
+         pbar.setLabelText(title.decode('utf-8'))
+-        #progressbar.setTextVisible(False)
++        pbar.setTextVisible(False)
+         return pbar
+     return StubProgressBar()
+ 
+diff --git calculate/lib/cl_template.py calculate/lib/cl_template.py
+index 7363a50..cc31ad2 100644
+--- calculate/lib/cl_template.py
++++ calculate/lib/cl_template.py
+@@ -46,7 +46,8 @@ from utils.files import (getModeFile, listDirectory,removeDir, typeFile,
+                         pathJoin,readFile,readLinesFile,process,STDOUT)
+ from datavars import DataVarsError
+ 
+-from calculate.lib.cl_lang import setLocalTranslate
++from calculate.lib.cl_lang import setLocalTranslate, RegexpLocalization
++
+ setLocalTranslate('cl_lib3',sys.modules[__name__])
+ 
+ PORTAGEUID,PORTAGEGID = getPortageUidGid()
+@@ -3818,6 +3819,7 @@ class Template(_file,_terms,_warning,xmlShare,templateFormat,_shareTemplate):
+                  printERROR=lambda x:x,askConfirm=lambda x:x,
+                  userProfile=False,dispatchConf=None):
+         # совместимость с вызовами из модулей предыдущих версий
++        self.translator = RegexpLocalization("cl_templates3")
+         if userProfile and objVar:
+             objVar.Set('cl_protect_use_set','off',force=True)
+ 
+@@ -3970,17 +3972,23 @@ gettext -d cl_template "$*"
+         p.write(code)
+         p.pipe.stdin.close()
+         for line in p.readByLine():
++            if line:
++                line = self.translator.translate(line)
+             self.printSUCCESS(line.strip())
+         p.pipe.wait()
+         if p.success():
+             self.executedFiles.append((code,execPath))
+             if p.readerr():
+                 for line in p.readerr().split('\n'):
++                    if line:
++                        line = self.translator.translate(line)
+                     self.printWARNING(line.strip())
+             return True
+         else:
+             if p.readerr():
+                 for line in p.readerr().split('\n'):
++                    if line:
++                        line = self.translator.translate(line)
+                     self.printERROR(line.strip())
+             return False
+ 
+@@ -4266,7 +4274,7 @@ gettext -d cl_template "$*"
+         """Check template variable cl_name in first directories and files"""
+         skipDirs = []
+         skipTemplates = []
+-        debug = self.objVar.Get('cl_env_debug_set') == "on"
++        debug = False
+         for dirsTemplate in dirsTemplates:
+             filesAndDirs = map(lambda x: os.path.join(dirsTemplate,x),
+                                listDirectory(dirsTemplate))
+@@ -4764,7 +4772,7 @@ gettext -d cl_template "$*"
+                             self.postmergePkgs.append(pkg)
+                         except:
+                             self.printWARNING(
+-                                _("Failed to reconfigure %s package")%pkg)
++                                _("Failed to reconfigure package %s")%pkg)
+             else:
+                 mergePkgs = mergePkgs + postmergePkgs
+ 
+@@ -4959,9 +4967,8 @@ gettext -d cl_template "$*"
+                     try:
+                         os.chmod(applyDir, mode)
+                     except:
+-                        self.setError(
+-                            _("Failed to change mode for directory: ") +\
+-                                      applyDir)
++                        self.setError(_("Failed to change the mode for "
++                            "the directory: ") +applyDir)
+             else:
+                 self.setError(_("Wrong value 'chmod' in the template") + ": " +\
+                                templateDirFile)
+diff --git calculate/lib/datavars.py calculate/lib/datavars.py
+index eb7f38d..052a5e5 100644
+--- calculate/lib/datavars.py
++++ calculate/lib/datavars.py
+@@ -394,13 +394,13 @@ class Variable:
+         if "list" in self.type:
+             if not type(value) in (list,tuple):
+                 raise VariableError(
+-                    _("Value for variable '{varname}' may be {vartype} only").format(
++                    _("The value for variable '{varname}' may be {vartype} only").format(
+                     varname=self.label or self.name,
+                     vartype="list"))
+             error = _("Values for variable '{varname}' may be {vartype} only")
+         else:
+             value = repeat(value,1)
+-            error = _("Value for variable '{varname}' may be {vartype} only")
++            error = _("The value for variable '{varname}' may be {vartype} only")
+         if "string" in self.type:
+             value, valuecopy = tee(value,2)
+             for v in (x for x in valuecopy if not type(x) in (str,unicode)):
+@@ -425,7 +425,7 @@ class Variable:
+                             error = _("Values for variable '{varname}' may "
+                                       "be {vartype}")
+                         else:
+-                            error = _("Value for variable '{varname}' may be "
++                            error = _("The value for variable '{varname}' may be "
+                                       "{vartype}")
+                     self.raiseWrongChoice(name, tipChoice, val, error)
+                 if "choice" in self.type and not "choiceedit" in self.type:
+@@ -589,7 +589,7 @@ class TableVariable(Variable):
+         if not type(value) in (list,tuple) or \
+             any(i for i in value if not type(i) in (tuple,list)):
+             raise VariableError(
+-                    _("Value for {varname} may be '{vartype}' only").format(
++                    _("The value for {varname} may be '{vartype}' only").format(
+                     varname=self.label or self.name,
+                     vartype="table"))
+         # check len all entries
+diff --git calculate/lib/utils/colortext/info.py calculate/lib/utils/colortext/info.py
+index 218c72f..64d94d4 100644
+--- calculate/lib/utils/colortext/info.py
++++ calculate/lib/utils/colortext/info.py
+@@ -30,13 +30,20 @@ class Terminal(object):
+     WRONG = -1
+ 
+     def __init__(self):
+-        curses.setupterm(environ.get('TERM', 'linux'))
++        try:
++            curses.setupterm(environ.get('TERM', 'linux'))
++            self.curses = curses
++        except curses.error:
++            self.curses = None
+         self.__echo = True
+         self.__cursor = True
+ 
+     @property
+     def colors(self):
+-        return curses.tigetnum('colors')
++        if self.curses:
++            return self.curses.tigetnum('colors')
++        else:
++            return 16
+ 
+     @property
+     def width(self):
+@@ -78,7 +85,8 @@ class Terminal(object):
+ 
+     @cursor.setter
+     def cursor(self, flag):
+-        param = "cnorm" if flag else "civis"
+-        sys.stdout.write(curses.tigetstr(param))
+-        sys.stdout.flush()
+-        self.__cursor = flag
++        if self.curses:
++            param = "cnorm" if flag else "civis"
++            sys.stdout.write(self.curses.tigetstr(param))
++            sys.stdout.flush()
++            self.__cursor = flag
+diff --git calculate/lib/utils/colortext/printing.py calculate/lib/utils/colortext/printing.py
+index c8ef675..0e5753f 100644
+--- calculate/lib/utils/colortext/printing.py
++++ calculate/lib/utils/colortext/printing.py
+@@ -82,7 +82,8 @@ class Print(object):
+         return self
+ 
+     def __call__(self, s, *args, **kwargs):
+-        s = s.format(*args, **kwargs)
++        if args or kwargs:
++            s = s.format(*args, **kwargs)
+         self.buffer.append(self.output.outputText(s))
+         self.buffer.append(self.output.endText())
+         try:
+diff --git calculate/lib/utils/common.py calculate/lib/utils/common.py
+index 9f13c66..75dcdce 100644
+--- calculate/lib/utils/common.py
++++ calculate/lib/utils/common.py
+@@ -178,8 +178,9 @@ def getDistfilesVideo(prefix="/"):
+     return list(set(
+            map(lambda x:'fglrx' if "amd" in x or "ati" in x else "nvidia",
+            filter(lambda x:"ati" in x or "amd" in x or
+-                           x.startswith('NVIDIA-Linux'),
+-           listDirectory(distFiles)))))
++                           x.startswith('nvidia-linux'),
++           map(lambda x:x.lower(),
++           listDirectory(distFiles))))))
+ 
+ def getAvailableVideo(prefix="/"):
+     """Get available video drivers (installed and maybe installed)"""
+diff --git calculate/lib/variables/env.py calculate/lib/variables/env.py
+index f35e3f7..86f1bfb 100644
+--- calculate/lib/variables/env.py
++++ calculate/lib/variables/env.py
+@@ -337,7 +337,8 @@ class VariableClEmergeInfo(ReadonlyVariable):
+     def get(self):
+         return filter(lambda x:x.startswith('PORTDIR_OVERLAY=') or \
+                                x.startswith('PORTDIR='),
+-               process("emerge","--info",envdict=os.environ).read().split('\n'))
++               process("/usr/bin/emerge","--ask=n","--info",
++                       envdict=os.environ).read().split('\n'))
+ 
+ class VariableClPortdirOverlay(ReadonlyVariable):
+     """
+@@ -366,7 +367,7 @@ class VariableClTemplatesLocate(Variable):
+ 
+     descriptionMap = {'overlay': _('Overlay templates'),
+                       'local': _('Local templates'),
+-                      'distro': _('Distributive templates'),
++                      'distro': _('Distribution templates'),
+                       'remote': _('Remote templates'),
+                       'clt': _('clt templates')}
+ 
+@@ -409,7 +410,7 @@ class VariableClEnvDebugSet(Variable):
+     Переменная для включения отладки
+     """
+     type = "bool"
+-    value = "off"
++    value = "on"
+ 
+ class VariableClMakeProfile(Variable):
+     """
+@@ -427,5 +428,5 @@ class VariableClMakeProfile(Variable):
+         val = self.get_work_link(
+             *[path.join(self.systemRoot, x) for x in files])
+         if not val:
+-            raise VariableError(_("Failed to detect system profile"))
++            raise VariableError(_("Failed to detect the system profile"))
+         return val
