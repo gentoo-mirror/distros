@@ -1,0 +1,90 @@
+diff --git install/utils/cl_setup.py install/utils/cl_setup.py
+index e4ad417..f70b00a 100644
+--- install/utils/cl_setup.py
++++ install/utils/cl_setup.py
+@@ -149,7 +149,7 @@ class ClSetupBootAction(ClSetupSystemAction):
+             Get('os_install_scratch') == 'off')
+         },
+         {'name':'no_scratch',
+-         'warning':_("The builder mode is not longer supported"),
++         'warning':_("The builder mode is no longer supported"),
+          'condition':lambda Get:Get('os_install_scratch') == 'on'
+         },
+         # изменить IO планировщик
+diff --git install/variables/X11.py install/variables/X11.py
+index a30d448..836803b 100644
+--- install/variables/X11.py
++++ install/variables/X11.py
+@@ -37,12 +37,12 @@ class VideoVariable(Variable):
+     """
+     xorg_need = True
+     default_video = "default"
+-    driver_names = {'nvidia': _("Nvidia proprietary video driver"),
+-                    'fglrx': _("Ati proprietary video driver"),
++    driver_names = {'nvidia': _("NVidia proprietary video driver"),
++                    'fglrx': _("ATI proprietary video driver"),
+                     'intel': _("Intel video driver"),
+-                    'radeon': _("Ati open source video driver"),
+-                    'nouveau': _("Nvidia open source video driver"),
+-                    'default': _("X.Org Server auto-detect")
++                    'radeon': _("ATI open source video driver"),
++                    'nouveau': _("NVidia open source video driver"),
++                    'default': _("X.Org Server auto detection")
+     }
+ 
+     def uncompatible(self):
+@@ -183,7 +183,7 @@ class VariableOsInstallX11VideoDrv(VideoVariable):
+                     return drv
+             return self.default_video
+         else:
+-            for drv in self.choice():
++            for drv in map(lambda x:x[0], self.choice()):
+                 videoSysPath = path.join("/sys/module",drv,"refcnt")
+                 refcnt = readFile(videoSysPath).strip()
+                 if refcnt.isdigit() and int(refcnt) > 0:
+diff --git install/variables/audio.py install/variables/audio.py
+index 5dc7a1c..b30cd6c 100644
+--- install/variables/audio.py
++++ install/variables/audio.py
+@@ -116,5 +116,5 @@ class VariableOsAudioDefault(Variable):
+             return _("Audio configuration unavailable for Flash install")
+         if self.Get('os_install_alsa_set') == 'off':
+             return \
+-                _("This distribution does not provide the alsa sound")
++                _("This distribution does not provide the ALSA sound")
+         return ""
+diff --git install/variables/disk.py install/variables/disk.py
+index 16505fb..a4d700c 100644
+--- install/variables/disk.py
++++ install/variables/disk.py
+@@ -1725,8 +1725,8 @@ class VariableOsInstallMbr(LocationHelper,Variable):
+                     raise VariableError(_("You need a disk with a dos "
+                                           "table for Flash install"))
+             if tableOnBootDisk == "dos" and useBtrfs:
+-                raise VariableError(_("You need a disk with a gpt "
+-                                          "table for install on btrfs"))
++                raise VariableError(_("You need a disk with a GPT table for "
++                                      "install on a btrfs partition"))
+             if rootType in ("usb-hdd","hdd") and tableOnBootDisk == "gpt":
+                 efisize = self.Select('os_disk_size',
+                            where=['os_disk_id','os_disk_parent'],
+@@ -1737,15 +1737,15 @@ class VariableOsInstallMbr(LocationHelper,Variable):
+                 minsize = "%dMb" % (int(bios_grub_size) / Sizes.M)
+                 if not efisize:
+                     raise VariableError(
+-                        _("Boot device must have BIOS Boot "
+-                          "partition ({minsize})").format(minsize=minsize))
++                        _("Your boot device must have a BIOS Boot partition "
++                          "({minsize})").format(minsize=minsize))
+                 # проверка размера EF02 при установке на btrfs
+                 elif useBtrfs:
+                     if (efisize.isdigit() and bios_grub_size.isdigit() and
+                         int(efisize) < int(bios_grub_size)):
+                         raise VariableError(
+-                            _("Boot device must have BIOS Boot partition "
+-                              "({minsize})").format(minsize=minsize))
++                            _("Your boot device must have a BIOS Boot "
++                              "partition ({minsize})").format(minsize=minsize))
+         if value:
+             if self.Get('os_grub2_path'):
+                 self.checkForGrub2()
