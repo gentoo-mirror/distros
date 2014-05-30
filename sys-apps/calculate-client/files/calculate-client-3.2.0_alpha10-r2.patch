@@ -1,0 +1,27 @@
+diff --git client/utils/cl_client_sync.py client/utils/cl_client_sync.py
+index 59d9197..fbcdc71 100644
+--- client/utils/cl_client_sync.py
++++ client/utils/cl_client_sync.py
+@@ -86,7 +86,8 @@ class ClClientSyncLoginAction(Action):
+          },
+          # проверка на попытку открыть вторую сессию для этого пользователя
+          {'name':'two_session',
+-          'error':__("Second X session for user {ur_login} cannot be opened."),
++          'error':
++            __("A second X session cannot be opened for user {ur_login}."),
+           'condition':lambda dv: (dv.Get('ur_login') in 
+                                   dv.Get('desktop.cl_desktop_online_user') and
+                           int(dv.Select('desktop.cl_desktop_online_count',
+diff --git data/client data/client
+index e3285f2..13695bb 100644
+--- data/client
++++ data/client
+@@ -41,7 +41,7 @@ start() {
+ 		ebegin "Mounting domain resources"
+ 
+ 		local NET_CONF=`cl-core-variables-show --only-value install.os_install_net_conf`
+-		if [[ $NET_CONF = "networkmanager" ]]
++		if [[ $NET_CONF = "networkmanager" ]] && type qdbus &>/dev/null
+ 		then
+ 			for COUNT in $( seq 0 24 )
+ 			do
