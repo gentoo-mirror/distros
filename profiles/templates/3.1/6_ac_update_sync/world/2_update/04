@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(update.worldtest)<4
+
+#-ini(update.worldtest,4)-#
+
+#?os_linux_shortname==CLDX#
+!x11-themes/greybird
+x11-themes/lightdm-themes-calculate
+#os_linux_shortname#
