@@ -11,3 +11,4 @@
 ~sys-boot/plymouth-openrc-plugin-0.1.2 amd64 x86
 ~x11-themes/greybird-1.2.2 amd64 x86
 ~sys-kernel/dracut-037 amd64 x86
+~media-gfx/lightdm-themes-calculate-14 amd64 x86
