@@ -22,5 +22,5 @@ RDEPEND="${RDEPEND}
 	cl_client? ( =sys-apps/calculate-client-3.2.0_alpha11 )
 	cl_desktop? ( =sys-apps/calculate-desktop-3.2.0_alpha11 )
 	cl_consolegui? ( =sys-apps/calculate-console-gui-3.2.0_alpha11-r1 )
-	cl_console? ( =sys-apps/calculate-console-3.2.0_alpha11-r1 )
+	cl_console? ( =sys-apps/calculate-console-3.2.0_alpha11 )
 "
