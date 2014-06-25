@@ -1,0 +1,8 @@
+# Calculate ini(update.revtest)<7 exec=/bin/bash
+
+#-ini(update.revtest,7)-#
+
+#?in(os_linux_shortname, CLD, CLDX)!=#
+/usr/sbin/cl-desktop root --force-setup on &>/dev/null
+#in#
+true
