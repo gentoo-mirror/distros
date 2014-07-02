@@ -2,6 +2,6 @@
 
 #-ini(update.revtest,8)-#
 
-/bin/rm /etc/layman/overlays/distros.xml
+/bin/rm -f /etc/layman/overlays/distros.xml
 
 true
