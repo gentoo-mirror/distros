@@ -1,0 +1,6 @@
+# Calculate format=world name=world ini(update.worldtest)<6
+
+#-ini(update.worldtest,6)-#
+
+!sys-kernel/calculate-sources
+sys-kernel/calculate-sources-dev
