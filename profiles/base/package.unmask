@@ -9,7 +9,7 @@
 ~sys-apps/calculate-update-3.2.0_alpha12
 ~sys-apps/calculate-utilities-3.2.0_alpha12
 
-sys-kernel/calculate-sources-dev
+=sys-kernel/calculate-sources-dev-3.14.15
 
 ~media-gfx/calculate-wallpapers-14
 ~media-gfx/dm-themes-calculate-14
