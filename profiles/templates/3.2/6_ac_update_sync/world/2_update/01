@@ -2,6 +2,6 @@
 
 #-ini(update.worldtest,1)-#
 
-#?os_linux_shortname==CLDX#
+#?in(os_linux_pkglist, CLDX)!=#
 x11-themes/greybird
 #os_linux_shortname#

@@ -2,7 +2,7 @@
 
 #-ini(update.worldtest,1)-#
 
-#?in(os_linux_shortname,CLDX,CLD)!=#
+#?in(os_linux_pkglist,CLDX,CLD)!=#
 sys-apps/keyexec
 dev-qt/qtdbus
 #in#
