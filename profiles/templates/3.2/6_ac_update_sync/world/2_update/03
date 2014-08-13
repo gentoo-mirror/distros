@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(update.worldtest)<1
-
-#-ini(update.worldtest,1)-#
-
-#?in(os_linux_pkglist,CLDX,CLD)!=#
-sys-apps/keyexec
-dev-qt/qtdbus
-#in#

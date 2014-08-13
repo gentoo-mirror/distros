@@ -1,5 +1,0 @@
-# Calculate ini(update.revtest)<6 format=samba path=/etc/calculate name=ini.env merge=sys-apps/openrc
-
-# reconfigure openrc for switch off interactive
-[update]
-revtest = 6

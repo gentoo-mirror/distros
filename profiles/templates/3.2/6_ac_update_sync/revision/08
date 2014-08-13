@@ -1,7 +1,0 @@
-# Calculate ini(update.revtest)<8 exec=/bin/bash
-
-#-ini(update.revtest,8)-#
-
-/bin/rm -f /etc/layman/overlays/distros.xml
-
-true

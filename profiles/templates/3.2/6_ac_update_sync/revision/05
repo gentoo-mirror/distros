@@ -1,7 +1,0 @@
-# Calculate ini(update.revtest)<5 exec=/bin/bash
-
-#-ini(update.revtest,5)-#
-
-PKGDB=/var/db/pkg
-[[ -d $PKGDB/sys-boot/plymouth-openrc-plugin-0.1.2 ]] && mv $PKGDB/sys-boot/plymouth-openrc-plugin-0.1.2 $PKGDB/sys-boot/plymouth-openrc-plugin-0.1.2_rc1
-true
