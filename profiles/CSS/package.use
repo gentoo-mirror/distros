@@ -1,4 +1,0 @@
-# временное изменение, потом перейдет в настройки
-# по умолчанию для серверов в calculate overlay
-sys-kernel/calculate-sources -themes -plymouth
-
