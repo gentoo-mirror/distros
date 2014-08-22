@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(update-distros.world)<1
-
-#-ini(update-distros.world,1)-#
-
-#?in(os_linux_pkglist, base)!=#
-!sys-kernel/calckernel
-#in#
