@@ -1,6 +1,9 @@
 # Guard and Security
 #USE="${USE} hardened kerberos sasl system"
 
+# Hardware
+USE="${USE} firmware"
+
 # Image
 USE="${USE} exif gif jpeg jpeg2k png tiff"
 

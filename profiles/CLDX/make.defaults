@@ -3,6 +3,9 @@ USE=""
 # Audio
 USE="${USE} cdda gstreamer pulseaudio"
 
+# Hardware
+USE="${USE} firmware"
+
 # Network protocols
 USE="${USE} rdesktop"
 
