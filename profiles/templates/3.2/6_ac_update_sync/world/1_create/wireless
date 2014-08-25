@@ -5,7 +5,6 @@ sys-firmware/b43-firmware
 net-wireless/broadcom-sta
 net-wireless/wireless-tools
 net-wireless/wpa_supplicant
-sys-kernel/linux-firmware
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDX)!=#

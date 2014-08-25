@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(update-distros.world)<3
+
+#-ini(update-distros.world,3)-#
+
+# пакет теперь входит в зависимости к calculate-sources
+#?in(os_linux_pkglist, CLD, CLDX, CMC, CLS)!=#
+!sys-kernel/linux-firmware
+#in#
