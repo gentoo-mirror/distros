@@ -10,7 +10,7 @@ USE="${USE} firmware"
 USE="${USE} rdesktop"
 
 # System
-USE="${USE} -dconf gnome-keyring networkmanager"
+USE="${USE} -dconf networkmanager"
 
 # Window manager and specialities
 USE="${USE} -eds -gnome -kde"
