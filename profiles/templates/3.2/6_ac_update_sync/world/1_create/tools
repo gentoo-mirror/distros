@@ -42,7 +42,6 @@ sys-process/lsof
 #?in(os_linux_pkglist, CLD, CLDX, CMC)!=#
 app-admin/sudo
 app-portage/gentoolkit-dev
-net-misc/dhcpcd
 sys-apps/hdparm
 sys-apps/pcmciautils
 sys-devel/prelink
@@ -86,8 +85,8 @@ dev-lang/vala
 sys-power/upower-pm-utils
 #in#
 
-#?in(os_linux_pkglist, CLS)!=#
-net-misc/dhcpcd
+#?in(os_linux_pkglist, CMC, CLS)!=#
+net-misc/dhcp
 #in#
 
 #?in(os_linux_pkglist, CMC)!=#
