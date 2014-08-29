@@ -1,4 +1,4 @@
-mail-client/claws-mail imap ldap
+mail-client/claws-mail pdf rss smime webkit xface
 media-sound/audacious chardet
 net-misc/networkmanager-pptp gnome
 net-misc/networkmanager-openvpn gnome
