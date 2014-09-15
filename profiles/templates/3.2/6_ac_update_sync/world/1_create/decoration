@@ -13,6 +13,7 @@ media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
 x11-themes/calculate-icon-theme
 x11-themes/calculate-xcursors
+x11-themes/claws-mail-theme-calculate
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
