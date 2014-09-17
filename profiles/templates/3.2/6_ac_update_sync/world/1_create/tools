@@ -49,7 +49,7 @@ sys-fs/exfat-utils
 sys-fs/fuse-exfat
 sys-power/acpi
 sys-power/acpid
-sys-power/cpufrequtils
+sys-power/cpupower
 sys-power/powernowd
 sys-power/powertop
 #in#
