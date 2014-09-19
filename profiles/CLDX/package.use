@@ -1,7 +1,7 @@
 # Add support for PDF, RSS, SMIME, HTML, Xface
 mail-client/claws-mail pdf rss smime webkit xface
 
-# Include Btrfs support and support for Linux software RAID.
+# Add file systems and raid support.
 sys-block/gparted btrfs dmraid fat jfs mdadm ntfs reiserfs xfs
 
 # Add Catalyst Control Panel

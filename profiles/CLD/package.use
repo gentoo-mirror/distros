@@ -1,3 +1,7 @@
+# Add file systems and raid support.
+sys-block/gparted btrfs dmraid fat jfs mdadm ntfs reiserfs xfs
+
+
 media-libs/mlt melt xml
 media-video/transcode mjpeg
 media-libs/mediastreamer video
