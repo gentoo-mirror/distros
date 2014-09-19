@@ -69,7 +69,6 @@ sys-apps/acl
 sys-apps/keyexec
 sys-apps/preload
 sys-apps/usb_modeswitch
-sys-auth/thinkfinger
 sys-block/gparted
 x11-libs/gksu
 # write to world for keep package on during depclean (ruby is used for DEPEND webkit-gtk)
