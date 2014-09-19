@@ -2,7 +2,7 @@
 mail-client/claws-mail pdf rss smime webkit xface
 
 # Include Btrfs support and support for Linux software RAID.
-sys-block/gparted btrfs mdadm
+sys-block/gparted btrfs dmraid fat jfs mdadm ntfs reiserfs xfs
 
 # Add Catalyst Control Panel
 x11-drivers/ati-drivers qt4
