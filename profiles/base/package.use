@@ -1,8 +1,0 @@
-# required by sys-boot/plymouth-0.8.8-r4[libkms]
-x11-libs/libdrm libkms
-sys-boot/grub -multislot
-
-
-# флаг требовался по зависимостям media-gfx/splashutils
-sys-libs/gpm -static-libs
-
