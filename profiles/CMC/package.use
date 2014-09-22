@@ -17,3 +17,5 @@ net-dialup/rp-pppoe -X
 # disable for discard ruby by depend sys-block/thin-provisioning-tools
 >=sys-fs/lvm2-2.02.103 -thin
 
+# [gudev] required by virtual/libgudev
+sys-fs/udev gudev
