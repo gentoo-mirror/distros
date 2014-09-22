@@ -20,6 +20,9 @@ media-gfx/exiv2 xmp
 # [sql] required by app-office/akonadi-server
 dev-qt/qtsql mysql
 
+# [icu] required by www-client/chromium
+media-libs/harfbuzz icu
+
 # Removed unnecessary dependence
 media-gfx/gimp -webkit
 net-print/hplip -qt4
