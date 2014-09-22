@@ -34,6 +34,7 @@ net-misc/networkmanager-vpnc -gtk
 net-misc/networkmanager-pptp -gtk
 net-misc/networkmanager-openvpn -gtk
 net-misc/networkmanager-openconnect -gtk
+net-p2p/ktorrent -infowidget
 
 # use gstreamer for sound
 media-libs/phonon gstreamer -vlc
