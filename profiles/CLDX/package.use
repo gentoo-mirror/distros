@@ -9,8 +9,6 @@ x11-drivers/ati-drivers qt4
 
 net-misc/remmina ssh freerdp
 
-net-print/gutenprint gimp
-
 # Build a Qt style called GTK+ that mimics the active GTK+ theme
 dev-qt/qtgui gtkstyle
 
@@ -26,6 +24,7 @@ net-print/gutenprint gimp
 
 # [python] required by net-p2p/deluge-1.3.3
 net-libs/rb_libtorrent python
+
 # [python] required by net-libs/rb_libtorrent
 dev-libs/boost python
 
@@ -33,7 +32,7 @@ dev-libs/boost python
 sys-fs/udev gudev introspection
 virtual/libgudev introspection
 
-# disable introspection for install webkit-gtk,lightdm without update gobject-intraspction
+# disable introspection for install webkit-gtk, lightdm without update gobject-intraspction
 media-libs/harfbuzz icu
 net-libs/webkit-gtk -geoloc -gstreamer -introspection
 x11-misc/lightdm -introspection
