@@ -17,6 +17,9 @@ kde-base/marble plasma
 # [xmp] required by kde-base/libkexiv2
 media-gfx/exiv2 xmp
 
+# [sql] required by app-office/akonadi-server
+dev-qt/qtsql mysql
+
 # Removed unnecessary dependence
 media-gfx/gimp -webkit
 net-print/hplip -qt4
