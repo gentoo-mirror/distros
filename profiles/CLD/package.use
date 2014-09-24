@@ -23,6 +23,10 @@ dev-qt/qtsql mysql
 # [icu] required by www-client/chromium
 media-libs/harfbuzz icu
 
+# [gudev] required by media-gfx/gimp
+sys-fs/udev gudev
+
+
 # Removed unnecessary dependence
 media-gfx/gimp -webkit
 net-print/hplip -qt4
