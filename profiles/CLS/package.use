@@ -1,5 +1,5 @@
 # Removed unnecessary dependence
-sys-fs/lvm -thin
+sys-fs/lvm2 -thin
 
 #To display the icons in the menu, support xdg autostart
 x11-wm/openbox imlib xdg
