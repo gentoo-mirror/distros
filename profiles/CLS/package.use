@@ -1,5 +1,8 @@
 #to display the icons in the menu, support xdg autostart
 x11-wm/openbox imlib xdg
+
 # disable for discard ruby by depend sys-block/thin-provisioning-tools
 >=sys-fs/lvm2-2.02.103 -thin
 
+# add support xft and 256 color
+x11-terms/rxvt-unicode 256-color xft

@@ -1,3 +1,7 @@
+# net-fs/samba [client]
+net-fs/cifs-utils -ac
+
+
 # Add support for PDF, RSS, SMIME, HTML, Xface
 mail-client/claws-mail pdf rss smime webkit xface
 
