@@ -2,32 +2,32 @@
 net-fs/cifs-utils -acl
 
 
-# [melt, xml] required by media-video/kdenlive
+# required by media-video/kdenlive [melt, xml]
 media-libs/mlt melt xml kdenlive -xine
 
-# [video] required by kde-base/kopete
+# required by kde-base/kopete [video]
 media-libs/mediastreamer video
 
-# [embedded] required by media-sound/amarok
+# required by media-sound/amarok [embedded]
 dev-db/mysql embedded
 virtual/mysql embedded
 
-# [pyqt4] required by kde-misc/synaptiks
+# required by kde-misc/synaptiks [pyqt4]
 dev-python/pyudev pyqt4
 
-# [plasma] required by media-libs/libkgeomap
+# required by media-libs/libkgeomap [plasma]
 kde-base/marble plasma
 
-# [xmp] required by kde-base/libkexiv2
+# required by kde-base/libkexiv2 [xmp]
 media-gfx/exiv2 xmp
 
-# [sql] required by app-office/akonadi-server
+# required by app-office/akonadi-server [sql]
 dev-qt/qtsql mysql
 
-# [icu] required by www-client/chromium
+# required by www-client/chromium [icu]
 media-libs/harfbuzz icu
 
-# [gudev] required by media-gfx/gimp
+# required by media-gfx/gimp [gudev]
 sys-fs/udev gudev
 
 
