@@ -6,6 +6,7 @@
 ~media-gfx/shotwell-0.18.1 amd64 x86
 ~media-libs/libmygpo-qt-1.0.7 amd64 x86
 ~media-sound/clementine-1.2.3 amd64 x86
+~media-video/smplayer-14.9.0 amd64 x86
 ~net-fs/smbnetfs-0.5.3b amd64 x86
 ~net-misc/freerdp-1.1.0_beta1_p20130710 amd64 x86
 ~net-misc/remmina-1.0.0_p20130723 amd64 x86
