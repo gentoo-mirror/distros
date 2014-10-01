@@ -1,6 +1,9 @@
 # net-fs/samba [client]
 net-fs/cifs-utils -acl
 
+# required by media-gfx/nomacs [raw]
+media-libs/opencv qt4
+
 
 # Removed unnecessary dependence
 net-fs/samba -winbind
