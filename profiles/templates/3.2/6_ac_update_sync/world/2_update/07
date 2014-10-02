@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(update.world)<7
+# Calculate format=world name=world ini(update-distros.world)<7
 
-#-ini(update.world,7)-#
+#-ini(update-distros.world,7)-#
 
 !media-gfx/splash-themes-calculate
 !media-gfx/splashutils

@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(update.world)<10
+# Calculate format=world name=world ini(update-distros.world)<10
 
-#-ini(update.world,10)-#
+#-ini(update-distros.world,10)-#
 
 #?in(os_linux_pkglist, base)!=#
 !app-i18n/man-pages-de

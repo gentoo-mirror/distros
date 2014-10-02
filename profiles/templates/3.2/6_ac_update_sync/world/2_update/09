@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(update.world)<9
+# Calculate format=world name=world ini(update-distros.world)<9
 
-#-ini(update.world,9)-#
+#-ini(update-distros.world,9)-#
 
 #?in(os_linux_pkglist, CLD, CLDX)!=#
 !sys-auth/thinkfinger
