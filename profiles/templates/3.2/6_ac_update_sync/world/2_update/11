@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(update.world)<11
+
+#-ini(update.world,11)-#
+
+#?in(os_linux_pkglist, CLDX)!=#
+!media-gfx/eog
+media-gfx/nomacs
+#in#
