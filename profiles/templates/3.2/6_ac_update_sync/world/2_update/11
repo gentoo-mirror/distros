@@ -4,5 +4,6 @@
 
 #?in(os_linux_pkglist, CLDX)!=#
 !media-gfx/eog
+!net-news/liferea
 media-gfx/nomacs
 #in#

@@ -27,7 +27,6 @@ net-p2p/ktorrent
 
 #?in(os_linux_pkglist, CLDX)!=#
 net-ftp/filezilla
-net-news/liferea
 mail-client/claws-mail
 net-fs/smbnetfs
 net-im/pidgin
