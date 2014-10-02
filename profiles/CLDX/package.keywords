@@ -1,4 +1,5 @@
 ~app-arch/xarchiver-0.5.3 amd64 x86
+~app-text/qpdfview-0.4.11.1 amd64 x86
 ~dev-libs/libindicate-12.10.1 amd64 x86
 ~dev-libs/libdbusmenu-12.10.2 amd64 x86
 ~dev-util/xfce4-dev-tools-4.11.0 amd64 x86
