@@ -5,5 +5,7 @@
 #?in(os_linux_pkglist, CLDX)!=#
 !media-gfx/eog
 !net-news/liferea
+!app-text/evince
 media-gfx/nomacs
+app-text/qpdfview
 #in#
