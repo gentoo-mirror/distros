@@ -12,7 +12,5 @@ sci-libs/clapack
 
 #?in(os_linux_pkglist, CLDX)!=#
 media-gfx/nomacs
-media-gfx/gtkam
-media-gfx/shotwell
 #in#
 
