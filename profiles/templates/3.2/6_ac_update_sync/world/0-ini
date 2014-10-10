@@ -1,4 +1,4 @@
-# Calculate path=/etc/calculate name=ini.env format=samba cl_update_world!=update||ini(update-distros.world)==
+# Calculate path=/etc/calculate name=ini.env format=samba cl_update_world!=update||ini(overlay-distros.world)==
 
-[update-distros]
+[overlay-distros]
 world = 12

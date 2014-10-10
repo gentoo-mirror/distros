@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(update-distros.world)<5
+# Calculate format=world name=world ini(overlay-distros.world)<5
 
-#-ini(update-distros.world,5)-#
+#-ini(overlay-distros.world,5)-#
 
 # Не поддерживаются, начиная с claws-mail 3.10
 #?in(os_linux_pkglist, CLDX)!=#

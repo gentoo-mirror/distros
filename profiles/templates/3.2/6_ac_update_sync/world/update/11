@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(update-distros.world)<11
+# Calculate format=world name=world ini(overlay-distros.world)<11
 
-#-ini(update-distros.world,11)-#
+#-ini(overlay-distros.world,11)-#
 
 #?in(os_linux_pkglist, CLDX)!=#
 !media-gfx/eog

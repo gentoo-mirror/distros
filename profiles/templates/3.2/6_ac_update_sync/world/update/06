@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(update-distros.world)<6
+# Calculate format=world name=world ini(overlay-distros.world)<6
 
-#-ini(update-distros.world,6)-#
+#-ini(overlay-distros.world,6)-#
 
 # отсутствует в KDE 4.14
 #?in(os_linux_pkglist, CLD)!=#

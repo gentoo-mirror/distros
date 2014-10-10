@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(update-distros.world)<12
+# Calculate format=world name=world ini(overlay-distros.world)<12
 
-#-ini(update-distros.world,12)-#
+#-ini(overlay-distros.world,12)-#
 
 #?in(os_linux_pkglist, CLDX)!=#
 !media-gfx/shotwell
