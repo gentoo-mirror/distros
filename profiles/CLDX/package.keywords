@@ -9,6 +9,7 @@
 ~media-sound/clementine-1.2.3 amd64 x86
 ~media-video/smplayer-14.9.0 amd64 x86
 ~net-fs/smbnetfs-0.5.3b amd64 x86
+~net-im/pidgin-2.10.10 amd64 x86
 ~net-misc/freerdp-1.1.0_beta1_p20130710 amd64 x86
 ~net-misc/remmina-1.0.0_p20130723 amd64 x86
 ~net-wireless/blueman-1.23_p20140717 amd64 x86
