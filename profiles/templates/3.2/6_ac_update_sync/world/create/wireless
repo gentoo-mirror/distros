@@ -7,10 +7,6 @@ net-wireless/wireless-tools
 net-wireless/wpa_supplicant
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX)!=#
-net-wireless/madwimax
-#in#
-
 #?in(os_linux_pkglist, CLDX)!=#
 net-wireless/blueman
 #in#
