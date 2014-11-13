@@ -2,6 +2,7 @@
 
 #?in(os_linux_pkglist, CLD, CLDX, CMC, CDS, CSS, CLS)!=#
 app-misc/tmux
+dev-util/ccache
 sys-auth/pam_update
 #in#
 
