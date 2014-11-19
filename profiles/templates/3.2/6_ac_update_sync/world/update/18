@@ -1,0 +1,76 @@
+# Calculate format=world name=world ini(overlay-distros.world)<15
+
+#-ini(overlay-distros.world,15)-#
+
+#?pkg(sys-kernel/calculate-sources-dev)!=#
+!sys-kernel/calculate-sources-dev
+sys-kernel/calculate-sources
+#pkg#
+
+#?in(os_linux_pkglist, base)!=#
+!app-i18n/man-pages-de
+!app-i18n/man-pages-fr
+!app-i18n/man-pages-it
+!app-i18n/man-pages-pl
+!app-i18n/man-pages-ro
+!app-i18n/man-pages-ru
+!media-gfx/splash-themes-calculate
+!media-gfx/splashutils
+sys-auth/pam_update
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX, CMC, CDS, CSS, CLS)!=#
+dev-util/ccache
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX, CMC)!=#
+!sys-power/acpid
+!sys-power/cpufrequtils
+sys-power/cpupower
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX)!=#
+!app-dicts/aspell-bg
+!app-dicts/aspell-de
+!app-dicts/aspell-en
+!app-dicts/aspell-es
+!app-dicts/aspell-fr
+!app-dicts/aspell-it
+!app-dicts/aspell-pl
+!app-dicts/aspell-pt-br
+!app-dicts/aspell-ro
+!app-dicts/aspell-ru
+!app-dicts/aspell-uk
+!app-dicts/myspell-bg
+!app-dicts/myspell-de
+!app-dicts/myspell-en
+!app-dicts/myspell-es
+!app-dicts/myspell-fr
+!app-dicts/myspell-it
+!app-dicts/myspell-pl
+!app-dicts/myspell-pt
+!app-dicts/myspell-pt-br
+!app-dicts/myspell-ro
+!app-dicts/myspell-ru
+!app-dicts/myspell-uk
+!net-wireless/madwimax
+!sys-auth/thinkfinger
+dev-qt/qtdbus
+sys-apps/keyexec
+#in#
+
+#?in(os_linux_pkglist, CLDX)!=#
+!app-text/evince
+!media-gfx/eog
+!media-gfx/gtkam
+!media-gfx/shotwell
+!net-news/liferea
+app-text/qpdfview
+media-gfx/lightdm-themes-calculate
+media-gfx/nomacs
+#in#
+
+#?in(os_linux_pkglist, CLS)!=#
+!media-gfx/calculate-wallpapers
+media-video/ffmpeg
+#in#

@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<15
-
-#-ini(overlay-distros.world,15)-#
-
-#?in(os_linux_pkglist, CLD, CLDX)!=#
-!net-wireless/madwimax
-#in#

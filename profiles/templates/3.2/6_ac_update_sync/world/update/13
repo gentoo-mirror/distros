@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<13
-
-#-ini(overlay-distros.world,13)-#
-
-#?in(os_linux_pkglist, CLS)!=#
-!media-gfx/calculate-wallpapers
-#in#
