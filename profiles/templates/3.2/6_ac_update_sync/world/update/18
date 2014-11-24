@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<15
+# Calculate format=world name=world ini(overlay-distros.world)<18
 
-#-ini(overlay-distros.world,15)-#
+#-ini(overlay-distros.world,18)-#
 
 #?pkg(sys-kernel/calculate-sources-dev)!=#
 !sys-kernel/calculate-sources-dev
