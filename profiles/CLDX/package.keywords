@@ -5,7 +5,7 @@
 ~app-text/qpdfview-0.4.12 amd64 x86
 ~dev-util/xfce4-dev-tools-4.11.0 amd64 x86
 ~mail-client/claws-mail-3.10.1 amd64 x86
-~media-gfx/nomacs-1.6.2 amd64 x86
+~media-gfx/nomacs-2.2.0 amd64 x86
 ~media-sound/clementine-1.2.3 amd64 x86
 ~media-video/smplayer-14.9.0 amd64 x86
 ~net-fs/smbnetfs-0.5.3b amd64 x86
