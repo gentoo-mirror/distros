@@ -75,11 +75,6 @@ x11-libs/gksu
 virtual/rubygems
 #in#
 
-#?in(os_linux_pkglist, CLDX)!=#
-# write to world for keep package on during depclean (ruby is used for DEPEND)
-dev-lang/vala
-#in#
-
 #?in(os_linux_pkglist, CLD, CMC)!=#
 sys-power/upower-pm-utils
 #in#
@@ -88,18 +83,21 @@ sys-power/upower-pm-utils
 net-misc/dhcp
 #in#
 
-#?in(os_linux_pkglist, CMC)!=#
-app-misc/lirc
-sys-apps/lm_sensors
-#in#
-
 #?in(os_linux_pkglist, CLDX)!=#
+app-admin/hardinfo
 dev-python/gst-python
+# write to world for keep package on during depclean (ruby is used for DEPEND)
+dev-lang/vala
 dev-util/catfish
 sys-apps/mlocate
 x11-misc/sw-notify-send
 #для корректной поддержки мультимедиа клавиатур
 x11-misc/wmctrl
+#in#
+
+#?in(os_linux_pkglist, CMC)!=#
+app-misc/lirc
+sys-apps/lm_sensors
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
