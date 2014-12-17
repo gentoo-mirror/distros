@@ -81,3 +81,5 @@ kde-misc/plasma-nm modemmanager
 # Enable support for mobile broadband devices
 net-libs/libnm-qt modemmanager
 
+#Add support for RAW format in GIMP
+media-gfx/ufraw gimp

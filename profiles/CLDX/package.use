@@ -53,3 +53,5 @@ media-libs/harfbuzz icu
 net-libs/webkit-gtk -geoloc -gstreamer -introspection
 x11-misc/lightdm -introspection
 
+#Add support for RAW format in GIMP
+media-gfx/ufraw gimp
