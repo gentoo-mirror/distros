@@ -23,3 +23,6 @@ www-apps/redmine -mysql git mongrel openid postgres imagemagick
 
 #fix compile
 net-dns/bind static-libs
+
+# include console modules
+sys-apps/calculate-utils console

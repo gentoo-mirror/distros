@@ -58,3 +58,6 @@ media-gfx/ufraw gimp
 
 # Install the sendto-plugin for xfce-base/thunar
 net-wireless/blueman thunar
+
+# include client, desktop, console and console-gui modules
+sys-apps/calculate-utils client desktop console qt4
