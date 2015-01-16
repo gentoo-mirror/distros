@@ -25,4 +25,4 @@ www-apps/redmine -mysql git mongrel openid postgres imagemagick
 net-dns/bind static-libs
 
 # include console modules
-sys-apps/calculate-utils console
+sys-apps/calculate-utils console pxe
