@@ -8,5 +8,6 @@ sys-apps/less
 sys-fs/btrfs-progs
 sys-fs/nilfs-utils
 sys-fs/reiserfsprogs
+sys-kernel/dracut
 #in#
 

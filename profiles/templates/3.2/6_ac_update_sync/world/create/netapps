@@ -14,7 +14,7 @@ net-misc/whois
 #?in(os_linux_pkglist, CLD, CLDX)!=#
 net-im/skype
 www-client/chromium
-www-apps/chromium-adblock
+www-apps/chromium-ublock
 www-plugins/chrome-binary-plugins
 x11-misc/x11vnc
 #in#
