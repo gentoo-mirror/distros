@@ -9,6 +9,7 @@ media-libs/sdl-mixer mod
 
 # [gudev] required by virtual/libgudev
 sys-fs/udev gudev
+sys-fs/eudev gudev
 
 
 # Removed unnecessary dependence
