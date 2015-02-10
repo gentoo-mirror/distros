@@ -2,7 +2,7 @@
 ~app-arch/rar-5.1.0 amd64 x86
 
 ~app-arch/xarchiver-0.5.3 amd64 x86
-~app-text/qpdfview-0.4.13 amd64 x86
+~app-text/qpdfview-0.4.12 amd64 x86
 ~dev-util/xfce4-dev-tools-4.11.0 amd64 x86
 ~mail-client/claws-mail-3.11.1 amd64 x86
 ~media-gfx/nomacs-2.2.0 amd64 x86
