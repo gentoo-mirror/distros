@@ -1,3 +1,9 @@
+~x11-libs/gtk+-3.14.8 amd64 x86
+~x11-themes/adwaita-icon-theme-3.14.1 amd64 x86
+~dev-libs/glib-2.42.1 amd64 x86
+~dev-util/gdbus-codegen-2.42.1 amd64 x86
+~x11-themes/gnome-themes-standard-3.14.2.3 amd64 x86
+
 # to fix packaging xarchiver
 ~app-arch/rar-5.1.0 amd64 x86
 
