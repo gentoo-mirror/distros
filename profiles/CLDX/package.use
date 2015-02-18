@@ -7,6 +7,9 @@ media-libs/opencv qt4
 # required by app-text/qpdfview [pdf,qt4]
 app-text/poppler qt4
 
+# required by virtual/libgudev-215-r1
+sys-fs/eudev gudev
+
 
 # Removed unnecessary dependence
 net-fs/samba -winbind
