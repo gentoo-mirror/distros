@@ -32,6 +32,15 @@ media-libs/harfbuzz icu
 # [gudev] required by media-gfx/gimp
 sys-fs/eudev gudev
 
+# [introspection] required by app-admin/system-config-printer-gnome-1.4.3
+x11-libs/gtk+ introspection
+
+# [introspection] required by x11-libs/gtk+-3.12.2
+x11-libs/gdk-pixbuf introspection
+sys-auth/polkit introspection
+x11-libs/pango introspection
+dev-libs/atk introspection
+
 
 # Removed unnecessary dependence
 app-arch/p7zip -kde

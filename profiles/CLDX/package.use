@@ -11,7 +11,7 @@ app-text/poppler qt4
 sys-fs/eudev gudev
 
 # required by dev-util/catfish-1.2.2
-x11-libs/gtk+:3 introspection
+x11-libs/gtk+ introspection
 
 # required by x11-libs/gtk+-3.14.8
 x11-libs/gdk-pixbuf introspection
