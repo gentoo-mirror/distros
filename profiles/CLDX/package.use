@@ -48,9 +48,9 @@ net-libs/rb_libtorrent python
 dev-libs/boost python
 
 
-# disable introspection for install webkit-gtk, lightdm without update gobject-intraspction
+# lightdm without update gobject-intraspction
 media-libs/harfbuzz icu
-net-libs/webkit-gtk -geoloc -gstreamer -introspection
+net-libs/webkit-gtk -geoloc
 x11-misc/lightdm -introspection
 
 # Add support for RAW format in GIMP
