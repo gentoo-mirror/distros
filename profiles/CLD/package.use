@@ -30,7 +30,6 @@ dev-qt/qtsql mysql
 media-libs/harfbuzz icu
 
 # [gudev] required by media-gfx/gimp
-sys-fs/udev gudev
 sys-fs/eudev gudev
 
 

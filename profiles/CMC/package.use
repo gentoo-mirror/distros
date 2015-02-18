@@ -7,10 +7,6 @@ net-libs/libmicrohttpd messages
 # [mod] required by media-tv/xbmc
 media-libs/sdl-mixer mod
 
-# [gudev] required by virtual/libgudev
-sys-fs/udev gudev
-sys-fs/eudev gudev
-
 
 # Removed unnecessary dependence
 dev-vcs/git -tk -perl
