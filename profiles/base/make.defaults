@@ -1,3 +1,5 @@
+USE="-introspection"
+
 ACCEPT_LICENSE="*"
 FEATURES="getbinpkg"
 
