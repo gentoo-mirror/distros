@@ -69,8 +69,8 @@ kde-base/ksysguard lm_sensors
 # Build a plugin for the GIMP
 net-print/gutenprint gimp
 
-# remove gstreamer,introspection and geolocation dep
-net-libs/webkit-gtk -gstreamer -introspection -geoloc
+# remove geolocation dep
+net-libs/webkit-gtk -geoloc
 
 # Build plugin for vkontakte.ru
 media-plugins/kipi-plugins vkontakte
