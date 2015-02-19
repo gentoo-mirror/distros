@@ -1,4 +1,4 @@
-USE="-introspection"
+USE="-introspection threads"
 
 ACCEPT_LICENSE="*"
 FEATURES="getbinpkg"
