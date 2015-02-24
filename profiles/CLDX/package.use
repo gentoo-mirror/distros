@@ -28,6 +28,9 @@ media-gfx/ufraw -gtk
 mail-client/claws-mail -libindicate
 
 
+# fix work
+x11-libs/libnotify introspection
+
 # Add support for PDF, RSS, SMIME, HTML, Xface
 mail-client/claws-mail pdf rss smime webkit xface
 
