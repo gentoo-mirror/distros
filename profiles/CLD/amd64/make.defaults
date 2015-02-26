@@ -1,4 +1,4 @@
 PKGDIR="/var/calculate/remote/packages/CLD/x86_64"
 
-PORTAGE_BINHOST="http://5.255.226.146/calculate/CLD/grp/x86_64"
-#PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/CLD/grp/x86_64"
+#PORTAGE_BINHOST="http://5.255.226.146/calculate/CLD/grp/x86_64"
+PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/CLD/grp/x86_64"
