@@ -3,6 +3,7 @@
 #?in(os_linux_pkglist, base)!=#
 app-editors/nano
 media-fonts/terminus-font
+sys-apps/calculate-toolkit
 sys-apps/ifplugd
 sys-apps/less
 sys-fs/btrfs-progs
