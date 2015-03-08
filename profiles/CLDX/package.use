@@ -1,3 +1,6 @@
+# raw? ( opencv ) tiff? ( opencv )
+media-gfx/nomacs opencv
+
 # net-fs/samba [client]
 net-fs/cifs-utils -acl
 
