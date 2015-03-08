@@ -36,6 +36,7 @@
 ~xfce-base/xfce4-panel-4.12.0 amd64 x86
 ~xfce-base/xfce4-session-4.12.0 amd64 x86
 ~xfce-base/xfce4-settings-4.12.0 amd64 x86
+~xfce-base/xfconf-4.12.0 amd64 x86
 ~xfce-base/xfdesktop-4.12.0 amd64 x86
 ~xfce-base/xfwm4-4.12.0 amd64 x86
 ~xfce-extra/thunar-volman-0.8.1 amd64 x86
