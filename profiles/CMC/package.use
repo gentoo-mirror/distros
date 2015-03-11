@@ -12,4 +12,4 @@ net-misc/dhcp minimal
 sys-fs/lvm2 -thin
 
 # include desktop, console modules
-sys-apps/calculate-utils desktop client
+sys-apps/calculate-utils desktop
