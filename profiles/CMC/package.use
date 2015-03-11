@@ -1,11 +1,4 @@
-media-tv/xbmc airplay bluray webserver -projectm
 net-p2p/rtorrent daemon xmlrpc
-
-# [messages] required by media-tv/xbmc [webserver]
-net-libs/libmicrohttpd messages
-
-# [mod] required by media-tv/xbmc
-media-libs/sdl-mixer mod
 
 # required by virtual/libgudev-215-r1
 sys-fs/eudev gudev
@@ -17,7 +10,6 @@ net-dialup/rp-pppoe -X
 net-fs/samba -winbind
 net-misc/dhcp minimal
 sys-fs/lvm2 -thin
-x11-drivers/nvidia-drivers -tools
 
 # include desktop, console modules
-sys-apps/calculate-utils desktop console
+sys-apps/calculate-utils desktop client
