@@ -5,7 +5,6 @@ sys-fs/eudev gudev
 
 
 # Removed unnecessary dependence
-dev-libs/glib -dbus
 dev-vcs/git -tk -perl
 net-dialup/rp-pppoe -X
 net-fs/samba -winbind
