@@ -5,8 +5,8 @@ sys-fs/eudev gudev
 
 
 # Removed unnecessary dependence
+dev-libs/glib -dbus
 dev-vcs/git -tk -perl
-gnome-base/dconf -X
 net-dialup/rp-pppoe -X
 net-fs/samba -winbind
 net-misc/dhcp minimal
