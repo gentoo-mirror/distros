@@ -77,3 +77,6 @@ net-wireless/blueman thunar
 
 # include client, desktop, console and console-gui modules
 sys-apps/calculate-utils client desktop console qt4
+
+# fix crash
+=media-sound/clementine-1.2.3 -udisks
