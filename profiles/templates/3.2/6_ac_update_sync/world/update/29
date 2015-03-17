@@ -1,4 +1,4 @@
-# Calculate format=world name=world ini(overlay-distros.world)<29
+# Calculate format=world name=world ini(overlay-distros.world)<29&&pkg(www-client/chromium)!=
 
 #-ini(overlay-distros.world,29)-#
 
