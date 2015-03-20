@@ -1,14 +1,8 @@
-~x11-libs/gtk+-3.14.9 amd64 x86
-~x11-themes/adwaita-icon-theme-3.14.1 amd64 x86
-~dev-libs/glib-2.42.1 amd64 x86
-~dev-util/gdbus-codegen-2.42.1 amd64 x86
-~x11-themes/gnome-themes-standard-3.14.2.3 amd64 x86
-
 # to fix packaging xarchiver
 ~app-arch/rar-5.1.0 amd64 x86
 
 ~app-arch/xarchiver-0.5.3 amd64 x86
-~app-text/qpdfview-0.4.12 amd64 x86
+~app-text/qpdfview-0.4.14 amd64 x86
 ~dev-util/xfce4-dev-tools-4.12.0 amd64 x86
 ~mail-client/claws-mail-3.11.1 amd64 x86
 ~media-gfx/nomacs-2.4.2 amd64 x86
@@ -16,13 +10,13 @@
 ~media-video/smplayer-14.9.0 amd64 x86
 ~net-fs/smbnetfs-0.6.0 amd64 x86
 ~net-im/pidgin-2.10.11 amd64 x86
-~net-misc/freerdp-1.1.0_beta1_pre20141115 amd64 x86
+~net-misc/freerdp-1.2.0_beta1_pre20141115 amd64 x86
 ~net-misc/remmina-1.1.1 amd64 x86
 ~net-wireless/blueman-1.98_p20150105 amd64 x86
 ~x11-libs/libtinynotify-0.2.1 amd64 x86
 ~x11-libs/libtinynotify-cli-1.2.1 amd64 x86
 ~x11-libs/libtinynotify-systemwide-0.1 amd64 x86
-~x11-misc/lightdm-1.10.4 amd64 x86
+~x11-misc/lightdm-1.10.5 amd64 x86
 ~x11-misc/lightdm-gtk-greeter-1.9.0 amd64 x86
 ~x11-misc/sw-notify-send-1.2.1 amd64 x86
 ~x11-terms/xfce4-terminal-0.6.3 amd64 x86
@@ -42,6 +36,7 @@
 ~xfce-base/xfwm4-4.12.2 amd64 x86
 ~xfce-extra/thunar-volman-0.8.1 amd64 x86
 ~xfce-extra/xfce4-clipman-plugin-1.2.6 amd64 x86
+~xfce-extra/xfce4-netload-plugin-1.2.2 amd64 x86
 ~xfce-extra/xfce4-gvfs-mount-0.0.4 amd64 x86
 ~xfce-extra/xfce4-xkb-plugin-0.7.0 amd64 x86
 
