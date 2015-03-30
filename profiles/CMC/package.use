@@ -6,6 +6,7 @@ sys-fs/eudev gudev
 
 # Removed unnecessary dependence
 dev-vcs/git -tk -perl
+media-libs/libprojectm -video_cards_nvidia
 net-dialup/rp-pppoe -X
 net-fs/samba -winbind
 net-misc/dhcp minimal

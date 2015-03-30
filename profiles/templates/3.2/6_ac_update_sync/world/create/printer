@@ -2,7 +2,7 @@
 
 #?in(os_linux_pkglist, CLD, CLDX)!=#
 media-gfx/xsane
-net-print/cndrvcups-capt
+net-print/cndrvcups-lb
 net-print/cnijfilter
 net-print/cups
 net-print/gutenprint
