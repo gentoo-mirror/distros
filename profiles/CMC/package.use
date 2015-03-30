@@ -11,6 +11,7 @@ net-dialup/rp-pppoe -X
 net-fs/samba -winbind
 net-misc/dhcp minimal
 sys-fs/lvm2 -thin
+x11-drivers/ati-drivers -abi_x86_32
 
 # include desktop, console modules
 sys-apps/calculate-utils desktop
