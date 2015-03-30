@@ -9,6 +9,9 @@ USE="${USE} -tk"
 # Printing
 USE="${USE} -cups"
 
+# System
+USE="${USE} -multilib"
+
 # Window manager and speciality
 USE="${USE} -gtk"
 
