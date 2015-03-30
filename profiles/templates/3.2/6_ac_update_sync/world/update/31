@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<31
-
-#-ini(overlay-distros.world,31)-#
-
-#?in(os_linux_pkglist, CLD, CLDX)!=#
-!net-print/cndrvcups-capt
-net-print/cndrvcups-lb
-#in#
