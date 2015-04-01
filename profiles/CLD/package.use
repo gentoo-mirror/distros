@@ -1,3 +1,6 @@
+# required by (app-admin/system-config-printer-gnome-1.4.3-r1
+x11-libs/libnotify introspection
+
 # required by kde-base/kopete-4.14.3-r1[ssl]
 app-crypt/qca openssl
 
