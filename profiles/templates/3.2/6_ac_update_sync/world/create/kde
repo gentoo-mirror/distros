@@ -26,7 +26,6 @@ kde-base/keditbookmarks
 kde-base/kephal
 kde-base/kfind
 kde-base/kfmclient
-kde-base/konqueror
 kde-base/konsole
 kde-base/kscreensaver
 kde-base/kstartupconfig
@@ -62,6 +61,7 @@ kde-base/systemsettings
 kde-base/kdm
 #kde-base-artwork
 #kde-base/konq-plugins
+#kde-base/konqueror
 #kde-base/nsplugins
 #krunner
 #solid-actions-kcm

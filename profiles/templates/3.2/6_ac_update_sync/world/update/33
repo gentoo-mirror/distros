@@ -5,6 +5,7 @@
 #?in(os_linux_pkglist, CLD)!=#
 !kde-base/kcolorchooser
 !kde-base/kolourpaint
+!kde-base/konqueror
 !kde-base/kruler
 !kde-base/ksystemlog
 !media-video/kdenlive
