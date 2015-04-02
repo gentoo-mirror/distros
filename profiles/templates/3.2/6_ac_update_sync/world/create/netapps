@@ -20,7 +20,6 @@ x11-misc/x11vnc
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
-net-im/choqok
 net-irc/konversation
 net-p2p/ktorrent
 #in#

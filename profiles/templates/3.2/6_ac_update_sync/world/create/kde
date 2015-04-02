@@ -3,8 +3,8 @@
 # kdeadmin-meta
 
 kde-base/kcron
-kde-base/ksystemlog
 kde-base/kuser
+#kde-base/ksystemlog
 
 # kdeartwork-meta
 kde-base/kdeartwork-colorschemes
@@ -69,11 +69,8 @@ kde-base/kdm
 # kdegraphics-meta
 kde-base/gwenview
 kde-base/kamera
-kde-base/kcolorchooser
 kde-base/kdegraphics-mobipocket
 kde-base/kgamma
-kde-base/kolourpaint
-kde-base/kruler
 kde-base/ksnapshot
 kde-base/libkdcraw
 kde-base/libkexiv2
@@ -83,6 +80,9 @@ kde-base/svgpart
 kde-base/thumbnailers
 kde-base/ksaneplugin
 kde-base/libksane
+#kde-base/kcolorchooser
+#kde-base/kolourpaint
+#kde-base/kruler
 
 # kdemultimedia-meta
 kde-base/audiocd-kio
