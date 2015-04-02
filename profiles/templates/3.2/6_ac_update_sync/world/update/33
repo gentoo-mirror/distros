@@ -3,11 +3,14 @@
 #-ini(overlay-distros.world,33)-#
 
 #?in(os_linux_pkglist, CLD)!=#
+!kde-base/kate
 !kde-base/kcolorchooser
 !kde-base/kolourpaint
 !kde-base/konqueror
+!kde-base/kleopatra
 !kde-base/kruler
 !kde-base/ksystemlog
+!kde-base/sweeper
 !media-video/kdenlive
 !net-im/choqok
 #in#

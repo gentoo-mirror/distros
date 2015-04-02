@@ -116,11 +116,11 @@ kde-base/kdf
 kde-base/kgpg
 kde-base/kremotecontrol
 kde-base/kwalletmanager
-kde-base/sweeper
 kde-base/print-manager
 #kde-base/ktimer
 #kde-base/superkaramba
 #kde-base/kfloppy
+#kde-base/sweeper
 
 # kdepim-meta
 kde-base/akonadiconsole
@@ -133,13 +133,13 @@ kde-base/kdepim-icons
 kde-base/kdepim-kresources
 kde-base/kdepim-runtime
 kde-base/kjots
-kde-base/kleopatra
 kde-base/kmail
 kde-base/knotes
 kde-base/konsolekalendar
 kde-base/kontact
 kde-base/korganizer
 #kde-base/blogilo
+#kde-base/kleopatra
 #kde-base/knode
 #kde-base/ktimetracker
 
@@ -148,8 +148,8 @@ kde-base/kde-l10n
 kde-base/kdepim-l10n
 
 # kdemisc
-kde-base/kate
 kde-misc/synaptiks
+#kde-base/kate
 #kde-misc/konq-plugins
 #kde-misc/kgtk
 
