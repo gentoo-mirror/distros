@@ -124,7 +124,6 @@ kde-base/print-manager
 
 # kdepim-meta
 kde-base/akonadiconsole
-kde-base/akregator
 kde-base/calendarjanitor
 kde-base/kabcclient
 kde-base/kaddressbook
@@ -138,6 +137,7 @@ kde-base/knotes
 kde-base/konsolekalendar
 kde-base/kontact
 kde-base/korganizer
+#kde-base/akregator
 #kde-base/blogilo
 #kde-base/kleopatra
 #kde-base/knode
