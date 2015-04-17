@@ -1,0 +1,4 @@
+# Calculate format=samba path=/etc/calculate name=ini.env merge=app-office/libreoffice ini(overlay-calculate.remerge)<1
+
+[overlay-calculate]
+remerge = 1

@@ -1,4 +1,4 @@
 # Calculate format=kde path=/usr/lib/libreoffice/share/xdg
 
 [Desktop Entry]
-Icon=libreoffice-base.svg
+Icon=/usr/share/icons/gnome/256x256/apps/libreoffice-base.png
