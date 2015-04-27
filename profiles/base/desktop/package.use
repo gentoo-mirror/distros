@@ -1,9 +1,11 @@
 # Calculate themes dependence
 sys-kernel/calculate-sources themes plymouth
 
+# required by sys-boot/plymouth [libkms]
+x11-libs/libdrm libkms
+
 # required by www-client/firefox [apng]
 media-libs/libpng apng
-
 
 # required by x11-libs/glamor [gdm]
 media-libs/mesa gbm
