@@ -5,7 +5,6 @@ app-misc/tmux
 dev-util/ccache
 sys-auth/pam_update
 sys-fs/btrfs-progs
-sys-fs/nilfs-utils
 sys-fs/reiserfsprogs
 #in#
 
