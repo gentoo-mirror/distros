@@ -4,6 +4,9 @@
 app-misc/tmux
 dev-util/ccache
 sys-auth/pam_update
+sys-fs/btrfs-progs
+sys-fs/nilfs-utils
+sys-fs/reiserfsprogs
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDX, CMC, CDS, CLS)!=#
@@ -30,7 +33,6 @@ sys-apps/pv
 sys-apps/smartmontools
 sys-fs/dmraid
 sys-fs/dosfstools
-sys-fs/e2fsprogs
 sys-fs/mdadm
 sys-fs/mtools
 sys-fs/ntfs3g

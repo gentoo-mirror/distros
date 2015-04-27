@@ -6,9 +6,6 @@ media-fonts/terminus-font
 sys-apps/calculate-toolkit
 sys-apps/ifplugd
 sys-apps/less
-sys-fs/btrfs-progs
-sys-fs/nilfs-utils
-sys-fs/reiserfsprogs
 sys-kernel/dracut
 #in#
 

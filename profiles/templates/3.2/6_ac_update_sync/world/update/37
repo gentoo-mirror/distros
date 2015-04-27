@@ -2,6 +2,10 @@
 
 #-ini(overlay-distros.world,36)-#
 
+#?in(os_linux_pkglist, base)!=#
+!sys-fs/nilfs-utils
+#in#
+
 #?in(os_linux_pkglist, CLD, CLDX, CMC, CDS)!=#
 !sys-fs/jfsutils
 #in#
