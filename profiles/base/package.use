@@ -1,2 +1,12 @@
-# threads? ( caps )
-net-dns/bind caps
+# Removed unnecessary dependence
+sys-apps/man-db -nls
+
+# Install linux kernel firmware
+sys-kernel/calculate-sources firmware
+
+# Add NTFS and Reiserfs support
+app-admin/testdisk ntfs reiserfs
+
+# Include internal version of ntfsprogs.
+sys-fs/ntfs3g ntfsprogs
+

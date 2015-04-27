@@ -26,3 +26,6 @@ net-dns/bind static-libs
 
 # include console modules
 sys-apps/calculate-utils console pxe
+
+# threads? ( caps )
+net-dns/bind caps
