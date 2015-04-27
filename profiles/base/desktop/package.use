@@ -25,6 +25,7 @@ dev-libs/elfutils static-libs
 
 
 # Removed unnecessary dependence
+app-accessibility/speech-dispatcher -espeak
 app-misc/mc -spell
 dev-vcs/git -gtk
 gnome-extra/nm-applet -bluetooth
