@@ -1,9 +1,7 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLD, CLDX)!=#
-media-gfx/scrot
 media-sound/alsa-utils
-media-sound/sox
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#

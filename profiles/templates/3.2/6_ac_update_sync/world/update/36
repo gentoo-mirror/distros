@@ -1,0 +1,13 @@
+# Calculate format=world name=world ini(overlay-distros.world)<36
+
+#-ini(overlay-distros.world,36)-#
+
+#?in(os_linux_pkglist, CLD, CLDX, CMC, CDS)!=#
+!sys-fs/jfsutils
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX)!=#
+!dev-python/ipython
+!media-gfx/scrot
+!media-sound/sox
+#in#
