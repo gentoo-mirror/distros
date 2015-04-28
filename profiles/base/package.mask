@@ -1,3 +1,0 @@
-# compile error
-~net-wireless/wpa_supplicant-2.4
-
