@@ -1,3 +1,6 @@
+# support for some plasmoids
+kde-base/plasma-workspace python
+
 # required by (app-admin/system-config-printer-gnome-1.4.3-r1
 x11-libs/libnotify introspection
 
