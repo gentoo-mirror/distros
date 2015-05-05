@@ -1,6 +1,9 @@
 # Calculate themes dependence
 sys-kernel/calculate-sources themes plymouth
 
+# use qt4
+media-video/smplayer qt4 autoshutdown
+
 # build with native HSP backend and oFono HFP backend for bluez 5
 media-sound/pulseaudio native-headset ofono-headset
 
