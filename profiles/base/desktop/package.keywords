@@ -24,6 +24,7 @@
 ~media-gfx/gimp-2.8.14 amd64 x86
 ~media-libs/x265-1.5 amd64 x86
 ~media-video/mplayer-1.2_pre20150214 amd64 x86
+=media-video/smtube-15.1.0 amd64 x86
 ~net-im/skype-4.3.0.37 amd64 x86
 ~net-print/foomatic-db-4.0.20141025 amd64 x86
 ~net-print/foomatic-db-engine-4.0.12 amd64 x86
