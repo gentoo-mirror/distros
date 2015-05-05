@@ -2,6 +2,8 @@
 
 #?in(os_linux_pkglist, CLD, CLDX)!=#
 media-sound/alsa-utils
+media-video/smplayer
+media-video/smtube
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
@@ -12,13 +14,11 @@ media-video/dvdauthor
 media-video/dvgrab
 media-video/kffmpegthumbnailer
 media-video/recordmydesktop
-media-video/smplayer
 #in#
 
 #?in(os_linux_pkglist, CLDX)!=#
 app-cdr/xfburn
 media-sound/clementine
-media-video/smplayer
 #in#
 
 #?in(os_linux_pkglist, CLS)!=#
