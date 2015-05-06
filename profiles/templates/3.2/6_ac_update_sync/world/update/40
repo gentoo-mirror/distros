@@ -1,0 +1,21 @@
+# Calculate format=world name=world ini(overlay-distros.world)<40
+
+#-ini(overlay-distros.world,40)-#
+
+#?in(os_linux_pkglist, CLD, CLDX)!=#
+!app-arch/arj
+!app-arch/p7zip
+!app-arch/unace
+!app-arch/unarj
+!app-arch/zip
+#in#
+
+#?in(os_linux_pkglist, CLDX)!=#
+!xfce-extra/xfce4-battery-plugin
+!xfce-extra/xfce4-cpugraph-plugin
+!xfce-extra/xfce4-fsguard-plugin
+!xfce-extra/xfce4-gvfs-mount
+!xfce-extra/xfce4-mailwatch-plugin
+!xfce-extra/xfce4-netload-plugin
+!xfce-extra/xfce4-notes-plugin
+#in#
