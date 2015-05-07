@@ -58,7 +58,6 @@ sys-power/powertop
 app-arch/rar
 app-arch/unzip
 app-misc/mc
-dev-tcltk/expect
 sys-apps/acl
 sys-apps/keyexec
 sys-apps/preload
