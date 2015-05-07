@@ -13,12 +13,13 @@ media-plugins/kipi-plugins
 media-video/dvdauthor
 media-video/dvgrab
 media-video/kffmpegthumbnailer
-media-video/recordmydesktop
+media-video/qt-recordmydesktop
 #in#
 
 #?in(os_linux_pkglist, CLDX)!=#
 app-cdr/xfburn
 media-sound/clementine
+media-video/gtk-recordmydesktop
 #in#
 
 #?in(os_linux_pkglist, CLS)!=#
