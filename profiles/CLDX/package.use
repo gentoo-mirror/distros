@@ -80,3 +80,6 @@ sys-apps/calculate-utils client desktop console qt4
 
 # fix crash
 =media-sound/clementine-1.2.3 -udisks
+
+# fix compile
+=net-misc/remmina-1.2.0_rc3 vte
