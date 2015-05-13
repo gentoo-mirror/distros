@@ -7,11 +7,11 @@ kde-base/kuser
 
 # kdeartwork-meta
 kde-base/kdeartwork-kscreensaver
+kde-base/kdeartwork-desktopthemes
 #kde-base/kdeartwork-colorschemes
 #kde-base/kdeartwork-styles
 #kde-base/kdeartwork-iconthemes
 #kde-base/kdeartwork-emoticons
-#kde-base/kdeartwork-desktopthemes
 #kde-base/kdeartwork-wallpapers
 #kde-base/kdeartwork-weatherwallpapers
 
