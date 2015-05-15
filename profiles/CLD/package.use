@@ -54,6 +54,7 @@ dev-libs/atk introspection
 # Removed unnecessary dependence
 app-arch/p7zip -kde
 dev-util/cmake -qt4
+kde-base/kdebase-runtime-meta minimal -crash-reporter
 media-gfx/gimp -webkit
 net-fs/samba -winbind
 net-misc/networkmanager-openconnect -gtk

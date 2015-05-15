@@ -1,26 +1,23 @@
 # Calculate name=world format=world in(os_linux_pkglist,CLD)!=
 
 # kdeadmin-meta
-
 kde-base/kcron
 kde-base/kuser
 #kde-base/ksystemlog
 
 # kdeartwork-meta
-kde-base/kdeartwork-colorschemes
-kde-base/kdeartwork-desktopthemes
-kde-base/kdeartwork-emoticons
-kde-base/kdeartwork-iconthemes
 kde-base/kdeartwork-kscreensaver
-kde-base/kdeartwork-styles
+kde-base/kdeartwork-desktopthemes
+#kde-base/kdeartwork-colorschemes
+#kde-base/kdeartwork-styles
+#kde-base/kdeartwork-iconthemes
+#kde-base/kdeartwork-emoticons
 #kde-base/kdeartwork-wallpapers
 #kde-base/kdeartwork-weatherwallpapers
 
 # kdebase-meta
 kde-base/dolphin
 kde-base/kcheckpass
-kde-base/kde-wallpapers
-kde-base/kdebase-runtime-meta
 kde-base/kdialog
 kde-base/keditbookmarks
 kde-base/kephal
@@ -40,7 +37,6 @@ kde-base/plasma-apps
 kde-base/qguiplatformplugin_kde
 kde-base/freespacenotifier
 kde-base/kcminit
-kde-base/kdebase-cursors
 kde-base/kdebase-startkde
 kde-base/kdepasswd
 kde-base/khotkeys
@@ -59,12 +55,18 @@ kde-base/plasma-workspace
 kde-base/powerdevil
 kde-base/systemsettings
 kde-base/kdm
+#kde-base/kde-wallpapers
+#kde-base/kdebase-cursors
+#kde-base/kdebase-runtime-meta
 #kde-base-artwork
 #kde-base/konq-plugins
 #kde-base/konqueror
 #kde-base/nsplugins
 #krunner
 #solid-actions-kcm
+
+# kdebase-runtime-meta
+kde-base/kcontrol
 
 # kdegraphics-meta
 kde-base/gwenview
@@ -87,11 +89,11 @@ kde-base/libksane
 # kdemultimedia-meta
 kde-base/audiocd-kio
 kde-base/kmix
-kde-base/kscd
 kde-base/libkcddb
 kde-base/libkcompactdisc
 kde-base/mplayerthumbs
 kde-base/ffmpegthumbs
+#kde-base/kscd
 #kde-base/dragon
 #kde-base/juk
 
@@ -109,14 +111,14 @@ kde-base/kdeplasma-addons
 
 # kdeutils-meta
 kde-base/ark
-kde-base/filelight
 kde-base/kcalc
-kde-base/kcharselect
-kde-base/kdf
-kde-base/kgpg
-kde-base/kremotecontrol
 kde-base/kwalletmanager
 kde-base/print-manager
+#kde-base/kremotecontrol
+#kde-base/kgpg
+#kde-base/kcharselect
+#kde-base/filelight
+#kde-base/kdf
 #kde-base/ktimer
 #kde-base/superkaramba
 #kde-base/kfloppy
@@ -127,16 +129,16 @@ kde-base/akonadiconsole
 kde-base/calendarjanitor
 kde-base/kabcclient
 kde-base/kaddressbook
-kde-base/kalarm
 kde-base/kdepim-icons
 kde-base/kdepim-kresources
 kde-base/kdepim-runtime
-kde-base/kjots
 kde-base/kmail
-kde-base/knotes
 kde-base/konsolekalendar
 kde-base/kontact
 kde-base/korganizer
+#kde-base/kjots
+#kde-base/kalarm
+#kde-base/knotes
 #kde-base/akregator
 #kde-base/blogilo
 #kde-base/kleopatra

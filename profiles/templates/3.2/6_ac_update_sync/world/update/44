@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<44
+
+#-ini(overlay-distros.world,44)-#
+
+#?in(os_linux_pkglist, CLDX)!=#
+!net-fs/smbnetfs
+#in#

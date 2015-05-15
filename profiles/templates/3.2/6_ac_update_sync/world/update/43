@@ -1,0 +1,24 @@
+# Calculate format=world name=world ini(overlay-distros.world)<43
+
+#-ini(overlay-distros.world,43)-#
+
+#?in(os_linux_pkglist, CLD)!=#
+!kde-base/kdf
+!kde-base/knotes
+!kde-base/filelight
+!kde-base/kdebase-runtime-meta
+!kde-base/kalarm
+!kde-base/kcharselect
+!kde-base/kgpg
+!kde-base/kjots
+!kde-base/kremotecontrol
+!kde-base/kscd
+!kde-base/kdeartwork-emoticons
+!kde-base/kdeartwork-iconthemes
+!kde-base/kdebase-cursors
+!kde-base/kdeartwork-styles
+!kde-base/kdeartwork-colorschemes
+!kde-base/kde-wallpapers
+
+kde-base/kcontrol
+#in#
