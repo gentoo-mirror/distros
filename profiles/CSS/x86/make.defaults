@@ -1,4 +1,4 @@
 PKGDIR="/var/calculate/remote/packages/CSS/i686"
 
-PORTAGE_BINHOST="http://mirror.yandex.ru/calculate/CSS/grp/i686"
-#PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/CSS/grp/i686"
+#PORTAGE_BINHOST="http://mirror.yandex.ru/calculate/CSS/grp/i686"
+PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/CSS/grp/i686"
