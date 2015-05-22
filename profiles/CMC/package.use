@@ -10,7 +10,6 @@ media-libs/libprojectm -video_cards_nvidia
 net-dialup/rp-pppoe -X
 net-fs/samba -winbind
 net-misc/dhcp minimal
-sys-apps/calculate-utils -client
 sys-fs/lvm2 -thin
 x11-drivers/ati-drivers -abi_x86_32
 
