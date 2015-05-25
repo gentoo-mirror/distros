@@ -1,13 +1,10 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLD, CLDX)!=#
+media-gfx/xsane
 net-print/cnijfilter
 net-print/cups
 net-print/gutenprint
 net-print/hplip
 net-print/hplip-plugin
-#in#
-
-#?in(os_linux_pkglist, CLDX)!=#
-media-gfx/xsane
 #in#

@@ -2,11 +2,9 @@
 
 #?in(os_linux_pkglist, CLD, CLDX)!=#
 media-gfx/gimp
-media-gfx/imagemagick
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
-media-gfx/digikam
 sci-libs/clapack
 #in#
 
