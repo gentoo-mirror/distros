@@ -2,10 +2,6 @@
 
 #-ini(overlay-distros.world,45)-#
 
-#?in(os_linux_pkglist, CLD, CLDX)!=#
-!media-gfx/imagemagick
-#in#
-
 #?in(os_linux_pkglist, CLD)!=#
 !media-gfx/digikam
 media-gfx/xsane
