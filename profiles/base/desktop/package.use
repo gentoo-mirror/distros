@@ -1,5 +1,5 @@
 # Calculate themes dependence
-sys-kernel/calculate-sources themes plymouth
+sys-kernel/calculate-sources themes
 
 # use qt4
 media-video/smplayer qt4 autoshutdown
