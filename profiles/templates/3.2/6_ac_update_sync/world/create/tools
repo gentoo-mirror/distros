@@ -62,7 +62,6 @@ sys-apps/acl
 sys-apps/keyexec
 sys-apps/preload
 sys-apps/usb_modeswitch
-sys-block/gparted
 x11-libs/gksu
 # write to world for keep package on during depclean (ruby is used for DEPEND webkit-gtk)
 virtual/rubygems
@@ -76,6 +75,10 @@ sys-power/upower-pm-utils
 net-misc/dhcp
 #in#
 
+#?in(os_linux_pkglist, CLD)!=#
+sys-block/partitionmanager
+#in#
+
 #?in(os_linux_pkglist, CLDX)!=#
 app-admin/hardinfo
 app-pda/usbmuxd
@@ -84,6 +87,7 @@ dev-python/gst-python
 dev-lang/vala
 dev-util/catfish
 sys-apps/mlocate
+sys-block/gparted
 x11-misc/sw-notify-send
 #для корректной поддержки мультимедиа клавиатур
 x11-misc/wmctrl

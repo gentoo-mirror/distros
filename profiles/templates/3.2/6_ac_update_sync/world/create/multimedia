@@ -9,7 +9,6 @@ media-video/smtube
 #?in(os_linux_pkglist, CLD)!=#
 app-cdr/k3b
 media-sound/amarok
-media-plugins/kipi-plugins
 media-video/dvdauthor
 media-video/dvgrab
 media-video/kffmpegthumbnailer
