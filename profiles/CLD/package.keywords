@@ -1,8 +1,6 @@
-~app-office/akonadi-server-1.13.0 amd64 x86
 ~dev-libs/libical-1.0.1 amd64 x86
 ~kde-misc/baloo-kcmadv-2014.04.27 amd64 x86
 ~media-libs/mediastreamer-2.9.0 amd64 x86
-~media-plugins/kipi-plugins-4.4.0 amd64 x86
 
 ~media-gfx/digikam-4.7.0 amd64 x86
 ~media-libs/libkgeomap-4.7.0 amd64 x86
