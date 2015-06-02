@@ -113,7 +113,7 @@ kde-base/kdeplasma-addons
 kde-base/ark
 kde-base/kcalc
 kde-base/kwalletmanager
-kde-base/print-manager
+#kde-base/print-manager
 #kde-base/kremotecontrol
 #kde-base/kgpg
 #kde-base/kcharselect
