@@ -71,9 +71,6 @@ sys-auth/polkit -gtk
 # use gstreamer for sound
 media-libs/phonon gstreamer -vlc
 
-# Add file systems and raid support.
-sys-block/gparted btrfs dmraid fat mdadm ntfs reiserfs xfs
-
 # Enables video thumbnails generation
 kde-base/dolphin thumbnail
 
