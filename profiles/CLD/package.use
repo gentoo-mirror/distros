@@ -92,9 +92,6 @@ net-print/gutenprint gimp
 # remove geolocation dep
 net-libs/webkit-gtk -geoloc
 
-# Build plugin for vkontakte.ru
-media-plugins/kipi-plugins vkontakte
-
 # Enable support for mobile broadband devices
 kde-misc/plasma-nm modemmanager
 
