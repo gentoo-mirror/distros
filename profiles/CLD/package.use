@@ -26,9 +26,6 @@ virtual/mysql embedded
 # [pyqt4] required by kde-misc/synaptiks
 dev-python/pyudev pyqt4
 
-# [plasma] required by media-libs/libkgeomap
-kde-base/marble plasma
-
 # [xmp] required by kde-base/libkexiv2
 media-gfx/exiv2 xmp
 
@@ -54,8 +51,8 @@ dev-libs/atk introspection
 # Removed unnecessary dependence
 app-arch/p7zip -kde
 dev-util/cmake -qt4
-kde-base/kdebase-runtime-meta minimal -crash-reporter
-kde-base/print-manager -gtk
+kde-apps/kdebase-runtime-meta minimal -crash-reporter
+kde-apps/print-manager -gtk
 media-gfx/gimp -webkit
 net-fs/samba -winbind
 net-misc/networkmanager-openconnect -gtk
@@ -72,13 +69,13 @@ sys-auth/polkit -gtk
 media-libs/phonon gstreamer -vlc
 
 # Enables video thumbnails generation
-kde-base/dolphin thumbnail
+kde-apps/dolphin thumbnail
 
 # Support for the KDE Image Plugin Interface.
-kde-base/gwenview kipi
+kde-apps/gwenview kipi
 
 # Remote desktop viewer support
-kde-base/krdc vnc
+kde-apps/krdc vnc
 
 # Hardware sensors support
 kde-base/ksysguard lm_sensors
