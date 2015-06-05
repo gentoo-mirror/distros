@@ -125,7 +125,6 @@ kde-apps/print-manager
 #kde-apps/sweeper
 
 # kdepim-meta
-kde-base/akonadiconsole
 kde-base/calendarjanitor
 kde-base/kabcclient
 kde-base/kaddressbook
@@ -136,6 +135,7 @@ kde-base/kmail
 kde-base/konsolekalendar
 kde-base/kontact
 kde-base/korganizer
+#kde-base/akonadiconsole
 #kde-base/kjots
 #kde-base/kalarm
 #kde-base/knotes
