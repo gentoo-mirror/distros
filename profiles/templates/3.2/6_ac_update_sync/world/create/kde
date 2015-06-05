@@ -1,44 +1,44 @@
 # Calculate name=world format=world in(os_linux_pkglist,CLD)!=
 
 # kdeadmin-meta
-kde-base/kcron
-kde-base/kuser
-#kde-base/ksystemlog
+kde-apps/kcron
+kde-apps/kuser
+#kde-apps/ksystemlog
 
 # kdeartwork-meta
-kde-base/kdeartwork-kscreensaver
-kde-base/kdeartwork-desktopthemes
-#kde-base/kdeartwork-colorschemes
-#kde-base/kdeartwork-styles
-#kde-base/kdeartwork-iconthemes
-#kde-base/kdeartwork-emoticons
-#kde-base/kdeartwork-wallpapers
-#kde-base/kdeartwork-weatherwallpapers
+kde-apps/kdeartwork-desktopthemes
+kde-apps/kdeartwork-kscreensaver
+#kde-apps/kdeartwork-colorschemes
+#kde-apps/kdeartwork-emoticons
+#kde-apps/kdeartwork-iconthemes
+#kde-apps/kdeartwork-wallpapers
+#kde-apps/kdeartwork-weatherwallpapers
+#kde-apps/kdeartwork-styles
 
 # kdebase-meta
-kde-base/dolphin
+kde-apps/dolphin
 kde-base/kcheckpass
-kde-base/kdialog
-kde-base/keditbookmarks
+kde-apps/kdialog
+kde-apps/keditbookmarks
 kde-base/kephal
-kde-base/kfind
-kde-base/kfmclient
-kde-base/konsole
+kde-apps/kfind
+kde-apps/kfmclient
+kde-apps/konsole
 kde-base/kscreensaver
 kde-base/kstartupconfig
 kde-base/kstyles
 kde-base/ksystraycmd
-kde-base/kwrite
-kde-base/libkonq
+kde-apps/kwrite
+kde-apps/libkonq
 kde-base/liboxygenstyle
 kde-base/libplasmaclock
-kde-base/phonon-kde
-kde-base/plasma-apps
+kde-apps/phonon-kde
+kde-apps/plasma-apps
 kde-base/qguiplatformplugin_kde
 kde-base/freespacenotifier
 kde-base/kcminit
 kde-base/kdebase-startkde
-kde-base/kdepasswd
+kde-apps/kdepasswd
 kde-base/khotkeys
 kde-base/kinfocenter
 kde-base/klipper
@@ -55,74 +55,74 @@ kde-base/plasma-workspace
 kde-base/powerdevil
 kde-base/systemsettings
 kde-base/kdm
-#kde-base/kde-wallpapers
+#kde-apps/kde-wallpapers
 #kde-base/kdebase-cursors
-#kde-base/kdebase-runtime-meta
-#kde-base-artwork
-#kde-base/konq-plugins
-#kde-base/konqueror
-#kde-base/nsplugins
-#krunner
-#solid-actions-kcm
+#kde-apps/kdebase-runtime-meta
+#kde-apps/kde-base-artwork
+#kde-apps/konq-plugins
+#kde-apps/konqueror
+#kde-apps/nsplugins
+#kde-base/krunner
+#kde-base/solid-actions-kcm
 
 # kdebase-runtime-meta
-kde-base/kcontrol
+kde-apps/kcontrol
 
 # kdegraphics-meta
-kde-base/gwenview
-kde-base/kamera
-kde-base/kdegraphics-mobipocket
-kde-base/kgamma
-kde-base/ksnapshot
-kde-base/libkdcraw
-kde-base/libkexiv2
-kde-base/libkipi
-kde-base/okular
-kde-base/svgpart
-kde-base/thumbnailers
-kde-base/ksaneplugin
-kde-base/libksane
-#kde-base/kcolorchooser
-#kde-base/kolourpaint
-#kde-base/kruler
+kde-apps/gwenview
+kde-apps/kamera
+kde-apps/kdegraphics-mobipocket
+kde-apps/kgamma
+kde-apps/ksnapshot
+kde-apps/libkdcraw
+kde-apps/libkexiv2
+kde-apps/libkipi
+kde-apps/okular
+kde-apps/svgpart
+kde-apps/thumbnailers
+kde-apps/ksaneplugin
+kde-apps/libksane
+#kde-apps/kcolorchooser
+#kde-apps/kolourpaint
+#kde-apps/kruler
 
 # kdemultimedia-meta
-kde-base/audiocd-kio
-kde-base/kmix
-kde-base/libkcddb
-kde-base/libkcompactdisc
-kde-base/mplayerthumbs
-kde-base/ffmpegthumbs
-#kde-base/kscd
-#kde-base/dragon
-#kde-base/juk
+kde-apps/audiocd-kio
+kde-apps/kmix
+kde-apps/libkcddb
+kde-apps/libkcompactdisc
+kde-apps/mplayerthumbs
+kde-apps/ffmpegthumbs
+#kde-apps/kscd
+#kde-apps/dragon
+#kde-apps/juk
 
 # kdenetwork-meta
-kde-base/kdenetwork-filesharing
-kde-base/kopete
-kde-base/krdc
-kde-base/zeroconf-ioslave
-#kde-base/kppp
-#kde-base/kget
-#kde-base/krfb
+kde-apps/kdenetwork-filesharing
+kde-apps/kopete
+kde-apps/krdc
+kde-apps/zeroconf-ioslave
+#kde-apps/kppp
+#kde-apps/kget
+#kde-apps/krfb
 
 # kdeplasma-addons
 kde-base/kdeplasma-addons
 
 # kdeutils-meta
-kde-base/ark
-kde-base/kcalc
-kde-base/kwalletmanager
-kde-base/print-manager
-#kde-base/kremotecontrol
-#kde-base/kgpg
-#kde-base/kcharselect
-#kde-base/filelight
-#kde-base/kdf
-#kde-base/ktimer
-#kde-base/superkaramba
-#kde-base/kfloppy
-#kde-base/sweeper
+kde-apps/ark
+kde-apps/kcalc
+kde-apps/kwalletmanager
+kde-apps/print-manager
+#kde-apps/kremotecontrol
+#kde-apps/kgpg
+#kde-apps/kcharselect
+#kde-apps/filelight
+#kde-apps/kdf
+#kde-apps/ktimer
+#kde-apps/superkaramba
+#kde-apps/kfloppy
+#kde-apps/sweeper
 
 # kdepim-meta
 kde-base/akonadiconsole
@@ -151,8 +151,8 @@ kde-base/kdepim-l10n
 
 # kdemisc
 kde-misc/synaptiks
-#kde-base/kate
-#kde-misc/konq-plugins
+#kde-apps/kate
+#kde-apps/konq-plugins
 #kde-misc/kgtk
 
 
