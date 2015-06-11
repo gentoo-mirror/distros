@@ -18,6 +18,7 @@ sys-process/vixie-cron
 
 #?in(os_linux_pkglist, CLD, CLDX, CMC, CDS)!=#
 app-admin/hddtemp
+app-admin/sudo
 app-cdr/cdrtools
 app-cdr/dvd+rw-tools
 app-portage/portage-utils
@@ -40,7 +41,6 @@ sys-process/lsof
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDX, CMC)!=#
-app-admin/sudo
 app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/pcmciautils
@@ -108,6 +108,7 @@ dev-python/psycopg
 dev-python/pyserial
 sci-libs/fftw
 sys-apps/acl
+sys-apps/ipmitool
 sys-apps/iproute2
 sys-apps/kexec-tools
 sys-auth/nss_ldap
