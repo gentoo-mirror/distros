@@ -4,7 +4,6 @@
 
 #?in(os_linux_pkglist, CLD, CLDX)!=#
 !app-arch/arj
-!app-arch/p7zip
 !app-arch/unace
 !app-arch/unarj
 !app-arch/zip

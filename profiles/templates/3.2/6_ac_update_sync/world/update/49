@@ -3,6 +3,6 @@
 #-ini(overlay-distros.world,49)-#
 
 #?in(os_linux_pkglist, CLD)!=#
-kde-base/print-manager
+kde-apps/print-manager
 #in#
 

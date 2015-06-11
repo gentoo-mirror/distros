@@ -54,6 +54,7 @@ sys-power/powertop
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDX)!=#
+app-arch/p7zip
 app-arch/rar
 app-arch/unzip
 app-misc/mc
