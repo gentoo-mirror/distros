@@ -49,7 +49,6 @@ dev-libs/atk introspection
 app-arch/p7zip -kde
 dev-util/cmake -qt4
 kde-apps/kdebase-runtime-meta minimal -crash-reporter
-kde-apps/kopete -jingle
 kde-apps/print-manager -gtk
 media-gfx/gimp -webkit
 net-fs/samba -winbind
