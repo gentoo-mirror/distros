@@ -16,7 +16,7 @@ USE="${USE} networkmanager"
 USE="${USE} webkit"
 
 # Window manager and speciality
-USE="${USE} -eds -gnome kde semantic-desktop qt4 qt3support -qt3"
+USE="${USE} -eds -gnome kde semantic-desktop qt4 -qt3"
 
 CL="builder client desktop console consolegui"
 THEMES="CLD"
