@@ -16,9 +16,6 @@ dev-python/PyQt4 declarative script sql
 # [melt, xml] required by media-video/kdenlive
 media-libs/mlt melt xml kdenlive -xine
 
-# [video] required by kde-base/kopete
-media-libs/mediastreamer video
-
 # [embedded] required by media-sound/amarok
 dev-db/mysql embedded
 virtual/mysql embedded
@@ -52,6 +49,7 @@ dev-libs/atk introspection
 app-arch/p7zip -kde
 dev-util/cmake -qt4
 kde-apps/kdebase-runtime-meta minimal -crash-reporter
+kde-apps/kopete -jingle
 kde-apps/print-manager -gtk
 media-gfx/gimp -webkit
 net-fs/samba -winbind
