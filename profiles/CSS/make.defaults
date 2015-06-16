@@ -1,4 +1,4 @@
 USE=""
-CL="builder -console -server"
+CL="builder"
 THEMES="CSS"
 
