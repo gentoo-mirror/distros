@@ -1,2 +1,0 @@
-#sdb-ldap - patch broken
-=net-dns/bind-9.10.1_p1

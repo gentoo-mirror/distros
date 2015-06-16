@@ -1,9 +1,3 @@
-net-p2p/rtorrent daemon xmlrpc
-
-# required by virtual/libgudev-215-r1
-sys-fs/eudev gudev
-
-
 # Removed unnecessary dependence
 dev-vcs/git -tk -perl
 media-libs/libprojectm -video_cards_nvidia

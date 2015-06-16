@@ -32,9 +32,6 @@ dev-qt/qtsql mysql
 # [icu] required by www-client/chromium
 media-libs/harfbuzz icu
 
-# [gudev] required by media-gfx/gimp
-sys-fs/eudev gudev
-
 # [introspection] required by app-admin/system-config-printer-gnome-1.4.3
 x11-libs/gtk+ introspection
 
