@@ -2,9 +2,9 @@
 dev-vcs/git -tk -perl
 media-libs/libprojectm -video_cards_nvidia
 net-dialup/rp-pppoe -X
-net-fs/samba -winbind
-net-misc/dhcp minimal
-x11-drivers/ati-drivers -abi_x86_32
+#net-fs/samba -winbind
+#net-misc/dhcp minimal
+#x11-drivers/ati-drivers -abi_x86_32
 
 # include desktop, console modules
 sys-apps/calculate-utils desktop
