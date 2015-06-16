@@ -88,6 +88,3 @@ net-libs/libnm-qt modemmanager
 
 #Add support for RAW format in GIMP
 media-gfx/ufraw gimp
-
-# include client, desktop, console and console-gui modules
-sys-apps/calculate-utils client desktop console qt4
