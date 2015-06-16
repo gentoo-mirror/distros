@@ -1,8 +1,5 @@
 USE=""
 
-# Hardware
-USE="${USE} -dbus lirc"
-
 # Languages support
 USE="${USE} -tk"
 
