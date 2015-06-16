@@ -1,5 +1,11 @@
 USE=""
 
+# Audio
+USE="${USE} -pulseaudio"
+
+# Hardware
+USE="${USE} -dbus"
+
 # Languages support
 USE="${USE} -tk"
 
