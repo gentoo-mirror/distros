@@ -7,4 +7,4 @@ net-dialup/rp-pppoe -X
 #x11-drivers/ati-drivers -abi_x86_32
 
 # include desktop, console modules
-sys-apps/calculate-utils -client
+sys-apps/calculate-utils -client -console -qt4
