@@ -1,0 +1,122 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLD, CLDX, CDS, CLSM, CLS, CSS, CMC)!=#
+app-misc/tmux
+dev-util/ccache
+sys-auth/pam_update
+sys-fs/btrfs-progs
+sys-fs/reiserfsprogs
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX, CDS, CLSM, CLS, CMC)!=#
+app-admin/logrotate
+app-admin/syslog-ng
+sys-apps/ethtool
+sys-apps/usbutils
+sys-process/vixie-cron
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX, CDS, CMC)!=#
+app-admin/hddtemp
+app-admin/sudo
+app-cdr/cdrtools
+app-cdr/dvd+rw-tools
+app-portage/portage-utils
+sys-apps/dmidecode
+sys-apps/gptfdisk
+sys-apps/lm_sensors
+sys-apps/memtest86+
+sys-apps/inxi
+sys-apps/pciutils
+sys-apps/pv
+sys-apps/smartmontools
+sys-fs/dmraid
+sys-fs/dosfstools
+sys-fs/mdadm
+sys-fs/mtools
+sys-fs/ntfs3g
+sys-fs/xfsprogs
+sys-process/htop
+sys-process/lsof
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX, CMC)!=#
+app-portage/gentoolkit-dev
+sys-apps/hdparm
+sys-apps/pcmciautils
+sys-devel/prelink
+sys-fs/exfat-utils
+sys-fs/fuse-exfat
+sys-power/acpi
+sys-power/cpupower
+sys-power/powernowd
+sys-power/powertop
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX)!=#
+app-arch/p7zip
+app-arch/rar
+app-arch/unzip
+app-misc/mc
+sys-apps/acl
+sys-apps/keyexec
+sys-apps/preload
+sys-apps/usb_modeswitch
+x11-libs/gksu
+# write to world for keep package on during depclean (ruby is used for DEPEND webkit-gtk)
+virtual/rubygems
+#in#
+
+#?in(os_linux_pkglist, CLD, CMC)!=#
+sys-power/upower-pm-utils
+#in#
+
+#?in(os_linux_pkglist,  CLSM, CLS, CMC)!=#
+net-misc/dhcp
+#in#
+
+#?in(os_linux_pkglist, CLD)!=#
+sys-block/partitionmanager
+#in#
+
+#?in(os_linux_pkglist, CLDX)!=#
+app-admin/hardinfo
+app-pda/usbmuxd
+dev-python/gst-python
+# write to world for keep package on during depclean (ruby is used for DEPEND)
+dev-lang/vala
+dev-util/catfish
+sys-apps/mlocate
+sys-block/gparted
+x11-misc/sw-notify-send
+#для корректной поддержки мультимедиа клавиатур
+x11-misc/wmctrl
+#in#
+
+#?in(os_linux_pkglist, CMC)!=#
+app-misc/lirc
+sys-apps/lm_sensors
+#in#
+
+#?in(os_linux_pkglist, CDS)!=#
+app-antivirus/clamav
+app-editors/vim
+app-i18n/enca
+app-misc/mc
+app-portage/ufed
+dev-libs/klibc
+dev-python/psycopg
+dev-python/pyserial
+sci-libs/fftw
+sys-apps/acl
+sys-apps/ipmitool
+sys-apps/iproute2
+sys-apps/kexec-tools
+sys-auth/nss_ldap
+sys-auth/pam_ldap
+sys-block/parted
+sys-block/tw_cli
+sys-fs/xfsdump
+sys-process/iotop
+#in#
+

@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-distros.world)<50
+
+#-ini(overlay-distros.world,50)-#
+
+#?in(os_linux_pkglist, CLD, CLDX, CMC, CDS)!=#
+!app-admin/testdisk
+#in#
+

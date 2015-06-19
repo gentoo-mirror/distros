@@ -1,0 +1,16 @@
+# Calculate format=world name=world ini(overlay-distros.world)<33
+
+#-ini(overlay-distros.world,33)-#
+
+#?in(os_linux_pkglist, CLD)!=#
+!kde-apps/kate
+!kde-apps/kcolorchooser
+!kde-apps/kolourpaint
+!kde-apps/konqueror
+!kde-apps/kruler
+!kde-apps/ksystemlog
+!kde-apps/sweeper
+!kde-base/kleopatra
+!media-video/kdenlive
+!net-im/choqok
+#in#

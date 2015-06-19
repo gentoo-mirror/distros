@@ -1,0 +1,10 @@
+# Calculate format=world name=world ini(overlay-distros.world)<28
+
+#-ini(overlay-distros.world,28)-#
+
+#?in(os_linux_pkglist, CLD)!=#
+!app-pda/usbmuxd
+#in#
+#?in(os_linux_pkglist, CLDX)!=#
+app-pda/usbmuxd
+#in#

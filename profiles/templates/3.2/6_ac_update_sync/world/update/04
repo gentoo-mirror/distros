@@ -1,0 +1,11 @@
+# Calculate format=world name=world ini(overlay-distros.world)<4
+
+#-ini(overlay-distros.world,4)-#
+
+# смена dhcp для поддержки PXE загрузки
+#?in(os_linux_pkglist, CLD, CLDX, CMC, CLS)!=#
+!net-misc/dhcpcd
+#in#
+#?in(os_linux_pkglist, CMC, CLS)!=#
+net-misc/dhcp
+#in#

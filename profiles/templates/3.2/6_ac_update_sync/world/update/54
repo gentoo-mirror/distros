@@ -1,0 +1,12 @@
+# Calculate format=world name=world ini(overlay-distros.world)<54
+
+#-ini(overlay-distros.world,54)-#
+
+#?in(os_linux_pkglist, CLDX)!=#
+!x11-misc/lightdm-gtk-greeter
+#in#
+
+#?in(os_linux_pkglist, CLDX, CLSM)!=#
+x11-misc/lightdm
+#in#
+

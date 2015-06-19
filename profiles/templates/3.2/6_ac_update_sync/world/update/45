@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-distros.world)<45
+
+#-ini(overlay-distros.world,45)-#
+
+#?in(os_linux_pkglist, CLD)!=#
+!media-gfx/digikam
+media-gfx/xsane
+#in#

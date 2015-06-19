@@ -1,0 +1,20 @@
+USE=""
+
+# Audio
+USE="${USE} -pulseaudio"
+
+# Hardware
+USE="${USE} -dbus"
+
+# Languages support
+USE="${USE} -tk"
+
+# Printing
+USE="${USE} -cups"
+
+# Window manager and speciality
+USE="${USE} -gtk"
+
+CL="builder console desktop"
+THEMES="CMC"
+

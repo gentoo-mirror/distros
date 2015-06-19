@@ -1,0 +1,4 @@
+# Calculate format=samba path=/etc/calculate name=ini.env merge=media-video/smtube ini(overlay-distros.remerge)<5
+
+[overlay-distros]
+remerge = 5
