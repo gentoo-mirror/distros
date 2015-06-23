@@ -50,3 +50,6 @@ net-ftp/tftp-hpa
 www-client/links
 #in#
 
+#?in(os_linux_pkglist, CLDX+)!=#
+www-client/firefox
+#in#
