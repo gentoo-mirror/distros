@@ -26,6 +26,7 @@ media-video/ffmpeg
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+media-tv/kodi
 media-video/vlc
 #in#
 
