@@ -24,3 +24,8 @@ media-video/gtk-recordmydesktop
 #?in(os_linux_pkglist, CLS)!=#
 media-video/ffmpeg
 #in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+media-video/vlc
+#in#
+

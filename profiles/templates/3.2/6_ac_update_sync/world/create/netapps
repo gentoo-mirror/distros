@@ -51,5 +51,6 @@ www-client/links
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+mail-client/thunderbird
 www-client/firefox
 #in#
