@@ -1,12 +1,12 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDX, CLSM, CLS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDX+, CLDX, CLSM, CLS, CMC)!=#
 sys-firmware/b43-firmware
 net-wireless/broadcom-sta
 net-wireless/wireless-tools
 net-wireless/wpa_supplicant
 #in#
 
-#?in(os_linux_pkglist, CLDX)!=#
+#?in(os_linux_pkglist, CLDX+, CLDX)!=#
 net-wireless/blueman
 #in#

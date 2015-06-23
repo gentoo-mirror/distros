@@ -1,17 +1,17 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDX, CDS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDX+, CLDX, CDS, CMC)!=#
 app-text/wgetpaste
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDX+, CLDX, CDS)!=#
 app-text/wgetpaste
 net-analyzer/nmap
 net-analyzer/traceroute
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDX+, CLDX)!=#
 net-im/skype
 www-client/chromium
 www-plugins/chrome-binary-plugins
@@ -24,7 +24,7 @@ net-irc/konversation
 net-p2p/ktorrent
 #in#
 
-#?in(os_linux_pkglist, CLDX)!=#
+#?in(os_linux_pkglist, CLDX+, CLDX)!=#
 net-ftp/filezilla
 mail-client/claws-mail
 net-im/pidgin

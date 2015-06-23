@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDX+, CLDX)!=#
 media-gfx/xsane
 net-print/cnijfilter
 net-print/cups
