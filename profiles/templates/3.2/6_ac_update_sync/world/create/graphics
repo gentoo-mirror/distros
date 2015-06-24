@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDX+, CLDX)!=#
 media-gfx/gimp
 media-gfx/imagemagick
 #in#
@@ -9,7 +9,7 @@ media-gfx/imagemagick
 sci-libs/clapack
 #in#
 
-#?in(os_linux_pkglist, CLDX)!=#
+#?in(os_linux_pkglist, CLDX+, CLDX)!=#
 media-gfx/nomacs
 #in#
 

@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDX+, CLDX)!=#
 app-editors/vim
 app-office/libreoffice
 app-text/fbreader
@@ -10,7 +10,7 @@ app-text/fbreader
 kde-misc/openofficeorg-thumbnail
 #in#
 
-#?in(os_linux_pkglist, CLDX)!=#
+#?in(os_linux_pkglist, CLDX+, CLDX)!=#
 app-editors/leafpad
 app-text/qpdfview
 sci-calculators/galculator
