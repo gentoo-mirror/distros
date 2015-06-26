@@ -1,21 +1,17 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDX+, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+)!=#
 app-editors/vim
 app-office/libreoffice
 app-text/fbreader
 #in#
 
-#?in(os_linux_pkglist, CLD)!=#
+#?in(os_linux_pkglist, CLD, CLD+)!=#
 kde-misc/openofficeorg-thumbnail
 #in#
 
-#?in(os_linux_pkglist, CLDX+, CLDX)!=#
+#?in(os_linux_pkglist, CLDX, CLDX+)!=#
 app-editors/leafpad
 app-text/qpdfview
 sci-calculators/galculator
-#in#
-
-#?in(os_linux_pkglist, CMC)!=#
-media-tv/kodi
 #in#

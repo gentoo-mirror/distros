@@ -1,10 +1,10 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CDS, CSS)!=#
+#?in(os_linux_pkglist, CDS, CDS+, CSS)!=#
 net-misc/dhcp
 #in#
 
-#?in(os_linux_pkglist, CDS)!=#
+#?in(os_linux_pkglist, CDS, CDS+)!=#
 dev-db/postgresql
 mail-filter/clamsmtp
 mail-filter/opendkim
