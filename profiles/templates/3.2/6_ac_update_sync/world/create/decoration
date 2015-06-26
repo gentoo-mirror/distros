@@ -10,7 +10,6 @@ media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
 x11-themes/calculate-icon-theme
 x11-themes/calculate-xcursors
-x11-themes/claws-mail-theme-calculate
 #in#
 
 #?in(os_linux_pkglist, CLD, CLD+)!=#
@@ -21,6 +20,7 @@ x11-themes/oxygen-gtk:3
 
 #?in(os_linux_pkglist, CLDX, CLDX+)!=#
 media-gfx/lightdm-themes-calculate
+x11-themes/claws-mail-theme-calculate
 x11-themes/gnome-themes-standard
 x11-themes/gtk-engines
 x11-themes/xfwm4-themes
