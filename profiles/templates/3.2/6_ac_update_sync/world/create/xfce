@@ -1,4 +1,4 @@
-# Calculate name=world format=world in(os_linux_pkglist,CLDX+,CLDX)!=
+# Calculate name=world format=world in(os_linux_pkglist,CLDX,CLDX+)!=
 
 app-arch/xarchiver
 media-sound/pavucontrol

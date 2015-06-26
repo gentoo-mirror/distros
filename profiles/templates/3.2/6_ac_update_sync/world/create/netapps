@@ -1,17 +1,16 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDX+, CLDX, CDS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CDS, CDS+, CMC)!=#
 app-text/wgetpaste
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX+, CLDX, CDS)!=#
-app-text/wgetpaste
+#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CDS, CDS+)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX+, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+)!=#
 net-im/skype
 www-client/chromium
 www-plugins/chrome-binary-plugins
@@ -19,12 +18,12 @@ www-plugins/chrome-ublock
 x11-misc/x11vnc
 #in#
 
-#?in(os_linux_pkglist, CLD)!=#
+#?in(os_linux_pkglist, CLD, CLD+)!=#
 net-irc/konversation
 net-p2p/ktorrent
 #in#
 
-#?in(os_linux_pkglist, CLDX+, CLDX)!=#
+#?in(os_linux_pkglist, CLDX, CLDX+)!=#
 net-ftp/filezilla
 mail-client/claws-mail
 net-im/pidgin
@@ -36,7 +35,7 @@ x11-plugins/pidgin-libnotify
 x11-plugins/purple-plugin_pack
 #in#
 
-#?in(os_linux_pkglist, CDS)!=#
+#?in(os_linux_pkglist, CDS, CDS+)!=#
 net-analyzer/fail2ban
 net-analyzer/iptraf-ng
 net-analyzer/macchanger

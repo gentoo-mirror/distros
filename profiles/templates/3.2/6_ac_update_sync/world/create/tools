@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDX+, CLDX, CDS, CLSM, CLS, CSS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CDS, CDS+, CLSM, CLS, CSS, CMC)!=#
 app-misc/tmux
 dev-util/ccache
 sys-auth/pam_update
@@ -8,7 +8,7 @@ sys-fs/btrfs-progs
 sys-fs/reiserfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX+, CLDX, CDS, CLSM, CLS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CDS, CDS+, CLSM, CLS, CMC)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -16,7 +16,7 @@ sys-apps/usbutils
 sys-process/vixie-cron
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX+, CLDX, CDS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CDS, CDS+, CMC)!=#
 app-admin/hddtemp
 app-admin/sudo
 app-cdr/cdrtools
@@ -40,7 +40,7 @@ sys-process/htop
 sys-process/lsof
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX+, CLDX, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CMC)!=#
 app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/pcmciautils
@@ -53,7 +53,7 @@ sys-power/powernowd
 sys-power/powertop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX+, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+)!=#
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
@@ -67,7 +67,7 @@ x11-libs/gksu
 virtual/rubygems
 #in#
 
-#?in(os_linux_pkglist, CLD, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLD+, CMC)!=#
 sys-power/upower-pm-utils
 #in#
 
@@ -75,11 +75,11 @@ sys-power/upower-pm-utils
 net-misc/dhcp
 #in#
 
-#?in(os_linux_pkglist, CLD)!=#
+#?in(os_linux_pkglist, CLD, CLD+)!=#
 sys-block/partitionmanager
 #in#
 
-#?in(os_linux_pkglist, CLDX+, CLDX)!=#
+#?in(os_linux_pkglist, CLDX, CLDX+)!=#
 app-admin/hardinfo
 app-pda/usbmuxd
 dev-python/gst-python
@@ -93,12 +93,7 @@ x11-misc/sw-notify-send
 x11-misc/wmctrl
 #in#
 
-#?in(os_linux_pkglist, CMC)!=#
-app-misc/lirc
-sys-apps/lm_sensors
-#in#
-
-#?in(os_linux_pkglist, CDS)!=#
+#?in(os_linux_pkglist, CDS, CDS+)!=#
 app-antivirus/clamav
 app-editors/vim
 app-i18n/enca
@@ -120,3 +115,7 @@ sys-fs/xfsdump
 sys-process/iotop
 #in#
 
+#?in(os_linux_pkglist, CMC)!=#
+app-misc/lirc
+sys-apps/lm_sensors
+#in#

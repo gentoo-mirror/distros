@@ -1,0 +1,4 @@
+PKGDIR="/var/calculate/remote/packages/CDS/i686"
+
+#PORTAGE_BINHOST="http://mirror.yandex.ru/calculate/CDS/grp/i686"
+PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/CDS/grp/i686"
