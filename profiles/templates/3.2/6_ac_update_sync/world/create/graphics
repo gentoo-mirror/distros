@@ -5,10 +5,10 @@ media-gfx/gimp
 media-gfx/imagemagick
 #in#
 
-#?in(os_linux_pkglist, CLD, CLD+)!=#
-sci-libs/clapack
-#in#
-
 #?in(os_linux_pkglist, CLDX, CLDX+)!=#
 media-gfx/nomacs
+#in#
+
+#?in(os_linux_pkglist, CLD+)!=#
+media-gfx/digikam
 #in#
