@@ -115,6 +115,10 @@ sys-fs/xfsdump
 sys-process/iotop
 #in#
 
+#?in(os_linux_pkglist, CLDX+)!=#
+dev-python/ipython
+#in#
+
 #?in(os_linux_pkglist, CMC)!=#
 app-misc/lirc
 sys-apps/lm_sensors
