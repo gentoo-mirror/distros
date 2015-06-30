@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<57
+
+#-ini(overlay-distros.world,57)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+dev-python/ipython
+#in#
