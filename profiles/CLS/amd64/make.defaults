@@ -1,4 +1,2 @@
-PKGDIR="/var/calculate/remote/packages/CLDX/x86_64"
-
-#PORTAGE_BINHOST="http://mirror.yandex.ru/calculate/CLDX/grp/x86_64"
-PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/CLDX/grp/x86_64"
+PKGDIR="/var/calculate/remote/packages/CLS/x86_64"
+PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/grp/CLDX+/x86_64"
