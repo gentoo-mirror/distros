@@ -1,2 +1,2 @@
 PKGDIR="/var/calculate/remote/packages/CLDX/i686"
-PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/grp/CLDX+/i686"
+PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/CLDX+/grp/i686"

@@ -1,2 +1,2 @@
 PKGDIR="/var/calculate/remote/packages/CLSM/x86_64"
-PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/grp/CLDX+/x86_64"
+PORTAGE_BINHOST="http://mirror.cnet.kz/calculate/CLDX+/grp/x86_64"
