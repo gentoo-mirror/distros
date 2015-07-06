@@ -51,5 +51,6 @@ www-client/links
 
 #?in(os_linux_pkglist, CLDX+)!=#
 mail-client/thunderbird
+net-misc/modem-manager-gui
 www-client/firefox
 #in#
