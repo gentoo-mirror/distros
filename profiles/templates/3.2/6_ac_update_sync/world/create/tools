@@ -116,6 +116,7 @@ sys-process/iotop
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+app-portage/cpuinfo2cpuflags
 dev-python/ipython
 #in#
 
