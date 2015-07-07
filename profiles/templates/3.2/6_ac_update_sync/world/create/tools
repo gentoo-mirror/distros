@@ -1,8 +1,11 @@
 # Calculate name=world format=world
 
+#?in(os_linux_pkglist, CLD+, CLDX+, CDS+)!=#
+dev-util/ccache
+#in#
+
 #?in(os_linux_pkglist, CLD, CLDX, CDS, CDS+, CLSM, CLS, CSS, CMC)!=#
 app-misc/tmux
-dev-util/ccache
 sys-auth/pam_update
 sys-fs/btrfs-progs
 sys-fs/reiserfsprogs
@@ -44,7 +47,6 @@ sys-process/lsof
 app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/pcmciautils
-sys-devel/prelink
 sys-fs/exfat-utils
 sys-fs/fuse-exfat
 sys-power/acpi
@@ -60,6 +62,10 @@ app-misc/mc
 
 #?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+)!=#
 sys-apps/keyexec
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX, CMC, CLDX+)!=#
+sys-devel/prelink
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDX, CLDX+)!=#
