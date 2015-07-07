@@ -12,3 +12,9 @@ media-gfx/nomacs
 #?in(os_linux_pkglist, CLD+)!=#
 media-gfx/digikam
 #in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+media-gfx/blender
+media-gfx/darktable
+media-gfx/inkscape
+#in#
