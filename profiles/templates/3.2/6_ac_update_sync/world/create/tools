@@ -40,7 +40,7 @@ sys-process/htop
 sys-process/lsof
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX, CLDX+, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDX, CMC, CDS+)!=#
 app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/pcmciautils
@@ -53,25 +53,29 @@ sys-power/powernowd
 sys-power/powertop
 #in#
 
+#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CDS, CDS+)!=#
+sys-apps/acl
+app-misc/mc
+#in#
+
 #?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+)!=#
+sys-apps/keyexec
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX, CLDX+)!=#
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
-app-misc/mc
-sys-apps/acl
-sys-apps/keyexec
 sys-apps/preload
 sys-apps/usb_modeswitch
 x11-libs/gksu
-# write to world for keep paddage on during depclean (ruby is used for DEPEND webkit-gtk)
-virtual/rubygems
 #in#
 
 #?in(os_linux_pkglist, CLD, CLD+, CMC)!=#
 sys-power/upower-pm-utils
 #in#
 
-#?in(os_linux_pkglist,  CLSM, CLS, CMC)!=#
+#?in(os_linux_pkglist, CLSM, CLS, CMC)!=#
 net-misc/dhcp
 #in#
 
@@ -97,13 +101,11 @@ x11-misc/wmctrl
 app-antivirus/clamav
 app-editors/vim
 app-i18n/enca
-app-misc/mc
 app-portage/ufed
 dev-libs/klibc
 dev-python/psycopg
 dev-python/pyserial
 sci-libs/fftw
-sys-apps/acl
 sys-apps/ipmitool
 sys-apps/iproute2
 sys-apps/kexec-tools
