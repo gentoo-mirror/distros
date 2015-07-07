@@ -1,13 +1,10 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD+, CLDX+)!=#
-app-emulation/winetricks
-#in#
-
 #?in(os_linux_pkglist, CLDX+)!=#
 app-emulation/playonlinux
 app-emulation/q4wine
 app-emulation/qemu
 app-emulation/wine
+app-emulation/winetricks
 games-emulation/dosbox
 #in#

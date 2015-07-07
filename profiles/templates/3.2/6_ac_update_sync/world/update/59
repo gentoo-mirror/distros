@@ -2,9 +2,6 @@
 
 #-ini(overlay-distros.world,59)-#
 
-#?in(os_linux_pkglist, CLD+, CLDX+)!=#
-app-emulation/winetricks
-#in#
 #?in(os_linux_pkglist, CLD+)!=#
 media-video/vlc
 #in#
