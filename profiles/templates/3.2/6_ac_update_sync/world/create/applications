@@ -3,6 +3,9 @@
 #?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+)!=#
 app-editors/vim
 app-office/libreoffice
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX, CLDX+)!=#
 app-text/fbreader
 #in#
 

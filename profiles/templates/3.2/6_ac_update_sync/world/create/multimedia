@@ -2,6 +2,9 @@
 
 #?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+)!=#
 media-sound/alsa-utils
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDX, CLDX+)!=#
 media-video/smplayer
 media-video/smtube
 #in#
@@ -27,8 +30,4 @@ media-tv/kodi
 
 #?in(os_linux_pkglist, CLD+, CLDX+)!=#
 media-video/vlc
-#in#
-
-#?in(os_linux_pkglist, CLS)!=#
-media-video/ffmpeg
 #in#

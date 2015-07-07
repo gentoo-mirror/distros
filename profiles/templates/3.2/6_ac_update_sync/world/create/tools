@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CDS, CDS+, CLSM, CLS, CSS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDX, CDS, CDS+, CLSM, CLS, CSS, CMC)!=#
 app-misc/tmux
 dev-util/ccache
 sys-auth/pam_update
@@ -8,7 +8,7 @@ sys-fs/btrfs-progs
 sys-fs/reiserfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CDS, CDS+, CLSM, CLS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDX, CDS, CDS+, CLSM, CLS, CMC)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -16,7 +16,7 @@ sys-apps/usbutils
 sys-process/vixie-cron
 #in#
 
-#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CDS, CDS+, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDX, CDS, CDS+, CMC)!=#
 app-admin/hddtemp
 app-admin/sudo
 app-cdr/cdrtools
@@ -40,7 +40,7 @@ sys-process/htop
 sys-process/lsof
 #in#
 
-#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDX, CLDX+, CMC)!=#
 app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/pcmciautils
@@ -63,7 +63,7 @@ sys-apps/keyexec
 sys-apps/preload
 sys-apps/usb_modeswitch
 x11-libs/gksu
-# write to world for keep package on during depclean (ruby is used for DEPEND webkit-gtk)
+# write to world for keep paddage on during depclean (ruby is used for DEPEND webkit-gtk)
 virtual/rubygems
 #in#
 
