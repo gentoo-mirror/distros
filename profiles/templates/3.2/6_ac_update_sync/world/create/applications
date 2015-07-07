@@ -15,3 +15,10 @@ app-editors/leafpad
 app-text/qpdfview
 sci-calculators/galculator
 #in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+app-editors/gvim
+app-office/abiword
+app-office/gnumeric
+app-office/scribus
+#in#

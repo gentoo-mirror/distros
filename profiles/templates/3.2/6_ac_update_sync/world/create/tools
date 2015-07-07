@@ -116,8 +116,11 @@ sys-process/iotop
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+app-misc/screen
 app-portage/cpuinfo2cpuflags
+dev-lang/mono
 dev-python/ipython
+dev-util/android-tools
 #in#
 
 #?in(os_linux_pkglist, CMC)!=#
