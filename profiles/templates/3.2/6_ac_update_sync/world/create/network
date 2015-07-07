@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+, CDS, CDS+, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDX, CDS, CDS+, CMC)!=#
 net-dns/bind-tools
 net-firewall/shorewall
 net-misc/ntp
