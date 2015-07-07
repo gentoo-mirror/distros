@@ -25,10 +25,10 @@ media-video/gtk-recordmydesktop
 media-tv/kodi
 #in#
 
-#?in(os_linux_pkglist, CLS)!=#
-media-video/ffmpeg
+#?in(os_linux_pkglist, CLD+, CLDX+)!=#
+media-video/vlc
 #in#
 
-#?in(os_linux_pkglist, CLDX+)!=#
-media-video/vlc
+#?in(os_linux_pkglist, CLS)!=#
+media-video/ffmpeg
 #in#

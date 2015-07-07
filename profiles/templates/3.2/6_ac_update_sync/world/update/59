@@ -5,6 +5,9 @@
 #?in(os_linux_pkglist, CLD+, CLDX+)!=#
 app-emulation/winetricks
 #in#
+#?in(os_linux_pkglist, CLD+)!=#
+media-video/vlc
+#in#
 #?in(os_linux_pkglist, CLDX+)!=#
 app-editors/gvim
 app-emulation/playonlinux
