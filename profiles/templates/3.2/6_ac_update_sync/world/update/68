@@ -1,0 +1,17 @@
+# Calculate format=world name=world ini(overlay-distros.world)<68
+
+#-ini(overlay-distros.world,68)-#
+
+#?in(os_linux_pkglist, CMC)!=#
+!app-misc/lirc
+!sys-apps/lm_sensors
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+dev-vcs/bzr
+dev-vcs/cvs
+!dev-vcs/darcs
+dev-vcs/mercurial
+dev-vcs/subversion
+#in#
+
