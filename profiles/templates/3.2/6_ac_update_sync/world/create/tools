@@ -134,7 +134,6 @@ dev-util/android-tools
 #?in(os_linux_pkglist, CDS+)!=#
 dev-vcs/bzr
 dev-vcs/cvs
-dev-vcs/darcs
 dev-vcs/mercurial
 dev-vcs/subversion
 #in#
