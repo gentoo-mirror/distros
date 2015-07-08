@@ -33,6 +33,7 @@ media-video/vlc
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+media-radio/radiotray
 media-sound/audacious
 media-sound/audacity
 media-sound/qmmp
