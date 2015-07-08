@@ -1,0 +1,13 @@
+# Calculate name=world format=world in(os_linux_pkglist,CLDX+)!=
+
+dev-qt/qtcore:5
+dev-qt/qtdbus:5
+dev-qt/qtgui:5
+dev-qt/qtopengl:5
+dev-qt/qtscript:5
+dev-qt/qtsql:5
+dev-qt/qtsvg:5
+dev-qt/qttest:5
+dev-qt/qttranslations:5
+dev-qt/qtwebkit:5
+dev-qt/qtxmlpatterns:5

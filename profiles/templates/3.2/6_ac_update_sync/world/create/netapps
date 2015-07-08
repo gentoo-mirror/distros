@@ -43,6 +43,7 @@ net-analyzer/sarg
 net-analyzer/tcpdump
 net-analyzer/traceroute
 net-analyzer/vnstat
+net-analyzer/wireshark
 net-dialup/minicom
 net-irc/weechat
 net-ftp/tftp-hpa
@@ -52,6 +53,12 @@ www-client/links
 #?in(os_linux_pkglist, CLDX+)!=#
 mail-client/sylpheed
 mail-client/thunderbird
+net-misc/dropbox
 net-misc/modem-manager-gui
+net-misc/yandex-disk
+net-p2p/amule
+net-p2p/qbittorrent
+net-p2p/rtorrent
+net-p2p/transmission
 www-client/firefox
 #in#

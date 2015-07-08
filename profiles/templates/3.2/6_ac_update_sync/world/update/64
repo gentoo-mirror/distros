@@ -1,0 +1,36 @@
+# Calculate format=world name=world ini(overlay-distros.world)<64
+
+#-ini(overlay-distros.world,64)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+dev-qt/qtcore:5
+dev-qt/qtdbus:5
+dev-qt/qtgui:5
+dev-qt/qtopengl:5
+dev-qt/qtscript:5
+dev-qt/qtsql:5
+dev-qt/qtsvg:5
+dev-qt/qttest:5
+dev-qt/qttranslations:5
+dev-qt/qtwebkit:5
+dev-qt/qtxmlpatterns:5
+media-gfx/blender
+media-gfx/darktable
+media-gfx/inkscape
+media-sound/audacious
+media-sound/audacity
+media-sound/qmmp
+media-video/avidemux
+media-video/mpv
+net-analyzer/wireshark
+net-misc/dropbox
+net-misc/yandex-disk
+net-p2p/amule
+net-p2p/qbittorrent
+net-p2p/rtorrent
+net-p2p/transmission
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+net-misc/tor
+#in#

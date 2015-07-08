@@ -31,3 +31,11 @@ media-tv/kodi
 #?in(os_linux_pkglist, CLD+, CLDX+)!=#
 media-video/vlc
 #in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+media-sound/audacious
+media-sound/audacity
+media-sound/qmmp
+media-video/avidemux
+media-video/mpv
+#in#
