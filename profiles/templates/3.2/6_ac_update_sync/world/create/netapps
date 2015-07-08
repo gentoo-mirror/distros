@@ -51,6 +51,7 @@ www-client/links
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+mail-client/geary
 mail-client/sylpheed
 mail-client/thunderbird
 net-misc/dropbox
