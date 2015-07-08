@@ -139,7 +139,6 @@ media-gfx/cellwriter
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
-app-misc/screenfetch
 dev-vcs/bzr
 dev-vcs/cvs
 dev-vcs/mercurial

@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<69
+# Calculate format=world name=world ini(overlay-distros.world)<70
 
-#-ini(overlay-distros.world,69)-#
+#-ini(overlay-distros.world,70)-#
 
 #?in(os_linux_pkglist, CMC)!=#
 !net-dns/bind-tools
@@ -14,7 +14,7 @@
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
-app-misc/screenfetch
+!app-misc/screenfetch
 net-misc/aria2
 #in#
 
