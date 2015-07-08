@@ -131,7 +131,12 @@ dev-python/ipython
 dev-util/android-tools
 #in#
 
-#?in(os_linux_pkglist, CMC)!=#
-app-misc/lirc
-sys-apps/lm_sensors
+#?in(os_linux_pkglist, CDS+)!=#
+dev-vcs/bzr
+dev-vcs/cvs
+dev-vcs/darcs
+dev-vcs/mercurial
+dev-vcs/subversion
 #in#
+
+
