@@ -1,0 +1,15 @@
+# Calculate format=world name=world ini(overlay-distros.world)<71
+
+#-ini(overlay-distros.world,71)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+dev-qt/designer:5
+dev-qt/qtconcurrent:5
+dev-qt/qtdeclarative:5
+dev-qt/qthelp:5
+dev-qt/qtprintsupport:5
+dev-qt/qtquick1:5
+dev-qt/qtquickcontrols:5
+dev-qt/qtx11extras:5
+dev-qt/qt-creator
+#in#
