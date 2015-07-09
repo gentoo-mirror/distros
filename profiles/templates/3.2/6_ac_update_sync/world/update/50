@@ -2,7 +2,7 @@
 
 #-ini(overlay-distros.world,50)-#
 
-#?in(os_linux_pkglist, CLD, CLDX, CMC, CDS)!=#
+#?in(os_linux_pkglist, CMC)!=#
 !app-admin/testdisk
 #in#
 
