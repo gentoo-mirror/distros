@@ -124,11 +124,18 @@ sys-process/iotop
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+app-laptop/tpb
+app-laptop/tp_smapi
+app-misc/anki
 app-misc/screen
+app-mobilephone/wammu
 app-portage/cpuinfo2cpuflags
+app-text/xournal
 dev-lang/mono
 dev-python/ipython
 dev-util/android-tools
+dev-util/geany-plugins
+media-gfx/cellwriter
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
@@ -136,6 +143,5 @@ dev-vcs/bzr
 dev-vcs/cvs
 dev-vcs/mercurial
 dev-vcs/subversion
+net-misc/aria2
 #in#
-
-
