@@ -1,0 +1,13 @@
+# Calculate format=world name=world ini(overlay-distros.world)<72
+
+#-ini(overlay-distros.world,72)-#
+
+#?in(os_linux_pkglist, CLD, CLDX, CDS, CDS+)!=#
+app-admin/testdisk
+#in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+x11-drivers/ati-drivers
+x11-drivers/nvidia-drivers
+x11-terms/guake
+#in#
