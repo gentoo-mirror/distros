@@ -9,6 +9,7 @@
 
 # AMD64 Profiles
 amd64		CLD/amd64					stable
+amd64		CLDM/amd64					stable
 amd64		CLDX/amd64					stable
 amd64		CDS/amd64					stable
 amd64		CLSM/amd64					stable
@@ -21,6 +22,7 @@ amd64		CDS+/amd64					stable
 
 # x86 Profiles
 x86		CLD/x86						stable
+x86		CLDM/x86					stable
 x86		CLDX/x86					stable
 x86		CDS/x86						stable
 x86		CLSM/x86					stable

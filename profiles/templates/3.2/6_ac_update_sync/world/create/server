@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CDS, CDS+, CSS)!=#
+#?in(os_linux_pkglist, CDS, CSS, CDS+)!=#
 net-misc/dhcp
 #in#
 
