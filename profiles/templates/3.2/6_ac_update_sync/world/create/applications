@@ -1,11 +1,11 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLD+, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLD+, CLDX+)!=#
 app-editors/vim
 app-office/libreoffice
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 app-text/fbreader
 #in#
 

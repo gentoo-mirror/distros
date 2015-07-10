@@ -1,0 +1,4 @@
+USE=""
+CL="builder client desktop console consolegui"
+THEMES="CLDM"
+LIGHTDM_SESSION=mate
