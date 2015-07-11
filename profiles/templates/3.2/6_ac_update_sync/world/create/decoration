@@ -15,6 +15,10 @@ x11-themes/calculate-xcursors
 x11-themes/calculate-icon-theme
 #in#
 
+#?in(os_linux_pkglist, CLDM)!=#
+x11-themes/elementary-icon-theme
+#in#
+
 #?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
 media-gfx/lightdm-themes-calculate
 x11-themes/claws-mail-theme-calculate

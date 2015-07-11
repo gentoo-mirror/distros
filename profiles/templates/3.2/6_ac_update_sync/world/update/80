@@ -6,3 +6,8 @@
 !app-misc/xorg-meta
 x11-base/xorg-server
 #in#
+
+#?in(os_linux_pkglist, CLDM)!=#
+x11-themes/elementary-icon-theme
+#in#
+
