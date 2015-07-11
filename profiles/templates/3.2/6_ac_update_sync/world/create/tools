@@ -97,7 +97,6 @@ sys-block/partitionmanager
 app-admin/hardinfo
 app-pda/usbmuxd
 dev-python/gst-python
-media-sound/pavucontrol
 sys-apps/mlocate
 sys-block/gparted
 #для корректной поддержки мультимедиа клавиатур
