@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-distros.world)<77
+
+#-ini(overlay-distros.world,77)-#
+
+#?in(os_linux_pkglist, CMC)!=#
+!app-misc/xorg-meta
+x11-base/xorg-server
+#in#

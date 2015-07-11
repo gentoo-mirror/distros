@@ -97,12 +97,8 @@ sys-block/partitionmanager
 app-admin/hardinfo
 app-pda/usbmuxd
 dev-python/gst-python
-# write to world for keep package on during depclean (ruby is used for DEPEND)
-dev-lang/vala
-dev-util/catfish
 sys-apps/mlocate
 sys-block/gparted
-x11-misc/sw-notify-send
 #для корректной поддержки мультимедиа клавиатур
 x11-misc/wmctrl
 #in#
