@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-distros.world)<74
+
+#-ini(overlay-distros.world,74)-#
+
+#?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
+dev-lang/vala
+#in#
+
