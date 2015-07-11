@@ -5,7 +5,7 @@ media-gfx/gimp
 media-gfx/imagemagick
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLDX, CLDX+)!=#
 media-gfx/nomacs
 #in#
 
