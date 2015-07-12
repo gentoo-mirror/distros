@@ -11,7 +11,7 @@ media-gfx/dm-themes-calculate
 x11-themes/calculate-xcursors
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLD+, CLDX+)!=#
 x11-themes/calculate-icon-theme
 #in#
 
