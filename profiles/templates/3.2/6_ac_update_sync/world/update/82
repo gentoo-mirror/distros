@@ -1,0 +1,12 @@
+# Calculate format=world name=world ini(overlay-distros.world)<82
+
+#-ini(overlay-distros.world,82)-#
+
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CDS+)!=#
+net-analyzer/speedtest-cli
+#in#
+
+#?in(os_linux_pkglist, CLD+)!=#
+!app-misc/xorg-meta
+x11-base/xorg-server
+#in#
