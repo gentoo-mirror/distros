@@ -145,5 +145,6 @@ dev-vcs/bzr
 dev-vcs/cvs
 dev-vcs/mercurial
 dev-vcs/subversion
+net-analyzer/speedtest-cli
 net-misc/aria2
 #in#

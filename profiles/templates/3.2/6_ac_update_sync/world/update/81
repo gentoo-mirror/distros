@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<81
+
+#-ini(overlay-distros.world,81)-#
+
+#?in(os_linux_pkglist, CDS+)!=#
+net-analyzer/speedtest-cli
+#in#
