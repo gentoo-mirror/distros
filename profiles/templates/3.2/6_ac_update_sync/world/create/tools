@@ -48,7 +48,7 @@ app-admin/testdisk
 net-analyzer/speedtest-cli
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLDX+, CDS+)!=#
 app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/pcmciautils
