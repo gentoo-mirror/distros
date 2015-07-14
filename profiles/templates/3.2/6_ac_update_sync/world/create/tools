@@ -60,7 +60,7 @@ sys-power/powernowd
 sys-power/powertop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLD+, CLDX+, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLDX+, CDS+)!=#
 sys-apps/acl
 app-misc/mc
 #in#
