@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<84
-
-#-ini(overlay-distros.world,84)-#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-sys-power/powertop
-x11-misc/parcellite
-#in#
