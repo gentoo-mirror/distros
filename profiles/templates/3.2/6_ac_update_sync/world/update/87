@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<86
+# Calculate format=world name=world ini(overlay-distros.world)<87
 
-#-ini(overlay-distros.world,86)-#
+#-ini(overlay-distros.world,87)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-admin/keepassx
@@ -27,7 +27,15 @@ x11-terms/tilda
 #in#
 
 #?in(os_linux_pkglist, CLD+)!=#
+!app-arch/star
+!app-misc/screenfetch
+!net-misc/iperf
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
 app-arch/star
 app-misc/screenfetch
+net-analyzer/mtr
 net-misc/iperf
 #in#
+

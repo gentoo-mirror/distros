@@ -169,6 +169,7 @@ dev-vcs/bzr
 dev-vcs/cvs
 dev-vcs/mercurial
 dev-vcs/subversion
+net-analyzer/mtr
 net-misc/aria2
 net-misc/iperf
 #in#
