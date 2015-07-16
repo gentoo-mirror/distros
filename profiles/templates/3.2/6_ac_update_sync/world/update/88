@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<88
+
+#-ini(overlay-distros.world,88)-#
+
+#?in(os_linux_pkglist, CLDX, CLDX+)!=#
+x11-themes/elementary-icon-theme
+#in#

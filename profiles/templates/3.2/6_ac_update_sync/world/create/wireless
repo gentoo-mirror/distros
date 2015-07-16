@@ -10,6 +10,6 @@ net-wireless/wpa_supplicant
 net-wireless/broadcom-sta
 #in#
 
-#?in(os_linux_pkglist, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
 net-wireless/blueman
 #in#
