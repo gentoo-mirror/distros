@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<90
+
+#-ini(overlay-distros.world,90)-#
+
+#?in(os_linux_pkglist, CLDM)!=#
+sys-power/upower-pm-utils
+#in#
