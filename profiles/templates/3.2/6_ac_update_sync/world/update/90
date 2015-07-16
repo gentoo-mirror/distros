@@ -3,5 +3,10 @@
 #-ini(overlay-distros.world,90)-#
 
 #?in(os_linux_pkglist, CLDM)!=#
+x11-misc/mate-notification-daemon
 sys-power/upower-pm-utils
+#in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+app-cdr/brasero
 #in#

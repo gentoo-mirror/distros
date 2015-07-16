@@ -1,4 +1,5 @@
 # Calculate name=world format=world in(os_linux_pkglist,CLDM,CLDX+)!=
 
 mate-base/mate
+x11-misc/mate-notification-daemon
 x11-misc/parcellite
