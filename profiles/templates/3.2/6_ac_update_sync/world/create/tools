@@ -171,4 +171,5 @@ dev-vcs/subversion
 net-analyzer/mtr
 net-misc/aria2
 net-misc/iperf
+sys-apps/lshw
 #in#
