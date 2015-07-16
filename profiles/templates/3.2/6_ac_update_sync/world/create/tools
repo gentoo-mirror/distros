@@ -82,7 +82,7 @@ sys-apps/usb_modeswitch
 x11-libs/gksu
 #in#
 
-#?in(os_linux_pkglist, CLD, CMC, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CMC, CLD+)!=#
 sys-power/upower-pm-utils
 #in#
 

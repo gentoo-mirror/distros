@@ -32,6 +32,7 @@ media-video/vlc
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+app-cdr/brasero
 media-radio/radiotray
 media-sound/alsa-utils
 media-sound/audacious
