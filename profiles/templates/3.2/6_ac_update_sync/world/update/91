@@ -9,4 +9,5 @@ sys-power/upower-pm-utils
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-cdr/brasero
+x11-misc/mate-notification-daemon
 #in#
