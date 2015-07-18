@@ -7,6 +7,7 @@ mail-client/evolution
 mail-client/mutt
 mate-extra/mate-sensors-applet
 net-analyzer/mate-netspeed
+x11-themes/mate-icon-theme-faenza
 #in#
 
 #?in(os_linux_pkglist, CLDM)!=#
