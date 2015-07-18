@@ -95,13 +95,16 @@ sys-block/partitionmanager
 #in#
 
 #?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
-app-admin/hardinfo
 app-pda/usbmuxd
 dev-python/gst-python
 sys-apps/mlocate
 sys-block/gparted
 #для корректной поддержки мультимедиа клавиатур
 x11-misc/wmctrl
+#in#
+
+#?in(os_linux_pkglist, CLDX, CLDX+)!=#
+app-admin/hardinfo
 #in#
 
 #?in(os_linux_pkglist, CDS, CDS+)!=#

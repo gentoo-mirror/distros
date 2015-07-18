@@ -5,4 +5,12 @@
 #?in(os_linux_pkglist, CLDX+)!=#
 mail-client/evolution
 mail-client/mutt
+mate-extra/mate-sensors-applet
+net-analyzer/mate-netspeed
+#in#
+
+#?in(os_linux_pkglist, CLDM)!=#
+mate-extra/mate-sensors-applet
+net-analyzer/mate-netspeed
+!app-admin/hardinfo
 #in#
