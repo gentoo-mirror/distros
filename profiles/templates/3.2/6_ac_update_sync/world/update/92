@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-distros.world)<92
+
+#-ini(overlay-distros.world,92)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+mail-client/evolution
+mail-client/mutt
+#in#
