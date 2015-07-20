@@ -1,8 +1,9 @@
-# Calculate format=world name=world ini(overlay-distros.world)<95
+# Calculate format=world name=world ini(overlay-distros.world)<97
 
-#-ini(overlay-distros.world,95)-#
+#-ini(overlay-distros.world,97)-#
 
 #?in(os_linux_pkglist, CLD+)!=#
+!kde-misc/kgtk
 kde-apps/dragon
 kde-apps/filelight
 kde-apps/juk
