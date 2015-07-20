@@ -170,7 +170,6 @@ kde-misc/synaptiks
 #?in(os_linux_pkglist, CLD+)!=#
 kde-apps/kate
 kde-apps/konq-plugins
-kde-misc/kgtk
 #in#
 
 #?in(os_linux_pkglist, CLD+)!=#
