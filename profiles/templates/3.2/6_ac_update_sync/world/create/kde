@@ -3,17 +3,21 @@
 # kdeadmin-meta
 kde-apps/kcron
 kde-apps/kuser
-#kde-apps/ksystemlog
+#?in(os_linux_pkglist, CLD+)!=#
+kde-apps/ksystemlog
+#in#
 
 # kdeartwork-meta
 kde-apps/kdeartwork-desktopthemes
 kde-apps/kdeartwork-kscreensaver
-#kde-apps/kdeartwork-colorschemes
-#kde-apps/kdeartwork-emoticons
-#kde-apps/kdeartwork-iconthemes
-#kde-apps/kdeartwork-wallpapers
-#kde-apps/kdeartwork-weatherwallpapers
-#kde-apps/kdeartwork-styles
+#?in(os_linux_pkglist, CLD+)!=#
+kde-apps/kdeartwork-colorschemes
+kde-apps/kdeartwork-emoticons
+kde-apps/kdeartwork-iconthemes
+kde-apps/kdeartwork-wallpapers
+kde-apps/kdeartwork-weatherwallpapers
+kde-apps/kdeartwork-styles
+#in#
 
 # kdebase-meta
 kde-apps/dolphin
@@ -55,15 +59,17 @@ kde-base/plasma-workspace
 kde-base/powerdevil
 kde-base/systemsettings
 kde-base/kdm
-#kde-apps/kde-wallpapers
-#kde-base/kdebase-cursors
-#kde-apps/kdebase-runtime-meta
-#kde-apps/kde-base-artwork
-#kde-apps/konq-plugins
-#kde-apps/konqueror
-#kde-apps/nsplugins
-#kde-base/krunner
-#kde-base/solid-actions-kcm
+#?in(os_linux_pkglist, CLD+)!=#
+kde-apps/kde-wallpapers
+kde-base/kdebase-cursors
+kde-apps/kdebase-runtime-meta
+kde-apps/kde-base-artwork
+kde-apps/konq-plugins
+kde-apps/konqueror
+kde-apps/nsplugins
+kde-base/krunner
+kde-base/solid-actions-kcm
+#in#
 
 # kdebase-runtime-meta
 kde-apps/kcontrol
@@ -82,9 +88,11 @@ kde-apps/svgpart
 kde-apps/thumbnailers
 kde-apps/ksaneplugin
 kde-apps/libksane
-#kde-apps/kcolorchooser
-#kde-apps/kolourpaint
-#kde-apps/kruler
+#?in(os_linux_pkglist, CLD+)!=#
+kde-apps/kcolorchooser
+kde-apps/kolourpaint
+kde-apps/kruler
+#in#
 
 # kdemultimedia-meta
 kde-apps/audiocd-kio
@@ -93,18 +101,22 @@ kde-apps/libkcddb
 kde-apps/libkcompactdisc
 kde-apps/mplayerthumbs
 kde-apps/ffmpegthumbs
-#kde-apps/kscd
-#kde-apps/dragon
-#kde-apps/juk
+#?in(os_linux_pkglist, CLD+)!=#
+kde-apps/kscd
+kde-apps/dragon
+kde-apps/juk
+#in#
 
 # kdenetwork-meta
 kde-apps/kdenetwork-filesharing
 kde-apps/kopete
 kde-apps/krdc
 kde-apps/zeroconf-ioslave
-#kde-apps/kppp
-#kde-apps/kget
-#kde-apps/krfb
+#?in(os_linux_pkglist, CLD+)!=#
+kde-apps/kppp
+kde-apps/kget
+kde-apps/krfb
+#in#
 
 # kdeplasma-addons
 kde-base/kdeplasma-addons
@@ -114,15 +126,17 @@ kde-apps/ark
 kde-apps/kcalc
 kde-apps/kwalletmanager
 kde-apps/print-manager
-#kde-apps/kremotecontrol
-#kde-apps/kgpg
-#kde-apps/kcharselect
-#kde-apps/filelight
-#kde-apps/kdf
-#kde-apps/ktimer
-#kde-apps/superkaramba
-#kde-apps/kfloppy
-#kde-apps/sweeper
+#?in(os_linux_pkglist, CLD+)!=#
+kde-apps/kremotecontrol
+kde-apps/kgpg
+kde-apps/kcharselect
+kde-apps/filelight
+kde-apps/kdf
+kde-apps/ktimer
+kde-apps/superkaramba
+kde-apps/kfloppy
+kde-apps/sweeper
+#in#
 
 # kdepim-meta
 kde-base/calendarjanitor
@@ -135,15 +149,17 @@ kde-base/kmail
 kde-base/konsolekalendar
 kde-base/kontact
 kde-base/korganizer
-#kde-base/akonadiconsole
-#kde-base/kjots
-#kde-base/kalarm
-#kde-base/knotes
-#kde-base/akregator
-#kde-base/blogilo
-#kde-base/kleopatra
-#kde-base/knode
-#kde-base/ktimetracker
+#?in(os_linux_pkglist, CLD+)!=#
+kde-base/akonadiconsole
+kde-base/kjots
+kde-base/kalarm
+kde-base/knotes
+kde-base/akregator
+kde-base/blogilo
+kde-base/kleopatra
+kde-base/knode
+kde-base/ktimetracker
+#in#
 
 # kde-l10n
 kde-apps/kde4-l10n
@@ -151,12 +167,14 @@ kde-base/kdepim-l10n
 
 # kdemisc
 kde-misc/synaptiks
-#kde-apps/kate
-#kde-apps/konq-plugins
-#kde-misc/kgtk
+#?in(os_linux_pkglist, CLD+)!=#
+kde-apps/kate
+kde-apps/konq-plugins
+kde-misc/kgtk
+#in#
 
-
-# kdeedu-meta
-# kdegames-meta
-# kdetoys-meta
-
+#?in(os_linux_pkglist, CLD+)!=#
+kde-apps/kdeedu-meta
+kde-apps/kdegames-meta
+kde-apps/kdetoys-meta
+#in#
