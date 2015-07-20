@@ -149,6 +149,7 @@ dev-util/geany-plugins
 mail-client/evolution
 mail-client/mutt
 mail-client/sylpheed
+media-radio/fldigi
 media-gfx/cellwriter
 media-sound/flacon
 media-sound/mac
