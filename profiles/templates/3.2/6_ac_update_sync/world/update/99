@@ -4,4 +4,5 @@
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-misc/workrave
+dev-python/PyQt5
 #in#
