@@ -54,6 +54,7 @@ www-client/links
 mail-client/geary
 mail-client/sylpheed
 mail-client/thunderbird
+net-im/qutim
 net-misc/dropbox
 net-misc/modem-manager-gui
 net-misc/yandex-disk
