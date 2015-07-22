@@ -8,3 +8,7 @@ net-voip/linphone
 x11-themes/greybird
 x11-wm/compiz-fusion
 #in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+dev-lang/php
+#in#
