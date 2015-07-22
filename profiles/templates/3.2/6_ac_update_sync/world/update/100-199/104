@@ -1,0 +1,10 @@
+# Calculate format=world name=world ini(overlay-distros.world)<104
+
+#-ini(overlay-distros.world,104)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+media-video/openshot
+net-voip/linphone
+x11-themes/greybird
+x11-wm/compiz-fusion
+#in#
