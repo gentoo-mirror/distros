@@ -5,4 +5,5 @@
 #?in(os_linux_pkglist, CLDX+)!=#
 media-video/openshot
 net-voip/linphone
+x11-wm/compiz-fusion
 #in#
