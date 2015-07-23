@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<106
-
-#-ini(overlay-distros.world,106)-#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-x11-misc/mate-notification-daemon
-#in#
