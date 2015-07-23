@@ -54,6 +54,7 @@ www-client/links
 mail-client/geary
 mail-client/sylpheed
 mail-client/thunderbird
+net-im/corebird
 net-im/psi
 net-misc/dropbox
 net-misc/modem-manager-gui

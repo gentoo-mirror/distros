@@ -5,6 +5,7 @@
 #?in(os_linux_pkglist, CLDX+)!=#
 media-video/openshot
 media-video/totem
+net-im/corebird
 net-im/psi
 net-voip/linphone
 x11-misc/mate-notification-daemon
