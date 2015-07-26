@@ -1,4 +1,3 @@
-PKGDIR="/var/calculate/remote/packages/CDS"
 USE=""
 CL="builder console server"
 THEMES="CDS"
