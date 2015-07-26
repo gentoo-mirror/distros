@@ -23,3 +23,6 @@ net-proxy/squidguard
 sys-apps/most
 #in#
 
+#?in(os_linux_pkglist, CDS+)!=#
+dev-lang/php
+#in#

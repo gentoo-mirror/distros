@@ -54,6 +54,8 @@ www-client/links
 mail-client/geary
 mail-client/sylpheed
 mail-client/thunderbird
+net-im/corebird
+net-im/psi
 net-misc/dropbox
 net-misc/modem-manager-gui
 net-misc/yandex-disk
@@ -61,5 +63,10 @@ net-p2p/amule
 net-p2p/qbittorrent
 net-p2p/rtorrent
 net-p2p/transmission
+net-voip/linphone
 www-client/firefox
+#in#
+
+#?in(os_linux_pkglist, CLD+)!=#
+net-im/qutim
 #in#

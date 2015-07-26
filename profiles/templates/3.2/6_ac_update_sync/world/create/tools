@@ -95,13 +95,16 @@ sys-block/partitionmanager
 #in#
 
 #?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
-app-admin/hardinfo
 app-pda/usbmuxd
 dev-python/gst-python
 sys-apps/mlocate
 sys-block/gparted
 #для корректной поддержки мультимедиа клавиатур
 x11-misc/wmctrl
+#in#
+
+#?in(os_linux_pkglist, CLDX, CLDX+)!=#
+app-admin/hardinfo
 #in#
 
 #?in(os_linux_pkglist, CDS, CDS+)!=#
@@ -133,6 +136,7 @@ app-laptop/tp_smapi
 app-misc/anki
 app-misc/screen
 app-misc/screenfetch
+app-misc/workrave
 app-mobilephone/wammu
 app-portage/cpuinfo2cpuflags
 app-text/texlive
@@ -143,7 +147,10 @@ dev-python/ipython
 dev-qt/qt-creator
 dev-util/android-tools
 dev-util/geany-plugins
+mail-client/evolution
+mail-client/mutt
 mail-client/sylpheed
+media-radio/fldigi
 media-gfx/cellwriter
 media-sound/flacon
 media-sound/mac
