@@ -33,6 +33,10 @@ net-misc/ifenslave
 net-misc/wol
 #in#
 
+#?in(os_linux_pkglist, CLDX+)!=#
+net-misc/wicd
+#in#
+
 #?in(os_linux_pkglist, CDS+)!=#
 net-misc/tor
 #in#

@@ -50,12 +50,18 @@ net-ftp/tftp-hpa
 www-client/links
 #in#
 
+#?in(os_linux_pkglist, CLD+)!=#
+net-im/qutim
+net-irc/kvirc
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 mail-client/geary
 mail-client/sylpheed
 mail-client/thunderbird
 net-im/corebird
 net-im/psi
+net-irc/kvirc
 net-misc/dropbox
 net-misc/modem-manager-gui
 net-misc/yandex-disk
@@ -63,10 +69,7 @@ net-p2p/amule
 net-p2p/qbittorrent
 net-p2p/rtorrent
 net-p2p/transmission
+net-voip/ekiga
 net-voip/linphone
 www-client/firefox
-#in#
-
-#?in(os_linux_pkglist, CLD+)!=#
-net-im/qutim
 #in#

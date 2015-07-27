@@ -128,6 +128,7 @@ sys-process/iotop
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+app-admin/conky
 app-admin/keepassx
 app-cdr/gcdemu
 app-editors/ghex
@@ -159,6 +160,8 @@ net-im/mcabber
 net-misc/clipgrab
 net-misc/putty
 net-news/quiterss
+sys-auth/thinkfinger
+sys-power/apcupsd
 x11-misc/slim
 x11-misc/spacefm
 x11-misc/sunflower
@@ -179,4 +182,7 @@ net-analyzer/mtr
 net-misc/aria2
 net-misc/iperf
 sys-apps/lshw
+sys-apps/setserial
+sys-fs/sshfs-fuse
+sys-process/nmon
 #in#
