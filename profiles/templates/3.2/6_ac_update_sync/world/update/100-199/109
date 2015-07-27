@@ -30,6 +30,7 @@ x11-wm/compiz-fusion
 #?in(os_linux_pkglist, CDS+)!=#
 dev-lang/php
 sys-apps/setserial
+sys-fs/cryptsetup
 sys-fs/sshfs-fuse
 sys-process/nmon
 #in#
