@@ -1,8 +1,9 @@
-# Calculate format=world name=world ini(overlay-distros.world)<108
+# Calculate format=world name=world ini(overlay-distros.world)<109
 
-#-ini(overlay-distros.world,108)-#
+#-ini(overlay-distros.world,109)-#
 
-#?in(os_linux_pkglist, CLDX+)!=#
+#?in(os_linux_pkglist, CLD+)!=#
+net-im/choqok
 net-irc/kvirc
 #in#
 
@@ -11,6 +12,7 @@ app-admin/conky
 media-video/openshot
 media-video/totem
 net-im/corebird
+net-im/licq
 net-im/psi
 net-irc/kvirc
 net-misc/wicd
