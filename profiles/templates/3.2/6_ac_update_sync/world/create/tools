@@ -183,6 +183,7 @@ net-misc/aria2
 net-misc/iperf
 sys-apps/lshw
 sys-apps/setserial
+sys-fs/cryptsetup
 sys-fs/sshfs-fuse
 sys-process/nmon
 #in#
