@@ -26,4 +26,5 @@ app-office/gnumeric
 app-office/scribus
 app-office/texmaker
 app-text/xournal
+dev-db/pgadmin3
 #in#

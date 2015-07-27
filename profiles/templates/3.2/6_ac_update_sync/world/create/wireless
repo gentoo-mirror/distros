@@ -13,3 +13,7 @@ net-wireless/broadcom-sta
 #?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
 net-wireless/blueman
 #in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+net-wireless/aircrack-ng
+#in#
