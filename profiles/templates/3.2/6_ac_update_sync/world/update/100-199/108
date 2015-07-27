@@ -1,0 +1,33 @@
+# Calculate format=world name=world ini(overlay-distros.world)<108
+
+#-ini(overlay-distros.world,108)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+net-irc/kvirc
+#in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+app-admin/conky
+media-video/openshot
+media-video/totem
+net-im/corebird
+net-im/psi
+net-irc/kvirc
+net-misc/wicd
+net-voip/ekiga
+net-voip/linphone
+sci-astronomy/stellarium
+sci-visualization/qtiplot
+sys-auth/thinkfinger
+sys-power/apcupsd
+x11-misc/mate-notification-daemon
+x11-themes/greybird
+x11-wm/compiz-fusion
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+dev-lang/php
+sys-apps/setserial
+sys-fs/sshfs-fuse
+sys-process/nmon
+#in#
