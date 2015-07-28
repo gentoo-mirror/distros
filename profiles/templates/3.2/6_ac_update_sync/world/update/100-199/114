@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<110
+# Calculate format=world name=world ini(overlay-distros.world)<114
 
-#-ini(overlay-distros.world,110)-#
+#-ini(overlay-distros.world,114)-#
 
 #?in(os_linux_pkglist, CLD+)!=#
 net-im/choqok
@@ -9,12 +9,16 @@ net-irc/kvirc
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-admin/conky
+app-emulation/virtualbox
+app-emulation/virtualbox-additions
+!app-emulation/virtualbox-guest-additions
 dev-db/pgadmin3
 media-video/openshot
 media-video/totem
 net-im/corebird
 net-im/licq
 net-im/psi
+net-im/psimedia
 net-irc/kvirc
 net-misc/wicd
 net-voip/ekiga
@@ -26,6 +30,8 @@ sys-auth/thinkfinger
 sys-power/apcupsd
 x11-misc/mate-notification-daemon
 x11-themes/greybird
+x11-wm/enlightenment
+x11-wm/enlightenment:0.17
 x11-wm/compiz-fusion
 #in#
 
