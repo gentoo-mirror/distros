@@ -7,7 +7,6 @@ app-emulation/qemu
 app-emulation/virt-manager
 app-emulation/virtualbox
 app-emulation/virtualbox-additions
-app-emulation/virtualbox-guest-additions
 app-emulation/wine
 app-emulation/winetricks
 games-emulation/dosbox

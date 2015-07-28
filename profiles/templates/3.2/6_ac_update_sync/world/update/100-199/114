@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<113
+# Calculate format=world name=world ini(overlay-distros.world)<114
 
-#-ini(overlay-distros.world,113)-#
+#-ini(overlay-distros.world,114)-#
 
 #?in(os_linux_pkglist, CLD+)!=#
 net-im/choqok
@@ -11,6 +11,7 @@ net-irc/kvirc
 app-admin/conky
 app-emulation/virtualbox
 app-emulation/virtualbox-additions
+!app-emulation/virtualbox-guest-additions
 dev-db/pgadmin3
 media-video/openshot
 media-video/totem
