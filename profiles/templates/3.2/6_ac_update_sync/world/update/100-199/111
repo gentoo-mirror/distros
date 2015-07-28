@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<110
+# Calculate format=world name=world ini(overlay-distros.world)<111
 
-#-ini(overlay-distros.world,110)-#
+#-ini(overlay-distros.world,111)-#
 
 #?in(os_linux_pkglist, CLD+)!=#
 net-im/choqok
@@ -26,6 +26,8 @@ sys-auth/thinkfinger
 sys-power/apcupsd
 x11-misc/mate-notification-daemon
 x11-themes/greybird
+x11-wm/enlightenment
+x11-wm/enlightenment:0.17
 x11-wm/compiz-fusion
 #in#
 
