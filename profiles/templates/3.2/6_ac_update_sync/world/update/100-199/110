@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<109
+# Calculate format=world name=world ini(overlay-distros.world)<110
 
-#-ini(overlay-distros.world,109)-#
+#-ini(overlay-distros.world,110)-#
 
 #?in(os_linux_pkglist, CLD+)!=#
 net-im/choqok
@@ -9,6 +9,7 @@ net-irc/kvirc
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-admin/conky
+dev-db/pgadmin3
 media-video/openshot
 media-video/totem
 net-im/corebird
@@ -18,6 +19,7 @@ net-irc/kvirc
 net-misc/wicd
 net-voip/ekiga
 net-voip/linphone
+net-wireless/aircrack-ng
 sci-astronomy/stellarium
 sci-visualization/qtiplot
 sys-auth/thinkfinger
@@ -28,9 +30,16 @@ x11-wm/compiz-fusion
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+app-crypt/pgpdump
+app-portage/genlop
 dev-lang/php
+net-analyzer/bmon
+net-analyzer/ettercap
+net-analyzer/trafshow
 sys-apps/setserial
+sys-fs/avfs
 sys-fs/cryptsetup
+net-fs/davfs2
 sys-fs/sshfs-fuse
 sys-process/nmon
 #in#

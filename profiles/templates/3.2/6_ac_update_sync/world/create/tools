@@ -173,16 +173,20 @@ x11-terms/tilda
 
 #?in(os_linux_pkglist, CDS+)!=#
 app-arch/star
+app-crypt/pgpdump
 app-misc/screenfetch
+app-portage/genlop
 dev-vcs/bzr
 dev-vcs/cvs
 dev-vcs/mercurial
 dev-vcs/subversion
 net-analyzer/mtr
+net-fs/davfs2
 net-misc/aria2
 net-misc/iperf
 sys-apps/lshw
 sys-apps/setserial
+sys-fs/avfs
 sys-fs/cryptsetup
 sys-fs/sshfs-fuse
 sys-process/nmon
