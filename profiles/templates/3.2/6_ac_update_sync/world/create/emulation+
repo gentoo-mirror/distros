@@ -5,6 +5,9 @@ app-emulation/playonlinux
 app-emulation/q4wine
 app-emulation/qemu
 app-emulation/virt-manager
+app-emulation/virtualbox
+app-emulation/virtualbox-additions
+app-emulation/virtualbox-guest-additions
 app-emulation/wine
 app-emulation/winetricks
 games-emulation/dosbox

@@ -9,12 +9,16 @@ net-irc/kvirc
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-admin/conky
+app-emulation/virtualbox
+app-emulation/virtualbox-additions
+app-emulation/virtualbox-guest-additions
 dev-db/pgadmin3
 media-video/openshot
 media-video/totem
 net-im/corebird
 net-im/licq
 net-im/psi
+net-im/psimedia
 net-irc/kvirc
 net-misc/wicd
 net-voip/ekiga
