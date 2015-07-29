@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<114
+# Calculate format=world name=world ini(overlay-distros.world)<115
 
-#-ini(overlay-distros.world,114)-#
+#-ini(overlay-distros.world,115)-#
 
 #?in(os_linux_pkglist, CLD+)!=#
 net-im/choqok
@@ -28,11 +28,13 @@ sci-astronomy/stellarium
 sci-visualization/qtiplot
 sys-auth/thinkfinger
 sys-power/apcupsd
+www-client/midori
+www-client/qupzilla
 x11-misc/mate-notification-daemon
 x11-themes/greybird
+x11-wm/compiz-fusion
 x11-wm/enlightenment
 x11-wm/enlightenment:0.17
-x11-wm/compiz-fusion
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
