@@ -64,9 +64,9 @@ mail-client/geary
 mail-client/sylpheed
 mail-client/thunderbird
 net-im/corebird
+net-im/licq
 net-im/psi
 net-im/psimedia
-net-im/licq
 net-irc/kvirc
 net-misc/dropbox
 net-misc/modem-manager-gui
@@ -78,4 +78,6 @@ net-p2p/transmission
 net-voip/ekiga
 net-voip/linphone
 www-client/firefox
+www-client/midori
+www-client/qupzilla
 #in#
