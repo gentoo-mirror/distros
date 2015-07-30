@@ -1,5 +1,16 @@
 # Calculate name=world format=world in(os_linux_pkglist,CLS,CLDX+)!=
 
+#in(os_linux_pkglist,CLS,CLDO,CLDX+)!=#
 x11-terms/rxvt-unicode
 x11-wm/openbox
+#in#
 
+#in(os_linux_pkglist,CLDO,CLDX+)!=#
+x11-misc/gmrun
+x11-misc/obconf
+x11-misc/screengrab
+x11-misc/spacefm
+x11-misc/tint2
+x11-misc/tintwizard
+x11-misc/xxkb
+#in#
