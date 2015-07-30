@@ -4,14 +4,14 @@
 dev-util/ccache
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLSM, CLS, CSS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CSS, CMC, CDS+)!=#
 app-misc/tmux
 sys-auth/pam_update
 sys-fs/btrfs-progs
 sys-fs/reiserfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLSM, CLS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CMC, CDS+)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -82,11 +82,11 @@ sys-apps/usb_modeswitch
 x11-libs/gksu
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CMC, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDO, CMC, CLD+)!=#
 sys-power/upower-pm-utils
 #in#
 
-#?in(os_linux_pkglist, CLSM, CLS, CMC)!=#
+#?in(os_linux_pkglist, CLS, CMC)!=#
 net-misc/dhcp
 #in#
 
@@ -163,7 +163,6 @@ net-news/quiterss
 sys-auth/thinkfinger
 sys-power/apcupsd
 x11-misc/slim
-x11-misc/spacefm
 x11-misc/sunflower
 x11-misc/xsnow
 x11-terms/guake
