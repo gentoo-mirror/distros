@@ -1,7 +1,6 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
-app-editors/vim
 app-office/libreoffice
 #in#
 

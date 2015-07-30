@@ -60,7 +60,8 @@ sys-power/powernowd
 sys-power/powertop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLDX+, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLDX+, CDS+)!=#
+app-editors/vim
 sys-apps/acl
 app-misc/mc
 #in#
@@ -109,7 +110,6 @@ app-admin/hardinfo
 
 #?in(os_linux_pkglist, CDS, CDS+)!=#
 app-antivirus/clamav
-app-editors/vim
 app-i18n/enca
 app-portage/ufed
 dev-libs/klibc
