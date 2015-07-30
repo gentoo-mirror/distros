@@ -1,10 +1,10 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSM, CLS, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CLS, CLDX+)!=#
 app-misc/xorg-meta
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLSM, CLDX+)!=#
+#?in(os_linux_pkglist, CLDM, CLDX, CLDO, CLDX+)!=#
 x11-misc/lightdm
 #in#
 
