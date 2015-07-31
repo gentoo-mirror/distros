@@ -23,9 +23,12 @@ net-irc/konversation
 net-p2p/ktorrent
 #in#
 
+#?in(os_linux_pkglist, CLDM, CLDX, CLDO, CLDX+)!=#
+mail-client/claws-mail
+#in#
+
 #?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
 net-ftp/filezilla
-mail-client/claws-mail
 net-im/pidgin
 net-irc/hexchat
 net-misc/remmina
