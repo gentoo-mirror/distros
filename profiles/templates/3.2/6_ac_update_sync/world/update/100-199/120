@@ -1,0 +1,9 @@
+# Calculate format=world name=world ini(overlay-distros.world)<120
+
+#-ini(overlay-distros.world,120)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+app-emulation/virtualbox-extpack-oracle
+x11-misc/compton
+x11-misc/pcmanfm
+#in#
