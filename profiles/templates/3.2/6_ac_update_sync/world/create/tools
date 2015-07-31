@@ -163,6 +163,7 @@ net-news/quiterss
 sys-auth/thinkfinger
 sys-power/apcupsd
 x11-misc/slim
+x11-misc/spacefm
 x11-misc/sunflower
 x11-misc/xsnow
 x11-terms/guake
