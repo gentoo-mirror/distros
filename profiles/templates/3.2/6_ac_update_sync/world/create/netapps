@@ -60,6 +60,7 @@ www-client/links
 net-im/choqok
 net-im/qutim
 net-irc/kvirc
+www-client/rekonq
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
@@ -83,4 +84,10 @@ net-voip/linphone
 www-client/firefox
 www-client/midori
 www-client/qupzilla
+www-client/seamonkey
+www-plugins/gnash
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+www-client/lynx
 #in#
