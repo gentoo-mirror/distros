@@ -29,6 +29,8 @@ app-text/fbless
 app-text/keepnote
 app-text/xournal
 dev-db/pgadmin3
+dev-util/meld
+sci-calculators/speedcrunch
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
