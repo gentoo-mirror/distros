@@ -20,10 +20,19 @@ sci-calculators/galculator
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-editors/gvim
+app-misc/rox-filer
 app-office/abiword
 app-office/gnumeric
 app-office/scribus
 app-office/texmaker
+app-text/fbless
+app-text/keepnote
 app-text/xournal
 dev-db/pgadmin3
+dev-util/meld
+sci-calculators/speedcrunch
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+app-text/fbless
 #in#

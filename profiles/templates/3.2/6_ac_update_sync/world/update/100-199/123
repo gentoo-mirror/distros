@@ -1,0 +1,30 @@
+# Calculate format=world name=world ini(overlay-distros.world)<123
+
+#-ini(overlay-distros.world,123)-#
+
+#?in(os_linux_pkglist, CLD+)!=#
+www-client/rekonq
+#in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+app-emulation/virtualbox-extpack-oracle
+app-misc/rox-filer
+app-text/keepnote
+dev-util/geany
+dev-util/meld
+media-gfx/gthumb
+media-sound/easytag
+media-sound/rhythmbox
+sci-calculators/speedcrunch
+www-client/seamonkey
+!www-plugins/gnash
+x11-misc/compton
+x11-misc/gcolor2
+x11-misc/pcmanfm
+x11-themes/geany-themes
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+app-text/fbless
+www-client/lynx
+#in#

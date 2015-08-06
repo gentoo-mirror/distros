@@ -37,7 +37,9 @@ media-radio/radiotray
 media-sound/alsa-utils
 media-sound/audacious
 media-sound/audacity
+media-sound/easytag
 media-sound/qmmp
+media-sound/rhythmbox
 media-video/avidemux
 media-video/mpv
 media-video/openshot
