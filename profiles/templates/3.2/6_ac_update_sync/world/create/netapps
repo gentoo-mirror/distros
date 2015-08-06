@@ -85,7 +85,6 @@ www-client/firefox
 www-client/midori
 www-client/qupzilla
 www-client/seamonkey
-www-plugins/gnash
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#

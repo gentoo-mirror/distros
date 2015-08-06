@@ -17,7 +17,7 @@ media-sound/easytag
 media-sound/rhythmbox
 sci-calculators/speedcrunch
 www-client/seamonkey
-www-plugins/gnash
+!www-plugins/gnash
 x11-misc/compton
 x11-misc/gcolor2
 x11-misc/pcmanfm
