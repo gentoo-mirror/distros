@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<123
+# Calculate format=world name=world ini(overlay-distros.world)<124
 
-#-ini(overlay-distros.world,123)-#
+#-ini(overlay-distros.world,124)-#
 
 #?in(os_linux_pkglist, CLD+)!=#
 www-client/rekonq
@@ -15,6 +15,7 @@ dev-util/meld
 media-gfx/gthumb
 media-sound/easytag
 media-sound/rhythmbox
+sci-astronomy/celestia
 sci-calculators/speedcrunch
 www-client/seamonkey
 !www-plugins/gnash
