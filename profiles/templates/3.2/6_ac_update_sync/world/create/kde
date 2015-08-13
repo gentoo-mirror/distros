@@ -172,9 +172,12 @@ kde-apps/kate
 kde-apps/konq-plugins
 #in#
 
+# other
 #?in(os_linux_pkglist, CLD+)!=#
+app-office/calligra
 kde-apps/kdeedu-meta
 kde-apps/kdegames-meta
 kde-apps/kdetoys-meta
+kde-apps/kompare
 kde-misc/yakuake
 #in#
