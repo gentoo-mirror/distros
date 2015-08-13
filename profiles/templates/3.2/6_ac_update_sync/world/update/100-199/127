@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<126
+# Calculate format=world name=world ini(overlay-distros.world)<127
 
-#-ini(overlay-distros.world,126)-#
+#-ini(overlay-distros.world,127)-#
 
 #?in(os_linux_pkglist, CLD+)!=#
 app-office/calligra
@@ -8,6 +8,7 @@ kde-apps/kompare
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+app-i18n/poedit
 app-misc/xmind
 #in#
 
