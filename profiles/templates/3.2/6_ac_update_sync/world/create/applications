@@ -21,6 +21,7 @@ sci-calculators/galculator
 #?in(os_linux_pkglist, CLDX+)!=#
 app-editors/gvim
 app-misc/rox-filer
+app-misc/xmind
 app-office/abiword
 app-office/gnumeric
 app-office/scribus

@@ -1,0 +1,12 @@
+# Calculate format=world name=world ini(overlay-distros.world)<125
+
+#-ini(overlay-distros.world,125)-#
+
+#?in(os_linux_pkglist, CLD+)!=#
+app-office/calligra
+kde-apps/kompare
+#in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+app-misc/xmind
+#in#
