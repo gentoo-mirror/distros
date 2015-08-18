@@ -2,4 +2,5 @@
 
 #?in(os_linux_pkglist, CLDX+)!=#
 sci-astronomy/celestia
+sci-chemistry/gromacs
 #in#

@@ -161,6 +161,7 @@ net-im/mcabber
 net-misc/clipgrab
 net-misc/putty
 net-news/quiterss
+sys-apps/gsmartcontrol
 sys-auth/thinkfinger
 sys-power/apcupsd
 x11-misc/gcolor2

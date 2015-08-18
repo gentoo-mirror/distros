@@ -18,6 +18,10 @@ app-text/qpdfview
 sci-calculators/galculator
 #in#
 
+#?in(os_linux_pkglist, CLD+)!=#
+app-text/kchmviewer
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 app-editors/gvim
 app-i18n/poedit
@@ -28,6 +32,7 @@ app-office/gnumeric
 app-office/scribus
 app-office/texmaker
 app-text/fbless
+app-text/kchmviewer
 app-text/keepnote
 app-text/xournal
 dev-db/pgadmin3

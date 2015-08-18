@@ -1,0 +1,20 @@
+# Calculate format=world name=world ini(overlay-distros.world)<128
+
+#-ini(overlay-distros.world,128)-#
+
+#?in(os_linux_pkglist, CLD+)!=#
+app-text/kchmviewer
+#in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+app-text/kchmviewer
+media-gfx/fotowall
+media-gfx/gqview
+media-sound/soundconverter
+media-video/bombono-dvd
+media-video/devede
+media-video/istanbul
+net-p2p/linuxdcpp
+sci-chemistry/gromacs
+sys-apps/gsmartcontrol
+#in#

@@ -19,6 +19,8 @@ media-gfx/digikam
 #?in(os_linux_pkglist, CLDX+)!=#
 media-gfx/blender
 media-gfx/darktable
+media-gfx/fotowall
+media-gfx/gqview
 media-gfx/gthumb
 media-gfx/inkscape
 media-gfx/pinta
