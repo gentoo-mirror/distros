@@ -18,10 +18,6 @@ app-text/qpdfview
 sci-calculators/galculator
 #in#
 
-#?in(os_linux_pkglist, CLD+)!=#
-app-text/kchmviewer
-#in#
-
 #?in(os_linux_pkglist, CLDX+)!=#
 app-editors/gvim
 app-i18n/poedit
