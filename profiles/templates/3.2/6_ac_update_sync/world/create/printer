@@ -11,3 +11,7 @@ net-print/cnijfilter
 net-print/gutenprint
 net-print/hplip-plugin
 #in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+net-print/splix
+#in#
