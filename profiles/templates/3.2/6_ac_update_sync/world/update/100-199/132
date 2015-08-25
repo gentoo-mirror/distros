@@ -1,0 +1,11 @@
+# Calculate format=world name=world ini(overlay-distros.world)<132
+
+#-ini(overlay-distros.world,132)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+net-print/splix
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+dev-vcs/gitolite-gentoo
+#in#

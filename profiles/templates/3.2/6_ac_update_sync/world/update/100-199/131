@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<131
-
-#-ini(overlay-distros.world,131)-#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-net-print/splix
-#in#
