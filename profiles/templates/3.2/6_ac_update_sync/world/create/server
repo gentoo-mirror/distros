@@ -25,5 +25,5 @@ sys-apps/most
 
 #?in(os_linux_pkglist, CDS+)!=#
 dev-lang/php
-dev-vcs/gitolite-gentoo
+dev-vcs/gitolite
 #in#
