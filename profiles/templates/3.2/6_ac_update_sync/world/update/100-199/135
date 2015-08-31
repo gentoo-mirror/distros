@@ -1,8 +1,10 @@
-# Calculate format=world name=world ini(overlay-distros.world)<134
+# Calculate format=world name=world ini(overlay-distros.world)<135
 
-#-ini(overlay-distros.world,134)-#
+#-ini(overlay-distros.world,135)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+net-p2p/bittorrent
+net-p2p/mldonkey
 net-print/splix
 x11-wm/afterstep
 x11-wm/fvwm
@@ -13,6 +15,9 @@ x11-wm/icewm
 !dev-vcs/gitolite-gentoo
 dev-vcs/gitolite
 net-misc/youtube-dl
+net-p2p/bittorrent
+net-p2p/btpd
+net-p2p/mldonkey
 www-servers/lighttpd
 www-servers/nginx
 #in#

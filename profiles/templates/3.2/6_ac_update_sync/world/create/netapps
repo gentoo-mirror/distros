@@ -76,8 +76,10 @@ net-misc/dropbox
 net-misc/modem-manager-gui
 net-misc/yandex-disk
 net-p2p/amule
+net-p2p/bittorrent
 net-p2p/qbittorrent
 net-p2p/linuxdcpp
+net-p2p/mldonkey
 net-p2p/rtorrent
 net-p2p/transmission
 net-voip/ekiga
@@ -90,5 +92,8 @@ www-client/seamonkey
 
 #?in(os_linux_pkglist, CDS+)!=#
 net-misc/youtube-dl
+net-p2p/bittorrent
+net-p2p/btpd
+net-p2p/mldonkey
 www-client/lynx
 #in#
