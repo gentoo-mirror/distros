@@ -1,0 +1,18 @@
+# Calculate format=world name=world ini(overlay-distros.world)<134
+
+#-ini(overlay-distros.world,134)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+net-print/splix
+x11-wm/afterstep
+x11-wm/fvwm
+x11-wm/icewm
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+!dev-vcs/gitolite-gentoo
+dev-vcs/gitolite
+net-misc/youtube-dl
+www-servers/lighttpd
+www-servers/nginx
+#in#

@@ -89,5 +89,6 @@ www-client/seamonkey
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+net-misc/youtube-dl
 www-client/lynx
 #in#

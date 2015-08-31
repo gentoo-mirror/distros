@@ -26,4 +26,6 @@ sys-apps/most
 #?in(os_linux_pkglist, CDS+)!=#
 dev-lang/php
 dev-vcs/gitolite
+www-servers/lighttpd
+www-servers/nginx
 #in#
