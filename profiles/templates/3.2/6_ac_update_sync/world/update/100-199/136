@@ -1,8 +1,10 @@
-# Calculate format=world name=world ini(overlay-distros.world)<135
+# Calculate format=world name=world ini(overlay-distros.world)<136
 
-#-ini(overlay-distros.world,135)-#
+#-ini(overlay-distros.world,136)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+media-sound/lxmusic
+media-sound/xmms2
 net-p2p/bittorrent
 net-p2p/mldonkey
 net-print/splix
