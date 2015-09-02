@@ -26,6 +26,7 @@ sys-apps/most
 #?in(os_linux_pkglist, CDS+)!=#
 dev-lang/php
 dev-vcs/gitolite
+net-misc/asterisk
 www-servers/lighttpd
 www-servers/nginx
 #in#

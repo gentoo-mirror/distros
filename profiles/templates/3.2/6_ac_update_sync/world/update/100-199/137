@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<136
+# Calculate format=world name=world ini(overlay-distros.world)<137
 
-#-ini(overlay-distros.world,136)-#
+#-ini(overlay-distros.world,137)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 media-sound/lxmusic
@@ -16,6 +16,7 @@ x11-wm/icewm
 #?in(os_linux_pkglist, CDS+)!=#
 !dev-vcs/gitolite-gentoo
 dev-vcs/gitolite
+net-misc/asterisk
 net-misc/youtube-dl
 net-p2p/bittorrent
 net-p2p/btpd
