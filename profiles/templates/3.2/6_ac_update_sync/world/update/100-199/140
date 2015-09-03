@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<139
+# Calculate format=world name=world ini(overlay-distros.world)<140
 
-#-ini(overlay-distros.world,139)-#
+#-ini(overlay-distros.world,140)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 dev-python/xlwt
@@ -25,6 +25,7 @@ net-misc/youtube-dl
 net-p2p/bittorrent
 net-p2p/btpd
 net-p2p/mldonkey
+sys-fs/ncdu
 www-servers/lighttpd
 www-servers/nginx
 #in#
