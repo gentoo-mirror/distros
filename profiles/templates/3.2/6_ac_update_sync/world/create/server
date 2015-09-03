@@ -27,6 +27,7 @@ sys-apps/most
 dev-lang/php
 dev-vcs/gitolite
 net-misc/asterisk
+net-misc/hylafaxplus
 www-servers/lighttpd
 www-servers/nginx
 #in#

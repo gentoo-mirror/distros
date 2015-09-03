@@ -1,6 +1,8 @@
 # Calculate name=world format=world in(os_linux_pkglist,CLDX+)!=
 
 dev-python/PyQt5
+dev-python/xlwt
+
 dev-qt/designer:5
 dev-qt/qtconcurrent:5
 dev-qt/qtcore:5

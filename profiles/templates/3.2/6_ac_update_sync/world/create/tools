@@ -187,6 +187,7 @@ dev-vcs/subversion
 net-analyzer/mtr
 net-fs/davfs2
 net-misc/aria2
+net-misc/iaxmodem
 net-misc/iperf
 sys-apps/lshw
 sys-apps/setserial
