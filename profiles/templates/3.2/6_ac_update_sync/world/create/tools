@@ -193,7 +193,6 @@ sys-apps/lshw
 sys-apps/setserial
 sys-fs/avfs
 sys-fs/cryptsetup
-sys-fs/ncdu
 sys-fs/sshfs-fuse
 sys-process/nmon
 #in#
