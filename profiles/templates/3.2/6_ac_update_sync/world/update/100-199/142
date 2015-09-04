@@ -1,8 +1,10 @@
-# Calculate format=world name=world ini(overlay-distros.world)<141
+# Calculate format=world name=world ini(overlay-distros.world)<142
 
-#-ini(overlay-distros.world,141)-#
+#-ini(overlay-distros.world,142)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+app-arch/arj
+app-editors/emacs
 dev-python/xlwt
 games-sports/xmoto
 media-sound/lxmusic

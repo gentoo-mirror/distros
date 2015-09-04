@@ -130,7 +130,9 @@ sys-process/iotop
 #?in(os_linux_pkglist, CLDX+)!=#
 app-admin/conky
 app-admin/keepassx
+app-arch/arj
 app-cdr/gcdemu
+app-editors/emacs
 app-editors/ghex
 app-laptop/tpb
 app-laptop/tp_smapi
