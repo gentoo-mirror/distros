@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<147
-
-#-ini(overlay-distros.world,147)-#
-
-#?in(os_linux_pkglist, CLDX+)!=&&os_arch_machine==x86_64#
-kde-plasma/plasma-meta
-#in#
