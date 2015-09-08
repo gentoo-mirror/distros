@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<143
+# Calculate format=world name=world ini(overlay-distros.world)<144
 
-#-ini(overlay-distros.world,143)-#
+#-ini(overlay-distros.world,144)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-arch/arj
@@ -8,6 +8,7 @@ app-arch/unrar
 app-editors/emacs
 dev-python/xlwt
 games-sports/xmoto
+kde-plasma/plasma-meta
 media-sound/lxmusic
 media-sound/xmms2
 net-p2p/bittorrent
