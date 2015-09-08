@@ -1,9 +1,10 @@
-# Calculate format=world name=world ini(overlay-distros.world)<142
+# Calculate format=world name=world ini(overlay-distros.world)<143
 
-#-ini(overlay-distros.world,142)-#
+#-ini(overlay-distros.world,143)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-arch/arj
+app-arch/unrar
 app-editors/emacs
 dev-python/xlwt
 games-sports/xmoto
@@ -18,12 +19,17 @@ x11-wm/icewm
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+dev-db/redis
 !dev-vcs/gitolite-gentoo
 dev-vcs/gitolite
+mail-filter/spamassassin
+net-fs/netatalk
+net-ftp/vsftpd
 net-misc/asterisk
 net-misc/hylafaxplus
 net-misc/iaxmodem
 net-misc/youtube-dl
+net-nds/shelldap
 net-p2p/bittorrent
 net-p2p/btpd
 net-p2p/mldonkey

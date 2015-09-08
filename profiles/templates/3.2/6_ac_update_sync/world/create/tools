@@ -131,6 +131,7 @@ sys-process/iotop
 app-admin/conky
 app-admin/keepassx
 app-arch/arj
+app-arch/unrar
 app-cdr/gcdemu
 app-editors/emacs
 app-editors/ghex
@@ -191,6 +192,7 @@ net-fs/davfs2
 net-misc/aria2
 net-misc/iaxmodem
 net-misc/iperf
+net-nds/shelldap
 sys-apps/lshw
 sys-apps/setserial
 sys-fs/avfs

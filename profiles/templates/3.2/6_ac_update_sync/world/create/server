@@ -24,8 +24,12 @@ sys-apps/most
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+dev-db/redis
 dev-lang/php
 dev-vcs/gitolite
+mail-filter/spamassassin
+net-fs/netatalk
+net-ftp/vsftpd
 net-misc/asterisk
 net-misc/hylafaxplus
 www-servers/lighttpd
