@@ -112,7 +112,6 @@ kde-plasma/systemsettings
 kde-plasma/user-manager
 
 kde-apps/amor
-kde-apps/attica
 kde-apps/audiocd-kio
 kde-apps/baloo-widgets
 kde-apps/dolphin
@@ -123,8 +122,6 @@ kde-apps/juk
 kde-apps/kaccounts-integration
 kde-apps/kate
 kde-apps/kcmshell
-kde-apps/kcontrol
-kde-apps/kcontrol
 kde-apps/kcron
 kde-apps/kde4-l10n
 kde-apps/kdeadmin-meta
@@ -140,7 +137,6 @@ kde-apps/kde-l10n
 kde-apps/kdemultimedia-meta
 kde-apps/kdenetwork-filesharing
 kde-apps/kdenlive
-kde-apps/kdepasswd
 kde-apps/kdepim-l10n
 kde-apps/kdesu
 kde-apps/kdetoys-meta
