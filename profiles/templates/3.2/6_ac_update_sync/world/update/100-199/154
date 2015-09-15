@@ -1,11 +1,11 @@
-# Calculate name=world format=world
+# Calculate format=world name=world ini(overlay-distros.world)<154
+
+#-ini(overlay-distros.world,154)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 games-arcade/briquolo
 games-arcade/lbreakout2
-games-util/steam-launcher
-games-misc/xpenguins
-games-sports/xmoto
+x11-misc/devilspie
 #in#
 
 #?in(os_linux_pkglist, CLD+)!=#

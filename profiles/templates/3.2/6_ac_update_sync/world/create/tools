@@ -167,6 +167,7 @@ net-news/quiterss
 sys-apps/gsmartcontrol
 sys-auth/thinkfinger
 sys-power/apcupsd
+x11-misc/devilspie
 x11-misc/gcolor2
 x11-misc/slim
 x11-misc/spacefm
