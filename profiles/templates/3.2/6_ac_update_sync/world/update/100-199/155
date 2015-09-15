@@ -1,0 +1,17 @@
+# Calculate format=world name=world ini(overlay-distros.world)<155
+
+#-ini(overlay-distros.world,155)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+games-arcade/briquolo
+games-arcade/lbreakout2
+x11-misc/devilspie
+#in#
+
+#?in(os_linux_pkglist, CLD+)!=#
+kde-apps/kbreakout
+net-misc/networkmanager
+net-misc/networkmanager-openvpn
+net-misc/networkmanager-pptp
+net-misc/networkmanager-vpnc
+#in#

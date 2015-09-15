@@ -10,7 +10,7 @@ net-misc/ntp
 net-misc/vconfig
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLD+, CLDX+)!=#
 net-misc/networkmanager
 net-misc/networkmanager-openvpn
 net-misc/networkmanager-pptp
