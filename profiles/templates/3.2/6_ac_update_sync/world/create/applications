@@ -30,6 +30,7 @@ app-office/texmaker
 app-text/fbless
 app-text/kchmviewer
 app-text/keepnote
+app-text/mupdf
 app-text/xournal
 dev-db/pgadmin3
 dev-util/meld

@@ -1,8 +1,9 @@
-# Calculate format=world name=world ini(overlay-distros.world)<155
+# Calculate format=world name=world ini(overlay-distros.world)<156
 
-#-ini(overlay-distros.world,155)-#
+#-ini(overlay-distros.world,156)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+app-text/mupdf
 games-arcade/briquolo
 games-arcade/lbreakout2
 x11-misc/devilspie
