@@ -1,13 +1,16 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLDX+)!=#
+games-action/supertuxkart
 games-arcade/briquolo
 games-arcade/lbreakout2
 games-util/steam-launcher
 games-misc/xpenguins
 games-sports/xmoto
+games-strategy/freeciv
 #in#
 
 #?in(os_linux_pkglist, CLD+)!=#
 kde-apps/kbreakout
+kde-apps/ktuberling
 #in#

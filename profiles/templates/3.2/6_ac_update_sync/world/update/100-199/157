@@ -1,16 +1,19 @@
-# Calculate format=world name=world ini(overlay-distros.world)<156
+# Calculate format=world name=world ini(overlay-distros.world)<157
 
-#-ini(overlay-distros.world,156)-#
+#-ini(overlay-distros.world,157)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-text/mupdf
+games-action/supertuxkart
 games-arcade/briquolo
 games-arcade/lbreakout2
+games-strategy/freeciv
 x11-misc/devilspie
 #in#
 
 #?in(os_linux_pkglist, CLD+)!=#
 kde-apps/kbreakout
+kde-apps/ktuberling
 net-misc/networkmanager
 net-misc/networkmanager-openvpn
 net-misc/networkmanager-pptp
