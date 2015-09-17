@@ -1,9 +1,14 @@
 # Calculate name=world format=world
 
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+games-misc/games-envd
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 games-action/supertuxkart
 games-arcade/briquolo
 games-arcade/lbreakout2
+games-arcade/supertux
 games-util/steam-launcher
 games-misc/xpenguins
 games-sports/xmoto
