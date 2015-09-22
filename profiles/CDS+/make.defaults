@@ -1,4 +1,4 @@
 USE=""
 CL="builder console server"
 THEMES="CDS"
-FEATURES="-getbinpkg"
+FEATURES="-getbinpkg buildpkg"

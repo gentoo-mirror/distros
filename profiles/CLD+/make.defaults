@@ -1,4 +1,4 @@
 USE=""
 CL="builder client desktop console consolegui"
 THEMES="CLD"
-FEATURES="-getbinpkg"
+FEATURES="-getbinpkg buildpkg"

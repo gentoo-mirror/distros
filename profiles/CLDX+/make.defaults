@@ -2,4 +2,4 @@ USE=""
 CL="builder client desktop console consolegui"
 THEMES="CLDX"
 LIGHTDM_SESSION=xfce
-FEATURES="-getbinpkg"
+FEATURES="-getbinpkg buildpkg"
