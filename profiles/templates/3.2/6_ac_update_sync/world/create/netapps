@@ -67,6 +67,7 @@ www-client/rekonq
 mail-client/geary
 mail-client/sylpheed
 mail-client/thunderbird
+net-analyzer/wireshark
 net-im/corebird
 net-im/licq
 net-im/psi
