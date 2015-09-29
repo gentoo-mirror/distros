@@ -20,6 +20,7 @@ net-mail/fetchmail
 net-proxy/havp
 net-proxy/squid
 net-proxy/squidguard
+sys-apps/calculate-server
 sys-apps/most
 #in#
 

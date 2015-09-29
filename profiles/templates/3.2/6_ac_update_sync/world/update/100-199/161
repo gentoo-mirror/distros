@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<161
+
+#-ini(overlay-distros.world,161)-#
+
+#?in(os_linux_pkglist, CDS, CDS+)!=#
+sys-apps/calculate-server
+#in#
