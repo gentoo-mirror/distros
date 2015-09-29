@@ -1,4 +1,3 @@
 USE=""
-CL="builder desktop console consolegui"
 THEMES="CLDM"
 LIGHTDM_SESSION=mate
