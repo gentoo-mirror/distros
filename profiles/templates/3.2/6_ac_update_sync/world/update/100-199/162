@@ -1,0 +1,19 @@
+# Calculate format=world name=world ini(overlay-distros.world)<162
+
+#-ini(overlay-distros.world,162)-#
+
+#?in(os_linux_pkglist, CDS)!=#
+!mail-filter/procmail
+!mail-mta/postfix
+!net-dns/bind
+!net-fs/samba
+!net-ftp/proftpd
+!net-mail/dovecot
+!net-proxy/squid
+!sys-auth/nss_ldap
+!sys-auth/pam_ldap
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+net-im/ejabberd
+#in#

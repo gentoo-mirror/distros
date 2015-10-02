@@ -119,8 +119,6 @@ sci-libs/fftw
 sys-apps/ipmitool
 sys-apps/iproute2
 sys-apps/kexec-tools
-sys-auth/nss_ldap
-sys-auth/pam_ldap
 sys-block/parted
 sys-block/tw_cli
 sys-fs/xfsdump
@@ -196,6 +194,8 @@ net-misc/iperf
 net-nds/shelldap
 sys-apps/lshw
 sys-apps/setserial
+sys-auth/nss_ldap
+sys-auth/pam_ldap
 sys-fs/avfs
 sys-fs/cryptsetup
 sys-fs/sshfs-fuse
