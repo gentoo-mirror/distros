@@ -10,11 +10,14 @@ net-analyzer/traceroute
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
-net-im/skype
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
 www-client/chromium
 www-plugins/chrome-binary-plugins
 www-plugins/chrome-ublock
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+net-im/skype
 x11-misc/x11vnc
 #in#
 

@@ -1,0 +1,17 @@
+# Calculate format=world name=world ini(overlay-distros.world)<165
+
+#-ini(overlay-distros.world,165)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+x11-themes/gnome-breeze
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+app-portage/genlop
+#in#
+
+#?in(os_linux_pkglist, CLSK)!=#
+www-client/chromium
+www-plugins/chrome-binary-plugins
+www-plugins/chrome-ublock
+#in#
