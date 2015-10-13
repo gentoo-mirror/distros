@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<163
-
-#-ini(overlay-distros.world,163)-#
-
-#?in(os_linux_pkglist, CDS+)!=#
-app-portage/genlop
-#in#
