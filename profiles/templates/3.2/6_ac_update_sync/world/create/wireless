@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CLS, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CLS, CLSK, CLDX+)!=#
 sys-firmware/b43-firmware
 net-wireless/wireless-tools
 net-wireless/wpa_supplicant

@@ -4,14 +4,14 @@
 dev-util/ccache
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CSS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CLSK, CSS, CMC, CDS+)!=#
 app-misc/tmux
 sys-auth/pam_update
 sys-fs/btrfs-progs
 sys-fs/reiserfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CLSK, CMC, CDS+)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -60,7 +60,7 @@ sys-power/powernowd
 sys-power/powertop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLDX+, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLSK, CLDX+, CDS+)!=#
 app-editors/vim
 sys-apps/acl
 app-misc/mc
@@ -87,7 +87,7 @@ x11-libs/gksu
 sys-power/upower-pm-utils
 #in#
 
-#?in(os_linux_pkglist, CLS, CMC)!=#
+#?in(os_linux_pkglist, CLS, CLSK, CMC)!=#
 net-misc/dhcp
 #in#
 

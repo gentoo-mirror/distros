@@ -14,6 +14,7 @@ amd64		CLDX/amd64					stable
 amd64		CLDO/amd64					stable
 amd64		CDS/amd64					stable
 amd64		CLS/amd64					stable
+amd64		CLSK/amd64					stable
 amd64		CSS/amd64					stable
 amd64		CMC/amd64					stable
 amd64		CLD+/amd64					stable

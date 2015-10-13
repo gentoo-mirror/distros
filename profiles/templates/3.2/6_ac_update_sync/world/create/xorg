@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CLS, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CLS, CLSK, CLDX+)!=#
 app-misc/xorg-meta
 #in#
 
