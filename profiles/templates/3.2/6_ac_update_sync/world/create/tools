@@ -167,6 +167,8 @@ sys-auth/thinkfinger
 sys-power/apcupsd
 x11-misc/devilspie
 x11-misc/gcolor2
+x11-misc/i3lock
+x11-misc/i3status
 x11-misc/slim
 x11-misc/spacefm
 x11-misc/sunflower
