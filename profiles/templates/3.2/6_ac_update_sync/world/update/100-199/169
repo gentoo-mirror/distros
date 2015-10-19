@@ -1,9 +1,10 @@
-# Calculate format=world name=world ini(overlay-distros.world)<168
+# Calculate format=world name=world ini(overlay-distros.world)<169
 
-#-ini(overlay-distros.world,168)-#
+#-ini(overlay-distros.world,169)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 !x11-drivers/nvidia-drivers
+media-plugins/qmmp-plugin-pack
 media-video/kino
 media-video/nvidia-settings
 x11-misc/i3lock
