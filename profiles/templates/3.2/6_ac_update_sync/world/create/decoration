@@ -38,6 +38,7 @@ x11-themes/gnome-breeze
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+x11-themes/audacious-themes
 x11-themes/greybird
 x11-wm/compiz-fusion
 #in#
