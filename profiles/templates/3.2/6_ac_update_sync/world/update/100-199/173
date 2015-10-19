@@ -1,0 +1,13 @@
+# Calculate format=world name=world ini(overlay-distros.world)<173
+
+#-ini(overlay-distros.world,173)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+x11-misc/dmenu
+x11-wm/blackbox
+x11-wm/oroborus
+x11-wm/twm
+x11-misc/oroborus-desklaunch
+x11-misc/oroborus-deskmenu
+x11-misc/oroborus-keylaunch
+#in#
