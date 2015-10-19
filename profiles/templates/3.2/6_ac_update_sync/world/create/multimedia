@@ -31,6 +31,10 @@ media-tv/kodi
 media-video/vlc
 #in#
 
+#?in(os_linux_pkglist, CLD+)!=#
+media-video/kaffeine
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 app-cdr/brasero
 media-plugins/qmmp-plugin-pack
@@ -48,7 +52,6 @@ media-video/avidemux
 media-video/bombono-dvd
 media-video/devede
 media-video/istanbul
-media-video/kaffeine
 media-video/kino
 media-video/mpv
 media-video/openshot

@@ -1,11 +1,15 @@
-# Calculate format=world name=world ini(overlay-distros.world)<170
+# Calculate format=world name=world ini(overlay-distros.world)<171
 
-#-ini(overlay-distros.world,170)-#
+#-ini(overlay-distros.world,171)-#
+
+#?in(os_linux_pkglist, CLD+)!=#
+media-video/kaffeine
+#in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+!media-video/kaffeine
 !x11-drivers/nvidia-drivers
 media-plugins/qmmp-plugin-pack
-media-video/kaffeine
 media-video/kino
 media-video/nvidia-settings
 x11-misc/i3lock
