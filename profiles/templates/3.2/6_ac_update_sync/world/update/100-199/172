@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<172
+
+#-ini(overlay-distros.world,172)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+x11-misc/dmenu
+#in#
