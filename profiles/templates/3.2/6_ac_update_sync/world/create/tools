@@ -184,6 +184,7 @@ x11-themes/geany-themes
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+app-arch/lbzip2
 app-arch/star
 app-crypt/pgpdump
 app-misc/screenfetch

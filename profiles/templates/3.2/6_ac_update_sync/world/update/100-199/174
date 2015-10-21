@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<173
+# Calculate format=world name=world ini(overlay-distros.world)<174
 
-#-ini(overlay-distros.world,173)-#
+#-ini(overlay-distros.world,174)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 x11-misc/dmenu
@@ -10,4 +10,8 @@ x11-wm/twm
 x11-misc/oroborus-desklaunch
 x11-misc/oroborus-deskmenu
 x11-misc/oroborus-keylaunch
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+app-arch/lbzip2
 #in#
