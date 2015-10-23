@@ -37,6 +37,7 @@ media-video/kaffeine
 
 #?in(os_linux_pkglist, CLDX+)!=#
 app-cdr/brasero
+media-gfx/shotwell
 media-plugins/qmmp-plugin-pack
 media-radio/radiotray
 media-sound/alsa-utils

@@ -1,8 +1,9 @@
-# Calculate format=world name=world ini(overlay-distros.world)<174
+# Calculate format=world name=world ini(overlay-distros.world)<175
 
-#-ini(overlay-distros.world,174)-#
+#-ini(overlay-distros.world,175)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+media-gfx/shotwell
 x11-misc/dmenu
 x11-wm/blackbox
 x11-wm/oroborus
