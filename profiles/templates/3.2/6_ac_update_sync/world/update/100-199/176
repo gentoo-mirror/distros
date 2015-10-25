@@ -1,19 +1,23 @@
-# Calculate format=world name=world ini(overlay-distros.world)<175
+# Calculate format=world name=world ini(overlay-distros.world)<176
 
-#-ini(overlay-distros.world,175)-#
+#-ini(overlay-distros.world,176)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+dev-python/Kivy
 media-gfx/shotwell
 x11-misc/dmenu
 x11-wm/blackbox
 x11-wm/oroborus
 x11-wm/twm
+x11-wm/windowmaker
 x11-misc/oroborus-desklaunch
 x11-misc/oroborus-deskmenu
 x11-misc/oroborus-keylaunch
+www-client/uget
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
 app-arch/lbzip2
 app-arch/pbzip2
+dev-db/mongodb
 #in#

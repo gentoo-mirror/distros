@@ -1,5 +1,7 @@
 # Calculate name=world format=world in(os_linux_pkglist,CLDX+)!=
 
+dev-python/Kivy
+
 dev-python/PyQt5
 dev-python/xlwt
 
