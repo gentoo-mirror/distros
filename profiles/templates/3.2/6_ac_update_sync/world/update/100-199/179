@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<178
+# Calculate format=world name=world ini(overlay-distros.world)<179
 
-#-ini(overlay-distros.world,178)-#
+#-ini(overlay-distros.world,179)-#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLD+, CLDX+)!=#
 net-misc/networkmanager-l2tp
@@ -8,6 +8,7 @@ net-misc/networkmanager-l2tp
 
 #?in(os_linux_pkglist, CLDX+)!=#
 dev-python/Kivy
+media-gfx/dispcalgui
 media-gfx/shotwell
 x11-misc/dmenu
 x11-misc/nitrogen

@@ -153,6 +153,7 @@ dev-util/geany-plugins
 mail-client/evolution
 mail-client/mutt
 mail-client/sylpheed
+media-gfx/dispcalgui
 media-gfx/cellwriter
 media-radio/fldigi
 media-sound/flacon
