@@ -1,0 +1,10 @@
+# Calculate format=world name=world ini(overlay-distros.world)<181
+
+#-ini(overlay-distros.world,181)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+!lxqt-base/lxqt-meta
+!lxqt-base/lxqt-openssh-askpass
+!lxqt-base/lxqt-powermanagement
+!media-gfx/lximage-qt
+#in#
