@@ -1,11 +1,12 @@
-# Calculate format=world name=world ini(overlay-distros.world)<176
+# Calculate format=world name=world ini(overlay-distros.world)<177
 
-#-ini(overlay-distros.world,176)-#
+#-ini(overlay-distros.world,177)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 dev-python/Kivy
 media-gfx/shotwell
 x11-misc/dmenu
+x11-misc/nitrogen
 x11-wm/blackbox
 x11-wm/oroborus
 x11-wm/twm
