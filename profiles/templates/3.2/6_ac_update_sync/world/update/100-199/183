@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<183
+
+#-ini(overlay-distros.world,183)-#
+
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CLSK, CSS, CMC, CDS+)!=#
+app-arch/lbzip2
+#in#

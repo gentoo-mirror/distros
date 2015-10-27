@@ -5,6 +5,7 @@ dev-util/ccache
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CLSK, CSS, CMC, CDS+)!=#
+app-arch/lbzip2
 app-misc/tmux
 sys-auth/pam_update
 sys-fs/btrfs-progs
