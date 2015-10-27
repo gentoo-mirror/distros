@@ -1,6 +1,7 @@
 # Calculate name=world format=world in(os_linux_pkglist,CLDX+)!=
 
-#lxqt-base/lxqt-meta
-#lxqt-base/lxqt-openssh-askpass
-#lxqt-base/lxqt-powermanagement
-#media-gfx/lximage-qt
+lxqt-base/lxqt-admin
+lxqt-base/lxqt-meta
+lxqt-base/lxqt-openssh-askpass
+lxqt-base/lxqt-powermanagement
+media-gfx/lximage-qt
