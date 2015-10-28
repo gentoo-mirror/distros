@@ -2,11 +2,6 @@
 
 #-ini(overlay-distros.world,185)-#
 
-#?in(os_linux_pkglist, CLS)!=#
-!x11-terms/rxvt-unicode
-!x11-wm/openbox
-#in#
-
 #?in(os_linux_pkglist, CLDX+)!=#
 lxqt-base/lxqt-admin
 lxqt-base/lxqt-meta
