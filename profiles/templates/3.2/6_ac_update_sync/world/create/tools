@@ -126,6 +126,10 @@ sys-fs/xfsdump
 sys-process/iotop
 #in#
 
+#?in(os_linux_pkglist, CLDO, CLDX+)!=#
+x11-terms/rxvt-unicode
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 app-admin/conky
 app-admin/keepassx

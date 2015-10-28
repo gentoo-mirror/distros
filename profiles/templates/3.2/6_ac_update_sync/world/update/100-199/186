@@ -1,6 +1,10 @@
-# Calculate format=world name=world ini(overlay-distros.world)<185
+# Calculate format=world name=world ini(overlay-distros.world)<186
 
-#-ini(overlay-distros.world,185)-#
+#-ini(overlay-distros.world,186)-#
+
+#?in(os_linux_pkglist, CMC)!=#
+sys-apps/lm_sensors
+#in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 lxqt-base/lxqt-admin

@@ -2,8 +2,6 @@
 
 #?in(os_linux_pkglist, CLDO, CLD+)!=#
 x11-misc/notification-daemon
-x11-terms/rxvt-unicode
-x11-wm/openbox
 #in#
 
 #?in(os_linux_pkglist, CLDO, CLDX+)!=#
@@ -15,4 +13,5 @@ x11-misc/pcmanfm
 x11-misc/tint2
 x11-misc/tintwizard
 x11-misc/xxkb
+x11-wm/openbox
 #in#
