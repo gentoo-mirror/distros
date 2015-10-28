@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLD+, CLDX+)!=#
 app-office/libreoffice
 #in#
 
