@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<186
+# Calculate format=world name=world ini(overlay-distros.world)<187
 
-#-ini(overlay-distros.world,186)-#
+#-ini(overlay-distros.world,187)-#
 
 #?in(os_linux_pkglist, CMC)!=#
 sys-apps/lm_sensors
@@ -12,4 +12,8 @@ lxqt-base/lxqt-meta
 lxqt-base/lxqt-openssh-askpass
 lxqt-base/lxqt-powermanagement
 media-gfx/lximage-qt
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+sys-fs/e4rat
 #in#

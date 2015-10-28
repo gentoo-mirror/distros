@@ -211,6 +211,7 @@ sys-auth/nss_ldap
 sys-auth/pam_ldap
 sys-fs/avfs
 sys-fs/cryptsetup
+sys-fs/e4rat
 sys-fs/sshfs-fuse
 sys-process/nmon
 #in#
