@@ -42,17 +42,13 @@ x11-plugins/purple-plugin_pack
 #in#
 
 #?in(os_linux_pkglist, CDS, CDS+)!=#
-net-analyzer/bmon
-net-analyzer/ettercap
 net-analyzer/fail2ban
 net-analyzer/iptraf-ng
 net-analyzer/macchanger
 net-analyzer/sarg
 net-analyzer/tcpdump
 net-analyzer/traceroute
-net-analyzer/trafshow
 net-analyzer/vnstat
-net-analyzer/wireshark
 net-dialup/minicom
 net-ftp/tftp-hpa
 net-irc/weechat
@@ -96,6 +92,10 @@ www-client/uget
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+net-analyzer/bmon
+net-analyzer/ettercap
+net-analyzer/trafshow
+net-analyzer/wireshark
 net-misc/youtube-dl
 net-p2p/bittorrent
 net-p2p/btpd
