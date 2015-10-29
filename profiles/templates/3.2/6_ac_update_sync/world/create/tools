@@ -6,6 +6,7 @@ dev-util/ccache
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CLSK, CSS, CMC, CDS+)!=#
 app-arch/lbzip2
+app-arch/pigz
 app-misc/tmux
 sys-auth/pam_update
 sys-fs/btrfs-progs
@@ -191,7 +192,6 @@ x11-themes/geany-themes
 
 #?in(os_linux_pkglist, CDS+)!=#
 app-arch/pbzip2
-app-arch/pigz
 app-arch/star
 app-crypt/pgpdump
 app-misc/screenfetch
