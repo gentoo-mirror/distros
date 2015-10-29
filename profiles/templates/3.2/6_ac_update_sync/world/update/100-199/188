@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<187
+# Calculate format=world name=world ini(overlay-distros.world)<188
 
-#-ini(overlay-distros.world,187)-#
+#-ini(overlay-distros.world,188)-#
 
 #?in(os_linux_pkglist, CMC)!=#
 sys-apps/lm_sensors
@@ -15,5 +15,6 @@ media-gfx/lximage-qt
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+app-arch/pigz
 sys-fs/e4rat
 #in#
