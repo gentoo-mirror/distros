@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<190
-
-#-ini(overlay-distros.world,190)-#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-media-gfx/hugin
-#in#

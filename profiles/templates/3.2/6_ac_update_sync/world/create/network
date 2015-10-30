@@ -35,9 +35,12 @@ net-misc/wol
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+net-firewall/fwbuilder
 net-misc/wicd
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+net-firewall/firehol
+net-firewall/sanewall
 net-misc/tor
 #in#
