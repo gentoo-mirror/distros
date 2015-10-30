@@ -21,8 +21,11 @@ net-im/skype
 x11-misc/x11vnc
 #in#
 
-#?in(os_linux_pkglist, CLD, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLD+, CLDX+)!=#
 net-irc/konversation
+#in#
+
+#?in(os_linux_pkglist, CLD, CLD+)!=#
 net-p2p/ktorrent
 #in#
 

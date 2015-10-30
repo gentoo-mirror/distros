@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<193
+# Calculate format=world name=world ini(overlay-distros.world)<194
 
-#-ini(overlay-distros.world,193)-#
+#-ini(overlay-distros.world,194)-#
 
 #?in(os_linux_pkglist, CLSK)!=#
 !x11-themes/calculate-xcursors
@@ -10,6 +10,7 @@
 app-editors/gedit
 media-gfx/hugin
 net-firewall/fwbuilder
+net-irc/konversation
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
