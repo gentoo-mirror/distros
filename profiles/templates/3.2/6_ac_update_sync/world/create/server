@@ -18,6 +18,7 @@ sys-apps/most
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+dev-db/mariadb
 dev-db/mongodb
 dev-db/redis
 dev-lang/php

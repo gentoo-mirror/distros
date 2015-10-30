@@ -1,0 +1,11 @@
+# Calculate format=world name=world ini(overlay-distros.world)<196
+
+#-ini(overlay-distros.world,196)-#
+
+#?in(os_linux_pkglist, CLD+, CLDX+)!=#
+dev-db/sqlitebrowser
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+dev-db/mariadb
+#in#

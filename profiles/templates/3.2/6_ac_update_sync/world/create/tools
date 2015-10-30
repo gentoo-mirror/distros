@@ -131,6 +131,10 @@ sys-process/iotop
 x11-terms/rxvt-unicode
 #in#
 
+#?in(os_linux_pkglist, CLD+, CLDX+)!=#
+dev-db/sqlitebrowser
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 app-admin/conky
 app-admin/keepassx
