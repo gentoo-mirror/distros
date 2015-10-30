@@ -1,12 +1,13 @@
-# Calculate format=world name=world ini(overlay-distros.world)<192
+# Calculate format=world name=world ini(overlay-distros.world)<193
 
-#-ini(overlay-distros.world,192)-#
+#-ini(overlay-distros.world,193)-#
 
 #?in(os_linux_pkglist, CLSK)!=#
 !x11-themes/calculate-xcursors
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+app-editors/gedit
 media-gfx/hugin
 net-firewall/fwbuilder
 #in#
