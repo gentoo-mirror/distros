@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<199
+
+#-ini(overlay-distros.world,199)-#
+
+#?in(os_linux_pkglist, CLSK, CLDX+)!=#
+sys-block/partitionmanager
+#in#

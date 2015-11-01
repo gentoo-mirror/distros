@@ -93,7 +93,7 @@ sys-power/upower-pm-utils
 net-misc/dhcp
 #in#
 
-#?in(os_linux_pkglist, CLD, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLSK, CLD+, CLDX+)!=#
 sys-block/partitionmanager
 #in#
 
