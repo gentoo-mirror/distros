@@ -5,3 +5,7 @@
 #?in(os_linux_pkglist, CLSK, CLDX+)!=#
 sys-block/partitionmanager
 #in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+www-client/elinks
+#in#

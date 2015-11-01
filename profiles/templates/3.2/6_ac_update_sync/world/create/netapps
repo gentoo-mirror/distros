@@ -103,5 +103,6 @@ net-misc/youtube-dl
 net-p2p/bittorrent
 net-p2p/btpd
 net-p2p/mldonkey
+www-client/elinks
 www-client/lynx
 #in#
