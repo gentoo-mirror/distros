@@ -10,6 +10,7 @@ media-gfx/xsane
 net-print/cnijfilter
 net-print/gutenprint
 net-print/hplip-plugin
+net-print/xerox-drivers
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
