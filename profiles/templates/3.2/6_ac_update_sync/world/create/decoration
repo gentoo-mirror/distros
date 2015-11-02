@@ -37,6 +37,7 @@ x11-themes/oxygen-gtk:3
 #in#
 
 #?in(os_linux_pkglist, CLSK, CLDX+)!=#
+media-gfx/plasma-themes-calculate
 x11-themes/gnome-breeze
 #in#
 

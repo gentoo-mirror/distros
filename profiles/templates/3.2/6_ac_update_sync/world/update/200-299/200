@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<200
+
+#-ini(overlay-distros.world,200)-#
+
+#?in(os_linux_pkglist, CLSK, CLDX+)!=#
+media-gfx/plasma-themes-calculate
+#in#
