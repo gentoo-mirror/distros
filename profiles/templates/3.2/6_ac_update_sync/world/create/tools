@@ -163,8 +163,8 @@ dev-util/geany-plugins
 mail-client/evolution
 mail-client/mutt
 mail-client/sylpheed
-media-gfx/dispcalgui
 media-gfx/cellwriter
+media-gfx/dispcalgui
 media-radio/fldigi
 media-sound/flacon
 media-sound/mac
@@ -181,6 +181,8 @@ x11-misc/dmenu
 x11-misc/gcolor2
 x11-misc/i3lock
 x11-misc/i3status
+x11-misc/idesk
+x11-misc/idesk-extras
 x11-misc/oroborus-desklaunch
 x11-misc/oroborus-deskmenu
 x11-misc/oroborus-keylaunch
@@ -188,6 +190,7 @@ x11-misc/slim
 x11-misc/spacefm
 x11-misc/sunflower
 x11-misc/xsnow
+x11-misc/xvkbd
 x11-terms/guake
 x11-terms/terminator
 x11-terms/tilda

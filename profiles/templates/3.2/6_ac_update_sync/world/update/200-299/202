@@ -1,0 +1,11 @@
+# Calculate format=world name=world ini(overlay-distros.world)<202
+
+#-ini(overlay-distros.world,202)-#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+sci-geosciences/qgis
+x11-misc/idesk
+x11-misc/idesk-extras
+x11-misc/xvkbd
+x11-wm/jwm
+#in#
