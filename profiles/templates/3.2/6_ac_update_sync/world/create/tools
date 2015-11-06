@@ -216,6 +216,7 @@ net-misc/aria2
 net-misc/iaxmodem
 net-misc/iperf
 net-nds/shelldap
+sys-apps/iucode_tool
 sys-apps/lshw
 sys-apps/setserial
 sys-auth/nss_ldap

@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<203
+# Calculate format=world name=world ini(overlay-distros.world)<204
 
-#-ini(overlay-distros.world,203)-#
+#-ini(overlay-distros.world,204)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 sci-geosciences/qgis
@@ -11,5 +11,6 @@ x11-wm/jwm
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+sys-apps/iucode_tool
 sys-apps/microcode-ctl
 #in#
