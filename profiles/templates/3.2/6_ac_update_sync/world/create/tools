@@ -21,9 +21,12 @@ sys-apps/usbutils
 sys-process/vixie-cron
 #in#
 
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CDS, CMC, CDS+)!=#
+app-admin/sudo
+#in#
+
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CDS+)!=#
 app-admin/hddtemp
-app-admin/sudo
 app-cdr/cdrtools
 app-cdr/dvd+rw-tools
 app-portage/portage-utils

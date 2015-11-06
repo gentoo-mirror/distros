@@ -2,6 +2,10 @@
 
 #-ini(overlay-distros.world,204)-#
 
+#?in(os_linux_pkglist, CLSK)!=#
+app-admin/sudo
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 sci-geosciences/qgis
 x11-misc/idesk
