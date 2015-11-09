@@ -71,12 +71,12 @@ sys-apps/acl
 app-misc/mc
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLD+, CLDX+)!=#
-sys-apps/keyexec
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CMC, CLDX+)!=#
+sys-devel/prelink
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLDX+)!=#
-sys-devel/prelink
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLD+, CLDX+)!=#
+sys-apps/keyexec
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#

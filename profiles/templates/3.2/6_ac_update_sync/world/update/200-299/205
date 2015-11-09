@@ -1,9 +1,10 @@
-# Calculate format=world name=world ini(overlay-distros.world)<204
+# Calculate format=world name=world ini(overlay-distros.world)<205
 
-#-ini(overlay-distros.world,204)-#
+#-ini(overlay-distros.world,205)-#
 
 #?in(os_linux_pkglist, CLSK)!=#
 app-admin/sudo
+sys-devel/prelink
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
