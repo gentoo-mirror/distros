@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<205
+# Calculate format=world name=world ini(overlay-distros.world)<206
 
-#-ini(overlay-distros.world,205)-#
+#-ini(overlay-distros.world,206)-#
 
 #?in(os_linux_pkglist, CLSK)!=#
 app-admin/sudo
@@ -16,6 +16,7 @@ x11-wm/jwm
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
+!net-p2p/btpd
 sys-apps/iucode_tool
 sys-apps/microcode-ctl
 #in#
