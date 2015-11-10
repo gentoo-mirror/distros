@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<206
+# Calculate format=world name=world ini(overlay-distros.world)<207
 
-#-ini(overlay-distros.world,206)-#
+#-ini(overlay-distros.world,207)-#
 
 #?in(os_linux_pkglist, CLSK)!=#
 app-admin/sudo
@@ -8,6 +8,7 @@ sys-devel/prelink
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+games-action/oolite
 sci-geosciences/qgis
 x11-misc/idesk
 x11-misc/idesk-extras
