@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<207
+# Calculate format=world name=world ini(overlay-distros.world)<208
 
-#-ini(overlay-distros.world,207)-#
+#-ini(overlay-distros.world,208)-#
 
 #?in(os_linux_pkglist, CLSK)!=#
 app-admin/sudo
@@ -13,6 +13,7 @@ sci-geosciences/qgis
 x11-misc/idesk
 x11-misc/idesk-extras
 x11-misc/xvkbd
+x11-wm/dwm
 x11-wm/jwm
 #in#
 
