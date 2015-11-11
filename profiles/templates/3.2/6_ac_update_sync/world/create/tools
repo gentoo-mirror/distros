@@ -23,6 +23,7 @@ sys-process/vixie-cron
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CDS, CMC, CDS+)!=#
 app-admin/sudo
+sys-apps/memtest86+
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CDS+)!=#
@@ -33,7 +34,6 @@ app-portage/portage-utils
 sys-apps/dmidecode
 sys-apps/gptfdisk
 sys-apps/lm_sensors
-sys-apps/memtest86+
 sys-apps/inxi
 sys-apps/pciutils
 sys-apps/pv

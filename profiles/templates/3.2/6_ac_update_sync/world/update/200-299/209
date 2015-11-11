@@ -1,9 +1,10 @@
-# Calculate format=world name=world ini(overlay-distros.world)<208
+# Calculate format=world name=world ini(overlay-distros.world)<209
 
-#-ini(overlay-distros.world,208)-#
+#-ini(overlay-distros.world,209)-#
 
 #?in(os_linux_pkglist, CLSK)!=#
 app-admin/sudo
+sys-apps/memtest86+
 sys-devel/prelink
 #in#
 
