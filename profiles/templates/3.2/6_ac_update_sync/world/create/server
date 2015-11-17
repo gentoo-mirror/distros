@@ -17,6 +17,10 @@ sys-apps/calculate-server
 sys-apps/most
 #in#
 
+#?in(os_linux_pkglist, CLD+)!=#
+mail-mta/ssmtp
+#in#
+
 #?in(os_linux_pkglist, CDS+)!=#
 dev-db/mariadb
 dev-db/mongodb

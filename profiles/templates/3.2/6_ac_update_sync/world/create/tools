@@ -163,6 +163,7 @@ dev-qt/qt-creator
 dev-util/android-tools
 dev-util/geany
 dev-util/geany-plugins
+gnome-base/dconf-editor
 mail-client/evolution
 mail-client/mutt
 mail-client/sylpheed

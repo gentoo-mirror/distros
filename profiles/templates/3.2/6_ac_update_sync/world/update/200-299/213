@@ -1,14 +1,20 @@
-# Calculate format=world name=world ini(overlay-distros.world)<212
+# Calculate format=world name=world ini(overlay-distros.world)<213
 
-#-ini(overlay-distros.world,212)-#
+#-ini(overlay-distros.world,213)-#
 
 #?in(os_linux_pkglist, CLDM, CLDX+)!=#
 mate-extra/caja-extensions
 mate-extra/mate-user-guide
 #in#
 
+#?in(os_linux_pkglist, CLD+)!=#
+mail-mta/ssmtp
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 !media-sound/flacon
+gnome-base/dconf-editor
+mate-extra/caja-dropbox
 net-im/gajim
 x11-themes/smplayer-skins
 x11-themes/smplayer-themes
