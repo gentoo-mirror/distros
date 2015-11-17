@@ -71,6 +71,7 @@ mail-client/sylpheed
 mail-client/thunderbird
 net-analyzer/wireshark
 net-im/corebird
+net-im/gajim
 net-im/licq
 net-im/psi
 net-im/psimedia

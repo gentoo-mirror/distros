@@ -1,9 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<211
-
-#-ini(overlay-distros.world,211)-#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-!media-sound/flacon
-x11-themes/smplayer-skins
-x11-themes/smplayer-themes
-#in#
