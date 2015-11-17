@@ -4,6 +4,7 @@
 
 #?in(os_linux_pkglist, CLDM, CLDX+)!=#
 mate-extra/caja-extensions
+mate-extra/mate-user-guide
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
