@@ -4,7 +4,6 @@
 mate-base/mate
 mate-extra/caja-extensions
 mate-extra/mate-sensors-applet
-mate-extra/mate-user-guide
 net-analyzer/mate-netspeed
 x11-misc/mate-notification-daemon
 x11-misc/parcellite
@@ -12,5 +11,6 @@ x11-misc/parcellite
 
 #?in(os_linux_pkglist, CLDX+)!=#
 mate-extra/caja-dropbox
+mate-extra/mate-user-guide
 x11-themes/mate-icon-theme-faenza
 #in#
