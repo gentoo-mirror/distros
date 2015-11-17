@@ -2,6 +2,7 @@
 
 #?in(os_linux_pkglist, CLDM, CLDX+)!=#
 mate-base/mate
+mate-extra/caja-extensions
 mate-extra/mate-sensors-applet
 net-analyzer/mate-netspeed
 x11-misc/mate-notification-daemon

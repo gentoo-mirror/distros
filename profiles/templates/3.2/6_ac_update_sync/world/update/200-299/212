@@ -2,6 +2,10 @@
 
 #-ini(overlay-distros.world,212)-#
 
+#?in(os_linux_pkglist, CLDM, CLDX+)!=#
+mate-extra/caja-extensions
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 !media-sound/flacon
 net-im/gajim
