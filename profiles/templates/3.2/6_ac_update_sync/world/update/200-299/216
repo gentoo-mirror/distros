@@ -1,0 +1,11 @@
+# Calculate format=world name=world ini(overlay-distros.world)<216
+
+#-ini(overlay-distros.world,216)-#
+
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+!media-video/smplayer
+#media-video/smtube
+
+#?in(os_linux_pkglist, CLDM)!=#
+mate-extra/mate-user-guide
+#in#

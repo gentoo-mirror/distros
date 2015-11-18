@@ -2,7 +2,6 @@
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 media-video/smplayer
-media-video/smtube
 #in#
 
 #?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
@@ -56,5 +55,6 @@ media-video/istanbul
 media-video/kino
 media-video/mpv
 media-video/openshot
+media-video/smtube
 media-video/totem
 #in#
