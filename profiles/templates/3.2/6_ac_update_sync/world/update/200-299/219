@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<219
+
+#-ini(overlay-distros.world,219)-#
+
+#?in(os_linux_pkglist, CLSK)!=#
+kde-apps/kde-l10n
+#in#
