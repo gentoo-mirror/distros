@@ -43,8 +43,8 @@ media-sound/alsa-utils
 media-sound/audacious
 media-sound/audacity
 media-sound/easytag
-media-sound/qmmp
 media-sound/lxmusic
+media-sound/qmmp
 media-sound/rhythmbox
 media-sound/soundconverter
 media-sound/xmms2
@@ -55,6 +55,7 @@ media-video/istanbul
 media-video/kino
 media-video/mpv
 media-video/openshot
+media-video/pitivi
 media-video/smtube
 media-video/totem
 #in#
