@@ -1,9 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<220
-
-#-ini(overlay-distros.world,220)-#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-media-gfx/freecad
-media-gfx/librecad
-media-video/pitivi
-#in#

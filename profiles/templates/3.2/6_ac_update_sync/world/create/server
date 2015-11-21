@@ -39,6 +39,7 @@ net-im/ejabberd
 net-mail/dovecot
 net-misc/asterisk
 net-misc/hylafaxplus
+net-misc/minidlna
 net-proxy/squid
 www-servers/lighttpd
 www-servers/nginx
