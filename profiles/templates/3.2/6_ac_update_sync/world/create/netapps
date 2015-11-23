@@ -93,6 +93,7 @@ www-client/midori
 www-client/qupzilla
 www-client/seamonkey
 www-client/uget
+www-client/vivaldi
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
