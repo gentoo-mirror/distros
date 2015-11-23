@@ -1,8 +1,9 @@
-# Calculate format=world name=world ini(overlay-distros.world)<222
+# Calculate format=world name=world ini(overlay-distros.world)<223
 
-#-ini(overlay-distros.world,222)-#
+#-ini(overlay-distros.world,223)-#
 
 #?in(os_linux_pkglist, CLDX+)!=#
+!media-sound/ardour
 media-gfx/freecad
 media-gfx/librecad
 media-sound/ardour
