@@ -1,6 +1,10 @@
-# Calculate format=world name=world ini(overlay-distros.world)<224
+# Calculate format=world name=world ini(overlay-distros.world)<225
 
-#-ini(overlay-distros.world,224)-#
+#-ini(overlay-distros.world,225)-#
+
+#?in(os_linux_pkglist, CLDX+, CDS+)!=#
+!net-p2p/bittorrent
+#in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
 !media-sound/ardour

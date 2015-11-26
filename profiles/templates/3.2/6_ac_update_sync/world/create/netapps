@@ -80,7 +80,6 @@ net-misc/dropbox
 net-misc/modem-manager-gui
 net-misc/yandex-disk
 net-p2p/amule
-net-p2p/bittorrent
 net-p2p/qbittorrent
 net-p2p/linuxdcpp
 net-p2p/mldonkey
@@ -102,7 +101,6 @@ net-analyzer/ettercap
 net-analyzer/trafshow
 net-analyzer/wireshark
 net-misc/youtube-dl
-net-p2p/bittorrent
 net-p2p/mldonkey
 www-client/elinks
 www-client/lynx

@@ -11,7 +11,6 @@ games-sports/xmoto
 !kde-plasma/plasma-meta
 media-sound/lxmusic
 media-sound/xmms2
-net-p2p/bittorrent
 net-p2p/mldonkey
 net-print/splix
 x11-wm/afterstep
@@ -31,7 +30,6 @@ net-misc/hylafaxplus
 net-misc/iaxmodem
 net-misc/youtube-dl
 net-nds/shelldap
-net-p2p/bittorrent
 net-p2p/btpd
 net-p2p/mldonkey
 !sys-fs/ncdu
