@@ -104,4 +104,5 @@ net-misc/youtube-dl
 net-p2p/mldonkey
 www-client/elinks
 www-client/lynx
+www-client/w3m
 #in#

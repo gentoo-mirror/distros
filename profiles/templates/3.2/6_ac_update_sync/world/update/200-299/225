@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<225
+# Calculate format=world name=world ini(overlay-distros.world)<226
 
-#-ini(overlay-distros.world,225)-#
+#-ini(overlay-distros.world,226)-#
 
 #?in(os_linux_pkglist, CLDX+, CDS+)!=#
 !net-p2p/bittorrent
@@ -16,4 +16,5 @@ www-client/vivaldi
 
 #?in(os_linux_pkglist, CDS+)!=#
 net-misc/minidlna
+www-client/w3m
 #in#
