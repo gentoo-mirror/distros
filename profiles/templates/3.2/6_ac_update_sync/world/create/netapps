@@ -17,7 +17,6 @@ www-plugins/chrome-ublock
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
-net-im/skype
 x11-misc/x11vnc
 #in#
 
@@ -75,14 +74,15 @@ net-im/gajim
 net-im/licq
 net-im/psi
 net-im/psimedia
+net-im/skype
 net-irc/kvirc
 net-misc/dropbox
 net-misc/modem-manager-gui
 net-misc/yandex-disk
 net-p2p/amule
-net-p2p/qbittorrent
 net-p2p/linuxdcpp
 net-p2p/mldonkey
+net-p2p/qbittorrent
 net-p2p/rtorrent
 net-p2p/transmission
 net-voip/ekiga
