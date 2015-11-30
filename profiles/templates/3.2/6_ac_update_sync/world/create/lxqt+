@@ -4,4 +4,5 @@ lxqt-base/lxqt-admin
 lxqt-base/lxqt-meta
 lxqt-base/lxqt-openssh-askpass
 lxqt-base/lxqt-powermanagement
+lxqt-base/lxqt-sudo
 media-gfx/lximage-qt
