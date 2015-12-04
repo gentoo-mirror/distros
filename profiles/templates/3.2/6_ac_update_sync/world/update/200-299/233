@@ -1,9 +1,13 @@
-# Calculate format=world name=world ini(overlay-distros.world)<232
+# Calculate format=world name=world ini(overlay-distros.world)<233
 
-#-ini(overlay-distros.world,232)-#
+#-ini(overlay-distros.world,233)-#
 
 #?in(os_linux_pkglist, CLDX+, CDS+)!=#
 !net-p2p/bittorrent
+#in#
+
+#?in(os_linux_pkglist, CLD+)!=#
+www-client/qupzilla
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#

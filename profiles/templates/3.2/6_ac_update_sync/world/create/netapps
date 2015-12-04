@@ -57,6 +57,10 @@ net-irc/weechat
 www-client/links
 #in#
 
+#?in(os_linux_pkglist, CLD+, CLDX+)!=#
+www-client/qupzilla
+#in#
+
 #?in(os_linux_pkglist, CLD+)!=#
 net-im/choqok
 net-im/qutim
@@ -89,7 +93,6 @@ net-voip/ekiga
 net-voip/linphone
 www-client/firefox
 www-client/midori
-www-client/qupzilla
 www-client/seamonkey
 www-client/uget
 www-client/vivaldi
