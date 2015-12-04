@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<230
+# Calculate format=world name=world ini(overlay-distros.world)<231
 
-#-ini(overlay-distros.world,230)-#
+#-ini(overlay-distros.world,231)-#
 
 #?in(os_linux_pkglist, CLDX+, CDS+)!=#
 !net-p2p/bittorrent
@@ -15,6 +15,7 @@ media-gfx/freecad
 media-gfx/librecad
 media-video/pitivi
 www-client/vivaldi
+www-plugins/adobe-flash
 x11-terms/qterminal
 #in#
 
