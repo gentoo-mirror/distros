@@ -48,6 +48,10 @@ sys-process/htop
 sys-process/lsof
 #in#
 
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLDX+, CDS+)!=#
+sys-power/powertop
+#in#
+
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CDS+)!=#
 app-admin/testdisk
 net-analyzer/speedtest-cli
@@ -62,7 +66,6 @@ sys-fs/fuse-exfat
 sys-power/acpi
 sys-power/cpupower
 sys-power/powernowd
-sys-power/powertop
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLSK, CLDX+, CDS+)!=#
