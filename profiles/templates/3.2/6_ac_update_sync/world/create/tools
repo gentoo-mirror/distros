@@ -74,7 +74,7 @@ sys-apps/acl
 app-misc/mc
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLD+, CLDX+)!=#
 www-plugins/adobe-flash
 #in#
 
