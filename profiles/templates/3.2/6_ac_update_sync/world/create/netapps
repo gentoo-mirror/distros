@@ -10,10 +10,8 @@ net-analyzer/traceroute
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
-www-client/chromium
-www-plugins/chrome-binary-plugins
-www-plugins/chrome-ublock
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLD+, CLDX+)!=#
+www-client/qupzilla
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
@@ -57,10 +55,6 @@ net-irc/weechat
 www-client/links
 #in#
 
-#?in(os_linux_pkglist, CLD+, CLDX+)!=#
-www-client/qupzilla
-#in#
-
 #?in(os_linux_pkglist, CLD+)!=#
 net-im/choqok
 net-im/qutim
@@ -91,11 +85,14 @@ net-p2p/rtorrent
 net-p2p/transmission
 net-voip/ekiga
 net-voip/linphone
+www-client/chromium
 www-client/firefox
 www-client/midori
 www-client/seamonkey
 www-client/uget
 www-client/vivaldi
+www-plugins/chrome-binary-plugins
+www-plugins/chrome-ublock
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
