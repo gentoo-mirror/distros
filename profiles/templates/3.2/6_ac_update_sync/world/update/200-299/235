@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<235
-
-#-ini(overlay-distros.world,235)-#
-
-#?in(os_linux_pkglist, CLD+)!=#
-www-plugins/adobe-flash
-#in#

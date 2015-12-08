@@ -6,10 +6,6 @@
 !net-p2p/bittorrent
 #in#
 
-#?in(os_linux_pkglist, CLD+)!=#
-www-client/qupzilla
-#in#
-
 #?in(os_linux_pkglist, CLDX+)!=#
 !media-sound/ardour
 !net-im/mcabber
