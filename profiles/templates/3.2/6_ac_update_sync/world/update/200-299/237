@@ -1,0 +1,12 @@
+# Calculate format=world name=world ini(overlay-distros.world)<237
+
+#-ini(overlay-distros.world,237)-#
+
+#?in(os_linux_pkglist, CLD+)!=#
+!www-client/qupzilla
+www-plugins/adobe-flash
+#in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+dev-qt/qt5ct
+#in#

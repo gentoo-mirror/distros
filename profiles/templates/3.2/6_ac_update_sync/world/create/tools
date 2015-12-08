@@ -166,6 +166,7 @@ app-text/xournal
 app-text/xournal
 dev-lang/mono
 dev-python/ipython
+dev-qt/qt5ct
 dev-qt/qt-creator
 dev-util/android-tools
 dev-util/geany
