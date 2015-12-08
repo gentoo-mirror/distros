@@ -8,5 +8,15 @@ www-plugins/adobe-flash
 #in#
 
 #?in(os_linux_pkglist, CLDX+)!=#
-dev-qt/qt5ct
+app-admin/sysstat
+app-benchmarks/bootchart2
+dev-db/mysql-workbench
+net-analyzer/mbrowse
+net-misc/badvpn
+sys-fs/cryptsetup
+sys-process/atop
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+app-benchmarks/bootchart2
 #in#
