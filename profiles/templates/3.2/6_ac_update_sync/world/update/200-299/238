@@ -1,6 +1,10 @@
-# Calculate format=world name=world ini(overlay-distros.world)<237
+# Calculate format=world name=world ini(overlay-distros.world)<238
 
-#-ini(overlay-distros.world,237)-#
+#-ini(overlay-distros.world,238)-#
+
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO)!=#
+!x11-themes/calculate-xcursors
+#in#
 
 #?in(os_linux_pkglist, CLD+)!=#
 !www-client/qupzilla

@@ -10,10 +10,6 @@ media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CLD+, CLDX+)!=#
-x11-themes/calculate-xcursors
-#in#
-
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLD+, CLDX+)!=#
 x11-themes/calculate-icon-theme
 #in#
@@ -47,5 +43,6 @@ x11-themes/audacious-themes
 x11-themes/greybird
 x11-themes/smplayer-skins
 x11-themes/smplayer-themes
+x11-themes/calculate-xcursors
 x11-wm/compiz-fusion
 #in#
