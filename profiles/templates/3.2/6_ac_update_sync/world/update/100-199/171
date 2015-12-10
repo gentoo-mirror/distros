@@ -15,7 +15,6 @@ media-video/nvidia-settings
 x11-misc/i3lock
 x11-misc/i3status
 x11-themes/audacious-themes
-x11-themes/gnome-breeze
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
