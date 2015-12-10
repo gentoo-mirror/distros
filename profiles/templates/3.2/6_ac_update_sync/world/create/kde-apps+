@@ -47,7 +47,7 @@ kde-apps/kdeartwork-emoticons
 kde-apps/kdeartwork-iconthemes
 kde-apps/kdeartwork-kscreensaver
 kde-apps/kdeartwork-meta
-kde-apps/kdeartwork-styles
+#kde-apps/kdeartwork-styles
 kde-apps/kdeartwork-wallpapers
 kde-apps/kdeartwork-weatherwallpapers
 kde-apps/kde-base-artwork
