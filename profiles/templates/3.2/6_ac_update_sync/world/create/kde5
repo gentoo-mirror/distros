@@ -1,16 +1,12 @@
 # Calculate name=world format=world in(os_linux_pkglist,CLSK)!=
 
-kde-plasma/plasma-meta
-
-# kdeadmin-meta
-kde-apps/kcron
-
-# kdebase-meta
+kde-apps/ark
 kde-apps/dolphin
+kde-apps/dragon
+kde-apps/gwenview
+kde-apps/kcalc
+kde-apps/kcron
+kde-apps/kde-l10n
 kde-apps/konsole
 kde-apps/kwrite
-
-# kdemultimedia-meta
-kde-apps/dragon
-
-kde-apps/kde-l10n
+kde-plasma/plasma-meta
