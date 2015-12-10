@@ -2,7 +2,11 @@
 
 #-ini(overlay-distros.world,239)-#
 
-#?in(os_linux_pkglist, CLSK+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
+!sci-geosciences/qgis
+#in#
+
+#?in(os_linux_pkglist, CLSK)!=#
 kde-apps/ark
 kde-apps/gwenview
 kde-apps/kcalc

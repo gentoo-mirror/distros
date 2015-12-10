@@ -2,5 +2,5 @@
 
 #?in(os_linux_pkglist, CLDX+)!=#
 sci-astronomy/celestia
-sci-geosciences/qgis
+#sci-geosciences/qgis
 #in#

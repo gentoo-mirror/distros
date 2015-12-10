@@ -10,7 +10,6 @@ sys-devel/prelink
 
 #?in(os_linux_pkglist, CLDX+)!=#
 games-action/oolite
-sci-geosciences/qgis
 x11-misc/idesk
 x11-misc/idesk-extras
 x11-misc/xvkbd
