@@ -11,7 +11,6 @@
 amd64		CLD/amd64					stable
 amd64		CLDM/amd64					stable
 amd64		CLDX/amd64					stable
-amd64		CLDO/amd64					stable
 amd64		CDS/amd64					stable
 amd64		CLS/amd64					stable
 amd64		CLSK/amd64					stable
@@ -25,7 +24,6 @@ amd64		CDS+/amd64					stable
 x86		CLD/x86						stable
 x86		CLDM/x86					stable
 x86		CLDX/x86					stable
-x86		CLDO/x86					stable
 x86		CDS/x86						stable
 x86		CLS/x86						stable
 x86		CLSK/x86					stable
