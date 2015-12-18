@@ -198,6 +198,7 @@ x11-misc/i3lock
 x11-misc/i3status
 x11-misc/idesk
 x11-misc/idesk-extras
+x11-misc/openbox-menu
 x11-misc/oroborus-desklaunch
 x11-misc/oroborus-deskmenu
 x11-misc/oroborus-keylaunch
