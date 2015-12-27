@@ -75,6 +75,7 @@ net-im/psi
 net-im/psimedia
 net-im/skype
 net-irc/kvirc
+net-irc/unrealircd
 net-misc/dropbox
 net-misc/modem-manager-gui
 net-misc/yandex-disk
