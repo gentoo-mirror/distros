@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<241
+
+#-ini(overlay-distros.world,241)-#
+
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLSK, CLS)!=#
+sys-firmware/amdgpu-ucode
+#in#
