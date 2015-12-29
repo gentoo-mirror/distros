@@ -23,7 +23,7 @@ app-editors/bluefish
 app-editors/gedit
 app-editors/gvim
 app-editors/juffed
-app-i18n/poedit
+#app-i18n/poedit
 app-misc/rox-filer
 app-misc/xmind
 app-office/abiword
