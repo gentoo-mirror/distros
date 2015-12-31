@@ -139,31 +139,31 @@ kde-apps/sweeper
 #in#
 
 # kdepim-meta
-kde-base/calendarjanitor
-kde-base/kabcclient
-kde-base/kaddressbook
-kde-base/kdepim-icons
-kde-base/kdepim-kresources
-kde-base/kdepim-runtime
-kde-base/kmail
-kde-base/konsolekalendar
-kde-base/kontact
-kde-base/korganizer
+kde-apps/calendarjanitor
+kde-apps/kabcclient
+kde-apps/kaddressbook
+kde-apps/kdepim-icons
+kde-apps/kdepim-kresources
+kde-apps/kdepim-runtime
+kde-apps/kmail
+kde-apps/konsolekalendar
+kde-apps/kontact
+kde-apps/korganizer
 #?in(os_linux_pkglist, CLD+)!=#
-kde-base/akonadiconsole
-kde-base/kjots
-kde-base/kalarm
-kde-base/knotes
-kde-base/akregator
-kde-base/blogilo
-kde-base/kleopatra
-kde-base/knode
-kde-base/ktimetracker
+kde-apps/akonadiconsole
+kde-apps/kjots
+kde-apps/kalarm
+kde-apps/knotes
+kde-apps/akregator
+kde-apps/blogilo
+kde-apps/kleopatra
+kde-apps/knode
+kde-apps/ktimetracker
 #in#
 
 # kde-l10n
 kde-apps/kde4-l10n
-kde-base/kdepim-l10n
+kde-apps/kdepim-l10n
 
 # kdemisc
 kde-misc/synaptiks
