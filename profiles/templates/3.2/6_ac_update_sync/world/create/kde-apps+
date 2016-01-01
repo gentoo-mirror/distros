@@ -66,7 +66,7 @@ kde-apps/kdegraphics-mobipocket
 kde-apps/kde-l10n
 kde-apps/kdemultimedia-meta
 kde-apps/kdenetwork-filesharing
-kde-apps/kdenlive
+#kde-apps/kdenlive
 #kde-apps/kdepasswd
 kde-apps/kdepim-l10n
 kde-apps/kdesdk-kioslaves
