@@ -62,6 +62,10 @@ net-irc/kvirc
 www-client/rekonq
 #in#
 
+#?in(os_linux_pkglist, CLDX+)!=&&os_arch_machine==x86_64#
+www-client/opera
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 mail-client/geary
 mail-client/sylpheed
@@ -92,7 +96,6 @@ www-client/midori
 www-client/otter
 www-client/seamonkey
 www-client/uget
-www-client/opera
 www-plugins/chrome-binary-plugins
 www-plugins/chrome-ublock
 #in#
