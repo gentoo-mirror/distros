@@ -10,6 +10,7 @@ app-arch/pigz
 app-misc/tmux
 sys-auth/pam_update
 sys-fs/btrfs-progs
+sys-fs/nilfs-utils
 sys-fs/reiserfsprogs
 #in#
 
