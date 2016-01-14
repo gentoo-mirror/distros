@@ -10,7 +10,6 @@ app-arch/pigz
 app-misc/tmux
 sys-auth/pam_update
 sys-fs/btrfs-progs
-sys-fs/nilfs-utils
 sys-fs/reiserfsprogs
 #in#
 
@@ -217,7 +216,6 @@ x11-themes/geany-themes
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
-
 app-arch/pbzip2
 app-arch/pixz
 app-arch/plzip
@@ -245,6 +243,7 @@ sys-auth/pam_ldap
 sys-fs/avfs
 sys-fs/cryptsetup
 sys-fs/e4rat
+sys-fs/nilfs-utils
 sys-fs/sshfs-fuse
 sys-process/nmon
 #in#
