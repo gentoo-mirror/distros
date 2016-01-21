@@ -18,6 +18,10 @@ app-text/qpdfview
 sci-calculators/galculator
 #in#
 
+#?in(os_linux_pkglist, CLD+, CLDX+)!=#
+app-office/calligra
+#in#
+
 #?in(os_linux_pkglist, CLDX+)!=#
 app-editors/bluefish
 app-editors/gedit
