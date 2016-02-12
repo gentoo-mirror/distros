@@ -91,6 +91,7 @@ net-p2p/transmission
 net-voip/ekiga
 net-voip/linphone
 www-client/chromium
+www-client/epiphany
 www-client/firefox
 www-client/midori
 www-client/otter
