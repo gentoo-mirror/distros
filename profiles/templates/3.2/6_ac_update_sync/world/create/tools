@@ -172,6 +172,7 @@ dev-qt/qt-creator
 dev-util/android-tools
 dev-util/geany
 dev-util/geany-plugins
+dev-util/gource
 dev-util/strace
 gnome-base/dconf-editor
 mail-client/evolution
