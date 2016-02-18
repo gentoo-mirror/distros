@@ -6,6 +6,7 @@ x11-wm/blackbox
 x11-wm/dwm
 x11-wm/enlightenment
 x11-wm/enlightenment:0.17
+x11-wm/evilwm
 x11-wm/fluxbox
 x11-wm/fvwm
 x11-wm/i3
