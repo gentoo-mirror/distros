@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<34
-
-#-ini(overlay-distros.world,34)-#
-
-#?in(os_linux_pkglist, CLD)!=#
-!kde-base/akregator
-!media-gfx/xsane
-#in#

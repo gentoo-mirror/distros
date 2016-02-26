@@ -1,9 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<30&&pkg(www-client/chromium)!=
-
-#-ini(overlay-distros.world,30)-#
-
-#?in(os_linux_pkglist, CLD, CLDX)!=#
-!www-apps/chromium-ublock
-!www-plugins/chrome-themes-calculate
-www-plugins/chrome-ublock
-#in#

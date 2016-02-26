@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<6
-
-#-ini(overlay-distros.world,6)-#
-
-# отсутствует в KDE 4.14
-#?in(os_linux_pkglist, CLD)!=#
-!kde-base/contactthemeeditor
-#in#

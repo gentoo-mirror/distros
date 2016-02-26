@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<65
-
-#-ini(overlay-distros.world,65)-#
-
-#?in(os_linux_pkglist, CLD, CLDX)!=#
-!dev-qt/qtdbus
-#in#

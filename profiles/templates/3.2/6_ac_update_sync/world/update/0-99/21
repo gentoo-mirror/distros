@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<21
-
-#-ini(overlay-distros.world,21)-#
-
-#?in(os_linux_pkglist, CDS)!=#
-!dev-db/postgresql-server
-dev-db/postgresql
-#in#
