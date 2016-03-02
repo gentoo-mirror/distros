@@ -3,5 +3,5 @@
 #-ini(overlay-distros.world,242)-#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK)!=#
-!net-ftp/filezilla
+#!net-ftp/filezilla
 #in#
