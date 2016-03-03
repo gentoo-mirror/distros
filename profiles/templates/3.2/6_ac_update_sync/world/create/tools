@@ -54,7 +54,6 @@ sys-power/powertop
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CDS+)!=#
 app-admin/testdisk
-net-analyzer/speedtest-cli
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CDS+)!=#
@@ -231,7 +230,10 @@ dev-vcs/bzr
 dev-vcs/cvs
 dev-vcs/mercurial
 dev-vcs/subversion
+net-analyzer/iftop
 net-analyzer/mtr
+net-analyzer/nload
+net-analyzer/speedtest-cli
 net-fs/davfs2
 net-misc/aria2
 net-misc/iaxmodem
