@@ -94,8 +94,11 @@ www-client/otter
 www-client/qupzilla
 www-client/seamonkey
 www-client/uget
-www-plugins/chrome-binary-plugins
 www-plugins/chrome-ublock
+#in#
+
+#?in(os_linux_pkglist, CLDX+)!=&&os_arch_machine==x86_64#
+www-plugins/chrome-binary-plugins
 #in#
 
 #?in(os_linux_pkglist, CDS+)!=#
