@@ -173,6 +173,7 @@ kde-apps/konq-plugins
 #in#
 
 # other
+kde-base/legacy-icons
 #?in(os_linux_pkglist, CLD+)!=#
 kde-apps/kdeedu-meta
 kde-apps/kdegames-meta
