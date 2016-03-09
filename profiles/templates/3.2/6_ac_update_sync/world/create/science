@@ -3,5 +3,5 @@
 #?in(os_linux_pkglist, CLDX+)!=#
 sci-astronomy/celestia
 #sci-geosciences/qgis
-sci-libs/openfoam
+#sci-libs/openfoam
 #in#
