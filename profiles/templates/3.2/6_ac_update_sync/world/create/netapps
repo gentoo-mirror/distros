@@ -54,7 +54,7 @@ www-client/links
 #?in(os_linux_pkglist, CLD+)!=#
 net-im/choqok
 net-im/qutim
-net-irc/kvirc
+#net-irc/kvirc
 www-client/rekonq
 #in#
 
