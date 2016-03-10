@@ -10,6 +10,10 @@ net-analyzer/traceroute
 net-misc/whois
 #in#
 
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
+www-client/qupzilla
+#in#
+
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 x11-misc/x11vnc
 #in#
@@ -91,7 +95,6 @@ www-client/epiphany
 www-client/firefox
 www-client/midori
 www-client/otter
-www-client/qupzilla
 www-client/seamonkey
 www-client/uget
 www-plugins/chrome-ublock
