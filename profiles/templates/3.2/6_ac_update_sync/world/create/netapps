@@ -27,7 +27,6 @@ mail-client/claws-mail
 #in#
 
 #?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
-net-ftp/filezilla
 net-im/pidgin
 net-irc/hexchat
 net-misc/remmina
@@ -76,6 +75,7 @@ net-im/psimedia
 net-im/skype
 net-irc/kvirc
 net-irc/unrealircd
+net-ftp/filezilla
 net-misc/dropbox
 net-misc/modem-manager-gui
 net-misc/yandex-disk
