@@ -182,6 +182,7 @@ media-gfx/dispcalgui
 media-radio/fldigi
 media-sound/mac
 media-sound/picard
+net-analyzer/iftop
 net-analyzer/mbrowse
 net-misc/badvpn
 net-misc/clipgrab
