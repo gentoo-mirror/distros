@@ -41,6 +41,7 @@ net-misc/asterisk
 net-misc/hylafaxplus
 net-misc/minidlna
 net-proxy/squid
+net-wireless/hostapd
 www-servers/lighttpd
 www-servers/nginx
 #in#
