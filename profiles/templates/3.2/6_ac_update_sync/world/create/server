@@ -21,6 +21,10 @@ sys-apps/most
 mail-mta/ssmtp
 #in#
 
+#?in(os_linux_pkglist, CLDX+)!=#
+net-wireless/hostapd
+#in#
+
 #?in(os_linux_pkglist, CDS+)!=#
 dev-db/mariadb
 dev-db/mongodb
@@ -41,7 +45,6 @@ net-misc/asterisk
 net-misc/hylafaxplus
 net-misc/minidlna
 net-proxy/squid
-net-wireless/hostapd
 www-servers/lighttpd
 www-servers/nginx
 #in#
