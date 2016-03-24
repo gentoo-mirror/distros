@@ -13,3 +13,7 @@ app-emulation/winetricks
 games-emulation/dosbox
 sci-visualization/qtiplot
 #in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+app-emulation/virtualbox
+#in#
