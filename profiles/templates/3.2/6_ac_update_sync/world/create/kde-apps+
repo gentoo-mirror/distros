@@ -140,7 +140,6 @@ kde-apps/kscd
 kde-apps/kshisen
 kde-apps/ksirk
 kde-apps/ksnakeduel
-kde-apps/ksnapshot
 kde-apps/kspaceduel
 kde-apps/ksquares
 kde-apps/kstart
@@ -187,6 +186,7 @@ kde-apps/poxml
 kde-apps/print-manager
 kde-apps/renamedlg-plugins
 kde-apps/solid-runtime
+kde-apps/spectacle
 kde-apps/superkaramba
 kde-apps/svgpart
 kde-apps/sweeper
