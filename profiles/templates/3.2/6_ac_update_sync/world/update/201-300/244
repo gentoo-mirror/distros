@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<244
-
-#-ini(overlay-distros.world,244)-#
-
-#?in(os_linux_pkglist, CLSK)!=#
-kde-apps/spectacle
-#in#
