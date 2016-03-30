@@ -249,6 +249,5 @@ sys-fs/avfs
 sys-fs/cryptsetup
 sys-fs/e4rat
 sys-fs/nilfs-utils
-sys-fs/sshfs-fuse
 sys-process/nmon
 #in#
