@@ -43,7 +43,7 @@ media-sound/alsa-utils
 media-sound/audacious
 media-sound/audacity
 media-sound/easytag
-media-sound/lxmusic
+#media-sound/lxmusic
 media-sound/qmmp
 media-sound/rhythmbox
 media-sound/soundconverter
