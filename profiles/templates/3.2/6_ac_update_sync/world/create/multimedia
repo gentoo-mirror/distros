@@ -47,7 +47,7 @@ media-sound/lxmusic
 media-sound/qmmp
 media-sound/rhythmbox
 media-sound/soundconverter
-media-sound/xmms2
+#media-sound/xmms2
 media-video/avidemux
 media-video/devede
 media-video/istanbul

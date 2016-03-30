@@ -36,9 +36,9 @@ net-misc/wol
 
 #?in(os_linux_pkglist, CLDX+)!=#
 net-firewall/fwbuilder
-#net-misc/cmst
-#net-misc/connman
-#net-misc/connman-gtk
+net-misc/cmst
+net-misc/connman
+net-misc/connman-gtk
 net-misc/wicd
 #in#
 
