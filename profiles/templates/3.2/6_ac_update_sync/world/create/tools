@@ -166,6 +166,7 @@ app-text/texlive
 app-text/xournal
 dev-db/mysql-workbench
 dev-lang/mono
+dev-libs/libcgroup
 dev-python/ipython
 dev-qt/qt-creator
 dev-util/android-tools
