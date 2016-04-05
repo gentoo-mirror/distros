@@ -1,12 +1,16 @@
 # Calculate name=world format=world in(os_linux_pkglist,CLDX+)!=
 
 kde-apps/amor
+kde-apps/analitza
 kde-apps/ark
+kde-apps/artikulate
 kde-apps/attica
 kde-apps/audiocd-kio
 kde-apps/baloo-widgets
+kde-apps/blinken
 kde-apps/bomber
 kde-apps/bovo
+kde-apps/cantor
 kde-apps/cervisia
 kde-apps/dolphin
 kde-apps/dolphin-plugins
@@ -22,7 +26,9 @@ kde-apps/juk
 kde-apps/kaccessible
 kde-apps/kaccounts-integration
 kde-apps/kajongg
+kde-apps/kalgebra
 kde-apps/kamera
+kde-apps/kanagram
 kde-apps/kapman
 kde-apps/kapptemplate
 kde-apps/kate
@@ -31,6 +37,7 @@ kde-apps/kblackbox
 kde-apps/kblocks
 kde-apps/kbounce
 kde-apps/kbreakout
+kde-apps/kbruch
 kde-apps/kcachegrind
 kde-apps/kcalc
 kde-apps/kcharselect
