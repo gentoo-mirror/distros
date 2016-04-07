@@ -246,6 +246,7 @@ sys-apps/lshw
 sys-apps/setserial
 sys-auth/nss_ldap
 sys-auth/pam_ldap
+sys-block/fio
 sys-fs/avfs
 sys-fs/cryptsetup
 sys-fs/e4rat
