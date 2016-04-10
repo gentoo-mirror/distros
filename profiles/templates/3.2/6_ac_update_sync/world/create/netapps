@@ -18,7 +18,7 @@ www-client/qupzilla
 x11-misc/x11vnc
 #in#
 
-#?in(os_linux_pkglist, CLD, CLSK, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLSK, CLD+, CLDX+)!=#
 net-irc/konversation
 #in#
 
