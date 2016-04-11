@@ -1,10 +1,10 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLD+)!=#
 media-gfx/imagemagick
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
 media-gfx/gimp
 #in#
 

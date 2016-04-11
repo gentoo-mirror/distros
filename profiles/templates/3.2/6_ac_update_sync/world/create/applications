@@ -1,14 +1,10 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLD+, CLDX+)!=#
 app-office/libreoffice
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX, CLDX+)!=#
-app-text/fbreader
-#in#
-
-#?in(os_linux_pkglist, CLD, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLSK, CLD+, CLDX+)!=#
 kde-misc/openofficeorg-thumbnail
 #in#
 
@@ -36,6 +32,7 @@ app-office/gnumeric
 app-office/lyx
 app-office/scribus
 app-office/texmaker
+app-text/fbreader
 app-text/kchmviewer
 app-text/keepnote
 app-text/mupdf

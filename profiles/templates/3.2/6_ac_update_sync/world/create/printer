@@ -1,11 +1,11 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
 net-print/cups
 net-print/hplip
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
 media-gfx/xsane
 net-print/cnijfilter
 net-print/gutenprint

@@ -8,7 +8,7 @@ sys-firmware/ipw2100-firmware
 sys-firmware/ipw2200-firmware
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CLS)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CLS, CLSK)!=#
 net-wireless/broadcom-sta
 #in#
 

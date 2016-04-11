@@ -26,7 +26,7 @@ app-admin/sudo
 sys-apps/memtest86+
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CLSK, CDS+)!=#
 app-admin/hddtemp
 app-cdr/cdrtools
 app-cdr/dvd+rw-tools
@@ -48,15 +48,15 @@ sys-process/htop
 sys-process/lsof
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLDX+, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLSK, CLDX+, CDS+)!=#
 sys-power/powertop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLSK, CDS+)!=#
 app-admin/testdisk
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLSK, CDS+)!=#
 app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/pcmciautils
@@ -81,11 +81,11 @@ www-plugins/adobe-flash
 sys-devel/prelink
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLD+, CLDX+)!=#
 sys-apps/keyexec
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
@@ -94,7 +94,7 @@ sys-apps/usb_modeswitch
 x11-libs/gksu
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDO, CMC, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDO, CMC, CLSK, CLD+)!=#
 sys-power/upower-pm-utils
 #in#
 
