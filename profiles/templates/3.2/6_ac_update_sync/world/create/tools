@@ -204,6 +204,7 @@ x11-misc/qlipper
 x11-misc/slim
 x11-misc/spacefm
 x11-misc/sunflower
+x11-misc/xrestop
 x11-misc/xsnow
 x11-misc/xvkbd
 x11-terms/guake
@@ -228,8 +229,10 @@ dev-vcs/bzr
 dev-vcs/cvs
 dev-vcs/mercurial
 dev-vcs/subversion
+net-analyzer/jnettop
 net-analyzer/iftop
 net-analyzer/mtr
+net-analyzer/nethogs
 net-analyzer/nload
 net-analyzer/speedtest-cli
 net-fs/davfs2
