@@ -5,7 +5,7 @@ media-gfx/grub-splashes-calculate
 media-gfx/syslinux-themes-calculate
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CLSK, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLD+, CLDX+)!=#
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
 #in#
@@ -14,7 +14,7 @@ media-gfx/dm-themes-calculate
 x11-themes/calculate-icon-theme
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDO, CLDX+)!=#
+#?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
 media-gfx/lightdm-themes-calculate
 x11-themes/claws-mail-theme-calculate
 #in#

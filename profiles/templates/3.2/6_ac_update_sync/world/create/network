@@ -18,7 +18,7 @@ net-misc/networkmanager-pptp
 net-misc/networkmanager-vpnc
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDO, CLDX+)!=#
+#?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
 gnome-extra/nm-applet
 #in#
 

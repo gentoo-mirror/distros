@@ -4,7 +4,7 @@
 dev-util/ccache
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CLSK, CSS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CLSK, CSS, CMC, CDS+)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -13,7 +13,7 @@ sys-fs/btrfs-progs
 sys-fs/reiserfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CLSK, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CLSK, CMC, CDS+)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -67,7 +67,7 @@ sys-power/cpupower
 sys-power/powernowd
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLSK, CLDX+, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLSK, CLDX+, CDS+)!=#
 app-editors/vim
 sys-apps/acl
 app-misc/mc
@@ -94,7 +94,7 @@ sys-apps/usb_modeswitch
 x11-libs/gksu
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDO, CMC, CLSK, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CMC, CLSK, CLD+)!=#
 sys-power/upower-pm-utils
 #in#
 
@@ -134,10 +134,6 @@ sys-block/parted
 sys-block/tw_cli
 sys-fs/xfsdump
 sys-process/iotop
-#in#
-
-#?in(os_linux_pkglist, CLDO, CLDX+)!=#
-x11-terms/rxvt-unicode
 #in#
 
 #?in(os_linux_pkglist, CLD+, CLDX+)!=#
@@ -212,6 +208,7 @@ x11-misc/sunflower
 x11-misc/xsnow
 x11-misc/xvkbd
 x11-terms/guake
+x11-terms/rxvt-unicode
 x11-terms/terminator
 x11-terms/tilda
 x11-themes/geany-themes

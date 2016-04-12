@@ -22,11 +22,8 @@ x11-misc/x11vnc
 net-irc/konversation
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDO, CLDX+)!=#
-mail-client/claws-mail
-#in#
-
 #?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
+mail-client/claws-mail
 net-im/pidgin
 net-irc/hexchat
 net-misc/remmina
