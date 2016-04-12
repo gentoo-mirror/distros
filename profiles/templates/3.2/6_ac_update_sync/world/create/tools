@@ -189,7 +189,6 @@ sys-apps/gsmartcontrol
 sys-auth/thinkfinger
 sys-fs/cryptsetup
 sys-power/apcupsd
-sys-process/atop
 x11-misc/devilspie
 x11-misc/dmenu
 x11-misc/gcolor2
@@ -248,5 +247,6 @@ sys-fs/avfs
 sys-fs/cryptsetup
 sys-fs/e4rat
 sys-fs/nilfs-utils
+sys-process/atop
 sys-process/nmon
 #in#
