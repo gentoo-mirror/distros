@@ -5,7 +5,6 @@ net-misc/dhcp
 #in#
 
 #?in(os_linux_pkglist, CDS, CDS+)!=#
-dev-db/pg_top
 dev-db/postgresql
 mail-filter/clamsmtp
 mail-filter/opendkim
