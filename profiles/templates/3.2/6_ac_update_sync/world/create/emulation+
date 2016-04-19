@@ -11,6 +11,6 @@ app-emulation/virtualbox-extpack-oracle
 app-emulation/wine
 app-emulation/winetricks
 games-emulation/dosbox
-pp-emulation/lxc
+app-emulation/lxc
 sci-visualization/qtiplot
 #in#
