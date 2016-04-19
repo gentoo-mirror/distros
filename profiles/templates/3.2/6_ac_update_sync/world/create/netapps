@@ -37,10 +37,6 @@ x11-plugins/purple-plugin_pack
 net-p2p/ktorrent
 #in#
 
-#?in(os_linux_pkglist, CLSK, CLDX+)!=#
-net-p2p/qbittorrent
-#in#
-
 #?in(os_linux_pkglist, CDS, CDS+)!=#
 net-analyzer/fail2ban
 net-analyzer/iptraf-ng
@@ -72,6 +68,7 @@ mail-client/sylpheed
 mail-client/thunderbird
 mail-client/trojita
 net-analyzer/wireshark
+net-ftp/filezilla
 net-im/corebird
 net-im/gajim
 net-im/licq
@@ -79,12 +76,12 @@ net-im/psi
 net-im/psimedia
 net-im/skype
 net-irc/kvirc
-net-ftp/filezilla
 net-misc/dropbox
 net-misc/modem-manager-gui
 net-misc/yandex-disk
 net-p2p/amule
 #net-p2p/mldonkey
+net-p2p/qbittorrent
 net-p2p/rtorrent
 net-p2p/transmission
 net-voip/ekiga
