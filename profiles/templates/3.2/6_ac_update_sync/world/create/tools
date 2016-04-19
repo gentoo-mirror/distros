@@ -222,6 +222,7 @@ app-arch/plzip
 app-arch/pxz
 app-arch/star
 app-benchmarks/bootchart2
+app-benchmarks/stress
 app-crypt/pgpdump
 app-misc/screenfetch
 app-portage/genlop
