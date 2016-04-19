@@ -33,7 +33,7 @@ x11-plugins/pidgin-libnotify
 x11-plugins/purple-plugin_pack
 #in#
 
-#?in(os_linux_pkglist, CLD, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLSK, CLD+, CLDX+)!=#
 net-p2p/ktorrent
 #in#
 
