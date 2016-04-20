@@ -9,7 +9,9 @@
 #?in(os_linux_pkglist, CLD)!=#
 !kde-apps/kcontrol
 !kde-apps/kde-apps-meta
+!kde-apps/kde-apps-meta
 !kde-apps/kdeartwork-styles
+!kde-apps/kdeedu-meta
 !kde-apps/kdegraphics-meta
 !kde-apps/kde-meta
 !kde-apps/kdepasswd
@@ -21,6 +23,7 @@
 !kde-apps/libkgeomap
 !kde-apps/libkleo
 !kde-apps/libkpgp
+!kde-apps/marble
 
 !kde-base/freespacenotifier
 !kde-base/kcheckpass

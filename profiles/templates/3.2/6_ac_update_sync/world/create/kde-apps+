@@ -79,7 +79,7 @@ kde-apps/kdecore-meta
 kde-apps/kde-dev-scripts
 kde-apps/kde-dev-utils
 kde-apps/kdeedu-data
-kde-apps/kdeedu-meta
+#kde-apps/kdeedu-meta
 kde-apps/kdegames-meta
 #kde-apps/kdegraphics-meta
 kde-apps/kdegraphics-mobipocket
@@ -236,7 +236,7 @@ kde-apps/libkonq
 kde-apps/libksane
 kde-apps/lokalize
 kde-apps/lskat
-kde-apps/marble
+#kde-apps/marble
 kde-apps/mplayerthumbs
 kde-apps/nsplugins
 kde-apps/okteta
