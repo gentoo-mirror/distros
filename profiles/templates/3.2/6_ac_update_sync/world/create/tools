@@ -77,10 +77,6 @@ app-misc/mc
 www-plugins/adobe-flash
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLDX+)!=#
-sys-devel/prelink
-#in#
-
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 sys-apps/keyexec
 #in#
@@ -184,6 +180,7 @@ net-misc/putty
 net-news/quiterss
 sys-apps/gsmartcontrol
 sys-auth/thinkfinger
+sys-devel/prelink
 sys-fs/cryptsetup
 sys-power/apcupsd
 x11-misc/devilspie
