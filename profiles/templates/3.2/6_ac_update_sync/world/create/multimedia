@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 media-video/smplayer
 #in#
 
@@ -9,16 +9,13 @@ media-sound/clementine
 media-video/gtk-recordmydesktop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLSK, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLDX+)!=#
 media-sound/amarok
 media-video/qt-recordmydesktop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLDX+)!=#
 app-cdr/k3b
-media-video/dvdauthor
-media-video/dvgrab
-media-video/kffmpegthumbnailer
 #in#
 
 #?in(os_linux_pkglist, CLDX, CLDX+)!=#
@@ -29,11 +26,10 @@ app-cdr/xfburn
 media-tv/kodi
 #in#
 
-#?in(os_linux_pkglist, CLD+, CLDX+)!=#
-media-video/vlc
-#in#
-
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
+media-video/dvdauthor
+media-video/dvgrab
+media-video/kffmpegthumbnailer
 media-video/kaffeine
 #in#
 
@@ -60,4 +56,5 @@ media-video/openshot
 media-video/pitivi
 media-video/smtube
 media-video/totem
+media-video/vlc
 #in#

@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLS, CLSK, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLS, CLDX+)!=#
 app-misc/xorg-meta
 #in#
 
@@ -8,6 +8,6 @@ app-misc/xorg-meta
 x11-misc/lightdm
 #in#
 
-#?in(os_linux_pkglist, CMC, CLD+)!=#
+#?in(os_linux_pkglist, CMC, CLDX+)!=#
 x11-base/xorg-server
 #in#

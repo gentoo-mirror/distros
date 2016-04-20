@@ -2,7 +2,7 @@
 
 #-ini(overlay-distros.world,238)-#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
 !x11-themes/calculate-xcursors
 #in#
 

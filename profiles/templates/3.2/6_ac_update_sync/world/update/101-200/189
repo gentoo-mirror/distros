@@ -2,7 +2,7 @@
 
 #-ini(overlay-distros.world,189)-#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDO, CDS, CLS, CLSK, CSS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CLSK, CSS, CMC, CDS+)!=#
 app-arch/pigz
 #in#
 

@@ -1,24 +1,24 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CLSK, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CLDX+)!=#
 app-text/wgetpaste
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLSK, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLDX+)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 www-client/qupzilla
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 x11-misc/x11vnc
 #in#
 
-#?in(os_linux_pkglist, CLD, CLSK, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDX+)!=#
 net-irc/konversation
 #in#
 
@@ -33,7 +33,7 @@ x11-plugins/pidgin-libnotify
 x11-plugins/purple-plugin_pack
 #in#
 
-#?in(os_linux_pkglist, CLD, CLSK, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDX+)!=#
 net-p2p/ktorrent
 #in#
 
@@ -51,10 +51,9 @@ net-irc/weechat
 www-client/links
 #in#
 
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 net-im/choqok
 net-im/qutim
-#net-irc/kvirc
 www-client/rekonq
 #in#
 

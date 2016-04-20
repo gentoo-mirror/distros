@@ -1,16 +1,16 @@
-# Calculate name=world format=world in(os_linux_pkglist,CLD,CLD+)!=
+# Calculate name=world format=world in(os_linux_pkglist,CLD,CLDX+)!=
 
 # kdeadmin-meta
 kde-apps/kcron
 kde-apps/kuser
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 kde-apps/ksystemlog
 #in#
 
 # kdeartwork-meta
 kde-apps/kdeartwork-desktopthemes
 kde-apps/kdeartwork-kscreensaver
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 kde-apps/kdeartwork-colorschemes
 kde-apps/kdeartwork-emoticons
 kde-apps/kdeartwork-iconthemes
@@ -59,7 +59,7 @@ kde-base/plasma-workspace
 kde-base/powerdevil
 kde-base/systemsettings
 kde-base/kdm
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 kde-apps/kde-wallpapers
 kde-base/kdebase-cursors
 kde-apps/kdebase-runtime-meta
@@ -88,7 +88,7 @@ kde-apps/svgpart
 kde-apps/thumbnailers
 kde-apps/ksaneplugin
 kde-apps/libksane
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 kde-apps/kcolorchooser
 kde-apps/kolourpaint
 kde-apps/kruler
@@ -101,7 +101,7 @@ kde-apps/libkcddb
 kde-apps/libkcompactdisc
 kde-apps/mplayerthumbs
 kde-apps/ffmpegthumbs
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 kde-apps/kscd
 kde-apps/dragon
 kde-apps/juk
@@ -112,7 +112,7 @@ kde-apps/kdenetwork-filesharing
 kde-apps/kopete
 kde-apps/krdc
 kde-apps/zeroconf-ioslave
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 kde-apps/kppp
 kde-apps/kget
 kde-apps/krfb
@@ -126,7 +126,7 @@ kde-apps/ark
 kde-apps/kcalc
 kde-apps/kwalletmanager
 kde-apps/print-manager
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 kde-apps/kremotecontrol
 kde-apps/kgpg
 kde-apps/kcharselect
@@ -149,7 +149,7 @@ kde-apps/kmail
 kde-apps/konsolekalendar
 kde-apps/kontact
 kde-apps/korganizer
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 kde-apps/akonadiconsole
 kde-apps/kjots
 kde-apps/kalarm
@@ -167,14 +167,14 @@ kde-apps/kdepim-l10n
 
 # kdemisc
 kde-misc/synaptiks
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 kde-apps/kate
 kde-apps/konq-plugins
 #in#
 
 # other
 kde-base/legacy-icons
-#?in(os_linux_pkglist, CLD+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 kde-apps/kdeedu-meta
 kde-apps/kdegames-meta
 kde-apps/kdetoys-meta

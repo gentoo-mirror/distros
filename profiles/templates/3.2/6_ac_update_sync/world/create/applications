@@ -1,10 +1,10 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 app-office/libreoffice
 #in#
 
-#?in(os_linux_pkglist, CLD, CLSK, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDX+)!=#
 kde-misc/openofficeorg-thumbnail
 #in#
 
@@ -14,7 +14,7 @@ app-text/qpdfview
 sci-calculators/galculator
 #in#
 
-#?in(os_linux_pkglist, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLDX+)!=#
 app-office/calligra
 #in#
 

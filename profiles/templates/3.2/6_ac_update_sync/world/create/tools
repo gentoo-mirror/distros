@@ -1,10 +1,10 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD+, CLDX+, CDS+)!=#
+#?in(os_linux_pkglist, CLDX+, CDS+)!=#
 dev-util/ccache
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CLSK, CSS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CSS, CMC, CDS+)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -13,7 +13,7 @@ sys-fs/btrfs-progs
 sys-fs/reiserfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CLSK, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CMC, CDS+)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -21,12 +21,12 @@ sys-apps/usbutils
 sys-process/vixie-cron
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CDS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CDS+)!=#
 app-admin/sudo
 sys-apps/memtest86+
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CLSK, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CDS+)!=#
 app-admin/hddtemp
 app-cdr/cdrtools
 app-cdr/dvd+rw-tools
@@ -48,15 +48,15 @@ sys-process/htop
 sys-process/lsof
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLSK, CLDX+, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLDX+, CDS+)!=#
 sys-power/powertop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLSK, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CDS+)!=#
 app-admin/testdisk
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLSK, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CDS+)!=#
 app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/pcmciautils
@@ -67,25 +67,25 @@ sys-power/cpupower
 sys-power/powernowd
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLSK, CLDX+, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLDX+, CDS+)!=#
 app-editors/vim
 sys-apps/acl
 app-misc/mc
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 www-plugins/adobe-flash
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CMC, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLDX+)!=#
 sys-devel/prelink
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 sys-apps/keyexec
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
@@ -94,15 +94,15 @@ sys-apps/usb_modeswitch
 x11-libs/gksu
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CMC, CLSK, CLD+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CMC, CLDX+)!=#
 sys-power/upower-pm-utils
 #in#
 
-#?in(os_linux_pkglist, CLS, CLSK, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLS, CMC)!=#
 net-misc/dhcp
 #in#
 
-#?in(os_linux_pkglist, CLD, CLSK, CLD+, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDX+)!=#
 sys-block/partitionmanager
 #in#
 
@@ -136,10 +136,6 @@ sys-fs/xfsdump
 sys-process/iotop
 #in#
 
-#?in(os_linux_pkglist, CLD+, CLDX+)!=#
-dev-db/sqlitebrowser
-#in#
-
 #?in(os_linux_pkglist, CLDX+)!=#
 app-admin/conky
 app-admin/keepassx
@@ -161,6 +157,7 @@ app-portage/cpuinfo2cpuflags
 app-text/texlive
 app-text/xournal
 dev-db/mysql-workbench
+dev-db/sqlitebrowser
 dev-lang/mono
 dev-libs/libcgroup
 dev-python/ipython

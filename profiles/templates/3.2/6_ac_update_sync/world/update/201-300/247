@@ -1,0 +1,21 @@
+# Calculate format=world name=world ini(overlay-distros.world)<247
+
+#-ini(overlay-distros.world,247)-#
+
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CMC)!=#
+!sys-devel/prelink
+#in#
+
+#?in(os_linux_pkglist, CLD)!=#
+!media-gfx/kdm-themes-calculate
+!x11-themes/oxygen-gtk:2
+!x11-themes/oxygen-gtk:3
+!media-video/dvdauthor
+!media-video/dvgrab
+!media-video/kffmpegthumbnailer
+media-gfx/plasma-themes-calculate
+#in#
+
+#?in(os_linux_pkglist, CLSK)!=#
+games-misc/games-envd
+#in#
