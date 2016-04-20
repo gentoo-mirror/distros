@@ -81,7 +81,7 @@ kde-apps/kde-dev-utils
 kde-apps/kdeedu-data
 kde-apps/kdeedu-meta
 kde-apps/kdegames-meta
-kde-apps/kdegraphics-meta
+#kde-apps/kdegraphics-meta
 kde-apps/kdegraphics-mobipocket
 kde-apps/kde-l10n
 #kde-apps/kde-meta
