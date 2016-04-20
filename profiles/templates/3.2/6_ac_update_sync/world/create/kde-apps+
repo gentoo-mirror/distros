@@ -55,7 +55,7 @@ kde-apps/kcron
 kde-apps/kde4-l10n
 kde-apps/kdeaccessibility-meta
 kde-apps/kdeadmin-meta
-kde-apps/kde-apps-meta
+#kde-apps/kde-apps-meta
 kde-apps/kdeartwork-colorschemes
 kde-apps/kdeartwork-desktopthemes
 kde-apps/kdeartwork-emoticons

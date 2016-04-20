@@ -8,6 +8,7 @@
 
 #?in(os_linux_pkglist, CLD)!=#
 !kde-apps/kcontrol
+!kde-apps/kde-apps-meta
 !kde-apps/kdeartwork-styles
 !kde-apps/kdegraphics-meta
 !kde-apps/kde-meta
