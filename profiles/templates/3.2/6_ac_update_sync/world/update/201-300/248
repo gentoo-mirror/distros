@@ -1,6 +1,6 @@
-# Calculate format=world name=world ini(overlay-distros.world)<247
+# Calculate format=world name=world ini(overlay-distros.world)<248
 
-#-ini(overlay-distros.world,247)-#
+#-ini(overlay-distros.world,248)-#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSK, CMC)!=#
 !sys-devel/prelink
@@ -17,6 +17,7 @@
 !kde-apps/kdepasswd
 !kde-apps/kdepim-icons
 !kde-apps/kdepim-wizards
+!kde-apps/kmix
 !kde-apps/ksnapshot
 !kde-apps/libkdeedu
 !kde-apps/libkdepim
