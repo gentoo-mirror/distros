@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<249
+
+#-ini(overlay-distros.world,249)-#
+
+#?in(os_linux_pkglist, CLD)!=#
+kde-apps/okular
+#in#

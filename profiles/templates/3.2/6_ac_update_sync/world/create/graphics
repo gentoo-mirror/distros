@@ -1,24 +1,10 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
 media-gfx/gimp
 media-gfx/imagemagick
 #in#
 
-#?in(os_linux_pkglist, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLDX)!=#
 media-gfx/nomacs
-#in#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-media-gfx/blender
-media-gfx/darktable
-media-gfx/digikam
-media-gfx/fotowall
-media-gfx/freecad
-media-gfx/gqview
-media-gfx/gthumb
-media-gfx/hugin
-media-gfx/inkscape
-media-gfx/librecad
-media-gfx/pinta
 #in#

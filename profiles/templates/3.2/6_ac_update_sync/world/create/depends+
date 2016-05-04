@@ -1,7 +1,0 @@
-# Calculate name=world format=world
-
-# Depending kde4 applications for installation in kde5
-#?in(os_linux_pkglist, CLDX+)!=#
-kde-base/baloo
-x11-libs/qtscriptgenerator
-#in#

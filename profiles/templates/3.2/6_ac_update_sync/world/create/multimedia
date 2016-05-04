@@ -1,60 +1,27 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
 media-video/smplayer
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLDM, CLDX)!=#
 media-sound/clementine
 media-video/gtk-recordmydesktop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX+)!=#
+#?in(os_linux_pkglist, CLD)!=#
 media-sound/amarok
 media-video/qt-recordmydesktop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX+)!=#
+#?in(os_linux_pkglist, CLD)!=#
 app-cdr/k3b
 #in#
 
-#?in(os_linux_pkglist, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLDX)!=#
 app-cdr/xfburn
 #in#
 
-#?in(os_linux_pkglist, CMC, CLDX+)!=#
+#?in(os_linux_pkglist, CMC)!=#
 media-tv/kodi
-#in#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-media-video/dvdauthor
-media-video/dvgrab
-media-video/kffmpegthumbnailer
-media-video/kaffeine
-#in#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-app-cdr/brasero
-media-gfx/shotwell
-media-plugins/qmmp-plugin-pack
-media-radio/radiotray
-media-sound/alsa-utils
-media-sound/audacious
-media-sound/audacity
-media-sound/easytag
-#media-sound/lxmusic
-media-sound/qmmp
-media-sound/rhythmbox
-media-sound/soundconverter
-#media-sound/xmms2
-media-video/avidemux
-media-video/devede
-media-video/istanbul
-media-video/kino
-media-video/mpv
-media-video/openshot
-media-video/pitivi
-media-video/smtube
-media-video/totem
-media-video/vlc
 #in#

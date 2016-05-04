@@ -1,10 +1,10 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CDS, CSS, CDS+)!=#
+#?in(os_linux_pkglist, CDS, CSS)!=#
 net-misc/dhcp
 #in#
 
-#?in(os_linux_pkglist, CDS, CDS+)!=#
+#?in(os_linux_pkglist, CDS)!=#
 dev-db/pg_top
 dev-db/postgresql
 mail-filter/clamsmtp
@@ -16,33 +16,4 @@ net-proxy/havp
 net-proxy/squidguard
 sys-apps/calculate-server
 sys-apps/most
-#in#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-mail-mta/ssmtp
-net-wireless/hostapd
-#in#
-
-#?in(os_linux_pkglist, CDS+)!=#
-dev-db/mariadb
-dev-db/mongodb
-dev-db/redis
-dev-lang/php
-dev-vcs/gitolite
-mail-filter/procmail
-mail-filter/spamassassin
-mail-mta/postfix
-net-dns/bind
-net-fs/netatalk
-net-fs/samba
-net-ftp/proftpd
-net-ftp/vsftpd
-net-im/ejabberd
-net-mail/dovecot
-net-misc/asterisk
-net-misc/hylafaxplus
-net-misc/minidlna
-net-proxy/squid
-www-servers/lighttpd
-www-servers/nginx
 #in#

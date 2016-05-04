@@ -1,10 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLDX+, CDS+)!=#
-dev-util/ccache
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CSS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CSS, CMC)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -13,7 +9,7 @@ sys-fs/btrfs-progs
 sys-fs/reiserfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CMC)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -21,12 +17,12 @@ sys-apps/usbutils
 sys-process/vixie-cron
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC)!=#
 app-admin/sudo
 sys-apps/memtest86+
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC)!=#
 app-admin/hddtemp
 app-cdr/cdrtools
 app-cdr/dvd+rw-tools
@@ -48,15 +44,15 @@ sys-process/htop
 sys-process/lsof
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CLDX+, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC)!=#
 sys-power/powertop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS)!=#
 app-admin/testdisk
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC)!=#
 app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/pcmciautils
@@ -67,21 +63,21 @@ sys-power/cpupower
 sys-power/powernowd
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLDX+, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS)!=#
 app-editors/vim
 sys-apps/acl
 app-misc/mc
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
 www-plugins/adobe-flash
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
 sys-apps/keyexec
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
@@ -90,7 +86,7 @@ sys-apps/usb_modeswitch
 x11-libs/gksu
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CMC, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CMC)!=#
 sys-power/upower-pm-utils
 #in#
 
@@ -98,11 +94,11 @@ sys-power/upower-pm-utils
 net-misc/dhcp
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDX+)!=#
+#?in(os_linux_pkglist, CLD)!=#
 sys-block/partitionmanager
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLDM, CLDX)!=#
 app-pda/usbmuxd
 dev-python/gst-python
 sys-apps/mlocate
@@ -111,11 +107,11 @@ sys-block/gparted
 x11-misc/wmctrl
 #in#
 
-#?in(os_linux_pkglist, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLDX)!=#
 app-admin/hardinfo
 #in#
 
-#?in(os_linux_pkglist, CDS, CDS+)!=#
+#?in(os_linux_pkglist, CDS)!=#
 app-antivirus/clamav
 app-i18n/enca
 app-portage/ufed
@@ -130,121 +126,4 @@ sys-block/parted
 sys-block/tw_cli
 sys-fs/xfsdump
 sys-process/iotop
-#in#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-app-admin/conky
-app-admin/keepassx
-app-admin/sysstat
-app-arch/arj
-app-arch/unrar
-app-benchmarks/bootchart2
-app-cdr/gcdemu
-app-editors/emacs
-app-editors/ghex
-app-laptop/tpb
-app-laptop/tp_smapi
-app-misc/anki
-app-misc/screen
-app-misc/screenfetch
-app-misc/workrave
-app-mobilephone/wammu
-app-portage/cpuinfo2cpuflags
-app-text/texlive
-app-text/xournal
-dev-db/mysql-workbench
-dev-db/sqlitebrowser
-dev-lang/mono
-dev-libs/libcgroup
-dev-python/ipython
-dev-qt/qt-creator
-dev-util/android-tools
-dev-util/geany
-dev-util/geany-plugins
-dev-util/gource
-dev-util/strace
-gnome-base/dconf-editor
-mail-client/evolution
-mail-client/mutt
-mail-client/sylpheed
-media-gfx/cellwriter
-media-gfx/dispcalgui
-media-radio/fldigi
-media-sound/mac
-media-sound/picard
-net-analyzer/iftop
-net-analyzer/mbrowse
-net-misc/badvpn
-net-misc/clipgrab
-net-misc/putty
-net-news/quiterss
-sys-apps/gsmartcontrol
-sys-auth/thinkfinger
-sys-devel/prelink
-sys-fs/cryptsetup
-sys-power/apcupsd
-x11-misc/devilspie
-x11-misc/dmenu
-x11-misc/gcolor2
-x11-misc/i3lock
-x11-misc/i3status
-x11-misc/idesk
-x11-misc/idesk-extras
-x11-misc/openbox-menu
-x11-misc/oroborus-desklaunch
-x11-misc/oroborus-deskmenu
-x11-misc/oroborus-keylaunch
-x11-misc/qlipper
-x11-misc/slim
-x11-misc/spacefm
-x11-misc/sunflower
-x11-misc/xrestop
-x11-misc/xsnow
-x11-misc/xvkbd
-x11-terms/guake
-x11-terms/rxvt-unicode
-x11-terms/terminator
-x11-terms/tilda
-x11-themes/geany-themes
-#in#
-
-#?in(os_linux_pkglist, CDS+)!=#
-app-arch/dump
-app-arch/pbzip2
-app-arch/pixz
-app-arch/plzip
-app-arch/pxz
-app-arch/star
-app-benchmarks/bootchart2
-app-benchmarks/stress
-app-crypt/pgpdump
-app-misc/screenfetch
-app-portage/genlop
-dev-vcs/bzr
-dev-vcs/cvs
-dev-vcs/mercurial
-dev-vcs/subversion
-net-analyzer/jnettop
-net-analyzer/iftop
-net-analyzer/mtr
-net-analyzer/nethogs
-net-analyzer/nload
-net-analyzer/speedtest-cli
-net-fs/davfs2
-net-misc/aria2
-net-misc/iaxmodem
-net-misc/iperf
-net-nds/shelldap
-sys-apps/iucode_tool
-sys-apps/lshw
-sys-apps/setserial
-sys-auth/nss_ldap
-sys-auth/pam_ldap
-sys-block/fio
-sys-fs/avfs
-sys-fs/cryptsetup
-sys-fs/e4rat
-sys-fs/nilfs-utils
-sys-process/atop
-sys-process/nmon
 #in#

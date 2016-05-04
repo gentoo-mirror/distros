@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CDS+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS)!=#
 net-dialup/pptpclient
 net-dialup/rp-pppoe
 net-dialup/xl2tpd
@@ -10,7 +10,7 @@ net-misc/ntp
 net-misc/vconfig
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
 net-misc/networkmanager
 net-misc/networkmanager-l2tp
 net-misc/networkmanager-openvpn
@@ -18,11 +18,11 @@ net-misc/networkmanager-pptp
 net-misc/networkmanager-vpnc
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDX+)!=#
+#?in(os_linux_pkglist, CLDM, CLDX)!=#
 gnome-extra/nm-applet
 #in#
 
-#?in(os_linux_pkglist, CDS, CDS+)!=#
+#?in(os_linux_pkglist, CDS)!=#
 net-dialup/ppp
 net-dialup/pptpd
 net-dns/ddclient
@@ -32,18 +32,4 @@ net-fs/samba
 net-misc/bridge-utils
 net-misc/ifenslave
 net-misc/wol
-#in#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-net-firewall/fwbuilder
-net-misc/cmst
-net-misc/connman
-net-misc/connman-gtk
-net-misc/wicd
-#in#
-
-#?in(os_linux_pkglist, CDS+)!=#
-net-firewall/firehol
-net-firewall/sanewall
-net-misc/tor
 #in#
