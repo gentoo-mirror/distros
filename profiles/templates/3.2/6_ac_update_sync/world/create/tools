@@ -81,7 +81,6 @@ sys-apps/keyexec
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
-sys-apps/preload
 sys-apps/usb_modeswitch
 x11-libs/gksu
 #in#
