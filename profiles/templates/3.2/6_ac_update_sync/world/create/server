@@ -12,7 +12,6 @@ mail-filter/opendkim
 mail-filter/postgrey
 net-ftp/ftp
 net-mail/fetchmail
-net-proxy/havp
 net-proxy/squidguard
 sys-apps/calculate-server
 sys-apps/most
