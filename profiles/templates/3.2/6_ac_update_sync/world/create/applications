@@ -4,6 +4,10 @@
 app-office/libreoffice
 #in#
 
+#?in(os_linux_pkglist, CLDM, CLDX)!=#
+app-text/fbreader
+#in#
+
 #?in(os_linux_pkglist, CLD)!=#
 kde-misc/openofficeorg-thumbnail
 #in#
