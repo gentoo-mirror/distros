@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-distros.world)<254
+
+#-ini(overlay-distros.world,254)-#
+
+#?in(os_linux_pkglist, CLDM)!=#
+!net-analyzer/mate-netspeed
+#in#
+
