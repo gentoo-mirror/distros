@@ -11,6 +11,7 @@ kde-apps/kdepim-l10n
 kde-apps/kmail
 kde-apps/konsole
 kde-apps/kopete
+kde-apps/kwalletd
 kde-apps/kwrite
 kde-apps/okular
 kde-apps/print-manager
