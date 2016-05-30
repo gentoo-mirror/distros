@@ -123,6 +123,5 @@ sys-apps/iproute2
 sys-apps/kexec-tools
 sys-block/parted
 sys-block/tw_cli
-sys-fs/xfsdump
 sys-process/iotop
 #in#
