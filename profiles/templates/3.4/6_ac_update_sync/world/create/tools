@@ -7,6 +7,7 @@ app-misc/tmux
 sys-auth/pam_update
 sys-fs/btrfs-progs
 sys-fs/reiserfsprogs
+sys-fs/xfsprogs
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CMC)!=#
@@ -39,7 +40,6 @@ sys-fs/dosfstools
 sys-fs/mdadm
 sys-fs/mtools
 sys-fs/ntfs3g
-sys-fs/xfsprogs
 sys-process/htop
 sys-process/lsof
 #in#
