@@ -70,7 +70,7 @@ app-misc/mc
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
-www-plugins/adobe-flash
+#www-plugins/adobe-flash
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
