@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-distros.world)<255
+
+#-ini(overlay-distros.world,255)-#
+
+#?in(os_linux_pkglist, CLD)!=#
+kde-apps/kmix
+#in#
+
