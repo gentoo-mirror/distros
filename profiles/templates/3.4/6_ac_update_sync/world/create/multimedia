@@ -1,7 +1,7 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
-media-sound/amarok
+media-sound/clementine
 media-video/smplayer
 #in#
 
