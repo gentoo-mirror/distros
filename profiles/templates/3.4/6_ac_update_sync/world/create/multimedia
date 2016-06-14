@@ -1,16 +1,15 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+media-sound/amarok
 media-video/smplayer
 #in#
 
 #?in(os_linux_pkglist, CLDM, CLDX)!=#
-media-sound/clementine
 media-video/gtk-recordmydesktop
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
-media-sound/amarok
 media-video/qt-recordmydesktop
 #in#
 
