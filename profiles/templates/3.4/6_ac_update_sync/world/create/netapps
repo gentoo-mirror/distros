@@ -10,7 +10,7 @@ net-analyzer/traceroute
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSL)!=#
 www-client/qupzilla
 #in#
 

@@ -5,12 +5,12 @@ media-gfx/grub-splashes-calculate
 media-gfx/syslinux-themes-calculate
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSL)!=#
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSL)!=#
 x11-themes/calculate-icon-theme
 #in#
 

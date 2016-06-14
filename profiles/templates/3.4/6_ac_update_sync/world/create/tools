@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CSS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CLSL, CSS, CMC)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -10,7 +10,7 @@ sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CLSL, CMC)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -63,7 +63,7 @@ sys-power/cpupower
 sys-power/powernowd
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSL, CDS)!=#
 app-editors/vim
 sys-apps/acl
 app-misc/mc
