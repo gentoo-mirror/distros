@@ -1,6 +1,8 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLSL)!=#
+app-editors/leafpad
+lxde-base/lxtask
 lxqt-base/lxqt-admin
 lxqt-base/lxqt-meta
 lxqt-base/lxqt-openssh-askpass
