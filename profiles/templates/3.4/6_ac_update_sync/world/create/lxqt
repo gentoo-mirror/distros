@@ -9,6 +9,7 @@ lxqt-base/lxqt-sudo
 mail-client/trojita
 media-gfx/lximage-qt
 net-im/qutim
+net-irc/kvirc
 x11-misc/qlipper
 x11-misc/screengrab
 x11-misc/sddm
