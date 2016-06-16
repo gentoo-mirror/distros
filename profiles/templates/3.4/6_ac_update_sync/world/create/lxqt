@@ -6,7 +6,10 @@ lxqt-base/lxqt-meta
 lxqt-base/lxqt-openssh-askpass
 lxqt-base/lxqt-powermanagement
 lxqt-base/lxqt-sudo
+mail-client/trojita
 media-gfx/lximage-qt
+net-im/qutim
+x11-misc/qlipper
 x11-misc/screengrab
 x11-misc/sddm
 x11-misc/xscreensaver

@@ -12,8 +12,11 @@ app-text/fbreader
 kde-misc/openofficeorg-thumbnail
 #in#
 
+#?in(os_linux_pkglist, CLDX, CLSL)!=#
+app-text/qpdfview
+#in#
+
 #?in(os_linux_pkglist, CLDX)!=#
 app-editors/leafpad
-app-text/qpdfview
 sci-calculators/galculator
 #in#
