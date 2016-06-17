@@ -9,6 +9,10 @@ media-video/smplayer
 media-video/gtk-recordmydesktop
 #in#
 
+#?in(os_linux_pkglist, CLDX, CLSL)!=#
+media-sound/pavucontrol
+#in#
+
 #?in(os_linux_pkglist, CLD)!=#
 media-video/qt-recordmydesktop
 #in#

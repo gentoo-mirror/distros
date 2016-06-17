@@ -10,6 +10,7 @@ lxqt-base/lxqt-powermanagement
 lxqt-base/lxqt-sudo
 mail-client/trojita
 media-gfx/lximage-qt
+media-sound/qastools
 net-im/qutim
 net-irc/kvirc
 x11-misc/qlipper
