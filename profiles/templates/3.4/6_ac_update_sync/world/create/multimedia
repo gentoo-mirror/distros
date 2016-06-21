@@ -1,8 +1,12 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX)!=#
 media-sound/clementine
 media-video/smplayer
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDL)!=#
+media-video/qt-recordmydesktop
 #in#
 
 #?in(os_linux_pkglist, CLDM, CLDX)!=#
@@ -12,10 +16,6 @@ media-video/gtk-recordmydesktop
 #?in(os_linux_pkglist, CLDL, CLDX)!=#
 media-sound/pavucontrol
 media-sound/qastools
-#in#
-
-#?in(os_linux_pkglist, CLD)!=#
-media-video/qt-recordmydesktop
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
