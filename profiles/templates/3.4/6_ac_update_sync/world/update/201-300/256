@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-distros.world)<256
+
+#-ini(overlay-distros.world,256)-#
+
+#?in(os_linux_pkglist, CLDX)!=#
+media-sound/qastools
+#in#
+

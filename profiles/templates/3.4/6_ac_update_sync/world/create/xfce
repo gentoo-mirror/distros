@@ -3,6 +3,7 @@
 #?in(os_linux_pkglist, CLDX)!=#
 app-arch/xarchiver
 dev-util/catfish
+media-sound/qastools
 media-sound/volumeicon
 x11-misc/light-locker
 x11-misc/sw-notify-send

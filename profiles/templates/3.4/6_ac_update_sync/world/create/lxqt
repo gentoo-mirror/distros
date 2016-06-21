@@ -14,6 +14,7 @@ media-sound/qastools
 net-im/qutim
 net-irc/kvirc
 net-p2p/qbittorrent
+sys-block/gparted
 x11-misc/qlipper
 x11-misc/screengrab
 x11-misc/sddm
