@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSL, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CDS)!=#
 net-dialup/pptpclient
 net-dialup/rp-pppoe
 net-dialup/xl2tpd
@@ -10,7 +10,7 @@ net-misc/ntp
 net-misc/vconfig
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSL)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX)!=#
 net-misc/networkmanager
 net-misc/networkmanager-l2tp
 net-misc/networkmanager-openvpn
@@ -18,7 +18,7 @@ net-misc/networkmanager-pptp
 net-misc/networkmanager-vpnc
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLSL)!=#
+#?in(os_linux_pkglist, CLDL, CLDM, CLDX)!=#
 gnome-extra/nm-applet
 #in#
 

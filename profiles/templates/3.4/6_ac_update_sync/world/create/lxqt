@@ -1,20 +1,16 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLSL)!=#
-app-editors/leafpad
+#?in(os_linux_pkglist, CLDL)!=#
 lxde-base/lxtask
 lxqt-base/lxqt-admin
 lxqt-base/lxqt-meta
 lxqt-base/lxqt-openssh-askpass
 lxqt-base/lxqt-powermanagement
 lxqt-base/lxqt-sudo
-mail-client/trojita
 media-gfx/lximage-qt
-media-sound/qastools
 net-im/qutim
 net-irc/kvirc
 net-p2p/qbittorrent
-sys-block/gparted
 x11-misc/qlipper
 x11-misc/screengrab
 x11-misc/sddm

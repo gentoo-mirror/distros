@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CLSL, CSS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CDS, CLS, CSS, CMC)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -10,7 +10,7 @@ sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CLS, CLSL, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CDS, CLS, CMC)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -18,12 +18,12 @@ sys-apps/usbutils
 sys-process/vixie-cron
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSL, CDS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CDS, CMC)!=#
 app-admin/sudo
 sys-apps/memtest86+
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CDS, CMC)!=#
 app-admin/hddtemp
 app-cdr/cdrtools
 app-cdr/dvd+rw-tools
@@ -44,15 +44,15 @@ sys-process/htop
 sys-process/lsof
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CMC)!=#
 sys-power/powertop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CDS)!=#
 app-admin/testdisk
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CMC)!=#
 app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/pcmciautils
@@ -63,7 +63,7 @@ sys-power/cpupower
 sys-power/powernowd
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSL, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CDS)!=#
 app-editors/vim
 sys-apps/acl
 app-misc/mc
@@ -73,11 +73,11 @@ app-misc/mc
 #www-plugins/adobe-flash
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX)!=#
 sys-apps/keyexec
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX)!=#
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
@@ -97,7 +97,7 @@ net-misc/dhcp
 sys-block/partitionmanager
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLDL, CLDM, CLDX)!=#
 app-pda/usbmuxd
 dev-python/gst-python
 sys-apps/mlocate

@@ -1,20 +1,20 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CDS, CMC)!=#
 app-text/wgetpaste
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CDS)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLSL)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX)!=#
 www-client/qupzilla
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX)!=#
 x11-misc/x11vnc
 #in#
 
@@ -22,11 +22,18 @@ x11-misc/x11vnc
 net-irc/konversation
 #in#
 
+#?in(os_linux_pkglist, CLDL)!=#
+mail-client/trojita
+#in#
+
+#?in(os_linux_pkglist, CLDL, CLDM, CLDX)!=#
+net-misc/remmina
+#in#
+
 #?in(os_linux_pkglist, CLDM, CLDX)!=#
 mail-client/claws-mail
 net-im/pidgin
 net-irc/hexchat
-net-misc/remmina
 net-p2p/deluge
 x11-plugins/pidgin-hotkeys
 x11-plugins/pidgin-libnotify
