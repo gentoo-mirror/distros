@@ -82,6 +82,9 @@ app-arch/p7zip
 app-arch/rar
 app-arch/unzip
 sys-apps/usb_modeswitch
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
 x11-libs/gksu
 #in#
 
