@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<121
-
-#-ini(overlay-distros.world,121)-#
-
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CMC, CDS, CSS, CLS)!=#
-!dev-util/ccache
-#in#

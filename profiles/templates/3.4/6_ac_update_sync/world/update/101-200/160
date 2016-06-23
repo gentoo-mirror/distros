@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<160
-
-#-ini(overlay-distros.world,160)-#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-!sys-power/powertop
-#in#

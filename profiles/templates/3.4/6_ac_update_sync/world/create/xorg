@@ -4,8 +4,12 @@
 app-misc/xorg-meta
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLDL, CLDM, CLDX)!=#
 x11-misc/lightdm
+#in#
+
+#?in(os_linux_pkglist, CLDL, CLDX)!=#
+x11-misc/light-locker
 #in#
 
 #?in(os_linux_pkglist, CMC)!=#
