@@ -5,6 +5,7 @@ app-admin/openrc-settingsd
 app-arch/file-roller
 app-cdr/brasero
 app-editors/gedit
+app-misc/mc
 app-text/evince
 gnome-extra/cinnamon
 gnome-extra/gnome-calculator
