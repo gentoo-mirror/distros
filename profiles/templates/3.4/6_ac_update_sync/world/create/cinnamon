@@ -1,0 +1,23 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDC)!=#
+app-admin/openrc-settingsd
+app-arch/file-roller
+app-cdr/brasero
+app-editors/gedit
+app-text/evince
+gnome-extra/cinnamon
+gnome-extra/gnome-calculator
+gnome-extra/gnome-system-monitor
+mail-client/evolution
+media-gfx/eog
+media-gfx/gnome-screenshot
+media-sound/rhythmbox
+net-im/gajim
+net-irc/hexchat
+net-p2p/deluge
+sys-apps/baobab
+www-client/qupzilla
+x11-terms/gnome-terminal
+x11-themes/calculate-icon-theme
+#in#
