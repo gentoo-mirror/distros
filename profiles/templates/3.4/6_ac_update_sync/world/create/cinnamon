@@ -8,6 +8,7 @@ app-editors/gedit
 app-text/evince
 gnome-extra/cinnamon
 gnome-extra/gnome-calculator
+gnome-extra/gnome-characters
 gnome-extra/gnome-system-monitor
 mail-client/evolution
 media-gfx/cinnamon-themes-calculate
