@@ -5,7 +5,6 @@ app-admin/openrc-settingsd
 app-arch/file-roller
 app-cdr/brasero
 app-editors/gedit
-app-misc/mc
 app-text/evince
 gnome-extra/cinnamon
 gnome-extra/gnome-calculator
@@ -14,13 +13,9 @@ mail-client/evolution
 media-gfx/cinnamon-themes-calculate
 media-gfx/eog
 media-gfx/gnome-screenshot
-media-gfx/lightdm-themes-calculate
 media-sound/rhythmbox
 net-im/gajim
-net-irc/hexchat
-net-p2p/deluge
 sys-apps/baobab
 www-client/qupzilla
 x11-terms/gnome-terminal
-x11-themes/calculate-icon-theme
 #in#

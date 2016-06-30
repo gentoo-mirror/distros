@@ -6,6 +6,7 @@ kde-apps/gwenview
 kde-apps/kamera
 kde-apps/kcalc
 kde-apps/kcron
+kde-apps/kde4-l10n
 kde-apps/kde-l10n
 kde-apps/kdepim-l10n:4
 kde-apps/kmail
@@ -17,8 +18,5 @@ kde-apps/kwrite
 kde-apps/okular
 kde-apps/print-manager
 kde-apps/spectacle
+kde-misc/openofficeorg-thumbnail
 kde-plasma/plasma-meta
-
-#kde-apps/kdenetwork-filesharing
-#kde-apps/kwalletmanager
-kde-apps/kde4-l10n
