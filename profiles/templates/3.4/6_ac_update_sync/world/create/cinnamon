@@ -11,8 +11,10 @@ gnome-extra/cinnamon
 gnome-extra/gnome-calculator
 gnome-extra/gnome-system-monitor
 mail-client/evolution
+media-gfx/cinnamon-themes-calculate
 media-gfx/eog
 media-gfx/gnome-screenshot
+media-gfx/lightdm-themes-calculate
 media-sound/rhythmbox
 net-im/gajim
 net-irc/hexchat
