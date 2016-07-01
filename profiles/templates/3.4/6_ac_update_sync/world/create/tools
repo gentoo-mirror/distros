@@ -92,10 +92,6 @@ sys-power/upower-pm-utils
 net-misc/dhcp
 #in#
 
-#?in(os_linux_pkglist, CLD)!=#
-sys-block/partitionmanager
-#in#
-
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
 app-pda/usbmuxd
 dev-python/gst-python
@@ -103,6 +99,14 @@ sys-apps/mlocate
 sys-block/gparted
 #для корректной поддержки мультимедиа клавиатур
 x11-misc/wmctrl
+#in#
+
+#?in(os_linux_pkglist, CLD)!=#
+sys-block/partitionmanager
+#in#
+
+#?in(os_linux_pkglist, CLDC)!=#
+gnome-base/dconf-editor
 #in#
 
 #?in(os_linux_pkglist, CLDX)!=#
