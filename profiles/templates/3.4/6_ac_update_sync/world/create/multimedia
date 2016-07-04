@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX)!=#
 media-video/smplayer
 #in#
 
@@ -27,6 +27,7 @@ app-cdr/k3b
 
 #?in(os_linux_pkglist, CLDC)!=#
 media-sound/rhythmbox
+media-video/totem
 #in#
 
 #?in(os_linux_pkglist, CLDX)!=#
