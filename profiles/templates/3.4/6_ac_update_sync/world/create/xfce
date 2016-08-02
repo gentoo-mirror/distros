@@ -3,6 +3,7 @@
 #?in(os_linux_pkglist, CLDX)!=#
 app-arch/xarchiver
 dev-util/catfish
+media-gfx/mirage
 media-sound/volumeicon
 x11-misc/sw-notify-send
 x11-terms/xfce4-terminal
