@@ -66,8 +66,9 @@ sys-power/powernowd
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
 app-editors/vim
-sys-apps/acl
 app-misc/mc
+app-vim/colorschemes
+sys-apps/acl
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
