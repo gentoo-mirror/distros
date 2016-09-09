@@ -15,6 +15,7 @@ www-client/qupzilla
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+www-plugins/adobe-flash
 x11-misc/x11vnc
 #in#
 
