@@ -18,7 +18,7 @@ media-gfx/gnome-screenshot
 media-sound/rhythmbox
 net-im/gajim
 net-irc/polari
-sys-apps/baobab
+#sys-apps/baobab
 www-client/epiphany
 x11-terms/gnome-terminal
 #in#
