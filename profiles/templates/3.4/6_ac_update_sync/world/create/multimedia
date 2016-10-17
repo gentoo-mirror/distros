@@ -8,10 +8,6 @@ media-video/smplayer
 media-sound/clementine
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDL, CLDX)!=#
-media-sound/qastools
-#in#
-
 #?in(os_linux_pkglist, CLDC, CLDM, CLDX)!=#
 media-video/gtk-recordmydesktop
 #in#
@@ -22,6 +18,7 @@ media-video/qt-recordmydesktop
 
 #?in(os_linux_pkglist, CLDL, CLDX)!=#
 media-sound/pavucontrol
+media-sound/qastools
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
