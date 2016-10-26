@@ -10,16 +10,11 @@ net-misc/ntp
 net-misc/vconfig
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
-net-misc/networkmanager
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
 net-misc/networkmanager-l2tp
 net-misc/networkmanager-openvpn
 net-misc/networkmanager-pptp
 net-misc/networkmanager-vpnc
-#in#
-
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
-gnome-extra/nm-applet
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
