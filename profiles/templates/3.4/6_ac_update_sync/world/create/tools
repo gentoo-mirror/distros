@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLS, CSS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLS, CSS, CMC, Timeless)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
