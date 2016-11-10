@@ -4,7 +4,7 @@
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
-app-shells/bash-completion
+#app-shells/bash-completion
 sys-auth/pam_update
 sys-fs/btrfs-progs
 sys-fs/reiserfsprogs
