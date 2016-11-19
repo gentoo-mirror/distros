@@ -7,11 +7,12 @@ app-misc/tmux
 #app-shells/bash-completion
 sys-auth/pam_update
 sys-fs/btrfs-progs
+sys-fs/cryptsetup
 sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLS, CMC, Timeless)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -64,7 +65,7 @@ sys-power/cpupower
 sys-power/powernowd
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, Timeless)!=#
 app-editors/vim
 app-misc/mc
 app-vim/colorschemes
