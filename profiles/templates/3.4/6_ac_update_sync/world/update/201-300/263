@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<263
+
+#-ini(overlay-distros.world,263)-#
+
+#?in(os_linux_pkglist, CLDM)!=#
+mate-extra/mate-calc
+#in#
