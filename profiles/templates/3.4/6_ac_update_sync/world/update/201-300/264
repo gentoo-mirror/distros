@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<264
+
+#-ini(overlay-distros.world,264)-#
+
+#?in(os_linux_pkglist, calculate)!=#
+!media-gfx/syslinux-themes-calculate
+#in#
