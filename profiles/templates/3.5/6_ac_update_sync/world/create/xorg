@@ -1,0 +1,17 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLS)!=#
+app-misc/xorg-meta
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
+x11-misc/lightdm
+#in#
+
+#?in(os_linux_pkglist, CLDL, CLDX)!=#
+x11-misc/light-locker
+#in#
+
+#?in(os_linux_pkglist, CMC)!=#
+x11-base/xorg-server
+#in#

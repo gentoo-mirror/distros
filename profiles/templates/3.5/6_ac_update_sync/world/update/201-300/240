@@ -1,0 +1,17 @@
+# Calculate format=world name=world ini(overlay-distros.world)<#-cut()-#
+
+#-ini(overlay-distros.world,#-cut()-#)-#
+
+#?in(os_linux_pkglist, CLSK, CLDX+)!=#
+!x11-themes/gnome-breeze
+#in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+!sci-geosciences/qgis
+#in#
+
+#?in(os_linux_pkglist, CLSK)!=#
+kde-apps/ark
+kde-apps/gwenview
+kde-apps/kcalc
+#in#

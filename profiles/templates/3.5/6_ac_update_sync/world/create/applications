@@ -1,0 +1,15 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+app-office/libreoffice
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
+app-text/fbreader
+#in#
+
+#?in(os_linux_pkglist, CLDL, CLDX)!=#
+app-editors/leafpad
+app-text/qpdfview
+sci-calculators/galculator
+#in#

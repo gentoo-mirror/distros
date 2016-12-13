@@ -1,0 +1,24 @@
+# Calculate format=world name=world ini(overlay-distros.world)<#-cut()-#
+
+#-ini(overlay-distros.world,#-cut()-#)-#
+
+#?in(os_linux_pkglist, CLSK)!=#
+app-admin/sudo
+sys-apps/memtest86+
+sys-devel/prelink
+#in#
+
+#?in(os_linux_pkglist, CLDX+)!=#
+games-action/oolite
+x11-misc/idesk
+x11-misc/idesk-extras
+x11-misc/xvkbd
+x11-wm/dwm
+x11-wm/jwm
+#in#
+
+#?in(os_linux_pkglist, CDS+)!=#
+!net-p2p/btpd
+sys-apps/iucode_tool
+sys-apps/microcode-ctl
+#in#

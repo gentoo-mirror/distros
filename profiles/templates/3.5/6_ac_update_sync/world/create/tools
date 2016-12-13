@@ -1,0 +1,137 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLS, CSS, CMC, Timeless)!=#
+app-arch/lbzip2
+app-arch/pigz
+app-misc/tmux
+#app-shells/bash-completion
+sys-auth/pam_update
+sys-fs/btrfs-progs
+sys-fs/cryptsetup
+sys-fs/reiserfsprogs
+sys-fs/xfsprogs
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLS, CMC, Timeless)!=#
+app-admin/logrotate
+app-admin/syslog-ng
+sys-apps/ethtool
+sys-apps/usbutils
+sys-process/vixie-cron
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CMC)!=#
+app-admin/sudo
+sys-apps/memtest86+
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CMC)!=#
+app-admin/hddtemp
+app-cdr/cdrtools
+app-cdr/dvd+rw-tools
+app-portage/portage-utils
+sys-apps/dmidecode
+sys-apps/gptfdisk
+sys-apps/lm_sensors
+sys-apps/inxi
+sys-apps/pciutils
+sys-apps/pv
+sys-apps/smartmontools
+sys-fs/dmraid
+sys-fs/dosfstools
+sys-fs/mdadm
+sys-fs/mtools
+sys-fs/ntfs3g
+sys-process/htop
+sys-process/lsof
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CMC)!=#
+sys-power/powertop
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
+app-admin/testdisk
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CMC)!=#
+app-portage/gentoolkit-dev
+sys-apps/hdparm
+sys-apps/pcmciautils
+sys-fs/exfat-utils
+sys-fs/fuse-exfat
+sys-power/acpi
+sys-power/cpupower
+sys-power/powernowd
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, Timeless)!=#
+app-editors/vim
+app-misc/mc
+app-vim/colorschemes
+sys-apps/acl
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+sys-apps/keyexec
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+app-arch/p7zip
+app-arch/rar
+app-arch/unzip
+sys-apps/usb_modeswitch
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+x11-libs/gksu
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CMC)!=#
+sys-power/upower-pm-utils
+#in#
+
+#?in(os_linux_pkglist, CLD, CLS, CMC)!=#
+net-misc/dhcp
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDM)!=#
+x11-misc/parcellite
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
+app-pda/usbmuxd
+dev-python/gst-python
+sys-apps/mlocate
+sys-block/gparted
+#для корректной поддержки мультимедиа клавиатур
+x11-misc/wmctrl
+#in#
+
+#?in(os_linux_pkglist, CLD)!=#
+sys-block/partitionmanager
+#in#
+
+#?in(os_linux_pkglist, CLDC)!=#
+gnome-base/dconf-editor
+#in#
+
+#?in(os_linux_pkglist, CLDX)!=#
+app-admin/hardinfo
+#in#
+
+#?in(os_linux_pkglist, CDS)!=#
+app-antivirus/clamav
+app-i18n/enca
+app-portage/ufed
+dev-libs/klibc
+dev-python/psycopg
+dev-python/pyserial
+sci-libs/fftw
+sys-apps/ipmitool
+sys-apps/iproute2
+sys-apps/kexec-tools
+sys-block/parted
+sys-block/tw_cli
+sys-process/iotop
+#in#
