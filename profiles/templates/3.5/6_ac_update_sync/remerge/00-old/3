@@ -1,4 +1,0 @@
-# Calculate format=samba name=ini.env merge=app-office/libreoffice ini(overlay-distros.remerge)<#-cut()-#
-
-[overlay-distros]
-remerge = #-cut()-#
