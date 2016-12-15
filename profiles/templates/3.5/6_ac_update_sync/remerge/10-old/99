@@ -1,4 +1,0 @@
-# Calculate format=samba name=ini.env ini(overlay-distros.remerge)<#-cut()-#
-
-[overlay-distros]
-remerge = 20160101

@@ -1,4 +1,0 @@
-# Calculate path=/var/lib/calculate name=ini.env format=samba ini(overlay-distros.revision)<#-cut()-#
-
-[overlay-distros]
-revision = 20160101
