@@ -10,11 +10,8 @@ net-analyzer/traceroute
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX)!=#
-www-client/qupzilla
-#in#
-
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+www-client/firefox
 www-plugins/adobe-flash
 x11-misc/x11vnc
 #in#
