@@ -9,7 +9,9 @@ kde-apps/kcron
 kde-apps/kde4-l10n
 kde-apps/kde-l10n
 kde-apps/kdepim-l10n:4
+kde-apps/kdepim-runtime
 kde-apps/kmail
+kde-apps/kmail-account-wizard
 kde-apps/kmix
 kde-apps/konsole
 kde-apps/kwalletd
