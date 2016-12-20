@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<265
+
+#-ini(overlay-distros.world,265)-#
+
+#?in(os_linux_pkglist, calculate)!=#
+!kde-apps/kopete
+#in#
