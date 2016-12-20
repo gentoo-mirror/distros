@@ -14,6 +14,8 @@ kde-apps/kmail
 kde-apps/kmail-account-wizard
 kde-apps/kmix
 kde-apps/konsole
+kde-apps/kontact
+kde-apps/korganizer
 kde-apps/kwalletd
 kde-apps/kwrite
 kde-apps/okular
