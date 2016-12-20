@@ -15,6 +15,7 @@ kde-apps/konsole
 kde-apps/kwalletd
 kde-apps/kwrite
 kde-apps/okular
+kde-apps/plasma-telepathy-meta
 kde-apps/print-manager
 kde-apps/spectacle
 kde-misc/openofficeorg-thumbnail
