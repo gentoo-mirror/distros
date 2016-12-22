@@ -3,9 +3,8 @@
 #?in(os_linux_pkglist, CLDM)!=#
 mate-base/mate
 mate-extra/caja-extensions
-mate-extra/mate-calc
 mate-extra/mate-sensors-applet
 mate-extra/mate-user-guide
-#net-analyzer/mate-netspeed
+media-gfx/mate-themes-calculate
 x11-misc/mate-notification-daemon
 #in#
