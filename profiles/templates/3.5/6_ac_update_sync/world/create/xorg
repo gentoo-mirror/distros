@@ -11,7 +11,3 @@ x11-misc/lightdm
 #?in(os_linux_pkglist, CLDL, CLDX)!=#
 x11-misc/light-locker
 #in#
-
-#?in(os_linux_pkglist, CMC)!=#
-x11-base/xorg-server
-#in#

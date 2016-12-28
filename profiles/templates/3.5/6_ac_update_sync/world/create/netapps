@@ -1,10 +1,7 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CMC)!=#
-app-text/wgetpaste
-#in#
-
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
+app-text/wgetpaste
 net-analyzer/nmap
 net-analyzer/traceroute
 net-misc/whois
@@ -14,14 +11,6 @@ net-misc/whois
 www-client/firefox
 www-plugins/adobe-flash
 x11-misc/x11vnc
-#in#
-
-#?in(os_linux_pkglist, CLD)!=#
-net-irc/konversation
-#in#
-
-#?in(os_linux_pkglist, CLDL)!=#
-mail-client/trojita
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
@@ -42,7 +31,12 @@ x11-plugins/purple-plugin_pack
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
+net-irc/konversation
 net-p2p/ktorrent
+#in#
+
+#?in(os_linux_pkglist, CLDL)!=#
+mail-client/trojita
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#

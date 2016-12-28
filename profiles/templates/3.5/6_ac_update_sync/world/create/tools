@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLS, CSS, CMC, Timeless)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, Timeless, CLS, CSS)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -12,7 +12,7 @@ sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLS, CMC, Timeless)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, Timeless, CLS)!=#
 app-admin/logrotate
 app-admin/syslog-ng
 sys-apps/ethtool
@@ -20,20 +20,25 @@ sys-apps/usbutils
 sys-process/vixie-cron
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CMC)!=#
-app-admin/sudo
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, Timeless)!=#
+app-editors/vim
+app-misc/mc
+app-vim/colorschemes
+sys-apps/acl
 sys-apps/memtest86+
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
 app-admin/hddtemp
+app-admin/sudo
+app-admin/testdisk
 app-cdr/cdrtools
 app-cdr/dvd+rw-tools
 app-portage/portage-utils
 sys-apps/dmidecode
 sys-apps/gptfdisk
-sys-apps/lm_sensors
 sys-apps/inxi
+sys-apps/lm_sensors
 sys-apps/pciutils
 sys-apps/pv
 sys-apps/smartmontools
@@ -46,57 +51,24 @@ sys-process/htop
 sys-process/lsof
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CMC)!=#
-sys-power/powertop
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
-app-admin/testdisk
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+app-arch/p7zip
+app-arch/rar
+app-arch/unzip
 app-portage/gentoolkit-dev
 sys-apps/hdparm
+sys-apps/keyexec
 sys-apps/pcmciautils
+sys-apps/usb_modeswitch
 sys-fs/exfat-utils
 sys-fs/fuse-exfat
 sys-power/acpi
 sys-power/cpupower
 sys-power/powernowd
+sys-power/powertop
 #in#
-
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, Timeless)!=#
-app-editors/vim
-app-misc/mc
-app-vim/colorschemes
-sys-apps/acl
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
-sys-apps/keyexec
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
-app-arch/p7zip
-app-arch/rar
-app-arch/unzip
-sys-apps/usb_modeswitch
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
-x11-libs/gksu
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CMC)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM)!=#
 sys-power/upower-pm-utils
-#in#
-
-#?in(os_linux_pkglist, CLD, CLS, CMC)!=#
-net-misc/dhcp
-#in#
-
-#?in(os_linux_pkglist, CLDC, CLDM)!=#
-x11-misc/parcellite
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
@@ -106,6 +78,18 @@ sys-apps/mlocate
 sys-block/gparted
 #для корректной поддержки мультимедиа клавиатур
 x11-misc/wmctrl
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+x11-libs/gksu
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDM)!=#
+x11-misc/parcellite
+#in#
+
+#?in(os_linux_pkglist, CLD, CLS)!=#
+net-misc/dhcp
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
