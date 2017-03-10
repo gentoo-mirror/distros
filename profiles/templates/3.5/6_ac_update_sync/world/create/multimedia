@@ -19,7 +19,7 @@ media-sound/qastools
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
-app-cdr/k3b
+kde-apps/k3b
 #in#
 
 #?in(os_linux_pkglist, CLDC)!=#
