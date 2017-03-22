@@ -67,9 +67,6 @@ sys-power/cpupower
 sys-power/powernowd
 sys-power/powertop
 #in#
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM)!=#
-sys-power/upower-pm-utils
-#in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
 app-pda/usbmuxd
