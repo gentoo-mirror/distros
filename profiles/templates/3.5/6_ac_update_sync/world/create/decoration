@@ -7,6 +7,7 @@ media-gfx/grub-splashes-calculate
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
+media-gfx/splash-themes-calculate
 x11-themes/calculate-icon-theme
 #in#
 
