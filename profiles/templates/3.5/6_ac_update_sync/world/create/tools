@@ -66,6 +66,7 @@ sys-power/acpi
 sys-power/cpupower
 sys-power/powernowd
 sys-power/powertop
+sys-power/upower
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
