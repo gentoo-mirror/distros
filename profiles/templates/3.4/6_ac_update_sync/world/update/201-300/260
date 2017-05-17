@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<260
-
-#-ini(overlay-distros.world,260)-#
-
-#?in(os_linux_pkglist, CLDC)!=#
-!media-gfx/xsane
-media-gfx/simple-scan
-#in#

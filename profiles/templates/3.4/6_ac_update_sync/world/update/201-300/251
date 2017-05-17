@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<251
-
-#-ini(overlay-distros.world,251)-#
-
-#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
-!sys-apps/preload
-#in#

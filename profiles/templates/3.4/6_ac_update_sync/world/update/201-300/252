@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<252
-
-#-ini(overlay-distros.world,252)-#
-
-#?in(os_linux_pkglist, CLDM, CLDX)!=#
-app-text/fbreader
-#in#
-

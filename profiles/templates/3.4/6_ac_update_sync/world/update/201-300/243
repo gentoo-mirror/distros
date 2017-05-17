@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<243
-
-#-ini(overlay-distros.world,243)-#
-
-#?in(os_linux_pkglist, CLD)!=#
-kde-base/legacy-icons
-#in#

@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<261
-
-#-ini(overlay-distros.world,261)-#
-
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
-app-vim/colorschemes
-#in#

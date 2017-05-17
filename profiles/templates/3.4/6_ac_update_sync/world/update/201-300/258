@@ -1,9 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<258
-
-#-ini(overlay-distros.world,258)-#
-
-#?in(os_linux_pkglist, CLD)!=#
-!kde-apps/kdepim-l10n
-kde-apps/kdepim-l10n:4
-#in#
-
