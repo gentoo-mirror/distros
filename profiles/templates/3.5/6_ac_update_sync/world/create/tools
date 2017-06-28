@@ -51,7 +51,7 @@ sys-process/htop
 sys-process/lsof
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX)!=#
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
@@ -66,7 +66,6 @@ sys-power/acpi
 sys-power/cpupower
 sys-power/powernowd
 sys-power/powertop
-sys-power/upower
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
