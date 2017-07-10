@@ -51,6 +51,10 @@ sys-process/htop
 sys-process/lsof
 #in#
 
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLS)!=#
+net-misc/dhcp
+#in#
+
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
 app-arch/p7zip
 app-arch/rar
