@@ -20,5 +20,6 @@ kde-apps/okular
 kde-apps/plasma-telepathy-meta
 kde-apps/print-manager
 kde-apps/spectacle
+kde-misc/kio-gdrive
 kde-misc/openofficeorg-thumbnail
 kde-plasma/plasma-meta
