@@ -59,7 +59,6 @@ net-misc/dhcp
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
-app-portage/gentoolkit-dev
 sys-apps/hdparm
 sys-apps/keyexec
 sys-apps/pcmciautils
