@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, Timeless, CLS, CSS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC, CLS, CSS, Timeless)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -12,7 +12,7 @@ sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, Timeless, CLS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC, CLS, Timeless)!=#
 app-admin/logrotate
 sys-apps/ethtool
 sys-apps/usbutils
@@ -20,7 +20,7 @@ virtual/cron
 virtual/logger
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, Timeless)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC, Timeless)!=#
 app-editors/vim
 app-misc/mc
 app-vim/colorschemes
@@ -28,7 +28,7 @@ sys-apps/acl
 sys-apps/memtest86+
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC)!=#
 app-admin/hddtemp
 app-admin/sudo
 app-admin/testdisk
@@ -102,10 +102,6 @@ gnome-base/dconf-editor
 
 #?in(os_linux_pkglist, CLDX)!=#
 app-admin/hardinfo
-#in#
-
-#?in(os_linux_pkglist, CLS)!=#
-net-misc/dhcpcd
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
