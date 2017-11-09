@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC, CLS, CSS, Timeless)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC, CLS, CSS)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -12,20 +12,12 @@ sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC, CLS, Timeless)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC, CLS)!=#
 app-admin/logrotate
 sys-apps/ethtool
 sys-apps/usbutils
 virtual/cron
 virtual/logger
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC, Timeless)!=#
-app-editors/vim
-app-misc/mc
-app-vim/colorschemes
-sys-apps/acl
-sys-apps/memtest86+
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC)!=#
@@ -34,11 +26,16 @@ app-admin/sudo
 app-admin/testdisk
 app-cdr/cdrtools
 app-cdr/dvd+rw-tools
+app-editors/vim
+app-misc/mc
 app-portage/portage-utils
+app-vim/colorschemes
+sys-apps/acl
 sys-apps/dmidecode
 sys-apps/gptfdisk
 sys-apps/inxi
 sys-apps/lm_sensors
+sys-apps/memtest86+
 sys-apps/pciutils
 sys-apps/pv
 sys-apps/smartmontools
@@ -118,4 +115,8 @@ sys-apps/kexec-tools
 sys-block/parted
 sys-block/tw_cli
 sys-process/iotop
+#in#
+
+#?in(os_linux_pkglist, CLC)!=#
+app-emulation/lxc
 #in#

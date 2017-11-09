@@ -8,6 +8,6 @@ sys-apps/less
 sys-kernel/dracut
 #in#
 
-#?in(os_linux_pkglist, CLS, CSS, Timeless)!=#
+#?in(os_linux_pkglist, CLS, CSS)!=#
 app-editors/nano
 #in#
