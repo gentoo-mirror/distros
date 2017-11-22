@@ -11,7 +11,7 @@ lxqt-base/lxqt-sudo
 media-gfx/lximage-qt
 net-im/gajim
 net-irc/kvirc
-#net-p2p/qbittorrent
+net-p2p/qbittorrent
 x11-misc/qlipper
 x11-misc/screengrab
 x11-terms/qterminal
