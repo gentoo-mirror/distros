@@ -2,8 +2,11 @@
 
 #-ini(overlay-distros.world,#-cut()-#)-#
 
-#?in(os_linux_pkglist, CLDL)!=#
-!net-im/qutim
+# not compiled
 !net-p2p/qbittorrent
+
+#?in(os_linux_pkglist, CLDL)!=#
+# masked for removal
+!net-im/qutim
 net-im/gajim
 #in#

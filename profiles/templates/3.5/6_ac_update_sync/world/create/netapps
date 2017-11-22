@@ -18,10 +18,8 @@ net-misc/remmina
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDM, CLDX)!=#
-net-im/pidgin
+net-im/gajim
 net-p2p/deluge
-x11-plugins/pidgin-hotkeys
-x11-plugins/pidgin-libnotify
 x11-plugins/purple-plugin_pack
 #in#
 
