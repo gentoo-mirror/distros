@@ -2,9 +2,12 @@
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC)!=#
 app-text/wgetpaste
+net-misc/whois
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
-net-misc/whois
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
@@ -43,7 +46,6 @@ net-analyzer/iptraf-ng
 net-analyzer/macchanger
 net-analyzer/sarg
 net-analyzer/tcpdump
-net-analyzer/traceroute
 net-analyzer/vnstat
 net-dialup/minicom
 net-ftp/tftp-hpa
