@@ -17,13 +17,13 @@ x11-misc/x11vnc
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
+net-im/gajim
+net-im/gajim-httpupload
 net-misc/remmina
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDM, CLDX)!=#
-net-im/gajim
 net-p2p/deluge
-x11-plugins/purple-plugin_pack
 #in#
 
 #?in(os_linux_pkglist, CLDM, CLDX)!=#

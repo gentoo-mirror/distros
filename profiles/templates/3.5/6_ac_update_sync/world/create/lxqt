@@ -9,7 +9,6 @@ lxqt-base/lxqt-openssh-askpass
 lxqt-base/lxqt-powermanagement
 lxqt-base/lxqt-sudo
 media-gfx/lximage-qt
-net-im/gajim
 net-irc/kvirc
 net-p2p/qbittorrent
 x11-misc/qlipper
