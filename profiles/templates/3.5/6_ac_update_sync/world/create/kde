@@ -1,5 +1,6 @@
 # Calculate name=world format=world in(os_linux_pkglist,CLD)!=
 
+app-admin/system-config-printer
 kde-apps/ark
 kde-apps/dolphin
 kde-apps/gwenview
