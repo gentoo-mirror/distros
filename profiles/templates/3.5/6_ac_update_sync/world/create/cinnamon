@@ -3,7 +3,6 @@
 #?in(os_linux_pkglist, CLDC)!=#
 app-admin/openrc-settingsd
 app-arch/file-roller
-app-cdr/brasero
 app-editors/gedit
 app-text/evince
 gnome-extra/cinnamon

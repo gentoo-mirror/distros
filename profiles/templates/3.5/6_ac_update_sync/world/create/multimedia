@@ -18,15 +18,7 @@ media-sound/pavucontrol
 media-sound/qastools
 #in#
 
-#?in(os_linux_pkglist, CLD)!=#
-kde-apps/k3b
-#in#
-
 #?in(os_linux_pkglist, CLDC)!=#
 media-sound/rhythmbox
 media-video/totem
-#in#
-
-#?in(os_linux_pkglist, CLDX)!=#
-app-cdr/xfburn
 #in#
