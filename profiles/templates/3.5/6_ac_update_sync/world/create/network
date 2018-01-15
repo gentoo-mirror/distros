@@ -19,12 +19,12 @@ net-misc/networkmanager-vpnc
 
 #?in(os_linux_pkglist, CDS)!=#
 net-dialup/ppp
-net-dialup/pptpd
 net-dns/ddclient
-net-firewall/ipsec-tools
 net-firewall/iptables
 net-fs/samba
 net-misc/bridge-utils
 net-misc/ifenslave
 net-misc/wol
+net-vpn/ipsec-tools
+net-vpn/pptpd
 #in#
