@@ -3,7 +3,6 @@
 #?in(os_linux_pkglist, CDS)!=#
 dev-db/pg_top
 dev-db/postgresql
-mail-filter/clamsmtp
 mail-filter/opendkim
 mail-filter/postgrey
 net-ftp/ftp
