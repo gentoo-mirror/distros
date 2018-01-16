@@ -14,6 +14,10 @@ net-print/hplip-plugin
 media-gfx/xsane
 #in#
 
+#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+app-admin/system-config-printer
+#in#
+
 #?in(os_linux_pkglist, CLDC)!=#
 media-gfx/simple-scan
 #in#
