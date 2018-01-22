@@ -13,13 +13,13 @@ net-analyzer/traceroute
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
 www-client/firefox
 www-plugins/adobe-flash
-x11-misc/x11vnc
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
 net-im/gajim
 net-im/gajim-httpupload
 net-misc/remmina
+x11-misc/x11vnc
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDM, CLDX)!=#
@@ -32,6 +32,8 @@ net-irc/hexchat
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
+kde-apps/krdc
+kde-apps/krfb
 net-irc/konversation
 net-p2p/ktorrent
 #in#
