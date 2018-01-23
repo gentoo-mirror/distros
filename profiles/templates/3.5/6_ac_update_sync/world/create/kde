@@ -28,3 +28,4 @@ kde-apps/spectacle
 kde-misc/openofficeorg-thumbnail
 kde-plasma/plasma-meta
 sys-fs/cryfs
+sys-fs/encfs
