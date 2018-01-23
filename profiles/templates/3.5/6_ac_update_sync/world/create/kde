@@ -27,3 +27,4 @@ kde-apps/spectacle
 #kde-misc/kio-gdrive
 kde-misc/openofficeorg-thumbnail
 kde-plasma/plasma-meta
+sys-fs/cryfs
