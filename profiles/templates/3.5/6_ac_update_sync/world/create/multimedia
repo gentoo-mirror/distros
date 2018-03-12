@@ -6,12 +6,8 @@ media-video/smplayer
 media-video/smtube
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
 media-video/gtk-recordmydesktop
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDL)!=#
-media-video/qt-recordmydesktop
 #in#
 
 #?in(os_linux_pkglist, CLDL, CLDX)!=#
