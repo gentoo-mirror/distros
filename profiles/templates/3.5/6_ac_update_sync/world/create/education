@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLDXE)!=#
-dev-java/eclipse-ecj
+dev-util/eclipse-sdk-bin
 media-gfx/inkscape
 #in#
