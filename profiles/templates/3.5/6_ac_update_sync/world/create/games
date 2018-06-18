@@ -1,5 +1,5 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 games-misc/games-envd
 #in#

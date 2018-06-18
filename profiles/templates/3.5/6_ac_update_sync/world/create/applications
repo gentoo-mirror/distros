@@ -1,14 +1,14 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 app-office/libreoffice
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 app-text/fbreader
 #in#
 
-#?in(os_linux_pkglist, CLDL, CLDX)!=#
+#?in(os_linux_pkglist, CLDL, CLDX, CLDXE)!=#
 app-editors/leafpad
 app-text/qpdfview
 sci-calculators/galculator

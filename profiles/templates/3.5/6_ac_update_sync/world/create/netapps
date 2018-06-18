@@ -1,32 +1,32 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC)!=#
 app-text/wgetpaste
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 www-client/firefox
 www-plugins/adobe-flash
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 net-im/gajim
 net-im/gajim-httpupload
 net-misc/remmina
 x11-misc/x11vnc
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLDC, CLDM, CLDX, CLDXE)!=#
 net-p2p/deluge
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLDM, CLDX, CLDXE)!=#
 mail-client/claws-mail
 net-irc/hexchat
 #in#

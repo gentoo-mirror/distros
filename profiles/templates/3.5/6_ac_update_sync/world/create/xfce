@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLDX)!=#
+#?in(os_linux_pkglist, CLDX, CLDXE)!=#
 app-arch/xarchiver
 dev-util/catfish
 media-sound/volumeicon

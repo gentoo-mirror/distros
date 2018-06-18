@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CLS)!=#
 net-wireless/broadcom-sta
 net-wireless/rtl8723de
 net-wireless/wireless-tools
@@ -10,6 +10,6 @@ sys-firmware/ipw2100-firmware
 sys-firmware/ipw2200-firmware
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 net-wireless/blueman
 #in#

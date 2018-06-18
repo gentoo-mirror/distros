@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC, CLS, CSS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC, CLS, CSS)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -12,7 +12,7 @@ sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC, CLS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC, CLS)!=#
 app-admin/logrotate
 sys-apps/ethtool
 sys-apps/usbutils
@@ -20,7 +20,7 @@ virtual/cron
 virtual/logger
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS, CLC)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC)!=#
 app-editors/vim
 app-portage/portage-utils
 app-vim/colorschemes
@@ -34,7 +34,7 @@ sys-process/htop
 sys-process/lsof
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS)!=#
 app-admin/hddtemp
 app-admin/sudo
 app-admin/testdisk
@@ -50,7 +50,7 @@ sys-fs/mtools
 sys-fs/ntfs3g
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 app-arch/p7zip
 app-arch/rar
 app-arch/unzip
@@ -66,11 +66,11 @@ sys-power/powernowd
 sys-power/powertop
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXE)!=#
 sys-power/upower
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 app-pda/usbmuxd
 dev-python/gst-python
 sys-apps/mlocate
@@ -79,7 +79,7 @@ sys-block/gparted
 x11-misc/wmctrl
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX)!=#
+#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDXE)!=#
 x11-libs/gksu
 #in#
 
@@ -95,7 +95,7 @@ sys-block/partitionmanager
 gnome-base/dconf-editor
 #in#
 
-#?in(os_linux_pkglist, CLDX)!=#
+#?in(os_linux_pkglist, CLDX, CLDXE)!=#
 app-admin/hardinfo
 #in#
 
