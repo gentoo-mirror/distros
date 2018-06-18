@@ -25,7 +25,6 @@ x86		CLDC/x86					stable
 x86		CLDL/x86					stable
 x86		CLDM/x86					stable
 x86		CLDX/x86					stable
-x86		CLDXE/x86					stable
 x86		CDS/x86						stable
 x86		CLS/x86						stable
 x86		CSS/x86						stable
