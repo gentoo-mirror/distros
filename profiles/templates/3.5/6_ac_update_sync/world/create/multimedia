@@ -3,7 +3,6 @@
 #?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXE)!=#
 media-sound/clementine
 media-video/smplayer
-media-video/smtube
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
