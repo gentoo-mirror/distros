@@ -9,9 +9,16 @@ media-video/smplayer
 media-video/gtk-recordmydesktop
 #in#
 
+#?in(os_linux_pkglist, CLDC, CLDL, CLDX, CLDXE)!=#
+media-sound/qastools
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDX, CLDXE)!=#
+media-sound/volumeicon
+#in#
+
 #?in(os_linux_pkglist, CLDL, CLDX, CLDXE)!=#
 media-sound/pavucontrol
-media-sound/qastools
 #in#
 
 #?in(os_linux_pkglist, CLDC)!=#

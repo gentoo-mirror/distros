@@ -3,7 +3,6 @@
 #?in(os_linux_pkglist, CLDX, CLDXE)!=#
 app-arch/xarchiver
 dev-util/catfish
-media-sound/volumeicon
 x11-misc/sw-notify-send
 x11-terms/xfce4-terminal
 xfce-base/xfce4-meta
