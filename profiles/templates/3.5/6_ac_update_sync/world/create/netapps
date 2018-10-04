@@ -13,6 +13,7 @@ net-analyzer/traceroute
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 www-client/firefox
 www-plugins/adobe-flash
+www-plugins/firefox-ublock
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
