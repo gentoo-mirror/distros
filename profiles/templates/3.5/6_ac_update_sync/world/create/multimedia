@@ -6,11 +6,8 @@ media-video/smplayer
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
-media-video/gtk-recordmydesktop
-#in#
-
-#?in(os_linux_pkglist, CLDC, CLDL, CLDX, CLDXE)!=#
 media-sound/qastools
+media-video/gtk-recordmydesktop
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDX, CLDXE)!=#
