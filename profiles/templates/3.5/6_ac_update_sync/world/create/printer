@@ -1,6 +1,7 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+net-print/cndrvcups-common-lb
 net-print/cnijfilter
 net-print/cups
 net-print/epson-inkjet-printer-escpr
