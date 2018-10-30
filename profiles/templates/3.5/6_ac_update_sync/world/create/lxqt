@@ -8,7 +8,6 @@ lxqt-base/lxqt-meta
 lxqt-base/lxqt-openssh-askpass
 lxqt-base/lxqt-powermanagement
 lxqt-base/lxqt-sudo
-media-gfx/lximage-qt
 net-irc/kvirc
 net-p2p/qbittorrent
 x11-misc/qlipper
