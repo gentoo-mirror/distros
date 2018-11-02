@@ -24,13 +24,17 @@ x11-themes/adwaita-qt
 x11-themes/claws-mail-theme-calculate
 #in#
 
-#?in(os_linux_pkglist, CLD)!=#
-media-gfx/plasma-themes-calculate
-#in#
-
 #?in(os_linux_pkglist, CLDX, CLDXE)!=#
 x11-themes/elementary-icon-theme
 x11-themes/gnome-themes-standard
 x11-themes/gtk-engines
 x11-themes/xfwm4-themes
+#in#
+
+#?in(os_linux_pkglist, CLD)!=#
+media-gfx/plasma-themes-calculate
+#in#
+
+#?in(os_linux_pkglist, CLDL)!=#
+media-gfx/lxqt-themes-calculate/
 #in#
