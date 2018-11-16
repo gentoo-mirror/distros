@@ -27,8 +27,11 @@ x11-misc/x11vnc
 net-p2p/deluge
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDL, CLDM, CLDX, CLDXE)!=#
 mail-client/claws-mail
+#in#
+
+#?in(os_linux_pkglist, CLDM, CLDX, CLDXE)!=#
 net-irc/hexchat
 #in#
 
@@ -37,10 +40,6 @@ kde-apps/krdc
 kde-apps/krfb
 net-irc/konversation
 net-p2p/ktorrent
-#in#
-
-#?in(os_linux_pkglist, CLDL)!=#
-mail-client/trojita
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
