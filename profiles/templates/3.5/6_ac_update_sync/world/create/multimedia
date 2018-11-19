@@ -17,7 +17,7 @@ media-sound/qastools
 media-sound/volumeicon
 #in#
 
-#?in(os_linux_pkglist, CLDL, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDX, CLDXE)!=#
 media-sound/pavucontrol
 #in#
 

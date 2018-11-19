@@ -79,10 +79,6 @@ sys-block/gparted
 x11-misc/wmctrl
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDM, CLDX, CLDXE)!=#
-x11-libs/gksu
-#in#
-
 #?in(os_linux_pkglist, CLDC, CLDM)!=#
 x11-misc/parcellite
 #in#

@@ -13,14 +13,14 @@ x11-themes/calculate-icon-theme
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 media-gfx/lightdm-themes-calculate
+x11-themes/adwaita-qt
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDM, CLDX, CLDXE)!=#
 x11-misc/qt5ct
-x11-themes/adwaita-qt
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDL, CLDM, CLDX, CLDXE)!=#
 x11-themes/claws-mail-theme-calculate
 #in#
 

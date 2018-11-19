@@ -1,6 +1,7 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLDL)!=#
+app-arch/xarchiver
 lxde-base/lxtask
 lxqt-base/lxqt-admin
 #lxqt-base/lxqt-l10n
