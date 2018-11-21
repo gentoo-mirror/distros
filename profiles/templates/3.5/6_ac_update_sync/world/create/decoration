@@ -37,4 +37,5 @@ media-gfx/plasma-themes-calculate
 
 #?in(os_linux_pkglist, CLDL)!=#
 media-gfx/lxqt-themes-calculate
+x11-misc/compton
 #in#

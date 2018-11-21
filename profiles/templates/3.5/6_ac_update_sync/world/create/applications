@@ -9,7 +9,14 @@ app-text/fbreader
 #in#
 
 #?in(os_linux_pkglist, CLDL, CLDX, CLDXE)!=#
-app-editors/leafpad
 app-text/qpdfview
 sci-calculators/galculator
+#in#
+
+#?in(os_linux_pkglist, CLDX, CLDXE)!=#
+app-editors/leafpad
+#in#
+
+#?in(os_linux_pkglist, CLDL)!=#
+app-editors/featherpad
 #in#
