@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<60
-
-#-ini(overlay-distros.world,60)-#
-
-#?in(os_linux_pkglist, CLD+)!=#
-!app-emulation/winetricks
-#in#

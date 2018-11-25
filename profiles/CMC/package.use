@@ -2,4 +2,4 @@
 # Removed unnecessary dependence
 # -----------------------------------------
 sys-apps/calculate-utils -client -console -qt4
-x11-drivers/ati-drivers -qt4
+x11-drivers/ati-drivers -qt5

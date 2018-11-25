@@ -1,4 +1,3 @@
 USE=""
-CL="builder client desktop console consolegui"
 THEMES="CLDX"
 LIGHTDM_SESSION=xfce

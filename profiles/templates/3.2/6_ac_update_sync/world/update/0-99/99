@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<99
-
-#-ini(overlay-distros.world,99)-#
-
-#?in(os_linux_pkglist, CLDX+)!=#
-app-misc/workrave
-dev-python/PyQt5
-#in#

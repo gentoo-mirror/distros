@@ -1,0 +1,116 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC, CLS, CSS)!=#
+app-arch/lbzip2
+app-arch/pigz
+app-misc/tmux
+net-misc/dhcp
+sys-auth/pam_update
+sys-fs/btrfs-progs
+sys-fs/cryptsetup
+sys-fs/reiserfsprogs
+sys-fs/xfsprogs
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC, CLS)!=#
+app-admin/logrotate
+sys-apps/ethtool
+sys-apps/usbutils
+virtual/cron
+virtual/logger
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC)!=#
+app-editors/vim
+app-portage/portage-utils
+app-vim/colorschemes
+sys-apps/inxi
+sys-apps/memtest86+
+sys-apps/pciutils
+sys-fs/dmraid
+sys-fs/dosfstools
+sys-fs/mdadm
+sys-process/htop
+sys-process/lsof
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS)!=#
+app-admin/hddtemp
+app-admin/sudo
+app-admin/testdisk
+app-cdr/cdrtools
+app-cdr/dvd+rw-tools
+app-misc/mc
+sys-apps/acl
+sys-apps/dmidecode
+sys-apps/lm_sensors
+sys-apps/pv
+sys-apps/smartmontools
+sys-fs/mtools
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+app-arch/p7zip
+app-arch/rar
+app-arch/unzip
+sys-apps/hdparm
+sys-apps/keyexec
+sys-apps/pcmciautils
+sys-apps/usb_modeswitch
+sys-fs/exfat-utils
+sys-fs/fuse-exfat
+sys-fs/ntfs3g
+sys-power/acpi
+sys-power/cpupower
+sys-power/powernowd
+sys-power/powertop
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXE)!=#
+sys-power/upower
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+app-pda/usbmuxd
+dev-python/gst-python
+sys-apps/mlocate
+sys-block/gparted
+#для корректной поддержки мультимедиа клавиатур
+x11-misc/wmctrl
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDM)!=#
+x11-misc/parcellite
+#in#
+
+#?in(os_linux_pkglist, CLD)!=#
+sys-block/partitionmanager
+#in#
+
+#?in(os_linux_pkglist, CLDC)!=#
+gnome-base/dconf-editor
+#in#
+
+#?in(os_linux_pkglist, CLDX, CLDXE)!=#
+app-admin/hardinfo
+#in#
+
+#?in(os_linux_pkglist, CDS)!=#
+app-antivirus/clamav
+app-i18n/enca
+app-portage/ufed
+dev-libs/klibc
+dev-python/psycopg
+dev-python/pyserial
+sci-libs/fftw
+sys-apps/ipmitool
+sys-apps/iproute2
+sys-apps/kexec-tools
+sys-block/parted
+sys-block/tw_cli
+sys-process/iotop
+#in#
+
+#?in(os_linux_pkglist, CLC)!=#
+app-emulation/lxc
+#in#

@@ -1,7 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<25
-
-#-ini(overlay-distros.world,25)-#
-
-#?in(os_linux_pkglist, base)!=#
-sys-apps/calculate-toolkit
-#in#

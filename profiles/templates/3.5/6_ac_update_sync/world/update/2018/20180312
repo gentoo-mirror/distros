@@ -1,0 +1,9 @@
+# Calculate format=world name=world ini(overlay-distros.world)<#-cut()-#
+
+#-ini(overlay-distros.world,#-cut()-#)-#
+
+#?in(os_linux_pkglist, CLD, CLDL)!=&&pkg(media-video/qt-recordmydesktop)!=#
+!media-video/qt-recordmydesktop
+media-video/gtk-recordmydesktop
+#in#
+

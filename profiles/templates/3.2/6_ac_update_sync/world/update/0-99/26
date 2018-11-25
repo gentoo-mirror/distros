@@ -1,8 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<26
-
-#-ini(overlay-distros.world,26)-#
-
-#?in(os_linux_pkglist, CMC)!=#
-!media-tv/xbmc
-media-tv/kodi
-#in#

@@ -1,4 +1,0 @@
-USE=""
-CL="builder client desktop console consolegui"
-THEMES="CLDO"
-LIGHTDM_SESSION=openbox

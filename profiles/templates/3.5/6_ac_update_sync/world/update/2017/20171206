@@ -1,0 +1,12 @@
+# Calculate format=world name=world ini(overlay-distros.world)<#-cut()-#
+
+#-ini(overlay-distros.world,#-cut()-#)-#
+
+#?in(os_linux_pkglist, CLD)!=#
+# http://www.calculate-linux.org/issues/1039
+app-admin/system-config-printer
+kde-apps/akonadi-import-wizard
+kde-apps/kaddressbook
+kde-apps/kleopatra
+kde-apps/pim-data-exporter
+#in#

@@ -1,0 +1,56 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC)!=#
+app-text/wgetpaste
+net-misc/whois
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS)!=#
+net-analyzer/nmap
+net-analyzer/traceroute
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+www-client/firefox
+www-plugins/adobe-flash
+www-plugins/firefox-ublock
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+net-im/gajim
+net-im/gajim-httpupload
+net-misc/remmina
+x11-misc/x11vnc
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDM, CLDX, CLDXE)!=#
+net-p2p/deluge
+#in#
+
+#?in(os_linux_pkglist, CLDL, CLDM, CLDX, CLDXE)!=#
+mail-client/claws-mail
+#in#
+
+#?in(os_linux_pkglist, CLDM, CLDX, CLDXE)!=#
+net-irc/hexchat
+#in#
+
+#?in(os_linux_pkglist, CLD)!=#
+kde-apps/krdc
+kde-apps/krfb
+net-irc/konversation
+net-p2p/ktorrent
+#in#
+
+#?in(os_linux_pkglist, CDS)!=#
+net-analyzer/fail2ban
+net-analyzer/iptraf-ng
+net-analyzer/macchanger
+net-analyzer/sarg
+net-analyzer/tcpdump
+net-analyzer/vnstat
+net-dialup/minicom
+net-ftp/tftp-hpa
+net-irc/weechat
+www-client/links
+#in#

@@ -1,0 +1,17 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDL)!=#
+app-arch/xarchiver
+lxde-base/lxtask
+lxqt-base/lxqt-admin
+#lxqt-base/lxqt-l10n
+lxqt-base/lxqt-meta
+lxqt-base/lxqt-openssh-askpass
+lxqt-base/lxqt-powermanagement
+lxqt-base/lxqt-sudo
+net-irc/kvirc
+net-p2p/qbittorrent
+x11-misc/qlipper
+x11-misc/screengrab
+x11-terms/qterminal
+#in#

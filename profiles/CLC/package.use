@@ -1,0 +1,5 @@
+# -----------------------------------------
+# Removed unnecessary dependence
+# -----------------------------------------
+sys-apps/calculate-utils backup install -client -console -desktop -minimal -pxe -qt5
+sys-kernel/calculate-sources desktop themes

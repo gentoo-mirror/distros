@@ -1,7 +1,0 @@
-# Calculate name=world format=world in(os_linux_pkglist,CLDX+)!=
-
-x11-wm/awesome
-x11-wm/enlightenment
-x11-wm/enlightenment:0.17
-x11-wm/fluxbox
-x11-wm/i3

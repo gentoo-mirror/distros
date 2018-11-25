@@ -1,0 +1,10 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLDM)!=#
+mate-base/mate
+mate-extra/caja-extensions
+mate-extra/mate-sensors-applet
+mate-extra/mate-user-guide
+media-gfx/mate-themes-calculate
+x11-misc/mate-notification-daemon
+#in#

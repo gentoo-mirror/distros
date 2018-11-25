@@ -1,9 +1,0 @@
-# Calculate format=world name=world ini(overlay-distros.world)<52
-
-#-ini(overlay-distros.world,52)-#
-
-#?in(os_linux_pkglist, CDS)!=#
-app-admin/sudo
-sys-apps/ipmitool
-#in#
-

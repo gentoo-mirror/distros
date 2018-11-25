@@ -1,0 +1,4 @@
+# Calculate format=samba name=ini.env cl_chroot_status==on&&ini(overlay-calculate.remerge)<#-cl_pass_file-# merge=app-cdr/brasero,app-cdr/k3b,app-cdr/xfburn,app-editors/gedit,app-editors/leafpad,app-editors/pluma,app-office/libreoffice,app-text/qpdfview,app-text/qpdfview,gnome-extra/gnome-calculator,kde-apps/gwenview,kde-apps/kcalc,kde-apps/kmail,kde-apps/konsole,kde-apps/kopete,kde-apps/kwrite,mail-client/claws-mail,mail-client/evolution,mail-client/trojita,mate-extra/mate-calc,media-gfx/eog,media-gfx/eom,media-gfx/gimp,media-gfx/lximage-qt,media-gfx/nomacs,media-sound/clementine,media-sound/rhythmbox,media-video/smplayer,media-video/totem,net-im/gajim,net-im/pidgin,net-im/qutim,net-irc/hexchat,net-irc/konversation,net-irc/kvirc,net-irc/polari,sci-calculators/galculator,www-client/epiphany,www-client/qupzilla,x11-terms/gnome-terminal,x11-terms/mate-terminal,x11-terms/qterminal,x11-terms/xfce4-terminal
+
+[overlay-calculate]
+remerge = #-cl_pass_file-#

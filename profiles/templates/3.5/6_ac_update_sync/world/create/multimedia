@@ -1,0 +1,27 @@
+# Calculate name=world format=world
+
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXE)!=#
+media-sound/clementine
+media-video/smplayer
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+media-video/gtk-recordmydesktop
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+media-sound/qastools
+#in#
+
+#?in(os_linux_pkglist, CLDC, CLDX, CLDXE)!=#
+media-sound/volumeicon
+#in#
+
+#?in(os_linux_pkglist, CLDX, CLDXE)!=#
+media-sound/pavucontrol
+#in#
+
+#?in(os_linux_pkglist, CLDC)!=#
+media-sound/rhythmbox
+media-video/totem
+#in#

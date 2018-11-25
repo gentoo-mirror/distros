@@ -1,4 +1,0 @@
-# Calculate format=samba path=/etc/calculate name=ini.env merge=app-office/libreoffice ini(overlay-distros.remerge)<3
-
-[overlay-distros]
-remerge = 3
