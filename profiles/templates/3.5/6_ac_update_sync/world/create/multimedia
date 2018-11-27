@@ -5,10 +5,6 @@ media-sound/clementine
 media-video/smplayer
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
-media-video/gtk-recordmydesktop
-#in#
-
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
 media-sound/qastools
 #in#
