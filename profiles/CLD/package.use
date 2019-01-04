@@ -1,1 +1,2 @@
+dev-qt/qtsql postgres
 virtual/notification-daemon kde
