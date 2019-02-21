@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC, CLS, CSS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLS, CSS)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -12,7 +12,7 @@ sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC, CLS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLS)!=#
 app-admin/logrotate
 sys-apps/ethtool
 sys-apps/usbutils
@@ -20,9 +20,10 @@ virtual/cron
 virtual/logger
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS, CLC)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS)!=#
 app-editors/vim
 app-portage/portage-utils
+app-text/tree
 app-vim/colorschemes
 sys-apps/inxi
 sys-apps/memtest86+
@@ -109,8 +110,4 @@ sys-apps/kexec-tools
 sys-block/parted
 sys-block/tw_cli
 sys-process/iotop
-#in#
-
-#?in(os_linux_pkglist, CLC)!=#
-app-emulation/lxc
 #in#
