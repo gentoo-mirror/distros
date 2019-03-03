@@ -11,10 +11,10 @@ net-misc/vconfig
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
-net-misc/networkmanager-l2tp
-net-misc/networkmanager-openvpn
-net-misc/networkmanager-pptp
-net-misc/networkmanager-vpnc
+net-vpn/networkmanager-l2tp
+net-vpn/networkmanager-openvpn
+net-vpn/networkmanager-pptp
+net-vpn/networkmanager-vpnc
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
