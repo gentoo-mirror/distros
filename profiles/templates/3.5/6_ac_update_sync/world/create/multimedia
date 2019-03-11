@@ -1,19 +1,19 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
 media-sound/clementine
 media-video/smplayer
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 media-sound/qastools
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDC, CLDX, CLDXS)!=#
 media-sound/volumeicon
 #in#
 
-#?in(os_linux_pkglist, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDX, CLDXS)!=#
 media-sound/pavucontrol
 #in#
 

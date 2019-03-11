@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDX, CLDXS)!=#
 app-arch/xarchiver
 gnome-extra/polkit-gnome
 x11-misc/sw-notify-send

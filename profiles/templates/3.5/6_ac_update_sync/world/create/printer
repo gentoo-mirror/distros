@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 net-print/cndrvcups-common-lb
 net-print/cnijfilter
 net-print/cups
@@ -12,11 +12,11 @@ net-print/hplip-plugin
 #net-print/xerox-drivers
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
 media-gfx/xsane
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
 app-admin/system-config-printer
 #in#
 
