@@ -1,13 +1,13 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CLS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CLS)!=#
 app-misc/xorg-meta
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 x11-misc/lightdm
 #in#
 
-#?in(os_linux_pkglist, CLDL, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDL, CLDX, CLDXS)!=#
 x11-misc/light-locker
 #in#

@@ -1,30 +1,30 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
 media-gfx/grub-splashes-calculate
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
 media-gfx/splash-themes-calculate
 x11-themes/calculate-icon-theme
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 media-gfx/lightdm-themes-calculate
 x11-themes/adwaita-qt
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDC, CLDM, CLDX, CLDXS)!=#
 x11-misc/qt5ct
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDM, CLDX, CLDXS)!=#
 x11-themes/claws-mail-theme-calculate
 #in#
 
-#?in(os_linux_pkglist, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDX, CLDXS)!=#
 x11-themes/elementary-icon-theme
 x11-themes/gnome-themes-standard
 x11-themes/gtk-engines

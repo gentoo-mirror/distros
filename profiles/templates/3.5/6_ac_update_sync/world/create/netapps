@@ -1,37 +1,37 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
 app-text/wgetpaste
 net-misc/whois
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 www-client/firefox
 www-plugins/adobe-flash
 www-plugins/firefox-ublock
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 net-im/gajim
 net-im/gajim-httpupload
 net-misc/remmina
 x11-misc/x11vnc
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDC, CLDM, CLDX, CLDXS)!=#
 net-p2p/deluge
 #in#
 
-#?in(os_linux_pkglist, CLDL, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDL, CLDM, CLDX, CLDXS)!=#
 mail-client/claws-mail
 #in#
 
-#?in(os_linux_pkglist, CLDM, CLDX, CLDXE)!=#
+#?in(os_linux_pkglist, CLDM, CLDX, CLDXS)!=#
 net-irc/hexchat
 #in#
 
