@@ -13,7 +13,7 @@ amd64		CLDC/amd64					stable
 amd64		CLDL/amd64					stable
 amd64		CLDM/amd64					stable
 amd64		CLDX/amd64					stable
-amd64		CLDXE/amd64					stable
+amd64		CLDXS/amd64					stable
 amd64		CDS/amd64					stable
 amd64		CLC/amd64					stable
 amd64		CLS/amd64					stable
