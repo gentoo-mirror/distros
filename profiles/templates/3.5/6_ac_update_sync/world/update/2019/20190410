@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-distros.world)<#-cut()-#
+
+#-ini(overlay-distros.world,#-cut()-#)-#
+
+#?in(os_linux_pkglist, CLDX, CLDXS)!=#
+!!xfce-base/libxfcegui4
+!!xfce-extra/xfce4-quicklauncher-plugin
+#in#
