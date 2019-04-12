@@ -18,7 +18,6 @@ www-plugins/firefox-ublock
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 net-im/gajim
-net-im/gajim-httpupload
 net-misc/remmina
 x11-misc/x11vnc
 #in#
