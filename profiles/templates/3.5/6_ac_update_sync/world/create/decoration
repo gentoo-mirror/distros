@@ -25,6 +25,7 @@ x11-themes/claws-mail-theme-calculate
 #in#
 
 #?in(os_linux_pkglist, CLDX, CLDXS)!=#
+media-gfx/xfce-themes-calculate
 x11-themes/elementary-xfce-icon-theme
 x11-themes/gnome-themes-standard
 x11-themes/gtk-engines
