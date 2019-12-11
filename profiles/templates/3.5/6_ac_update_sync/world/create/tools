@@ -92,8 +92,8 @@ sys-block/partitionmanager
 gnome-base/dconf-editor
 #in#
 
-#?in(os_linux_pkglist, CLDX, CLDXS)!=#
-app-admin/hardinfo
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
+sys-process/cpu-x
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
