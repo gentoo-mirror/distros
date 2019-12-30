@@ -33,6 +33,8 @@ x11-themes/xfwm4-themes
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
+kde-frameworks/oxygen-icons
+media-fonts/oxygen-fonts
 media-gfx/plasma-themes-calculate
 #in#
 
