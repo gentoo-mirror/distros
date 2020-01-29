@@ -3,13 +3,12 @@
 kde-apps/akonadi-import-wizard
 kde-apps/ark
 kde-apps/dolphin
+kde-apps/filelight
 kde-apps/gwenview
 kde-apps/kaddressbook
 kde-apps/kamera
 kde-apps/kcalc
 kde-apps/kcron
-#kde-apps/kde-l10n
-#kde-apps/kdepim-l10n
 kde-apps/kdepim-runtime
 kde-apps/kleopatra
 kde-apps/kmail
@@ -25,7 +24,6 @@ kde-apps/plasma-telepathy-meta
 kde-apps/print-manager
 kde-apps/spectacle
 kde-apps/thumbnailers
-#kde-misc/kio-gdrive
 kde-misc/openofficeorg-thumbnail
 kde-plasma/plasma-meta
 sys-fs/cryfs

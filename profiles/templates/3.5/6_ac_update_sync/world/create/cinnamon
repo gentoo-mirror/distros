@@ -17,6 +17,6 @@ media-gfx/eog
 media-gfx/gnome-screenshot
 media-sound/rhythmbox
 net-irc/polari
-#sys-apps/baobab
+sys-apps/baobab
 x11-terms/gnome-terminal
 #in#

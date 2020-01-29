@@ -76,8 +76,13 @@ app-pda/usbmuxd
 dev-python/gst-python
 sys-apps/mlocate
 sys-block/gparted
+sys-process/cpu-x
 #для корректной поддержки мультимедиа клавиатур
 x11-misc/wmctrl
+#in#
+
+#?in(os_linux_pkglist, CLDL, CLDM, CLDX, CLDXS)!=#
+sys-apps/qdirstat
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDM)!=#
@@ -90,10 +95,6 @@ sys-block/partitionmanager
 
 #?in(os_linux_pkglist, CLDC)!=#
 gnome-base/dconf-editor
-#in#
-
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
-sys-process/cpu-x
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
