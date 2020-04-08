@@ -1,3 +1,8 @@
 app-office/libreoffice kde
 dev-qt/qtsql postgres
+net-vpn/networkmanager-l2tp -gnome
+net-vpn/networkmanager-openconnect -gtk
+net-vpn/networkmanager-openvpn -gtk
+net-vpn/networkmanager-pptp -gtk
+net-vpn/networkmanager-vpnc -gtk
 virtual/notification-daemon kde
