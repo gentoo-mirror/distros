@@ -11,9 +11,11 @@ net-analyzer/traceroute
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
-www-client/firefox
+www-client/chromium
 www-plugins/adobe-flash
-www-plugins/firefox-ublock
+www-plugins/chrome-freedommarks
+www-plugins/chrome-passman
+www-plugins/chrome-ublock
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
