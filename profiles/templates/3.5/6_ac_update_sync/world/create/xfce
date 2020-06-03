@@ -4,6 +4,7 @@
 app-arch/xarchiver
 dev-util/catfish
 gnome-extra/polkit-gnome
+x11-misc/snixembed
 x11-misc/sw-notify-send
 x11-terms/xfce4-terminal
 xfce-base/xfce4-meta
