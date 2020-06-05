@@ -21,11 +21,8 @@ www-plugins/chrome-ublock
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 net-im/gajim
 net-misc/remmina
+net-p2p/qbittorrent
 x11-misc/x11vnc
-#in#
-
-#?in(os_linux_pkglist, CLDC, CLDM, CLDX, CLDXS)!=#
-net-p2p/deluge
 #in#
 
 #?in(os_linux_pkglist, CLDL, CLDM, CLDX, CLDXS)!=#

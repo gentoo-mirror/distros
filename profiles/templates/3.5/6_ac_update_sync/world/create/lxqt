@@ -10,7 +10,6 @@ lxqt-base/lxqt-openssh-askpass
 lxqt-base/lxqt-powermanagement
 lxqt-base/lxqt-sudo
 net-irc/kvirc
-net-p2p/qbittorrent
 x11-misc/qlipper
 x11-misc/screengrab
 x11-terms/qterminal
