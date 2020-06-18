@@ -82,7 +82,7 @@ sys-process/cpu-x
 x11-misc/wmctrl
 #in#
 
-#?in(os_linux_pkglist, CLDL, CLDM, CLDX, CLDXS)!=#
+#?in(os_linux_pkglist, CLDL, CLDX, CLDXS)!=#
 sys-apps/qdirstat
 #in#
 
