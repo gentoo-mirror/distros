@@ -5,6 +5,7 @@ media-gfx/grub-splashes-calculate
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
+media-fonts/noto-emoji
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
 media-gfx/splash-themes-calculate
