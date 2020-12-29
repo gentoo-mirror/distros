@@ -16,7 +16,6 @@ net-vpn/networkmanager-openvpn
 net-vpn/networkmanager-pptp
 net-vpn/networkmanager-vpnc
 net-vpn/networkmanager-wireguard
-net-vpn/wireguard-modules
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
