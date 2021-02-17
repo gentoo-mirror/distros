@@ -14,10 +14,10 @@ sys-fs/xfsprogs
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS, CLS)!=#
 app-admin/logrotate
+app-admin/syslog-ng
 sys-apps/ethtool
 sys-apps/usbutils
-virtual/cron
-virtual/logger
+sys-process/cronie
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
