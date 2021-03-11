@@ -100,7 +100,6 @@ gnome-base/dconf-editor
 app-antivirus/clamav
 app-i18n/enca
 app-portage/ufed
-dev-libs/klibc
 dev-python/psycopg
 dev-python/pyserial
 sci-libs/fftw
