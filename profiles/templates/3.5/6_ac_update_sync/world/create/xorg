@@ -8,6 +8,6 @@ app-misc/xorg-meta
 x11-misc/lightdm
 #in#
 
-#?in(os_linux_pkglist, CLDL, CLDX, CLDXS)!=#
+#?in(os_linux_pkglist, CLDL)!=#
 x11-misc/light-locker
 #in#
