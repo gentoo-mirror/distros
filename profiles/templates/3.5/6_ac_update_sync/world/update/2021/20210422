@@ -4,7 +4,9 @@
 
 #?in(os_linux_pkglist, CLDX, CLDXS)!=#
 !x11-misc/light-locker
-#!in#
-sys-power/acpid
 xfce-extra/xfce4-screensaver
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
+sys-power/acpid
 #in#
