@@ -2,7 +2,6 @@
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CLS)!=#
 net-wireless/broadcom-sta
-net-wireless/rtl8723de
 net-wireless/rtl8814au
 net-wireless/rtl8821ce
 net-wireless/rtl8821cu
