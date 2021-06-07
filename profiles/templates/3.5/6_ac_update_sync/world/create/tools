@@ -8,6 +8,7 @@ net-misc/dhcp
 sys-auth/pam_update
 sys-fs/btrfs-progs
 sys-fs/cryptsetup
+sys-fs/f2fs-tools
 sys-fs/reiserfsprogs
 sys-fs/xfsprogs
 #in#
