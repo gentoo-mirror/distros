@@ -14,7 +14,7 @@ sci-calculators/galculator
 #in#
 
 #?in(os_linux_pkglist, CLDX, CLDXS)!=#
-app-editors/mousepad
+app-editors/leafpad
 #in#
 
 #?in(os_linux_pkglist, CLDL)!=#
