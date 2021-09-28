@@ -1,5 +1,6 @@
 app-office/libreoffice kde
 dev-qt/qtsql postgres
+media-libs/libsdl2 pipewire
 net-vpn/networkmanager-l2tp -gnome
 net-vpn/networkmanager-openconnect -gtk
 net-vpn/networkmanager-openvpn -gtk
