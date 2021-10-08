@@ -10,15 +10,18 @@ net-print/foomatic-db-engine
 net-print/gutenprint
 net-print/hplip
 net-print/hplip-plugin
-#net-print/xerox-drivers
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
-media-gfx/xsane
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
 app-admin/system-config-printer
+#in#
+
+#?in(os_linux_pkglist, CLDL, CLDM, CLDX, CLDXS)!=#
+media-gfx/xsane
+#in#
+
+#?in(os_linux_pkglist, CLD)!=#
+kde-misc/skanlite
 #in#
 
 #?in(os_linux_pkglist, CLDC)!=#
