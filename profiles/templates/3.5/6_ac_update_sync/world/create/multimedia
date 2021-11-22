@@ -3,6 +3,7 @@
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 media-plugins/alsa-plugins
 media-sound/alsa-utils
+media-sound/bluez-alsa
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
