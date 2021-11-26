@@ -2,7 +2,7 @@
 
 #-ini(overlay-distros.world,#-cut()-#)-#
 
-#?in(os_linux_pkglist, CLDL)!=#
-!x11-misc/compton
-x11-misc/picom
+#?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
+!media-sound/clementine
+media-sound/strawberry
 #in#

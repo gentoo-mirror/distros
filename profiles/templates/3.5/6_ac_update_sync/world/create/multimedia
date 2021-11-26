@@ -7,7 +7,7 @@ media-sound/bluez-alsa
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
-media-sound/clementine
+media-sound/strawberry
 media-video/smplayer
 #in#
 
