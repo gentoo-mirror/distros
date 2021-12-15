@@ -4,6 +4,7 @@
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
+app-text/tree
 net-misc/dhcp
 sys-auth/pam_update
 sys-fs/btrfs-progs
@@ -30,7 +31,6 @@ app-cdr/dvd+rw-tools
 app-editors/vim
 app-misc/mc
 app-portage/portage-utils
-app-text/tree
 app-vim/colorschemes
 sys-apps/acl
 sys-apps/dmidecode
