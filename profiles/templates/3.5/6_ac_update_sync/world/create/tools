@@ -57,8 +57,7 @@ sys-apps/hdparm
 sys-apps/keyexec
 sys-apps/pcmciautils
 sys-apps/usb_modeswitch
-sys-fs/exfat-utils
-sys-fs/fuse-exfat
+sys-fs/exfatprogs
 sys-fs/ntfs3g
 sys-power/acpi
 sys-power/acpid
