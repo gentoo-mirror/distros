@@ -4,6 +4,7 @@
 media-plugins/alsa-plugins
 media-sound/alsa-utils
 media-sound/bluez-alsa
+sys-firmware/sof-firmware
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
