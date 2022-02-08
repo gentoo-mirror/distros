@@ -1,6 +1,7 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLDX, CLDXS)!=#
+app-admin/openrc-settingsd
 app-arch/xarchiver
 dev-util/catfish
 gnome-extra/polkit-gnome
