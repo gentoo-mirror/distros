@@ -1,6 +1,7 @@
 # Calculate name=world format=world
 
 #?in(os_linux_pkglist, CLDM)!=#
+app-admin/openrc-settingsd
 mate-base/mate
 mate-extra/caja-extensions
 mate-extra/mate-sensors-applet
