@@ -19,7 +19,7 @@ www-plugins/chrome-ublock
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 net-im/gajim
-net-misc/vinagre
+net-misc/remmina
 net-p2p/qbittorrent
 x11-misc/x11vnc
 #in#
