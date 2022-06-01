@@ -4,7 +4,8 @@ net-vpn/networkmanager-l2tp -gnome
 net-vpn/networkmanager-openconnect -gtk
 net-vpn/networkmanager-openvpn -gtk
 net-vpn/networkmanager-pptp -gtk
-net-vpn/networkmanager-vpnc -gtk
+# bug: https://bugs.gentoo.org/837365
+#net-vpn/networkmanager-vpnc -gtk
 net-vpn/networkmanager-wireguard -gtk
 virtual/notification-daemon kde
 
