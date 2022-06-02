@@ -115,6 +115,7 @@ sys-process/iotop
 #in#
 
 #?in(os_linux_pkglist, CCM)!=#
+app-backup/btrbk
 app-containers/lxc
 sys-apps/calculate-access
 #in#
