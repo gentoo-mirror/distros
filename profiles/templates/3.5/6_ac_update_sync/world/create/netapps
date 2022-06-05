@@ -2,12 +2,11 @@
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
 app-text/wgetpaste
-net-misc/whois
-#in#
-
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
+net-dns/bind-tools
+net-misc/ntp
+net-misc/whois
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
@@ -32,11 +31,19 @@ mail-client/claws-mail
 net-irc/hexchat
 #in#
 
+#?in(os_linux_pkglist, CCM, CDS)!=#
+net-analyzer/vnstat
+#in#
+
 #?in(os_linux_pkglist, CLD)!=#
 kde-apps/krdc
 kde-apps/krfb
 net-irc/konversation
 net-p2p/ktorrent
+#in#
+
+#?in(os_linux_pkglist, CCM)!=#
+mail-mta/nullmailer
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
@@ -45,8 +52,8 @@ net-analyzer/iptraf-ng
 net-analyzer/macchanger
 net-analyzer/sarg
 net-analyzer/tcpdump
-net-analyzer/vnstat
 net-dialup/minicom
+net-fs/samba
 net-ftp/tftp-hpa
 net-irc/weechat
 www-client/links
