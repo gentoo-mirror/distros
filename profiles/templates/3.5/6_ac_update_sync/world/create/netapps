@@ -5,11 +5,11 @@ app-text/wgetpaste
 net-analyzer/nmap
 net-analyzer/traceroute
 net-dns/bind-tools
-net-misc/ntp
 net-misc/whois
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
+net-misc/ntp
 www-client/chromium
 www-plugins/chrome-freedommarks
 www-plugins/chrome-passman
@@ -33,6 +33,7 @@ net-irc/hexchat
 
 #?in(os_linux_pkglist, CCM, CDS)!=#
 net-analyzer/vnstat
+net-misc/ntp
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
