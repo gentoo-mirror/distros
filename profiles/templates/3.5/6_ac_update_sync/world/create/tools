@@ -26,6 +26,8 @@ sys-process/cronie
 app-editors/vim
 app-vim/colorschemes
 sys-apps/inxi
+sys-fs/mdadm
+sys-process/htop
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
@@ -45,10 +47,8 @@ sys-apps/pv
 sys-apps/smartmontools
 sys-fs/dmraid
 sys-fs/dosfstools
-sys-fs/mdadm
 sys-fs/mtools
 sys-fs/ncdu
-sys-process/htop
 sys-process/lsof
 #in#
 

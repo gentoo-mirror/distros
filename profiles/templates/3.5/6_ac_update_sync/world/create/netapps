@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CCM, CDS)!=#
 app-text/wgetpaste
 net-analyzer/nmap
 net-analyzer/traceroute
@@ -32,6 +32,7 @@ net-irc/hexchat
 #in#
 
 #?in(os_linux_pkglist, CCM, CDS)!=#
+net-analyzer/tcpdump
 net-analyzer/vnstat
 #in#
 
@@ -44,6 +45,8 @@ net-p2p/ktorrent
 
 #?in(os_linux_pkglist, CCM)!=#
 mail-mta/nullmailer
+net-analyzer/nload
+net-analyzer/wireshark
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
@@ -51,7 +54,6 @@ net-analyzer/fail2ban
 net-analyzer/iptraf-ng
 net-analyzer/macchanger
 net-analyzer/sarg
-net-analyzer/tcpdump
 net-dialup/minicom
 net-fs/samba
 net-ftp/tftp-hpa
