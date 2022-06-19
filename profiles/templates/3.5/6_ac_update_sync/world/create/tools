@@ -1,6 +1,6 @@
 # Calculate name=world format=world
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS, CLS, CCM, CSS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CCM, CDS, CLS, CSS)!=#
 app-arch/lbzip2
 app-arch/pigz
 app-misc/tmux
@@ -22,7 +22,7 @@ sys-apps/usbutils
 sys-process/cronie
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS, CCM)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CCM, CDS)!=#
 app-editors/vim
 app-vim/colorschemes
 sys-apps/inxi
