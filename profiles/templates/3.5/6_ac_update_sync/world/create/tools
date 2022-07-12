@@ -87,6 +87,10 @@ x11-misc/wmctrl
 sys-apps/qdirstat
 #in#
 
+#?in(os_linux_pkglist, CCM, CDS)!=#
+sys-process/iotop
+#in#
+
 #?in(os_linux_pkglist, CLDC, CLDM)!=#
 x11-misc/parcellite
 #in#
@@ -111,7 +115,6 @@ sys-apps/iproute2
 sys-apps/kexec-tools
 sys-block/parted
 sys-block/tw_cli
-sys-process/iotop
 #in#
 
 #?in(os_linux_pkglist, CCM)!=#
