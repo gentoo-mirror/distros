@@ -78,7 +78,6 @@ app-pda/usbmuxd
 dev-python/gst-python
 sys-apps/mlocate
 sys-block/gparted
-sys-process/cpu-x
 #для корректной поддержки мультимедиа клавиатур
 x11-misc/wmctrl
 #in#
