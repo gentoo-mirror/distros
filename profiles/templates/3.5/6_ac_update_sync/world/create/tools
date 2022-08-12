@@ -76,7 +76,6 @@ sys-power/upower
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 app-pda/usbmuxd
 dev-python/gst-python
-sys-apps/mlocate
 sys-block/gparted
 #для корректной поддержки мультимедиа клавиатур
 x11-misc/wmctrl
