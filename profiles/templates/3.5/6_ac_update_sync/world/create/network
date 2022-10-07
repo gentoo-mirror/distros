@@ -5,7 +5,6 @@ net-dialup/pptpclient
 net-dialup/rp-pppoe
 net-dialup/xl2tpd
 net-firewall/shorewall
-net-misc/vconfig
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
