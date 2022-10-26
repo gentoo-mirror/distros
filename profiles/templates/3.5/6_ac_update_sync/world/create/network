@@ -21,6 +21,5 @@ net-dns/ddclient
 net-firewall/iptables
 net-misc/bridge-utils
 net-misc/ifenslave
-net-misc/wol
 net-vpn/pptpd
 #in#
