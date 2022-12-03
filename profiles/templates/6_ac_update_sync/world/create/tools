@@ -23,8 +23,6 @@ sys-process/cronie
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
-app-editors/vim
-app-vim/colorschemes
 sys-apps/inxi
 sys-fs/mdadm
 sys-process/htop
