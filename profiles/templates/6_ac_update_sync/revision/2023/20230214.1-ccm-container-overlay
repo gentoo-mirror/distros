@@ -2,7 +2,7 @@
 
 #-ini(overlay-distros.revision,#-cut(0)-#)-#
 
-if -q grep '\[container\]' /etc/portage/repos.conf/zz-calculate.conf && \
+if grep -q '\[container\]' /etc/portage/repos.conf/zz-calculate.conf && \
 	[[ ! -e /etc/portage/repos.conf/cl-lxc.conf ]]
 then
 	while IFS= read -r line; do
