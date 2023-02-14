@@ -18,8 +18,8 @@ then
 			echo $line >> /etc/portage/repos.conf/zz-calculate-new.conf
 		fi
 	
-		mv /etc/portage/repos.conf/{zz-calculate-new.conf,zz-calculate.conf}
 	done <<< $(cat /etc/portage/repos.conf/zz-calculate.conf)
+	mv /etc/portage/repos.conf/zz-calculate-new.conf /etc/portage/repos.conf/zz-calculate.conf
 fi
 
 exit 0
