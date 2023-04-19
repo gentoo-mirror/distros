@@ -102,6 +102,7 @@ app-i18n/enca
 app-portage/ufed
 dev-python/psycopg
 dev-python/pyserial
+net-misc/dhcp
 sci-libs/fftw
 sys-apps/ipmitool
 sys-apps/iproute2
