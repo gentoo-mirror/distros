@@ -1,0 +1,8 @@
+# Calculate format=world name=world ini(overlay-distros.world)<#-cut()-#
+
+#-ini(overlay-distros.world,#-cut()-#)-#
+
+# build problems with kernel 6.1
+!net-wireless/broadcom-sta
+!net-wireless/rtl8821cu
+
