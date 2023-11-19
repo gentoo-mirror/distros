@@ -22,10 +22,10 @@ kde-apps/kwrite
 kde-apps/okular
 kde-apps/pim-data-exporter
 kde-apps/plasma-telepathy-meta
-kde-apps/print-manager
 kde-apps/spectacle
 kde-apps/thumbnailers
 kde-misc/openofficeorg-thumbnail
 kde-plasma/plasma-meta
+kde-plasma/print-manager
 sys-fs/cryfs
 sys-fs/encfs
