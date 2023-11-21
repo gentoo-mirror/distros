@@ -3,4 +3,8 @@
 #-ini(overlay-distros.world,#-cut()-#)-#
 
 !kde-apps/print-manager
+!kde-plasma/print-manager
+
+#?in(os_linux_pkglist, CLD)!=#
 kde-plasma/print-manager
+#in#
