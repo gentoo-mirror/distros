@@ -2,10 +2,13 @@
 
 #?in(os_linux_pkglist, calculate)!=#
 media-fonts/terminus-font
-net-misc/dhcpcd
 sys-apps/busybox
 sys-apps/calculate-toolkit
 sys-apps/ifplugd
 sys-apps/less
 sys-kernel/dracut
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CCM, CLS, CSS)!=#
+net-misc/dhcpcd
 #in#
