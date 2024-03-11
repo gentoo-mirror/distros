@@ -2,6 +2,9 @@
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CCM, CDS)!=#
 app-text/wgetpaste
+#in#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
 net-dns/bind-tools
@@ -31,11 +34,6 @@ mail-client/claws-mail
 net-irc/hexchat
 #in#
 
-#?in(os_linux_pkglist, CCM, CDS)!=#
-net-analyzer/tcpdump
-net-analyzer/vnstat
-#in#
-
 #?in(os_linux_pkglist, CLD)!=#
 kde-apps/krdc
 kde-apps/krfb
@@ -45,8 +43,6 @@ net-p2p/ktorrent
 
 #?in(os_linux_pkglist, CCM)!=#
 mail-mta/nullmailer
-net-analyzer/nload
-net-analyzer/wireshark
 #in#
 
 #?in(os_linux_pkglist, CDS)!=#
@@ -54,6 +50,8 @@ net-analyzer/fail2ban
 net-analyzer/iptraf-ng
 net-analyzer/macchanger
 net-analyzer/sarg
+net-analyzer/tcpdump
+net-analyzer/vnstat
 net-dialup/minicom
 net-fs/samba
 net-ftp/tftp-hpa

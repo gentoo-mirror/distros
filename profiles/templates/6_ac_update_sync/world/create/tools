@@ -16,15 +16,12 @@ sys-fs/xfsprogs
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CCM, CDS, CLS)!=#
 app-admin/logrotate
 app-admin/syslog-ng
-sys-apps/ethtool
 sys-apps/usbutils
 sys-process/cronie
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
-sys-apps/inxi
-sys-fs/mdadm
-sys-process/htop
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS, CLS)!=#
+sys-apps/ethtool
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
@@ -52,16 +49,19 @@ app-arch/p7zip
 app-arch/rar
 app-arch/unzip
 sys-apps/hdparm
+sys-apps/inxi
 sys-apps/keyexec
 sys-apps/pcmciautils
 sys-apps/usb_modeswitch
 sys-fs/exfatprogs
+sys-fs/mdadm
 sys-fs/ntfs3g
 sys-power/acpi
 sys-power/acpid
 sys-power/cpupower
 sys-power/powernowd
 sys-power/powertop
+sys-process/htop
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
