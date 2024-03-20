@@ -1,0 +1,6 @@
+# Calculate format=world name=world ini(overlay-distros.world)<#-cut()-#
+
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
+!!net-misc/ntp
+net-misc/chrony
+#in#
