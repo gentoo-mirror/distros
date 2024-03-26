@@ -8,7 +8,7 @@ app-misc/xorg-meta
 app-i18n/uim
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
 x11-misc/lightdm
 #in#
 
