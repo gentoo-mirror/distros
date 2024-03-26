@@ -1,0 +1,6 @@
+# Calculate format=world name=world ini(overlay-distros.world)<#-cut()-#
+
+#?in(os_linux_pkglist, CLD)!=#
+media-gfx/lightdm-themes-calculate
+x11-misc/lightdm
+#in#
