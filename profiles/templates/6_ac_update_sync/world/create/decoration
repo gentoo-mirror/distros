@@ -8,12 +8,12 @@ media-gfx/grub-splashes-calculate
 media-fonts/noto-emoji
 media-gfx/calculate-wallpapers
 media-gfx/dm-themes-calculate
+media-gfx/lightdm-themes-calculate
 media-gfx/splash-themes-calculate
 x11-themes/calculate-icon-theme
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
-media-gfx/lightdm-themes-calculate
 x11-themes/adwaita-qt
 #in#
 
