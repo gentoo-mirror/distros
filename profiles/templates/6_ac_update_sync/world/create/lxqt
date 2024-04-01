@@ -2,6 +2,7 @@
 
 #?in(os_linux_pkglist, CLDL)!=#
 app-arch/xarchiver
+lxde-base/lxmenu-data
 lxde-base/lxtask
 lxqt-base/lxqt-admin
 lxqt-base/lxqt-meta
