@@ -8,15 +8,15 @@
 
 
 # AMD64 Profiles
-amd64		CLD/amd64/20					stable
-amd64		CLDC/amd64/20					stable
-amd64		CLDL/amd64/20					stable
-amd64		CLDM/amd64/20					stable
-amd64		CLDX/amd64/20					stable
-amd64		CLDXS/amd64/20					stable
-amd64		CLS/amd64/20					stable
-amd64		CCM/amd64/20					stable
-amd64		CDS/amd64/20					stable
-amd64		CSS/amd64/20					stable
+amd64		CLD/amd64/23					stable
+amd64		CLDC/amd64/23					stable
+amd64		CLDL/amd64/23					stable
+amd64		CLDM/amd64/23					stable
+amd64		CLDX/amd64/23					stable
+amd64		CLDXS/amd64/23					stable
+amd64		CLS/amd64/23					stable
+amd64		CCM/amd64/23					stable
+amd64		CDS/amd64/23					stable
+amd64		CSS/amd64/23					stable
 
 # vim: set ts=8
