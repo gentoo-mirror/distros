@@ -59,7 +59,6 @@ sys-fs/ntfs3g
 sys-power/acpi
 sys-power/acpid
 sys-power/cpupower
-sys-power/powernowd
 sys-power/powertop
 sys-process/htop
 #in#
