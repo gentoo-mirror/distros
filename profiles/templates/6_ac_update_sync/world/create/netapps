@@ -35,7 +35,7 @@ net-irc/hexchat
 #in#
 
 #?in(os_linux_pkglist, CLD)!=#
-kde-apps/krdc
+#kde-apps/krdc
 kde-apps/krfb
 net-irc/konversation
 net-p2p/ktorrent
