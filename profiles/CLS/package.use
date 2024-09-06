@@ -1,4 +1,4 @@
 # -----------------------------------------
 # Removed unnecessary dependence
 # -----------------------------------------
-sys-apps/calculate-utils -client -qt5
+sys-apps/calculate-utils -client -qt6
