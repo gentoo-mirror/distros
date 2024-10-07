@@ -4,7 +4,6 @@
 app-arch/xarchiver
 dev-util/catfish
 gnome-extra/polkit-gnome
-x11-misc/dunst
 x11-terms/xfce4-terminal
 xfce-base/thunar-volman
 xfce-base/tumbler
