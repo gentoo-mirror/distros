@@ -40,7 +40,6 @@ sys-apps/smartmontools
 sys-fs/dmraid
 sys-fs/dosfstools
 sys-fs/mtools
-sys-fs/ncdu
 sys-process/lsof
 #in#
 
