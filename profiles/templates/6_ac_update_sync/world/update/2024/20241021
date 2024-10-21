@@ -1,0 +1,6 @@
+# Calculate format=world name=world ini(overlay-distros.world)<#-cut()-#
+
+#-ini(overlay-distros.world,#-cut()-#)-#
+
+!!net-misc/dhcpcd
+net-misc/dhcp
