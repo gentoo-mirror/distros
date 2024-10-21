@@ -9,6 +9,6 @@ sys-apps/less
 sys-kernel/dracut
 #in#
 
-#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CCM, CLS, CSS)!=#
-net-misc/dhcpcd
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CCM, CLS, CDS, CSS)!=#
+net-misc/dhcp
 #in#
