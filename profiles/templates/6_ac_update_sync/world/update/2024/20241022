@@ -3,4 +3,3 @@
 #-ini(overlay-distros.world,#-cut()-#)-#
 
 !!net-misc/dhcpcd
-net-misc/dhcp
