@@ -4,7 +4,6 @@
 net-dialup/pptpclient
 net-dialup/rp-pppoe
 net-dialup/xl2tpd
-net-firewall/shorewall
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
@@ -18,8 +17,12 @@ net-vpn/networkmanager-vpnc
 #?in(os_linux_pkglist, CDS)!=#
 net-dialup/ppp
 net-dns/ddclient
-net-firewall/iptables
+net-firewall/nftables
 net-misc/bridge-utils
 net-misc/ifenslave
 net-vpn/pptpd
+#in#
+
+#?in(os_linux_pkglist, CCM)!=#
+net-firewall/nftables
 #in#
