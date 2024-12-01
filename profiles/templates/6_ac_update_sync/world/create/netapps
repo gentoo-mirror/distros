@@ -1,5 +1,9 @@
 # Calculate name=world format=world
 
+#?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CCM, CDS)!=#
+app-text/wgetpaste
+#in#
+
 #?in(os_linux_pkglist, CLD, CLDC, CLDL, CLDM, CLDX, CLDXS, CDS)!=#
 net-analyzer/nmap
 net-analyzer/traceroute
