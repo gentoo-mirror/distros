@@ -5,7 +5,7 @@ app-office/libreoffice
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
-app-text/crqt-ng
+#app-text/crqt-ng
 #in#
 
 #?in(os_linux_pkglist, CLDL, CLDX, CLDXS)!=#
