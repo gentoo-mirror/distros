@@ -12,11 +12,11 @@ media-sound/strawberry
 media-video/smplayer
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
+#?in(os_linux_pkglist, CLDC, CLDL, CLDM)!=#
 media-sound/qastools
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDX, CLDXS)!=#
+#?in(os_linux_pkglist, CLDC)!=#
 media-sound/volumeicon
 #in#
 
