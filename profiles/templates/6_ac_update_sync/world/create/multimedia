@@ -8,23 +8,21 @@ sys-firmware/sof-firmware
 #in#
 
 #?in(os_linux_pkglist, CLD, CLDL, CLDM, CLDX, CLDXS)!=#
-media-sound/strawberry
 media-video/smplayer
 #in#
 
-#?in(os_linux_pkglist, CLDC, CLDL, CLDM)!=#
+#?in(os_linux_pkglist, CLD, CLDL, CLDM)!=#
+media-sound/strawberry
 media-sound/qastools
 #in#
 
-#?in(os_linux_pkglist, CLDC)!=#
-media-sound/volumeicon
-#in#
-
 #?in(os_linux_pkglist, CLDX, CLDXS)!=#
+media-sound/audacious
 media-sound/pavucontrol
 #in#
 
 #?in(os_linux_pkglist, CLDC)!=#
 media-sound/rhythmbox
+media-sound/volumeicon
 media-video/totem
 #in#
