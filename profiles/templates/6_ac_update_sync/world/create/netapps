@@ -16,7 +16,7 @@ net-misc/whois
 www-client/chromium
 www-plugins/chrome-freedommarks
 www-plugins/chrome-passman
-www-plugins/chrome-ublock
+www-plugins/chrome-ublock-lite
 #in#
 
 #?in(os_linux_pkglist, CLDC, CLDL, CLDM, CLDX, CLDXS)!=#
