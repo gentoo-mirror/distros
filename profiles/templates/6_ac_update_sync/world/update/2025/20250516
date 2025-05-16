@@ -1,0 +1,7 @@
+# Calculate format=world name=world ini(overlay-distros.world)<#-cut()-#
+
+#-ini(overlay-distros.world,#-cut()-#)-#
+
+!!www-plugins/chrome-freedommarks:0
+!!www-plugins/chrome-passman:0
+!!www-plugins/chrome-ublock-lite:0
