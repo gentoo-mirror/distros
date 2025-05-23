@@ -21,9 +21,9 @@ kde-apps/korganizer
 kde-apps/kwrite
 kde-apps/okular
 kde-apps/pim-data-exporter
-kde-apps/spectacle
 kde-apps/thumbnailers
 kde-plasma/plasma-meta
 kde-plasma/print-manager
+kde-plasma/spectacle
 sys-fs/cryfs
 sys-fs/encfs
