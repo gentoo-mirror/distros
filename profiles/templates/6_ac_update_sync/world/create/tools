@@ -111,6 +111,7 @@ sys-block/tw_cli
 
 #?in(os_linux_pkglist, CCM)!=#
 app-backup/btrbk
+app-containers/cl-lxc
 app-containers/lxc
 sys-apps/calculate-access
 #in#
